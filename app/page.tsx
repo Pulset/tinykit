@@ -1,10 +1,8 @@
-'use client';
-
-import { useEffect } from 'react';
 import Navigation from '@/app/components/Navigation';
 import FeatureCard from '@/app/components/FeatureCard';
 import UserAvatar from '@/app/components/UserAvatar';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
+import SmoothScroll from '@/app/components/SmoothScroll';
 import { siteConfig, productConfig } from '@/app/data/site-config';
 import {
   features,
@@ -14,43 +12,17 @@ import {
 } from '@/app/data/page-data';
 
 export default function Home() {
-  useEffect(() => {
-    // Smooth scrolling for navigation links
-    const handleSmoothScroll = (e: Event) => {
-      const target = e.target as HTMLAnchorElement;
-      if (target.href && target.href.includes('#')) {
-        e.preventDefault();
-        const id = target.getAttribute('href')?.substring(1);
-        if (id) {
-          const element = document.getElementById(id);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
-      }
-    };
-
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', handleSmoothScroll);
-    });
-
-    return () => {
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.removeEventListener('click', handleSmoothScroll);
-      });
-    };
-  }, []);
-
   return (
-    <div>
+    <>
+      <SmoothScroll />
       <Navigation />
 
       {/* Hero Section */}
-      <section className='gradient-bg text-white py-32'>
+      <section className='gradient-bg text-white py-32' aria-label="Hero section">
         <div className='container mx-auto px-6 text-center'>
           <div className='max-w-4xl mx-auto'>
-            <div className='bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-8'>
-              <FontAwesomeIcon name='fas fa-star' className='inline mr-2' />
+            <div className='bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-8' role="banner">
+              <FontAwesomeIcon name='fas fa-star' className='inline mr-2' aria-hidden="true" />
               #1 File Organization Tool on Mac
             </div>
             <h1 className='text-5xl md:text-7xl font-bold mb-8'>
@@ -68,8 +40,9 @@ export default function Home() {
                 className='bg-white text-purple-600 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 text-lg inline-block'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label="Download File Sortify on the Mac App Store"
               >
-                <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
+                <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' aria-hidden="true" />
                 Download on the Mac App Store
               </a>
             </div>
@@ -120,10 +93,10 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id='features' className='py-20 bg-white'>
+      <section id='features' className='py-20 bg-white' aria-labelledby="features-heading">
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2 id='features-heading' className='text-4xl font-bold text-gray-800 mb-4'>
               Powerful Features
             </h2>
             <p className='text-xl text-gray-600'>
@@ -146,10 +119,10 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id='how-it-works' className='py-20 bg-gray-50'>
+      <section id='how-it-works' className='py-20 bg-gray-50' aria-labelledby="how-it-works-heading">
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2 id='how-it-works-heading' className='text-4xl font-bold text-gray-800 mb-4'>
               How It Works
             </h2>
             <p className='text-xl text-gray-600'>
@@ -187,10 +160,10 @@ export default function Home() {
       </section>
 
       {/* Screenshots Section */}
-      <section id='screenshots' className='py-20 bg-white'>
+      <section id='screenshots' className='py-20 bg-white' aria-labelledby="screenshots-heading">
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2 id='screenshots-heading' className='text-4xl font-bold text-gray-800 mb-4'>
               Beautiful & Intuitive Interface
             </h2>
             <p className='text-xl text-gray-600'>
@@ -199,7 +172,7 @@ export default function Home() {
           </div>
           <div className='grid md:grid-cols-3 gap-8'>
             {screenshots.map((screenshot, index) => (
-              <div
+              <article
                 key={index}
                 className='rounded-2xl overflow-hidden shadow-xl'
               >
@@ -207,6 +180,7 @@ export default function Home() {
                   src={screenshot.image}
                   alt={screenshot.title}
                   className='w-full'
+                  loading="lazy"
                 />
                 <div className='p-4 bg-gray-50'>
                   <h4 className='font-semibold text-gray-800'>
@@ -216,17 +190,17 @@ export default function Home() {
                     {screenshot.description}
                   </p>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <section id='pricing' className='py-20 hero-gradient'>
+      <section id='pricing' className='py-20 hero-gradient' aria-labelledby="pricing-heading">
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2 id='pricing-heading' className='text-4xl font-bold text-gray-800 mb-4'>
               One-Time Purchase
             </h2>
             <p className='text-xl text-gray-700'>
@@ -276,10 +250,10 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className='py-20 bg-white'>
+      <section className='py-20 bg-white' aria-labelledby="testimonials-heading">
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2 id='testimonials-heading' className='text-4xl font-bold text-gray-800 mb-4'>
               Loved by Mac Users
             </h2>
             <p className='text-xl text-gray-600'>
@@ -288,13 +262,14 @@ export default function Home() {
           </div>
           <div className='grid md:grid-cols-3 gap-8'>
             {testimonials.map((testimonial, index) => (
-              <div key={index} className='bg-gray-50 p-8 rounded-2xl'>
-                <div className='flex text-yellow-400 mb-4'>
+              <article key={index} className='bg-gray-50 p-8 rounded-2xl'>
+                <div className='flex text-yellow-400 mb-4' aria-label="5 star rating">
                   {[...Array(5)].map((_, i) => (
                     <FontAwesomeIcon
                       key={i}
                       name='fas fa-star'
                       className='inline'
+                      aria-hidden="true"
                     />
                   ))}
                 </div>
@@ -312,14 +287,14 @@ export default function Home() {
                     <p className='text-sm text-gray-600'>{testimonial.role}</p>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className='py-20 gradient-bg text-white'>
+      <section className='py-20 gradient-bg text-white' aria-label="Call to action">
         <div className='container mx-auto px-6 text-center'>
           <h2 className='text-4xl font-bold mb-6'>
             Ready to Organize Your Digital Life?
@@ -333,8 +308,9 @@ export default function Home() {
               className='bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 inline-block'
               target='_blank'
               rel='noopener noreferrer'
+              aria-label="Download File Sortify on Mac App Store"
             >
-              <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
+              <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' aria-hidden="true" />
               Download on Mac App Store
             </a>
           </div>
@@ -342,7 +318,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className='bg-gray-900 text-white py-8'>
+      <footer className='bg-gray-900 text-white py-8' role="contentinfo">
         <div className='container mx-auto px-6'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='flex items-center mb-4 md:mb-0'>
@@ -351,29 +327,33 @@ export default function Home() {
                 alt='File Sortify Logo'
                 className='mr-3'
                 style={{ width: '30px', height: 'auto' }}
+                width="30"
+                height="30"
               />
               <span className='text-2xl font-bold text-gray-400'>
                 File Sortify
               </span>
             </div>
-            <div className='flex items-center space-x-6'>
+            <nav className='flex items-center space-x-6' aria-label="Footer navigation">
               <a
                 href={`mailto:${siteConfig.email}`}
                 className='text-gray-400 hover:text-white transition'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label="Contact us via email"
               >
-                <FontAwesomeIcon name='fas fa-envelope' className='mr-2' />
+                <FontAwesomeIcon name='fas fa-envelope' className='mr-2' aria-hidden="true" />
                 {siteConfig.email}
               </a>
               <a
                 href='/privacy'
                 className='text-gray-400 hover:text-white transition'
+                aria-label="View privacy policy"
               >
-                <FontAwesomeIcon name='fas fa-shield-alt' className='mr-2' />
+                <FontAwesomeIcon name='fas fa-shield-alt' className='mr-2' aria-hidden="true" />
                 Privacy Policy
               </a>
-            </div>
+            </nav>
           </div>
           <div className='border-t border-gray-800 mt-6 pt-6 text-center text-gray-400'>
             <p>
@@ -383,6 +363,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
