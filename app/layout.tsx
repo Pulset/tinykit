@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import './globals.css';
 import StructuredData from '@/app/components/StructuredData';
-
+import { Analytics } from '@vercel/analytics/next';
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -85,8 +85,7 @@ export const metadata: Metadata = {
     // AI-friendly metadata for LLMs
     'application-name': 'File Sortify',
     'product-type': 'Mac Utility Software',
-    'target-audience':
-      'Mac users who need to organize files automatically',
+    'target-audience': 'Mac users who need to organize files automatically',
     'key-features':
       'Auto-categorization, Custom rules, Real-time monitoring, Operation history',
     'use-cases':
@@ -111,6 +110,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased bg-gray-50`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
