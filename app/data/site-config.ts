@@ -12,25 +12,12 @@ export const siteConfig = {
   stats: {
     happyUsers: '10,000+',
     rating: 5,
-    freeTrialDays: 3,
   },
 };
 
 export const productConfig = {
   appStoreUrl: 'https://apps.apple.com/app/id6754158420', // File Sortify App Store URL
   pricing: {
-    freeTrial: {
-      title: 'Free Trial',
-      price: '$0',
-      period: '/3 days',
-      features: [
-        'Full access to all features',
-        'Smart file categorization',
-        'Custom rules creation',
-        'Real-time monitoring',
-        'Limited to 3 days',
-      ],
-    },
     lifetime: {
       title: 'Lifetime License',
       price: '$20',
