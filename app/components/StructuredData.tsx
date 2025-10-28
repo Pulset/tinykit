@@ -15,6 +15,13 @@ export default function StructuredData() {
       // 'https://twitter.com/tinykit',
       // 'https://github.com/tinykit',
     ],
+    foundingDate: '2024',
+    knowsAbout: [
+      'Mac software development',
+      'File organization',
+      'Productivity tools',
+      'macOS utilities',
+    ],
   };
 
   // Software Application Schema for File Sortify
@@ -24,12 +31,14 @@ export default function StructuredData() {
     name: 'File Sortify',
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'macOS',
+    softwareVersion: '1.0',
     offers: {
       '@type': 'Offer',
       price: '20.00',
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       url: productConfig.appStoreUrl,
+      priceValidUntil: '2026-12-31',
     },
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -40,6 +49,10 @@ export default function StructuredData() {
     },
     description: siteConfig.description,
     author: {
+      '@type': 'Organization',
+      name: 'TinyKit',
+    },
+    creator: {
       '@type': 'Organization',
       name: 'TinyKit',
     },
@@ -57,6 +70,10 @@ export default function StructuredData() {
       'Safe & Secure',
       'Lightning Fast',
     ],
+    keywords:
+      'file organizer, mac app, file management, auto file sorter, download folder organizer',
+    applicationSubCategory: 'File Management',
+    installUrl: productConfig.appStoreUrl,
   };
 
   // WebSite Schema
@@ -86,6 +103,88 @@ export default function StructuredData() {
     ],
   };
 
+  // FAQ Schema - AI-friendly
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is File Sortify?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'File Sortify is an intelligent file organization tool for Mac that automatically sorts and organizes your files based on type, custom rules, and real-time monitoring. It is perfect for keeping your Downloads folder and desktop clean and organized.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does File Sortify organize files?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'File Sortify uses smart auto-categorization to sort files by type (documents, images, videos, etc.), allows you to create custom rules for specific file types or names, and monitors folders in real-time to automatically organize new files as they arrive.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is File Sortify compatible with my Mac?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'File Sortify is designed exclusively for macOS. It works with all modern Mac computers running macOS and integrates seamlessly with the Mac file system.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much does File Sortify cost?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'File Sortify is available for a one-time purchase of $20 USD. This includes lifetime access, unlimited usage, lifetime updates, and all future features with no subscription required.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I undo file organization changes?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, File Sortify includes an Operation History feature that allows you to review and revert file organization actions if needed, ensuring your files are always safe.',
+        },
+      },
+    ],
+  };
+
+  // Product Schema for better AI understanding
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'File Sortify',
+    description: siteConfig.description,
+    brand: {
+      '@type': 'Brand',
+      name: 'TinyKit',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '20.00',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: productConfig.appStoreUrl,
+      seller: {
+        '@type': 'Organization',
+        name: 'TinyKit',
+      },
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: siteConfig.stats.rating,
+      ratingCount: 500,
+      bestRating: 5,
+    },
+    category: 'Mac Utility Software',
+    audience: {
+      '@type': 'Audience',
+      audienceType: 'Mac users seeking file organization solutions',
+    },
+  };
+
   return (
     <>
       <script
@@ -110,6 +209,18 @@ export default function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productSchema),
         }}
       />
     </>
