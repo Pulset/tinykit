@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import Navigation from '@/app/components/Navigation';
 import FeatureCard from '@/app/components/FeatureCard';
 import UserAvatar from '@/app/components/UserAvatar';
-import Icon from '@/app/components/Icon';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 import { siteConfig, productConfig } from '@/app/data/site-config';
 import {
@@ -67,8 +66,8 @@ export default function Home() {
               <a
                 href={productConfig.appStoreUrl}
                 className='bg-white text-purple-600 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 text-lg inline-block'
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
                 Download on the Mac App Store
@@ -294,8 +293,8 @@ export default function Home() {
               <a
                 href={productConfig.appStoreUrl}
                 className='w-full bg-white text-purple-600 py-3 rounded-full font-semibold hover:bg-gray-100 transition inline-block text-center'
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
                 Buy for $20
@@ -361,8 +360,8 @@ export default function Home() {
             <a
               href={productConfig.appStoreUrl}
               className='bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 inline-block'
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
               Download on Mac App Store
@@ -372,65 +371,44 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className='bg-gray-900 text-white py-12'>
+      <footer className='bg-gray-900 text-white py-8'>
         <div className='container mx-auto px-6'>
-          <div className='grid md:grid-cols-4 gap-8'>
-            <div>
-              <div className='flex items-center mb-4'>
-                <FontAwesomeIcon
-                  name='fas fa-folder-open'
-                  className='text-2xl text-purple-400 mr-2'
-                />
-                <span className='text-xl font-bold'>File Sortify</span>
-              </div>
-              <p className='text-gray-400'>
-                The smart file organization tool for Mac users who value
-                efficiency and cleanliness.
-              </p>
+          <div className='flex flex-col md:flex-row justify-between items-center'>
+            <div className='flex items-center mb-4 md:mb-0'>
+              <img
+                src={siteConfig.logo}
+                alt='File Sortify Logo'
+                className='mr-3'
+                style={{ width: '30px', height: 'auto' }}
+              />
+              <span className='text-2xl font-bold text-gray-400'>
+                File Sortify
+              </span>
             </div>
-            <div>
-              <h4 className='font-semibold mb-4'>Product</h4>
-              <ul className='space-y-2 text-gray-400'>
-                <li>
-                  <a href='#features' className='hover:text-white transition'>
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a href='#pricing' className='hover:text-white transition'>
-                    Pricing
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className='font-semibold mb-4'>Support</h4>
-              <ul className='space-y-2 text-gray-400'>
-                <li>
-                  <a
-                    href={`mailto:${siteConfig.email}`}
-                    className='hover:text-white transition'
-                  >
-                    {siteConfig.email}
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className='font-semibold mb-4'>Connect</h4>
-              <div className='flex space-x-4 mb-4'>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className='text-gray-400 hover:text-white transition'
-                >
-                  {siteConfig.email}
-                </a>
-              </div>
-              <p className='text-gray-400'>Made with ❤️ for Mac users</p>
+            <div className='flex items-center space-x-6'>
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className='text-gray-400 hover:text-white transition'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FontAwesomeIcon name='fas fa-envelope' className='mr-2' />
+                {siteConfig.email}
+              </a>
+              <a
+                href='/privacy'
+                className='text-gray-400 hover:text-white transition'
+              >
+                <FontAwesomeIcon name='fas fa-shield-alt' className='mr-2' />
+                Privacy Policy
+              </a>
             </div>
           </div>
-          <div className='border-t border-gray-800 mt-8 pt-8 text-center text-gray-400'>
-            <p>&copy; 2025 File Sortify. All rights reserved.</p>
+          <div className='border-t border-gray-800 mt-6 pt-6 text-center text-gray-400'>
+            <p>
+              &copy; {new Date().getFullYear()} File Sortify. All rights
+              reserved.
+            </p>
           </div>
         </div>
       </footer>

@@ -15,7 +15,8 @@ import {
   faCheckCircle as fasCheckCircle,
   faLock as fasLock,
   faFolderOpen as fasFolderOpen,
-  faPlayCircle as fasPlayCircle
+  faPlayCircle as fasPlayCircle,
+  faEnvelope as fasEnvelope
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faApple as fabApple,
@@ -39,6 +40,7 @@ type FontAwesomeIconName =
   | 'fas fa-lock'
   | 'fas fa-folder-open'
   | 'fas fa-play-circle'
+  | 'fas fa-envelope'
   | 'fab fa-apple'
   | 'fab fa-github'
   | 'fab fa-discord'
@@ -60,6 +62,7 @@ const iconMap: Record<FontAwesomeIconName, any> = {
   'fas fa-lock': fasLock,
   'fas fa-folder-open': fasFolderOpen,
   'fas fa-play-circle': fasPlayCircle,
+  'fas fa-envelope': fasEnvelope,
 
   // Brand icons
   'fab fa-apple': fabApple,
