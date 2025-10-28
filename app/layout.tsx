@@ -15,29 +15,16 @@ export const metadata: Metadata = {
     template: '%s | TinyKit',
   },
   description:
-    'Automatically organize your files with File Sortify. The intelligent file management tool that sorts files by type, custom rules, and real-time monitoring. Perfect for keeping your Downloads folder tidy.',
+    'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
+  // Note: Meta keywords are ignored by Google/Bing since 2009, but kept minimal for potential AI crawlers
   keywords: [
-    // Product specific keywords
     'file organizer mac',
     'mac file management',
     'auto file sorter',
     'download folder organizer',
     'file automation mac',
-    'file organization app',
-    'mac productivity tools',
-    // Brand keywords
-    'tinykit',
     'file sortify',
-    'mac utilities',
-    // Feature keywords
-    'automatic file sorting',
-    'custom file rules',
-    'real-time file monitoring',
-    // AI-friendly long-tail keywords
-    'how to organize files on mac',
-    'best file organizer for macOS',
-    'automate file sorting downloads folder',
-    'intelligent file management software',
+    'tinykit',
   ],
   authors: [{ name: 'TinyKit Team', url: 'https://tinykit.app' }],
   creator: 'TinyKit',
