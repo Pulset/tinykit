@@ -1,65 +1,424 @@
-import Image from "next/image";
+'use client';
+
+import { useEffect } from 'react';
+import Navigation from '@/app/components/Navigation';
+import FeatureCard from '@/app/components/FeatureCard';
+import UserAvatar from '@/app/components/UserAvatar';
+import Icon from '@/app/components/Icon';
+import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
+import { siteConfig, productConfig } from '@/app/data/site-config';
+import {
+  features,
+  howItWorks,
+  screenshots,
+  testimonials,
+} from '@/app/data/page-data';
 
 export default function Home() {
+  useEffect(() => {
+    // Smooth scrolling for navigation links
+    const handleSmoothScroll = (e: Event) => {
+      const target = e.target as HTMLAnchorElement;
+      if (target.href && target.href.includes('#')) {
+        e.preventDefault();
+        const id = target.getAttribute('href')?.substring(1);
+        if (id) {
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', handleSmoothScroll);
+    });
+
+    return () => {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.removeEventListener('click', handleSmoothScroll);
+      });
+    };
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div>
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className='gradient-bg text-white py-32'>
+        <div className='container mx-auto px-6 text-center'>
+          <div className='max-w-4xl mx-auto'>
+            <div className='bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-8'>
+              <FontAwesomeIcon name='fas fa-star' className='inline mr-2' />
+              #1 File Organization Tool on Mac
+            </div>
+            <h1 className='text-5xl md:text-7xl font-bold mb-8'>
+              Sortify Your Files,{' '}
+              <span className='text-yellow-300'>Automatically!</span>
+            </h1>
+            <p className='text-xl md:text-2xl mb-12 text-gray-100 leading-relaxed'>
+              Transform your chaotic Downloads folder into an organized
+              paradise. File Sortify intelligently categorizes your files based
+              on type, custom rules, and real-time monitoring.
+            </p>
+            <div className='flex flex-col sm:flex-row gap-6 justify-center mb-12'>
+              <button className='bg-white text-purple-600 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 text-lg'>
+                <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
+                Download on the Mac App Store
+              </button>
+            </div>
+            <div className='flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-8'>
+              <div className='flex -space-x-2'>
+                <UserAvatar
+                  src='https://picsum.photos/seed/user1/48/48.jpg'
+                  alt='User 1'
+                  size='medium'
+                  className='border-2 border-white'
+                />
+                <UserAvatar
+                  src='https://picsum.photos/seed/user2/48/48.jpg'
+                  alt='User 2'
+                  size='medium'
+                  className='border-2 border-white'
+                />
+                <UserAvatar
+                  src='https://picsum.photos/seed/user3/48/48.jpg'
+                  alt='User 3'
+                  size='medium'
+                  className='border-2 border-white'
+                />
+                <UserAvatar
+                  src='https://picsum.photos/seed/user4/48/48.jpg'
+                  alt='User 4'
+                  size='medium'
+                  className='border-2 border-white'
+                />
+              </div>
+              <div className='text-center'>
+                <div className='flex text-yellow-300 justify-center mb-2'>
+                  {[...Array(5)].map((_, i) => (
+                    <FontAwesomeIcon
+                      key={i}
+                      name='fas fa-star'
+                      className='inline'
+                    />
+                  ))}
+                </div>
+                <p className='text-base font-medium'>
+                  {siteConfig.stats.happyUsers} happy Mac users
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id='features' className='py-20 bg-white'>
+        <div className='container mx-auto px-6'>
+          <div className='text-center mb-16'>
+            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+              Powerful Features
+            </h2>
+            <p className='text-xl text-gray-600'>
+              Everything you need to keep your files perfectly organized
+            </p>
+          </div>
+          <div className='grid md:grid-cols-3 gap-8'>
+            {features.map((feature, index) => (
+              <FeatureCard
+                key={index}
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+                bgColor={feature.bgColor}
+                iconColor={feature.iconColor}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section id='how-it-works' className='py-20 bg-gray-50'>
+        <div className='container mx-auto px-6'>
+          <div className='text-center mb-16'>
+            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+              How It Works
+            </h2>
+            <p className='text-xl text-gray-600'>
+              Get organized in 3 simple steps
+            </p>
+          </div>
+          <div className='grid md:grid-cols-3 gap-8'>
+            {howItWorks.map((step, index) => (
+              <div key={index} className='text-center group'>
+                <div
+                  className={`btn-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold group-hover:btn-purple-700 transition-colors`}
+                >
+                  {step.step}
+                </div>
+                <h3 className='text-xl font-semibold text-gray-800 mb-3'>
+                  {step.title}
+                </h3>
+                <p className='text-gray-600 mb-6'>{step.description}</p>
+                <div className='relative mx-auto max-w-sm'>
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-r ${step.gradientColors} rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform`}
+                  ></div>
+                  <div className='relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform'>
+                    <img
+                      src={step.image}
+                      alt={`${step.title} Interface`}
+                      className='w-full h-auto'
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Section */}
+      <section id='screenshots' className='py-20 bg-white'>
+        <div className='container mx-auto px-6'>
+          <div className='text-center mb-16'>
+            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+              Beautiful & Intuitive Interface
+            </h2>
+            <p className='text-xl text-gray-600'>
+              Designed exclusively for macOS
+            </p>
+          </div>
+          <div className='grid md:grid-cols-3 gap-8'>
+            {screenshots.map((screenshot, index) => (
+              <div
+                key={index}
+                className='rounded-2xl overflow-hidden shadow-xl'
+              >
+                <img
+                  src={screenshot.image}
+                  alt={screenshot.title}
+                  className='w-full'
+                />
+                <div className='p-4 bg-gray-50'>
+                  <h4 className='font-semibold text-gray-800'>
+                    {screenshot.title}
+                  </h4>
+                  <p className='text-sm text-gray-600'>
+                    {screenshot.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id='pricing' className='py-20 hero-gradient'>
+        <div className='container mx-auto px-6'>
+          <div className='text-center mb-16'>
+            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+              Simple, Transparent Pricing
+            </h2>
+            <p className='text-xl text-gray-700'>
+              Choose the plan that works for you
+            </p>
+          </div>
+          <div className='grid md:grid-cols-2 gap-8 max-w-4xl mx-auto'>
+            {/* Free Trial */}
+            <div className='bg-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition'>
+              <h3 className='text-2xl font-bold text-gray-800 mb-4'>
+                {productConfig.pricing.freeTrial.title}
+              </h3>
+              <div className='text-4xl font-bold text-gray-800 mb-6'>
+                {productConfig.pricing.freeTrial.price}
+                <span className='text-lg text-gray-600'>
+                  {productConfig.pricing.freeTrial.period}
+                </span>
+              </div>
+              <ul className='space-y-3 mb-8'>
+                {productConfig.pricing.freeTrial.features.map(
+                  (feature, index) => (
+                    <li key={index} className='flex items-center text-gray-700'>
+                      <FontAwesomeIcon
+                        name='fas fa-check'
+                        className='text-green-500 mr-3'
+                      />
+                      {feature}
+                    </li>
+                  )
+                )}
+              </ul>
+              <button className='w-full bg-gray-200 text-gray-800 py-3 rounded-full font-semibold hover:bg-gray-300 transition'>
+                Start Free Trial
+              </button>
+            </div>
+
+            {/* Lifetime License */}
+            <div className='btn-purple-600 text-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition relative'>
+              <div className='absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-800 px-4 py-1 rounded-full text-sm font-semibold'>
+                {productConfig.pricing.lifetime.badge}
+              </div>
+              <h3 className='text-2xl font-bold mb-4'>
+                {productConfig.pricing.lifetime.title}
+              </h3>
+              <div className='text-4xl font-bold mb-6'>
+                {productConfig.pricing.lifetime.price}
+                <span className='text-lg text-purple-200'>
+                  {productConfig.pricing.lifetime.period}
+                </span>
+              </div>
+              <ul className='space-y-3 mb-8'>
+                {productConfig.pricing.lifetime.features.map(
+                  (feature, index) => (
+                    <li key={index} className='flex items-center'>
+                      <FontAwesomeIcon
+                        name='fas fa-check'
+                        className='text-green-300 mr-3'
+                      />
+                      {feature}
+                    </li>
+                  )
+                )}
+              </ul>
+              <button className='w-full bg-white text-purple-600 py-3 rounded-full font-semibold hover:bg-gray-100 transition'>
+                <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
+                Buy for $20
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className='py-20 bg-white'>
+        <div className='container mx-auto px-6'>
+          <div className='text-center mb-16'>
+            <h2 className='text-4xl font-bold text-gray-800 mb-4'>
+              Loved by Mac Users
+            </h2>
+            <p className='text-xl text-gray-600'>
+              See what our customers are saying
+            </p>
+          </div>
+          <div className='grid md:grid-cols-3 gap-8'>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className='bg-gray-50 p-8 rounded-2xl'>
+                <div className='flex text-yellow-400 mb-4'>
+                  {[...Array(5)].map((_, i) => (
+                    <FontAwesomeIcon
+                      key={i}
+                      name='fas fa-star'
+                      className='inline'
+                    />
+                  ))}
+                </div>
+                <p className='text-gray-700 mb-4'>{testimonial.content}</p>
+                <div className='flex items-center'>
+                  <UserAvatar
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className='mr-4'
+                  />
+                  <div>
+                    <p className='font-semibold text-gray-800'>
+                      {testimonial.name}
+                    </p>
+                    <p className='text-sm text-gray-600'>{testimonial.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className='py-20 gradient-bg text-white'>
+        <div className='container mx-auto px-6 text-center'>
+          <h2 className='text-4xl font-bold mb-6'>
+            Ready to Organize Your Digital Life?
+          </h2>
+          <p className='text-xl mb-8 text-gray-100'>
+            Join thousands of Mac users who've simplified their file management
           </p>
+          <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+            <button className='bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105'>
+              <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
+              Download on Mac App Store
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Footer */}
+      <footer className='bg-gray-900 text-white py-12'>
+        <div className='container mx-auto px-6'>
+          <div className='grid md:grid-cols-4 gap-8'>
+            <div>
+              <div className='flex items-center mb-4'>
+                <FontAwesomeIcon
+                  name='fas fa-folder-open'
+                  className='text-2xl text-purple-400 mr-2'
+                />
+                <span className='text-xl font-bold'>File Sortify</span>
+              </div>
+              <p className='text-gray-400'>
+                The smart file organization tool for Mac users who value
+                efficiency and cleanliness.
+              </p>
+            </div>
+            <div>
+              <h4 className='font-semibold mb-4'>Product</h4>
+              <ul className='space-y-2 text-gray-400'>
+                <li>
+                  <a href='#features' className='hover:text-white transition'>
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href='#pricing' className='hover:text-white transition'>
+                    Pricing
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className='font-semibold mb-4'>Support</h4>
+              <ul className='space-y-2 text-gray-400'>
+                <li>
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className='hover:text-white transition'
+                  >
+                    {siteConfig.email}
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className='font-semibold mb-4'>Connect</h4>
+              <div className='flex space-x-4 mb-4'>
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className='text-gray-400 hover:text-white transition'
+                >
+                  {siteConfig.email}
+                </a>
+              </div>
+              <p className='text-gray-400'>Made with ❤️ for Mac users</p>
+            </div>
+          </div>
+          <div className='border-t border-gray-800 mt-8 pt-8 text-center text-gray-400'>
+            <p>&copy; 2025 File Sortify. All rights reserved.</p>
+          </div>
         </div>
-      </main>
+      </footer>
     </div>
   );
 }
