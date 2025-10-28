@@ -15,7 +15,7 @@ export const siteConfig = {
 }
 
 export const productConfig = {
-  appStoreUrl: "https://apps.apple.com/app/filesortify/id6471234567", // 需要替换为真实的 App Store URL
+  appStoreUrl: "https://apps.apple.com/app/id6754158420", // File Sortify App Store URL
   pricing: {
     freeTrial: {
       title: "Free Trial",

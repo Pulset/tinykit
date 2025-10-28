@@ -64,10 +64,15 @@ export default function Home() {
               on type, custom rules, and real-time monitoring.
             </p>
             <div className='flex flex-col sm:flex-row gap-6 justify-center mb-12'>
-              <button className='bg-white text-purple-600 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 text-lg'>
+              <a
+                href={productConfig.appStoreUrl}
+                className='bg-white text-purple-600 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 text-lg inline-block'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
                 Download on the Mac App Store
-              </button>
+              </a>
             </div>
             <div className='flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-8'>
               <div className='flex -space-x-2'>
@@ -286,10 +291,15 @@ export default function Home() {
                   )
                 )}
               </ul>
-              <button className='w-full bg-white text-purple-600 py-3 rounded-full font-semibold hover:bg-gray-100 transition'>
+              <a
+                href={productConfig.appStoreUrl}
+                className='w-full bg-white text-purple-600 py-3 rounded-full font-semibold hover:bg-gray-100 transition inline-block text-center'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
                 Buy for $20
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -348,10 +358,15 @@ export default function Home() {
             Join thousands of Mac users who've simplified their file management
           </p>
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-            <button className='bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105'>
+            <a
+              href={productConfig.appStoreUrl}
+              className='bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 inline-block'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
               Download on Mac App Store
-            </button>
+            </a>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { siteConfig } from '@/app/data/site-config';
+import { siteConfig, productConfig } from '@/app/data/site-config';
 import { navItems } from '@/app/data/page-data';
 import { Menu, X } from 'lucide-react';
 import FontAwesomeIcon from './FontAwesomeIcon';
@@ -37,10 +37,15 @@ export default function Navigation() {
                 {item.label}
               </a>
             ))}
-            <button className='btn-purple-600 text-white px-6 py-2 rounded-full hover:btn-purple-700 transition'>
+            <Link
+              href={productConfig.appStoreUrl}
+              className='btn-purple-600 text-white px-6 py-2 rounded-full hover:btn-purple-700 transition inline-block'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon name='fab fa-apple' className='mr-2' />
               Download for Mac
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -69,10 +74,15 @@ export default function Navigation() {
                 </a>
               ))}
 
-              <button className='btn-purple-600 text-white px-6 py-2 rounded-full hover:btn-purple-700 transition'>
+              <Link
+                href={productConfig.appStoreUrl}
+                className='btn-purple-600 text-white px-6 py-2 rounded-full hover:btn-purple-700 transition inline-block'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon name='fab fa-apple' className='mr-2' />
                 Download for Mac
-              </button>
+              </Link>
             </div>
           </div>
         )}
