@@ -219,6 +219,19 @@ export default function Home() {
             <div className='btn-purple-600 text-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition relative' itemScope itemType="https://schema.org/Product">
               <meta itemProp="name" content="File Sortify Lifetime License" />
               <meta itemProp="description" content="Lifetime access to File Sortify with all features and updates" />
+              <meta itemProp="image" content="https://oss.picasso-designs.com/static/logo.png" />
+              <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
+                <meta itemProp="price" content="20.00" />
+                <meta itemProp="priceCurrency" content="USD" />
+                <meta itemProp="availability" content="https://schema.org/InStock" />
+                <meta itemProp="url" content={productConfig.appStoreUrl} />
+                <meta itemProp="priceValidUntil" content="2026-12-31" />
+              </div>
+              <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
+                <meta itemProp="ratingValue" content="5" />
+                <meta itemProp="ratingCount" content="500" />
+                <meta itemProp="bestRating" content="5" />
+              </div>
               <div className='absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-800 px-4 py-1 rounded-full text-sm font-semibold'>
                 {productConfig.pricing.lifetime.badge}
               </div>
