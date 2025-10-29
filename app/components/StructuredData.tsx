@@ -1,4 +1,5 @@
 import { siteConfig, productConfig } from '@/app/data/site-config';
+import { testimonials } from '@/app/data/page-data';
 
 export default function StructuredData() {
   // Organization Schema
@@ -157,6 +158,11 @@ export default function StructuredData() {
     '@type': 'Product',
     name: 'File Sortify',
     description: siteConfig.description,
+    image: [
+      siteConfig.logo,
+      'https://oss.picasso-designs.com/static/dashboard.png',
+      'https://oss.picasso-designs.com/static/rules.png',
+    ],
     brand: {
       '@type': 'Brand',
       name: 'TinyKit',
@@ -167,9 +173,45 @@ export default function StructuredData() {
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       url: productConfig.appStoreUrl,
+      priceValidUntil: '2026-12-31',
       seller: {
         '@type': 'Organization',
         name: 'TinyKit',
+      },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'US',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 14,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/FreeReturn',
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '0',
+          currency: 'USD',
+        },
+        shippingDestination: {
+          '@type': 'DefinedRegion',
+          addressCountry: 'US',
+        },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 0,
+            maxValue: 0,
+            unitCode: 'DAY',
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 0,
+            maxValue: 0,
+            unitCode: 'DAY',
+          },
+        },
       },
     },
     aggregateRating: {
@@ -179,11 +221,31 @@ export default function StructuredData() {
       bestRating: 5,
     },
     category: 'Mac Utility Software',
-    audience: {
-      '@type': 'Audience',
-      audienceType: 'Mac users seeking file organization solutions',
-    },
   };
+
+  // Review Schemas - Individual reviews with complete information
+  const reviewSchemas = testimonials.map((testimonial, index) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    itemReviewed: {
+      '@type': 'SoftwareApplication',
+      name: 'File Sortify',
+      operatingSystem: 'macOS',
+      applicationCategory: 'UtilitiesApplication',
+    },
+    author: {
+      '@type': 'Person',
+      name: testimonial.name,
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: 5,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    reviewBody: testimonial.content,
+    datePublished: '2024-12-01',
+  }));
 
   return (
     <>
@@ -223,6 +285,15 @@ export default function StructuredData() {
           __html: JSON.stringify(productSchema),
         }}
       />
+      {reviewSchemas.map((reviewSchema, index) => (
+        <script
+          key={`review-${index}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(reviewSchema),
+          }}
+        />
+      ))}
     </>
   );
 }

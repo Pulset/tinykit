@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     description:
       'Automatically organize your files with File Sortify. The intelligent file management tool.',
     images: ['https://oss.picasso-designs.com/static/logo.png'],
-    creator: '@tinykit', // 未来可以更新为真实的 Twitter 账号
+    creator: '@tinykit_app', // 未来可以更新为真实的 Twitter 账号
   },
   robots: {
     index: true,
@@ -73,11 +73,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    // 替换为真实的验证码
-    // google: 'ka1pp61M7TJndSNDsXkQQ6GwD2gy5eM7J981RqY_E_4',
-    // yandex: 'your-yandex-verification-code',
   },
   category: 'technology',
   classification: 'Mac Utilities',
