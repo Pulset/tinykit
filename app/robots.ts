@@ -41,6 +41,27 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Google-Extended',
         allow: '/',
       },
+      {
+        userAgent: 'YandexBot',
+        allow: '/',
+      },
+      // Other major search engines
+      {
+        userAgent: 'Bingbot',
+        allow: '/',
+      },
+      {
+        userAgent: 'Slurp',
+        allow: '/',
+      },
+      {
+        userAgent: 'DuckDuckBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'Baiduspider',
+        allow: '/',
+      },
     ],
     sitemap: 'https://tinykit.app/sitemap.xml',
   };
