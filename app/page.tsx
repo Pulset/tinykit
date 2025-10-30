@@ -285,8 +285,15 @@ export default function Home() {
           <div className='grid md:grid-cols-3 gap-8'>
             {testimonials.map((testimonial, index) => (
               <article key={index} className='bg-gray-50 p-8 rounded-2xl' itemScope itemType="https://schema.org/Review">
+                <div itemProp="itemReviewed" itemScope itemType="https://schema.org/SoftwareApplication">
+                  <meta itemProp="name" content="File Sortify" />
+                  <meta itemProp="operatingSystem" content="macOS" />
+                </div>
                 <div className='flex text-yellow-400 mb-4' aria-label="5 star rating">
-                  <meta itemProp="reviewRating" content="5" />
+                  <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                    <meta itemProp="ratingValue" content="5" />
+                    <meta itemProp="bestRating" content="5" />
+                  </div>
                   {[...Array(5)].map((_, i) => (
                     <FontAwesomeIcon
                       key={i}
@@ -297,7 +304,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className='text-gray-700 mb-4' itemProp="reviewBody">{testimonial.content}</p>
-                <div className='flex items-center' itemScope itemType="https://schema.org/Person">
+                <div className='flex items-center' itemProp="author" itemScope itemType="https://schema.org/Person">
                   <UserAvatar
                     src={testimonial.avatar}
                     alt={testimonial.name}
