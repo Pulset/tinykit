@@ -288,6 +288,15 @@ export default function Home() {
                 <div itemProp="itemReviewed" itemScope itemType="https://schema.org/SoftwareApplication">
                   <meta itemProp="name" content="File Sortify" />
                   <meta itemProp="operatingSystem" content="macOS" />
+                  <meta itemProp="applicationCategory" content="UtilitiesApplication" />
+                  <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
+                    <meta itemProp="price" content="20.00" />
+                    <meta itemProp="priceCurrency" content="USD" />
+                  </div>
+                  <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
+                    <meta itemProp="ratingValue" content="5" />
+                    <meta itemProp="ratingCount" content="500" />
+                  </div>
                 </div>
                 <div className='flex text-yellow-400 mb-4' aria-label="5 star rating">
                   <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
