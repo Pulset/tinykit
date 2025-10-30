@@ -18,18 +18,35 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className='gradient-bg text-white py-32' aria-labelledby="hero-heading">
+      <section
+        className='gradient-bg text-white py-32'
+        aria-labelledby='hero-heading'
+      >
         <div className='container mx-auto px-6 text-center'>
           <div className='max-w-4xl mx-auto'>
-            <div className='bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-8' role="status" aria-label="Product ranking badge">
-              <FontAwesomeIcon name='fas fa-star' className='inline mr-2' aria-hidden="true" />
+            <div
+              className='bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-8'
+              role='status'
+              aria-label='Product ranking badge'
+            >
+              <FontAwesomeIcon
+                name='fas fa-star'
+                className='inline mr-2'
+                aria-hidden='true'
+              />
               #1 File Organization Tool on Mac
             </div>
-            <h1 id='hero-heading' className='text-5xl md:text-7xl font-bold mb-8'>
+            <h1
+              id='hero-heading'
+              className='text-5xl md:text-7xl font-bold mb-8'
+            >
               Sortify Your Files,{' '}
               <span className='text-yellow-300'>Automatically!</span>
             </h1>
-            <p className='text-xl md:text-2xl mb-12 text-gray-100 leading-relaxed' role="doc-subtitle">
+            <p
+              className='text-xl md:text-2xl mb-12 text-gray-100 leading-relaxed'
+              role='doc-subtitle'
+            >
               Transform your chaotic Downloads folder into an organized
               paradise. File Sortify intelligently categorizes your files based
               on type, custom rules, and real-time monitoring.
@@ -40,10 +57,14 @@ export default function Home() {
                 className='bg-white text-purple-600 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 text-lg inline-block'
                 target='_blank'
                 rel='noopener noreferrer'
-                aria-label="Download File Sortify on the Mac App Store"
-                itemProp="downloadUrl"
+                aria-label='Download File Sortify on the Mac App Store'
+                itemProp='downloadUrl'
               >
-                <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' aria-hidden="true" />
+                <FontAwesomeIcon
+                  name='fab fa-apple'
+                  className='inline mr-2'
+                  aria-hidden='true'
+                />
                 Download on the Mac App Store
               </a>
             </div>
@@ -94,10 +115,17 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id='features' className='py-20 bg-white' aria-labelledby="features-heading">
+      <section
+        id='features'
+        className='py-20 bg-white'
+        aria-labelledby='features-heading'
+      >
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 id='features-heading' className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2
+              id='features-heading'
+              className='text-4xl font-bold text-gray-800 mb-4'
+            >
               Powerful Features
             </h2>
             <p className='text-xl text-gray-600'>
@@ -120,10 +148,17 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id='how-it-works' className='py-20 bg-gray-50' aria-labelledby="how-it-works-heading">
+      <section
+        id='how-it-works'
+        className='py-20 bg-gray-50'
+        aria-labelledby='how-it-works-heading'
+      >
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 id='how-it-works-heading' className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2
+              id='how-it-works-heading'
+              className='text-4xl font-bold text-gray-800 mb-4'
+            >
               How It Works
             </h2>
             <p className='text-xl text-gray-600'>
@@ -132,17 +167,27 @@ export default function Home() {
           </div>
           <div className='grid md:grid-cols-3 gap-8'>
             {howItWorks.map((step, index) => (
-              <article key={index} className='text-center group' itemScope itemType="https://schema.org/HowToStep">
+              <article
+                key={index}
+                className='text-center group'
+                itemScope
+                itemType='https://schema.org/HowToStep'
+              >
                 <div
                   className={`btn-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold group-hover:btn-purple-700 transition-colors`}
                   aria-label={`Step ${step.step}`}
                 >
                   {step.step}
                 </div>
-                <h3 className='text-xl font-semibold text-gray-800 mb-3' itemProp="name">
+                <h3
+                  className='text-xl font-semibold text-gray-800 mb-3'
+                  itemProp='name'
+                >
                   {step.title}
                 </h3>
-                <p className='text-gray-600 mb-6' itemProp="text">{step.description}</p>
+                <p className='text-gray-600 mb-6' itemProp='text'>
+                  {step.description}
+                </p>
                 <div className='relative mx-auto max-w-sm'>
                   <div
                     className={`absolute inset-0 bg-gradient-to-r ${step.gradientColors} rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform`}
@@ -152,8 +197,8 @@ export default function Home() {
                       src={step.image}
                       alt={`${step.title} Interface`}
                       className='w-full h-auto'
-                      loading="lazy"
-                      itemProp="image"
+                      loading='lazy'
+                      itemProp='image'
                     />
                   </div>
                 </div>
@@ -164,10 +209,17 @@ export default function Home() {
       </section>
 
       {/* Screenshots Section */}
-      <section id='screenshots' className='py-20 bg-white' aria-labelledby="screenshots-heading">
+      <section
+        id='screenshots'
+        className='py-20 bg-white'
+        aria-labelledby='screenshots-heading'
+      >
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 id='screenshots-heading' className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2
+              id='screenshots-heading'
+              className='text-4xl font-bold text-gray-800 mb-4'
+            >
               Beautiful & Intuitive Interface
             </h2>
             <p className='text-xl text-gray-600'>
@@ -180,20 +232,20 @@ export default function Home() {
                 key={index}
                 className='rounded-2xl overflow-hidden shadow-xl'
                 itemScope
-                itemType="https://schema.org/ImageObject"
+                itemType='https://schema.org/ImageObject'
               >
                 <img
                   src={screenshot.image}
                   alt={screenshot.title}
                   className='w-full'
-                  loading="lazy"
-                  itemProp="contentUrl"
+                  loading='lazy'
+                  itemProp='contentUrl'
                 />
                 <div className='p-4 bg-gray-50'>
-                  <h3 className='font-semibold text-gray-800' itemProp="name">
+                  <h3 className='font-semibold text-gray-800' itemProp='name'>
                     {screenshot.title}
                   </h3>
-                  <p className='text-sm text-gray-600' itemProp="description">
+                  <p className='text-sm text-gray-600' itemProp='description'>
                     {screenshot.description}
                   </p>
                 </div>
@@ -204,10 +256,19 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id='pricing' className='py-20 hero-gradient' aria-labelledby="pricing-heading" itemScope itemType="https://schema.org/Offer">
+      <section
+        id='pricing'
+        className='py-20 hero-gradient'
+        aria-labelledby='pricing-heading'
+        itemScope
+        itemType='https://schema.org/Offer'
+      >
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 id='pricing-heading' className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2
+              id='pricing-heading'
+              className='text-4xl font-bold text-gray-800 mb-4'
+            >
               One-Time Purchase
             </h2>
             <p className='text-xl text-gray-700'>
@@ -216,21 +277,42 @@ export default function Home() {
           </div>
           <div className='max-w-md mx-auto'>
             {/* Lifetime License */}
-            <div className='btn-purple-600 text-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition relative' itemScope itemType="https://schema.org/Product">
-              <meta itemProp="name" content="File Sortify Lifetime License" />
-              <meta itemProp="description" content="Lifetime access to File Sortify with all features and updates" />
-              <meta itemProp="image" content="https://oss.picasso-designs.com/static/logo.png" />
-              <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
-                <meta itemProp="price" content="20.00" />
-                <meta itemProp="priceCurrency" content="USD" />
-                <meta itemProp="availability" content="https://schema.org/InStock" />
-                <meta itemProp="url" content={productConfig.appStoreUrl} />
-                <meta itemProp="priceValidUntil" content="2026-12-31" />
+            <div
+              className='btn-purple-600 text-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition relative'
+              itemScope
+              itemType='https://schema.org/Product'
+            >
+              <meta itemProp='name' content='File Sortify Lifetime License' />
+              <meta
+                itemProp='description'
+                content='Lifetime access to File Sortify with all features and updates'
+              />
+              <meta
+                itemProp='image'
+                content='https://oss.picasso-designs.com/static/logo.png'
+              />
+              <div
+                itemProp='offers'
+                itemScope
+                itemType='https://schema.org/Offer'
+              >
+                <meta itemProp='price' content='20.00' />
+                <meta itemProp='priceCurrency' content='USD' />
+                <meta
+                  itemProp='availability'
+                  content='https://schema.org/InStock'
+                />
+                <meta itemProp='url' content={productConfig.appStoreUrl} />
+                <meta itemProp='priceValidUntil' content='2026-12-31' />
               </div>
-              <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
-                <meta itemProp="ratingValue" content="5" />
-                <meta itemProp="ratingCount" content="500" />
-                <meta itemProp="bestRating" content="5" />
+              <div
+                itemProp='aggregateRating'
+                itemScope
+                itemType='https://schema.org/AggregateRating'
+              >
+                <meta itemProp='ratingValue' content='5' />
+                <meta itemProp='ratingCount' content='500' />
+                <meta itemProp='bestRating' content='5' />
               </div>
               <div className='absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-800 px-4 py-1 rounded-full text-sm font-semibold'>
                 {productConfig.pricing.lifetime.badge}
@@ -272,10 +354,16 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className='py-20 bg-white' aria-labelledby="testimonials-heading">
+      <section
+        className='py-20 bg-white'
+        aria-labelledby='testimonials-heading'
+      >
         <div className='container mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 id='testimonials-heading' className='text-4xl font-bold text-gray-800 mb-4'>
+            <h2
+              id='testimonials-heading'
+              className='text-4xl font-bold text-gray-800 mb-4'
+            >
               Loved by Mac Users
             </h2>
             <p className='text-xl text-gray-600'>
@@ -284,46 +372,82 @@ export default function Home() {
           </div>
           <div className='grid md:grid-cols-3 gap-8'>
             {testimonials.map((testimonial, index) => (
-              <article key={index} className='bg-gray-50 p-8 rounded-2xl' itemScope itemType="https://schema.org/Review">
-                <div itemProp="itemReviewed" itemScope itemType="https://schema.org/SoftwareApplication">
-                  <meta itemProp="name" content="File Sortify" />
-                  <meta itemProp="operatingSystem" content="macOS" />
-                  <meta itemProp="applicationCategory" content="UtilitiesApplication" />
-                  <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
-                    <meta itemProp="price" content="20.00" />
-                    <meta itemProp="priceCurrency" content="USD" />
+              <article
+                key={index}
+                className='bg-gray-50 p-8 rounded-2xl'
+                itemScope
+                itemType='https://schema.org/Review'
+              >
+                <div
+                  itemProp='itemReviewed'
+                  itemScope
+                  itemType='https://schema.org/SoftwareApplication'
+                >
+                  <meta itemProp='name' content='File Sortify' />
+                  <meta itemProp='operatingSystem' content='macOS' />
+                  <meta
+                    itemProp='applicationCategory'
+                    content='UtilitiesApplication'
+                  />
+                  <div
+                    itemProp='offers'
+                    itemScope
+                    itemType='https://schema.org/Offer'
+                  >
+                    <meta itemProp='price' content='20.00' />
+                    <meta itemProp='priceCurrency' content='USD' />
                   </div>
-                  <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
-                    <meta itemProp="ratingValue" content="5" />
-                    <meta itemProp="ratingCount" content="500" />
+                  <div
+                    itemProp='aggregateRating'
+                    itemScope
+                    itemType='https://schema.org/AggregateRating'
+                  >
+                    <meta itemProp='ratingValue' content='5' />
+                    <meta itemProp='ratingCount' content='500' />
                   </div>
                 </div>
-                <div className='flex text-yellow-400 mb-4' aria-label="5 star rating">
-                  <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-                    <meta itemProp="ratingValue" content="5" />
-                    <meta itemProp="bestRating" content="5" />
+                <div
+                  className='flex text-yellow-400 mb-4'
+                  aria-label='5 star rating'
+                >
+                  <div
+                    itemProp='reviewRating'
+                    itemScope
+                    itemType='https://schema.org/Rating'
+                  >
+                    <meta itemProp='ratingValue' content='5' />
+                    <meta itemProp='bestRating' content='5' />
                   </div>
                   {[...Array(5)].map((_, i) => (
                     <FontAwesomeIcon
                       key={i}
                       name='fas fa-star'
                       className='inline'
-                      aria-hidden="true"
+                      aria-hidden='true'
                     />
                   ))}
                 </div>
-                <p className='text-gray-700 mb-4' itemProp="reviewBody">{testimonial.content}</p>
-                <div className='flex items-center' itemProp="author" itemScope itemType="https://schema.org/Person">
+                <p className='text-gray-700 mb-4' itemProp='reviewBody'>
+                  {testimonial.content}
+                </p>
+                <div
+                  className='flex items-center'
+                  itemProp='author'
+                  itemScope
+                  itemType='https://schema.org/Person'
+                >
                   <UserAvatar
                     src={testimonial.avatar}
                     alt={testimonial.name}
                     className='mr-4'
                   />
                   <div>
-                    <p className='font-semibold text-gray-800' itemProp="name">
+                    <p className='font-semibold text-gray-800' itemProp='name'>
                       {testimonial.name}
                     </p>
-                    <p className='text-sm text-gray-600' itemProp="jobTitle">{testimonial.role}</p>
+                    <p className='text-sm text-gray-600' itemProp='jobTitle'>
+                      {testimonial.role}
+                    </p>
                   </div>
                 </div>
               </article>
@@ -333,7 +457,10 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className='py-20 gradient-bg text-white' aria-labelledby="cta-heading">
+      <section
+        className='py-20 gradient-bg text-white'
+        aria-labelledby='cta-heading'
+      >
         <div className='container mx-auto px-6 text-center'>
           <h2 id='cta-heading' className='text-4xl font-bold mb-6'>
             Ready to Organize Your Digital Life?
@@ -347,9 +474,13 @@ export default function Home() {
               className='bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 inline-block'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label="Download File Sortify on Mac App Store"
+              aria-label='Download File Sortify on Mac App Store'
             >
-              <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' aria-hidden="true" />
+              <FontAwesomeIcon
+                name='fab fa-apple'
+                className='inline mr-2'
+                aria-hidden='true'
+              />
               Download on Mac App Store
             </a>
           </div>
@@ -357,7 +488,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className='bg-gray-900 text-white py-8' role="contentinfo">
+      <footer className='bg-gray-900 text-white py-8' role='contentinfo'>
         <div className='container mx-auto px-6'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='flex items-center mb-4 md:mb-0'>
@@ -366,30 +497,41 @@ export default function Home() {
                 alt='File Sortify Logo'
                 className='mr-3'
                 style={{ width: '30px', height: 'auto' }}
-                width="30"
-                height="30"
+                width='30'
+                height='30'
               />
               <span className='text-2xl font-bold text-gray-400'>
                 File Sortify
               </span>
             </div>
-            <nav className='flex items-center space-x-6' aria-label="Footer navigation">
+            <nav
+              className='flex items-center space-x-6'
+              aria-label='Footer navigation'
+            >
               <a
                 href={`mailto:${siteConfig.email}`}
                 className='text-gray-400 hover:text-white transition'
                 target='_blank'
                 rel='noopener noreferrer'
-                aria-label="Contact us via email"
+                aria-label='Contact us via email'
               >
-                <FontAwesomeIcon name='fas fa-envelope' className='mr-2' aria-hidden="true" />
+                <FontAwesomeIcon
+                  name='fas fa-envelope'
+                  className='mr-2'
+                  aria-hidden='true'
+                />
                 {siteConfig.email}
               </a>
               <a
-                href='/privacy'
+                href='/file-sortify/privacy'
                 className='text-gray-400 hover:text-white transition'
-                aria-label="View privacy policy"
+                aria-label='View privacy policy'
               >
-                <FontAwesomeIcon name='fas fa-shield-alt' className='mr-2' aria-hidden="true" />
+                <FontAwesomeIcon
+                  name='fas fa-shield-alt'
+                  className='mr-2'
+                  aria-hidden='true'
+                />
                 Privacy Policy
               </a>
             </nav>

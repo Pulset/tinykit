@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy - File Sortify',
     description:
       'File Sortify Privacy Policy - We never collect personal information. All data stays local on your Mac.',
-    url: 'https://www.tinykit.app/privacy',
+    url: 'https://www.tinykit.app/file-sortify/privacy',
     type: 'website',
   },
   twitter: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: 'summary',
   },
   alternates: {
-    canonical: '/privacy',
+    canonical: '/file-sortify/privacy',
   },
 };
 
