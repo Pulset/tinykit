@@ -6,6 +6,20 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.join(__dirname, '..'),
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'oss.picasso-designs.com',
+        pathname: '/static/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
