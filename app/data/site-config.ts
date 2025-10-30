@@ -4,7 +4,7 @@ export const siteConfig = {
     'Automatically organize your files with File Sortify. The intelligent file management tool that sorts files by type, custom rules, and real-time monitoring. Perfect for keeping your Downloads folder tidy.',
   keywords:
     'file organizer, mac app, file management, auto file sorter, download folder organizer, file automation',
-  url: 'https://tinykit.app',
+  url: 'https://www.tinykit.app',
   author: 'File Sortify Team',
   email: 'support@tinykit.app',
   logo: 'https://oss.picasso-designs.com/static/logo.png',

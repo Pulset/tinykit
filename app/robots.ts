@@ -63,6 +63,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://tinykit.app/sitemap.xml',
+    sitemap: 'https://www.tinykit.app/sitemap.xml',
   };
 }

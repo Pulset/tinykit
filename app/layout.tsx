@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'file sortify',
     'tinykit',
   ],
-  authors: [{ name: 'TinyKit Team', url: 'https://tinykit.app' }],
+  authors: [{ name: 'TinyKit Team', url: 'https://www.tinykit.app' }],
   creator: 'TinyKit',
   publisher: 'TinyKit',
   formatDetection: {
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://tinykit.app'),
+  metadataBase: new URL('https://www.tinykit.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://tinykit.app',
+    url: 'https://www.tinykit.app',
     title: 'File Sortify - Smart File Organization for Mac | TinyKit',
     description:
       'Automatically organize your files with File Sortify. The intelligent file management tool that sorts files by type, custom rules, and real-time monitoring.',

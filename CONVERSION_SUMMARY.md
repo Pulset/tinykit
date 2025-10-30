@@ -181,7 +181,7 @@ Next.js:   单页面组件 + 布局
    ```typescript
    // 添加 .env.local 文件
    NEXT_PUBLIC_EMAIL=support@tinykit.app
-   NEXT_PUBLIC_URL=https://tinykit.app
+   NEXT_PUBLIC_URL=https://www.tinykit.app
    ```
 
 ### 中期优化
