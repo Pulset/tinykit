@@ -59,9 +59,9 @@ export default function StructuredData() {
     },
     downloadUrl: productConfig.appStoreUrl,
     screenshot: [
-      'https://oss.picasso-designs.com/static/dashboard.png',
-      'https://oss.picasso-designs.com/static/rules.png',
-      'https://oss.picasso-designs.com/static/revert.png',
+      'https://cdn.tinykit.app/file-sortify/images/dashboard.png',
+      'https://cdn.tinykit.app/file-sortify/images/rules.png',
+      'https://cdn.tinykit.app/file-sortify/images/revert.png',
     ],
     featureList: [
       'Smart Auto-Categorization',
@@ -160,8 +160,8 @@ export default function StructuredData() {
     description: siteConfig.description,
     image: [
       siteConfig.logo,
-      'https://oss.picasso-designs.com/static/dashboard.png',
-      'https://oss.picasso-designs.com/static/rules.png',
+      'https://cdn.tinykit.app/file-sortify/images/dashboard.png',
+      'https://cdn.tinykit.app/file-sortify/images/rules.png',
     ],
     brand: {
       '@type': 'Brand',
@@ -181,7 +181,8 @@ export default function StructuredData() {
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
         applicableCountry: 'US',
-        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        returnPolicyCategory:
+          'https://schema.org/MerchantReturnFiniteReturnWindow',
         merchantReturnDays: 14,
         returnMethod: 'https://schema.org/ReturnByMail',
         returnFees: 'https://schema.org/FreeReturn',
@@ -250,37 +251,37 @@ export default function StructuredData() {
   return (
     <>
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
         }}
       />
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(softwareSchema),
         }}
       />
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(websiteSchema),
         }}
       />
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqSchema),
         }}
       />
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(productSchema),
         }}
@@ -288,7 +289,7 @@ export default function StructuredData() {
       {reviewSchemas.map((reviewSchema, index) => (
         <script
           key={`review-${index}`}
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(reviewSchema),
           }}

@@ -55,7 +55,7 @@ export const howItWorks = [
     title: 'Choose Your Folder',
     description:
       'Select the folder you want to organize - typically your Downloads folder',
-    image: 'https://oss.picasso-designs.com/static/add.png',
+    image: 'https://cdn.tinykit.app/file-sortify/images/add.png',
     gradientColors: 'from-purple-400 to-pink-400',
   },
   {
@@ -63,7 +63,7 @@ export const howItWorks = [
     title: 'Configure Rules',
     description:
       'Set up custom rules or use our smart defaults for automatic categorization',
-    image: 'https://oss.picasso-designs.com/static/rules.png',
+    image: 'https://cdn.tinykit.app/file-sortify/images/rules.png',
     gradientColors: 'from-blue-400 to-cyan-400',
   },
   {
@@ -71,7 +71,7 @@ export const howItWorks = [
     title: 'Sit Back & Relax',
     description:
       'File Sortify automatically organizes your files in the background',
-    image: 'https://oss.picasso-designs.com/static/start.png',
+    image: 'https://cdn.tinykit.app/file-sortify/images/start.png',
     gradientColors: 'from-green-400 to-teal-400',
   },
 ];
@@ -80,17 +80,17 @@ export const screenshots = [
   {
     title: 'Main Dashboard',
     description: 'Monitor and control all your file operations',
-    image: 'https://oss.picasso-designs.com/static/dashboard.png',
+    image: 'https://cdn.tinykit.app/file-sortify/images/dashboard.png',
   },
   {
     title: 'Custom Rules',
     description: 'Create powerful organization rules',
-    image: 'https://oss.picasso-designs.com/static/rules.png',
+    image: 'https://cdn.tinykit.app/file-sortify/images/rules.png',
   },
   {
     title: 'Operation History',
     description: 'Track and review all file movements',
-    image: 'https://oss.picasso-designs.com/static/revert.png',
+    image: 'https://cdn.tinykit.app/file-sortify/images/revert.png',
   },
 ];
 
@@ -100,21 +100,21 @@ export const testimonials = [
     role: 'Designer',
     content:
       "File Sortify has completely transformed how I manage my Downloads folder. It's like having a personal assistant for file organization!",
-    avatar: 'https://picsum.photos/seed/testimonial1/50/50.jpg',
+    avatar: 'https://cdn.tinykit.app/file-sortify/images/user5.jpg',
   },
   {
     name: 'Mark Johnson',
     role: 'Developer',
     content:
       "The custom rules feature is incredible. I've set it up to organize my work files perfectly. Saves me hours every week!",
-    avatar: 'https://picsum.photos/seed/testimonial2/50/50.jpg',
+    avatar: 'https://cdn.tinykit.app/file-sortify/images/user6.jpg',
   },
   {
     name: 'Emily Rodriguez',
     role: 'Photographer',
     content:
       'Finally, a Mac app that just works! Clean interface, powerful features, and it respects my privacy. Highly recommended!',
-    avatar: 'https://picsum.photos/seed/testimonial3/50/50.jpg',
+    avatar: 'https://cdn.tinykit.app/file-sortify/images/user7.jpg',
   },
 ];
 

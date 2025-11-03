@@ -7,7 +7,7 @@ export const siteConfig = {
   url: 'https://www.tinykit.app',
   author: 'File Sortify Team',
   email: 'geek.bo@hotmail.com',
-  logo: 'https://oss.picasso-designs.com/static/logo.png',
+  logo: 'https://cdn.tinykit.app/file-sortify/images/logo.png',
   // 统计数据 (可更新)
   stats: {
     happyUsers: '10,000+',
