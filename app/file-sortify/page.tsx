@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import FeatureCard from '@/app/components/FeatureCard';
 import UserAvatar from '@/app/components/UserAvatar';
@@ -10,6 +11,39 @@ import {
   screenshots,
   testimonials,
 } from '@/app/data/page-data';
+
+export const metadata: Metadata = {
+  title: 'File Sortify - Smart File Organization for Mac',
+  description:
+    'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
+  alternates: {
+    canonical: '/file-sortify',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.tinykit.app/file-sortify',
+    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
+    description:
+      'Automatically organize your files with File Sortify. The intelligent file management tool that sorts files by type, custom rules, and real-time monitoring.',
+    siteName: 'TinyKit',
+    images: [
+      {
+        url: 'https://cdn.tinykit.app/file-sortify/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'File Sortify - Smart File Organization for Mac',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
+    description:
+      'Automatically organize your files with File Sortify. The intelligent file management tool.',
+    images: ['https://cdn.tinykit.app/file-sortify/images/logo.png'],
+  },
+};
 
 export default function Home() {
   return (
