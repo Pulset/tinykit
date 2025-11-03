@@ -10,13 +10,13 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'oss.picasso-designs.com',
-        pathname: '/static/**',
+        hostname: 'picsum.photos',
+        pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'picsum.photos',
-        pathname: '/**',
+        hostname: 'cdn.tinykit.app',
+        pathname: '/images/**',
       },
     ],
   },

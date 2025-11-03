@@ -289,7 +289,7 @@ export default function Home() {
               />
               <meta
                 itemProp='image'
-                content='https://oss.picasso-designs.com/static/logo.png'
+                content='https://cdn.tinykit.app/file-sortify/images/logo.png'
               />
               <div
                 itemProp='offers'
