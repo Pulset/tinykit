@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 import Image from 'next/image';
 import { siteConfig } from '@/app/data/site-config';
 
@@ -61,19 +60,6 @@ export default function HomePage() {
                   organize your files with custom rules and real-time
                   monitoring.
                 </p>
-                <div className='flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-gray-500'>
-                  <div className='flex items-center space-x-1'>
-                    <FontAwesomeIcon
-                      name='fas fa-star'
-                      className='text-yellow-400'
-                    />
-                    <span className='font-semibold text-gray-700'>5.0</span>
-                  </div>
-                  <span className='hidden sm:inline'>•</span>
-                  <span>$20 one-time</span>
-                  <span className='hidden sm:inline'>•</span>
-                  <span>macOS</span>
-                </div>
               </div>
               <div className='hidden sm:flex items-center text-purple-600'>
                 <span className='text-2xl'>→</span>
