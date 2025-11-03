@@ -102,16 +102,16 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <StructuredData />
+        <script
+          defer
+          src='https://cloud.umami.is/script.js'
+          data-website-id='ab9992f4-ff7b-43d3-839c-08d5fdba599e'
+        ></script>
       </head>
       <body className={`${inter.className} antialiased bg-gray-50`}>
         {children}
         <Analytics />
       </body>
-      <script
-        defer
-        src='https://cloud.umami.is/script.js'
-        data-website-id='ab9992f4-ff7b-43d3-839c-08d5fdba599e'
-      ></script>
     </html>
   );
 }

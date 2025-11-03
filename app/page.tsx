@@ -37,13 +37,16 @@ export default function HomePage() {
             className='block bg-white rounded-2xl md:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-6 md:p-8 mb-6 md:mb-8 hover:scale-[1.02]'
           >
             <div className='flex flex-col sm:flex-row items-start sm:space-x-6 space-y-4 sm:space-y-0'>
-              <div className='w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md p-3'>
+              <div
+                className='w-20 h-20 flex-shrink-0 overflow-hidden'
+                style={{ borderRadius: '20px' }}
+              >
                 <Image
                   src={siteConfig.logo}
                   alt='File Sortify Logo'
                   width={80}
                   height={80}
-                  className='w-full h-full object-contain'
+                  className='w-full h-full object-cover'
                 />
               </div>
               <div className='flex-1 w-full'>
