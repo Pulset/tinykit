@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'cdn.tinykit.app',
-        pathname: '/images/**',
+        pathname: '/file-sortify/images/**',
       },
     ],
   },
