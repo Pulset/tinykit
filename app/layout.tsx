@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: 'TinyKit',
     images: [
       {
-        url: 'https://cdn.tinykit.app/file-sortify/images/logo.png',
+        url: 'https://cdn.tinykit.app/file-sortify/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'File Sortify - Smart File Organization for Mac',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: 'File Sortify - Smart File Organization for Mac | TinyKit',
     description:
       'Automatically organize your files with File Sortify. The intelligent file management tool.',
-    images: ['https://cdn.tinykit.app/file-sortify/images/logo.png'],
+    images: ['https://cdn.tinykit.app/file-sortify/images/og-image.png'],
     creator: '@tinykit_app', // 未来可以更新为真实的 Twitter 账号
   },
   robots: {
