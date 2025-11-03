@@ -24,7 +24,7 @@ export default function Home() {
       >
         <div className='container mx-auto px-6 text-center'>
           <div className='max-w-4xl mx-auto'>
-            <div
+            {/* <div
               className='bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-8'
               role='status'
               aria-label='Product ranking badge'
@@ -35,7 +35,7 @@ export default function Home() {
                 aria-hidden='true'
               />
               #1 File Organization Tool on Mac
-            </div>
+            </div> */}
             <h1
               id='hero-heading'
               className='text-5xl md:text-7xl font-bold mb-8'
@@ -68,7 +68,7 @@ export default function Home() {
                 Download on the Mac App Store
               </a>
             </div>
-            <div className='flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-8'>
+            {/* <div className='flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-8'>
               <div className='flex -space-x-2'>
                 <UserAvatar
                   src='https://picsum.photos/seed/user1/48/48.jpg'
@@ -109,7 +109,7 @@ export default function Home() {
                   {siteConfig.stats.happyUsers} happy Mac users
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
