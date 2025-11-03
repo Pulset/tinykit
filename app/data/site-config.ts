@@ -6,7 +6,7 @@ export const siteConfig = {
     'file organizer, mac app, file management, auto file sorter, download folder organizer, file automation',
   url: 'https://www.tinykit.app',
   author: 'File Sortify Team',
-  email: 'support@tinykit.app',
+  email: 'geek.bo@hotmail.com',
   logo: 'https://oss.picasso-designs.com/static/logo.png',
   // 统计数据 (可更新)
   stats: {
