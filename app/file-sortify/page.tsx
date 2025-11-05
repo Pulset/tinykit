@@ -101,6 +101,20 @@ export default function Home() {
                 />
                 Download on the Mac App Store
               </a>
+              <a
+                href='https://youtu.be/ufdBY0RJacM'
+                className='border-2 border-white text-white px-10 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition text-lg'
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label='Watch demo video'
+              >
+                <FontAwesomeIcon
+                  name='fas fa-play-circle'
+                  className='inline mr-2'
+                  aria-hidden='true'
+                />
+                Watch Demo
+              </a>
             </div>
             {/* <div className='flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-8'>
               <div className='flex -space-x-2'>
