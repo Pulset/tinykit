@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   title: 'File Sortify - Smart File Organization for Mac',
   description:
     'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
+  keywords:
+    'file organizer, mac file management, auto file sorter, download folder organizer, file automation',
   alternates: {
     canonical: '/file-sortify',
   },
