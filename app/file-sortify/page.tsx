@@ -20,8 +20,13 @@ export const metadata: Metadata = {
   title: 'File Sortify - Smart File Organization for Mac',
   description:
     'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
-  keywords:
-    'file organizer, mac file management, auto file sorter, download folder organizer, file automation',
+  keywords: [
+    'file organizer',
+    'mac file management',
+    'auto file sorter',
+    'download folder organizer',
+    'file automation',
+  ],
   alternates: {
     canonical: '/file-sortify',
   },
@@ -85,7 +90,7 @@ const fileSortifyProductData: ProductData = {
   currency: 'USD',
   screenshots: screenshots.map((s) => s.image),
   features: features.map((f) => f.title),
-  keywords: metadata.keywords?.join(', ') || '', // Reuse keywords from metadata
+  keywords: (metadata.keywords as string[])?.join(', ') || '', // Reuse keywords from metadata
   faqs: fileSortifyFAQS,
   testimonials: testimonials as Testimonial[], // Cast to Testimonial[]
 };
