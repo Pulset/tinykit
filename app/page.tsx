@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { siteConfig } from '@/app/data/site-config';
 
+export const metadata = {
+  title: 'TinyKit - Productivity Apps for Mac',
+  description:
+    'Discover TinyKit, your comprehensive toolkit for Mac productivity. Powerful file organization, minimal tools, and smart utilities designed to streamline your daily workflow.',
+};
+
 export default function HomePage() {
   return (
     <div className='min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50'>

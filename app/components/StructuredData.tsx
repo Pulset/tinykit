@@ -1,8 +1,38 @@
-import { siteConfig, productConfig } from '@/app/data/site-config';
-import { testimonials } from '@/app/data/page-data';
+import { siteConfig } from '@/app/data/site-config';
 
-export default function StructuredData() {
-  // Organization Schema
+// Define the structure for a testimonial, which can be reused.
+export interface Testimonial {
+  name: string;
+  role: string;
+  content: string;
+  avatar: string;
+}
+
+// Define the structure for product-specific data, making the component dynamic.
+export interface ProductData {
+  name: string;
+  description: string;
+  appStoreUrl: string;
+  version: string;
+  price: string;
+  currency: string;
+  screenshots: string[];
+  features: string[];
+  keywords: string;
+  faqs: { name: string; text: string }[];
+  testimonials: Testimonial[];
+}
+
+interface StructuredDataProps {
+  productData?: ProductData;
+  breadcrumbList?: { name: string; item: string }[];
+}
+
+export default function StructuredData({
+  productData,
+  breadcrumbList,
+}: StructuredDataProps) {
+  // Always include Organization and WebSite schema for brand consistency.
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -11,12 +41,7 @@ export default function StructuredData() {
     logo: siteConfig.logo,
     email: siteConfig.email,
     description: 'Developer of productivity apps for Mac users',
-    sameAs: [
-      // 未来可以添加社交媒体链接
-      // 'https://twitter.com/tinykit',
-      // 'https://github.com/tinykit',
-    ],
-    foundingDate: '2024',
+    foundingDate: '2025',
     knowsAbout: [
       'Mac software development',
       'File organization',
@@ -25,59 +50,6 @@ export default function StructuredData() {
     ],
   };
 
-  // Software Application Schema for File Sortify
-  const softwareSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: 'File Sortify',
-    applicationCategory: 'UtilitiesApplication',
-    operatingSystem: 'macOS',
-    softwareVersion: '1.0',
-    offers: {
-      '@type': 'Offer',
-      price: '20.00',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      url: productConfig.appStoreUrl,
-      priceValidUntil: '2026-12-31',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: siteConfig.stats.rating,
-      ratingCount: 500, // 可以根据实际情况调整
-      bestRating: 5,
-      worstRating: 1,
-    },
-    description: siteConfig.description,
-    author: {
-      '@type': 'Organization',
-      name: 'TinyKit',
-    },
-    creator: {
-      '@type': 'Organization',
-      name: 'TinyKit',
-    },
-    downloadUrl: productConfig.appStoreUrl,
-    screenshot: [
-      'https://cdn.tinykit.app/file-sortify/images/dashboard.png',
-      'https://cdn.tinykit.app/file-sortify/images/rules.png',
-      'https://cdn.tinykit.app/file-sortify/images/revert.png',
-    ],
-    featureList: [
-      'Smart Auto-Categorization',
-      'Custom Rules Engine',
-      'Real-Time Monitoring',
-      'Operation History',
-      'Safe & Secure',
-      'Lightning Fast',
-    ],
-    keywords:
-      'file organizer, mac app, file management, auto file sorter, download folder organizer',
-    applicationSubCategory: 'File Management',
-    installUrl: productConfig.appStoreUrl,
-  };
-
-  // WebSite Schema
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -90,208 +62,106 @@ export default function StructuredData() {
     },
   };
 
-  // Breadcrumb Schema
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: siteConfig.url,
-      },
-    ],
-  };
+  // Start with base schemas and conditionally add more.
+  const schemas: object[] = [organizationSchema, websiteSchema];
 
-  // FAQ Schema - AI-friendly
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What is File Sortify?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'File Sortify is an intelligent file organization tool for Mac that automatically sorts and organizes your files based on type, custom rules, and real-time monitoring. It is perfect for keeping your Downloads folder and desktop clean and organized.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How does File Sortify organize files?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'File Sortify uses smart auto-categorization to sort files by type (documents, images, videos, etc.), allows you to create custom rules for specific file types or names, and monitors folders in real-time to automatically organize new files as they arrive.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Is File Sortify compatible with my Mac?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'File Sortify is designed exclusively for macOS. It works with all modern Mac computers running macOS and integrates seamlessly with the Mac file system.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How much does File Sortify cost?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'File Sortify is available for a one-time purchase of $20 USD. This includes lifetime access, unlimited usage, lifetime updates, and all future features with no subscription required.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Can I undo file organization changes?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, File Sortify includes an Operation History feature that allows you to review and revert file organization actions if needed, ensuring your files are always safe.',
-        },
-      },
-    ],
-  };
-
-  // Product Schema for better AI understanding
-  const productSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'File Sortify',
-    description: siteConfig.description,
-    image: [
-      siteConfig.logo,
-      'https://cdn.tinykit.app/file-sortify/images/dashboard.png',
-      'https://cdn.tinykit.app/file-sortify/images/rules.png',
-    ],
-    brand: {
-      '@type': 'Brand',
-      name: 'TinyKit',
-    },
-    offers: {
-      '@type': 'Offer',
-      price: '20.00',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      url: productConfig.appStoreUrl,
-      priceValidUntil: '2026-12-31',
-      seller: {
-        '@type': 'Organization',
-        name: 'TinyKit',
-      },
-      hasMerchantReturnPolicy: {
-        '@type': 'MerchantReturnPolicy',
-        applicableCountry: 'US',
-        returnPolicyCategory:
-          'https://schema.org/MerchantReturnFiniteReturnWindow',
-        merchantReturnDays: 14,
-        returnMethod: 'https://schema.org/ReturnByMail',
-        returnFees: 'https://schema.org/FreeReturn',
-      },
-      shippingDetails: {
-        '@type': 'OfferShippingDetails',
-        shippingRate: {
-          '@type': 'MonetaryAmount',
-          value: '0',
-          currency: 'USD',
-        },
-        shippingDestination: {
-          '@type': 'DefinedRegion',
-          addressCountry: 'US',
-        },
-        deliveryTime: {
-          '@type': 'ShippingDeliveryTime',
-          handlingTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 0,
-            maxValue: 0,
-            unitCode: 'DAY',
-          },
-          transitTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 0,
-            maxValue: 0,
-            unitCode: 'DAY',
-          },
-        },
-      },
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: siteConfig.stats.rating,
-      ratingCount: 500,
-      bestRating: 5,
-    },
-    category: 'Mac Utility Software',
-  };
-
-  // Review Schemas - Individual reviews with complete information
-  const reviewSchemas = testimonials.map((testimonial, index) => ({
-    '@context': 'https://schema.org',
-    '@type': 'Review',
-    itemReviewed: {
+  if (productData) {
+    const softwareSchema = {
+      '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
-      name: 'File Sortify',
-      operatingSystem: 'macOS',
+      name: productData.name,
       applicationCategory: 'UtilitiesApplication',
-    },
-    author: {
-      '@type': 'Person',
-      name: testimonial.name,
-    },
-    reviewRating: {
-      '@type': 'Rating',
-      ratingValue: 5,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    reviewBody: testimonial.content,
-    datePublished: '2024-12-01',
-  }));
+      operatingSystem: 'macOS',
+      softwareVersion: productData.version,
+      offers: {
+        '@type': 'Offer',
+        price: productData.price,
+        priceCurrency: productData.currency,
+        availability: 'https://schema.org/InStock',
+        url: productData.appStoreUrl,
+        priceValidUntil: '2026-12-31',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: siteConfig.stats.rating,
+        ratingCount: productData.testimonials.length, // Dynamic count
+        bestRating: 5,
+        worstRating: 1,
+      },
+      description: productData.description,
+      author: { '@type': 'Organization', name: 'TinyKit' },
+      creator: { '@type': 'Organization', name: 'TinyKit' },
+      downloadUrl: productData.appStoreUrl,
+      screenshot: productData.screenshots,
+      featureList: productData.features,
+      keywords: productData.keywords,
+      applicationSubCategory: 'File Management',
+      installUrl: productData.appStoreUrl,
+    };
+
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: productData.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.name,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.text,
+        },
+      })),
+    };
+
+    const productSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: productData.name,
+      description: productData.description,
+      image: [siteConfig.logo, ...productData.screenshots],
+      brand: { '@type': 'Brand', name: 'TinyKit' },
+      offers: softwareSchema.offers, // Reuse from software schema
+      aggregateRating: softwareSchema.aggregateRating, // Reuse from software schema
+      category: 'Mac Utility Software',
+    };
+
+    const reviewSchemas = productData.testimonials.map((testimonial) => ({
+      '@context': 'https://schema.org',
+      '@type': 'Review',
+      itemReviewed: {
+        '@type': 'SoftwareApplication',
+        name: productData.name,
+      },
+      author: { '@type': 'Person', name: testimonial.name },
+      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+      reviewBody: testimonial.content,
+      datePublished: '2024-12-01', // This could also be part of the dynamic data
+    }));
+
+    schemas.push(softwareSchema, faqSchema, productSchema, ...reviewSchemas);
+  }
+
+  if (breadcrumbList) {
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbList.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: item.item,
+      })),
+    };
+    schemas.push(breadcrumbSchema);
+  }
 
   return (
     <>
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
-        }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(softwareSchema),
-        }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(websiteSchema),
-        }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema),
-        }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productSchema),
-        }}
-      />
-      {reviewSchemas.map((reviewSchema, index) => (
+      {schemas.map((schema, index) => (
         <script
-          key={`review-${index}`}
+          key={`ld-json-${index}`}
           type='application/ld+json'
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(reviewSchema),
+            __html: JSON.stringify(schema),
           }}
         />
       ))}

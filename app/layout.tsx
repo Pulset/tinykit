@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import './globals.css';
-import StructuredData from '@/app/components/StructuredData';
 import { Analytics } from '@vercel/analytics/next';
 const inter = Inter({
   subsets: ['latin'],
@@ -102,7 +101,6 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <meta name='apple-mobile-web-app-title' content='File Sortify' />
-        <StructuredData />
         <script
           defer
           src='https://cloud.umami.is/script.js'
