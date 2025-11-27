@@ -2,9 +2,9 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'File Sortify',
-    short_name: 'File Sortify',
-    description: 'File Sortify',
+    name: 'TinyKit',
+    short_name: 'TinyKit',
+    description: 'TinyKit - your comprehensive toolkit for productivity',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

@@ -15,8 +15,12 @@ export default function HomePage() {
       <header className='container mx-auto px-6 py-8'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center space-x-3'>
-            <div className='w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center'>
-              <span className='text-2xl font-bold text-white'>T</span>
+            <div className='w-12 h-12 rounded-xl flex items-center justify-center'>
+              <img
+                src='/tinykit-logo.png'
+                alt='TinyKit Logo'
+                className='w-full h-full object-contain rounded-xl'
+              />
             </div>
             <h1 className='text-2xl font-bold text-gray-800'>TinyKit</h1>
           </div>

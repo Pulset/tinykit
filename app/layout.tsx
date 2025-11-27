@@ -10,19 +10,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'File Sortify - Smart File Organization for Mac | TinyKit',
+    default: 'TinyKit - Productivity Apps for Mac',
     template: '%s | TinyKit',
   },
   description:
-    'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
-  // Note: Meta keywords are ignored by Google/Bing since 2009, but kept minimal for potential AI crawlers
+    'Discover TinyKit, your comprehensive toolkit for Mac productivity. Powerful file organization, minimal tools, and smart utilities designed to streamline your daily workflow.',
   keywords: [
-    'file organizer mac',
-    'mac file management',
-    'auto file sorter',
-    'download folder organizer',
-    'file automation mac',
-    'file sortify',
+    'mac productivity apps',
+    'mac utilities',
+    'productivity tools mac',
+    'mac apps',
     'tinykit',
   ],
   authors: [{ name: 'TinyKit Team', url: 'https://www.tinykit.app' }],
@@ -41,26 +38,26 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.tinykit.app',
-    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
+    title: 'TinyKit - Productivity Apps for Mac',
     description:
-      'Automatically organize your files with File Sortify. The intelligent file management tool that sorts files by type, custom rules, and real-time monitoring.',
+      'Discover our collection of powerful, beautiful, and easy-to-use Mac applications designed to boost your productivity.',
     siteName: 'TinyKit',
     images: [
       {
-        url: 'https://cdn.tinykit.app/file-sortify/images/og-image.png',
+        url: 'https://cdn.tinykit.app/tinykit-og-image.png',
         width: 1200,
         height: 630,
-        alt: 'File Sortify - Smart File Organization for Mac',
+        alt: 'TinyKit - Productivity Apps for Mac',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
+    title: 'TinyKit - Productivity Apps for Mac',
     description:
-      'Automatically organize your files with File Sortify. The intelligent file management tool.',
-    images: ['https://cdn.tinykit.app/file-sortify/images/og-image.png'],
-    creator: '@tinykit_app', // 未来可以更新为真实的 Twitter 账号
+      'Discover our collection of powerful Mac applications designed to boost your productivity.',
+    images: ['https://cdn.tinykit.app/tinykit-og-image.png'],
+    creator: '@GeekfanBo',
   },
   robots: {
     index: true,
@@ -75,20 +72,34 @@ export const metadata: Metadata = {
   },
   category: 'technology',
   classification: 'Mac Utilities',
-  other: {
-    // AI-friendly metadata for LLMs
-    'application-name': 'File Sortify',
-    'product-type': 'Mac Utility Software',
-    'target-audience': 'Mac users who need to organize files automatically',
-    'key-features':
-      'Auto-categorization, Custom rules, Real-time monitoring, Operation history',
-    'use-cases':
-      'Organize downloads folder, Sort files by type, Automate file management, Clean up desktop files',
-  },
   appleWebApp: {
     capable: true,
-    title: 'File Sortify',
+    title: 'TinyKit',
     statusBarStyle: 'default',
+  },
+  icons: {
+    icon: [
+      {
+        url: '/tinykit-logo.png',
+        sizes: 'any',
+      },
+      {
+        url: '/tinykit-logo.png',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+      {
+        url: '/tinykit-logo.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+    ],
+    apple: {
+      url: '/tinykit-logo.png',
+      sizes: '180x180',
+      type: 'image/png',
+    },
+    shortcut: '/tinykit-logo.png',
   },
 };
 
@@ -97,10 +108,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'TinyKit',
+    url: 'https://www.tinykit.app',
+    logo: 'https://www.tinykit.app/tinykit-logo.png',
+    description:
+      'TinyKit provides powerful, beautiful, and easy-to-use Mac applications designed to boost productivity.',
+    sameAs: ['https://twitter.com/tinykit_app'],
+  };
+
   return (
     <html lang='en'>
       <head>
-        <meta name='apple-mobile-web-app-title' content='File Sortify' />
+        <meta name='apple-mobile-web-app-title' content='TinyKit' />
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script
           defer
           src='https://cloud.umami.is/script.js'

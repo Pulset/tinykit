@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import FeatureCard from '@/app/components/FeatureCard';
 import UserAvatar from '@/app/components/UserAvatar';
@@ -15,46 +14,6 @@ import {
   screenshots,
   testimonials,
 } from '@/app/data/page-data';
-
-export const metadata: Metadata = {
-  title: 'File Sortify - Smart File Organization for Mac',
-  description:
-    'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
-  keywords: [
-    'file organizer',
-    'mac file management',
-    'auto file sorter',
-    'download folder organizer',
-    'file automation',
-  ],
-  alternates: {
-    canonical: '/file-sortify',
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.tinykit.app/file-sortify',
-    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
-    description:
-      'Automatically organize your files with File Sortify. The intelligent file management tool that sorts files by type, custom rules, and real-time monitoring.',
-    siteName: 'TinyKit',
-    images: [
-      {
-        url: 'https://cdn.tinykit.app/file-sortify/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'File Sortify - Smart File Organization for Mac',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
-    description:
-      'Automatically organize your files with File Sortify. The intelligent file management tool.',
-    images: ['https://cdn.tinykit.app/file-sortify/images/og-image.png'],
-  },
-};
 
 // Define FAQs specifically for File Sortify page structured data
 const fileSortifyFAQS = [
@@ -83,14 +42,22 @@ const fileSortifyFAQS = [
 // Prepare ProductData for StructuredData component
 const fileSortifyProductData: ProductData = {
   name: 'File Sortify',
-  description: metadata.description as string, // Reuse description from metadata
+  description:
+    'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
   appStoreUrl: productConfig.appStoreUrl,
   version: '1.0',
-  price: '20.00',
+  price: '9.99',
   currency: 'USD',
   screenshots: screenshots.map((s) => s.image),
   features: features.map((f) => f.title),
-  keywords: (metadata.keywords as string[])?.join(', ') || '', // Reuse keywords from metadata
+  keywords: [
+    'file organizer mac',
+    'mac file management',
+    'auto file sorter',
+    'download folder organizer',
+    'file automation mac',
+    'file sortify',
+  ].join(', '),
   faqs: fileSortifyFAQS,
   testimonials: testimonials as Testimonial[], // Cast to Testimonial[]
 };
@@ -411,7 +378,7 @@ export default function Home() {
                 itemScope
                 itemType='https://schema.org/Offer'
               >
-                <meta itemProp='price' content='20.00' />
+                <meta itemProp='price' content='9.99' />
                 <meta itemProp='priceCurrency' content='USD' />
                 <meta
                   itemProp='availability'
@@ -461,7 +428,7 @@ export default function Home() {
                 rel='noopener noreferrer'
               >
                 <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
-                Buy for $20
+                Buy for $9.99
               </a>
             </div>
           </div>
@@ -509,7 +476,7 @@ export default function Home() {
                     itemScope
                     itemType='https://schema.org/Offer'
                   >
-                    <meta itemProp='price' content='20.00' />
+                    <meta itemProp='price' content='9.99' />
                     <meta itemProp='priceCurrency' content='USD' />
                   </div>
                   <div

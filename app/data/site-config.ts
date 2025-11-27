@@ -20,7 +20,7 @@ export const productConfig = {
   pricing: {
     lifetime: {
       title: 'Lifetime License',
-      price: '$20',
+      price: '$9.99',
       period: '/once',
       badge: 'BEST VALUE',
       features: [
