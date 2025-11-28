@@ -2,11 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { siteConfig } from '@/app/data/site-config';
 
-export const metadata = {
-  title: 'TinyKit - Productivity Apps for Mac',
-  description:
-    'Discover TinyKit, your comprehensive toolkit for Mac productivity. Powerful file organization, minimal tools, and smart utilities designed to streamline your daily workflow.',
-};
 
 export default function HomePage() {
   return (
@@ -22,7 +17,7 @@ export default function HomePage() {
                 className='w-full h-full object-contain rounded-xl'
               />
             </div>
-            <h1 className='text-2xl font-bold text-gray-800'>TinyKit</h1>
+            <p className='text-2xl font-bold text-gray-800'>TinyKit</p>
           </div>
         </div>
       </header>
@@ -30,12 +25,11 @@ export default function HomePage() {
       {/* Hero Section */}
       <main className='container mx-auto px-6 py-12 md:py-20'>
         <div className='text-center mb-12 md:mb-16'>
-          <h2 className='text-3xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6'>
-            Productivity Apps for Mac
-          </h2>
+          <h1 className='text-3xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6'>
+            Crafting Minimalist & Practical Apps
+          </h1>
           <p className='text-lg md:text-xl text-gray-600 max-w-2xl mx-auto'>
-            Discover our collection of powerful, beautiful, and easy-to-use Mac
-            applications designed to boost your productivity.
+            Discover TinyKit, where we build simple, beautiful, and effective tools designed to streamline your daily digital life without the clutter.
           </p>
         </div>
 

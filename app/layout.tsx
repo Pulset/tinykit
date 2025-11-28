@@ -10,16 +10,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'TinyKit - Productivity Apps for Mac',
+    default: 'TinyKit: Crafting Minimalist & Practical Apps',
     template: '%s | TinyKit',
   },
   description:
-    'Discover TinyKit, your comprehensive toolkit for Mac productivity. Powerful file organization, minimal tools, and smart utilities designed to streamline your daily workflow.',
+    'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
   keywords: [
-    'mac productivity apps',
+    'productivity apps',
     'mac utilities',
-    'productivity tools mac',
-    'mac apps',
+    'productivity tools',
+    'minimalist apps',
+    'practical apps',
     'tinykit',
   ],
   authors: [{ name: 'TinyKit Team', url: 'https://www.tinykit.app' }],
@@ -38,24 +39,24 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.tinykit.app',
-    title: 'TinyKit - Productivity Apps for Mac',
+    title: 'TinyKit: Crafting Minimalist & Practical Apps',
     description:
-      'Discover our collection of powerful, beautiful, and easy-to-use Mac applications designed to boost your productivity.',
+      'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
     siteName: 'TinyKit',
     images: [
       {
         url: 'https://cdn.tinykit.app/tinykit-og-image.png',
         width: 1200,
         height: 630,
-        alt: 'TinyKit - Productivity Apps for Mac',
+        alt: 'TinyKit: Crafting Minimalist & Practical Apps',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TinyKit - Productivity Apps for Mac',
+    title: 'TinyKit: Crafting Minimalist & Practical Apps',
     description:
-      'Discover our collection of powerful Mac applications designed to boost your productivity.',
+      'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
     images: ['https://cdn.tinykit.app/tinykit-og-image.png'],
     creator: '@GeekfanBo',
   },
@@ -115,7 +116,7 @@ export default function RootLayout({
     url: 'https://www.tinykit.app',
     logo: 'https://www.tinykit.app/tinykit-logo.png',
     description:
-      'TinyKit provides powerful, beautiful, and easy-to-use Mac applications designed to boost productivity.',
+      'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
     sameAs: ['https://twitter.com/tinykit_app'],
   };
 
