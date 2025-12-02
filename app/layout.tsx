@@ -78,30 +78,6 @@ export const metadata: Metadata = {
     title: 'TinyKit',
     statusBarStyle: 'default',
   },
-  icons: {
-    icon: [
-      {
-        url: '/tinykit-logo.png',
-        sizes: 'any',
-      },
-      {
-        url: '/tinykit-logo.png',
-        sizes: '32x32',
-        type: 'image/png',
-      },
-      {
-        url: '/tinykit-logo.png',
-        sizes: '192x192',
-        type: 'image/png',
-      },
-    ],
-    apple: {
-      url: '/tinykit-logo.png',
-      sizes: '180x180',
-      type: 'image/png',
-    },
-    shortcut: '/tinykit-logo.png',
-  },
 };
 
 export default function RootLayout({
