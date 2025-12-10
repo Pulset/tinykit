@@ -136,7 +136,7 @@ export default function Home() {
                 Download on the Mac App Store
               </a>
               <a
-                href='https://youtu.be/ufdBY0RJacM'
+                href='https://youtu.be/dDRc3kqf3N8'
                 className='border-2 border-white text-white px-10 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition text-lg'
                 target='_blank'
                 rel='noopener noreferrer'
