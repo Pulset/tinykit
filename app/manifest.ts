@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'TinyKit',
     short_name: 'TinyKit',
-    description: 'TinyKit: Crafting Minimalist & Practical Apps',
+    description: 'TinyKit - Crafting Minimalist & Practical Apps',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

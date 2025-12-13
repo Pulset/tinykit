@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.tinykit.app',
-    title: 'TinyKit: Crafting Minimalist & Practical Apps',
+    title: 'TinyKit - Crafting Minimalist & Practical Apps',
     description:
       'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
     siteName: 'TinyKit',
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
         url: 'https://cdn.tinykit.app/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'TinyKit: Crafting Minimalist & Practical Apps',
+        alt: 'TinyKit - Crafting Minimalist & Practical Apps',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TinyKit: Crafting Minimalist & Practical Apps',
+    title: 'TinyKit - Crafting Minimalist & Practical Apps',
     description:
       'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
     images: ['https://cdn.tinykit.app/images/og-image.png'],
