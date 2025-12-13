@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'TinyKit: Crafting Minimalist & Practical Apps',
+    default: 'TinyKit - Crafting Minimalist & Practical Apps',
     template: '%s | TinyKit',
   },
   description:
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: 'TinyKit',
     images: [
       {
-        url: 'https://cdn.tinykit.app/tinykit-og-image.png',
+        url: 'https://cdn.tinykit.app/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'TinyKit: Crafting Minimalist & Practical Apps',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: 'TinyKit: Crafting Minimalist & Practical Apps',
     description:
       'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
-    images: ['https://cdn.tinykit.app/tinykit-og-image.png'],
+    images: ['https://cdn.tinykit.app/images/og-image.png'],
     creator: '@GeekfanBo',
   },
   robots: {
