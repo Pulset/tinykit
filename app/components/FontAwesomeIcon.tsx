@@ -16,7 +16,15 @@ import {
   faLock as fasLock,
   faFolderOpen as fasFolderOpen,
   faPlayCircle as fasPlayCircle,
-  faEnvelope as fasEnvelope
+  faEnvelope as fasEnvelope,
+  faPlay as fasPlay,
+  faImages as fasImages,
+  faPalette as fasPalette,
+  faTint as fasTint,
+  faCamera as fasCamera,
+  faDownload as fasDownload,
+  faHeart as fasHeart,
+  faQuoteLeft as fasQuoteLeft
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faApple as fabApple,
@@ -45,6 +53,14 @@ type FontAwesomeIconName =
   | 'fab fa-github'
   | 'fab fa-discord'
   | 'fab fa-youtube'
+  | 'fas fa-play'
+  | 'fas fa-images'
+  | 'fas fa-palette'
+  | 'fas fa-tint'
+  | 'fas fa-camera'
+  | 'fas fa-download'
+  | 'fas fa-heart'
+  | 'fas fa-quote-left'
 
 const iconMap: Record<FontAwesomeIconName, any> = {
   // Solid icons
@@ -63,6 +79,14 @@ const iconMap: Record<FontAwesomeIconName, any> = {
   'fas fa-folder-open': fasFolderOpen,
   'fas fa-play-circle': fasPlayCircle,
   'fas fa-envelope': fasEnvelope,
+  'fas fa-play': fasPlay,
+  'fas fa-images': fasImages,
+  'fas fa-palette': fasPalette,
+  'fas fa-tint': fasTint,
+  'fas fa-camera': fasCamera,
+  'fas fa-download': fasDownload,
+  'fas fa-heart': fasHeart,
+  'fas fa-quote-left': fasQuoteLeft,
 
   // Brand icons
   'fab fa-apple': fabApple,

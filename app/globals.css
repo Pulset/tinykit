@@ -101,6 +101,15 @@ html {
   ); /* rgb(124, 58, 237) - 如果需要调整可以修改 */
 }
 
+/* Custom rose/pink to match AI Hairstyle logo */
+.btn-rose-600 {
+  background-color: rgb(225, 87, 101); /* Rose 600 - logo primary color */
+}
+
+.btn-pink-600 {
+  background-color: rgb(236, 72, 153); /* Pink 600 - logo secondary color */
+}
+
 /* 如果需要完全自定义的紫色，可以取消注释下面的代码 */
 /* .btn-purple-600 { */
 /*   background-color: #7c3aed; 调整为你需要的确切紫色值 */
@@ -109,3 +118,32 @@ html {
 /* .btn-purple-700:hover { */
 /*   background-color: #6d28d9; 悬停时更深的紫色 */
 /* } */
+
+/* Animations for AI Hairstyle Page */
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+  animation: blob 7s infinite;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
