@@ -184,7 +184,7 @@ export default function HairstylePage() {
                 <h1 className='text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight text-gray-800'>
                   New{' '}
                   <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#d63384] via-[#e83e8c] to-[#9775fa]'>
-                    Hairstyle
+                    &apos;Do
                   </span>
                   , <br />
                   New{' '}
@@ -556,6 +556,12 @@ export default function HairstylePage() {
                 className='hover:text-[#d63384] transition'
               >
                 Privacy
+              </a>
+              <a
+                href='/hairstyle/terms'
+                className='hover:text-[#d63384] transition'
+              >
+                Terms
               </a>
             </div>
             <p className='text-gray-500 text-sm'>

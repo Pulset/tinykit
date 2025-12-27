@@ -93,7 +93,7 @@ export default function HomePage() {
 
           {/* AI Hairstyle Card */}
           <Link
-            href='/'
+            href='/hairstyle'
             className='group block bg-white rounded-2xl md:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-6 md:p-8 mb-6 md:mb-8 hover:scale-[1.02]'
           >
             <div className='flex flex-col sm:flex-row items-start sm:items-center sm:space-x-6 space-y-4 sm:space-y-0'>
@@ -118,8 +118,11 @@ export default function HomePage() {
                   <h3 className='text-2xl md:text-3xl font-bold text-gray-800'>
                     AI Hairstyle
                   </h3>
-                  <span className='bg-yellow-100 text-yellow-700 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit'>
+                  {/* <span className='bg-yellow-100 text-yellow-700 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit'>
                     In Development
+                  </span> */}
+                  <span className='bg-green-100 text-green-700 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit'>
+                    Available Now
                   </span>
                 </div>
                 <p className='text-gray-600 text-base md:text-lg mb-4'>
