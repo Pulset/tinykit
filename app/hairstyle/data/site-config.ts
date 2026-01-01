@@ -15,7 +15,7 @@ export const siteConfig = {
 };
 
 export const productConfig = {
-  appStoreUrl: 'https://apps.apple.com/app/ai-hairstyle/id123456789', // AI Hairstyle App Store URL
+  appStoreUrl: 'https://apps.apple.com/app/id6756533779', // AI Hairstyle App Store URL
   pricing: {
     free: {
       title: 'Free Download',

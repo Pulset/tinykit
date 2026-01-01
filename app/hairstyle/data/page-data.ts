@@ -35,7 +35,7 @@ export const features = [
     icon: 'fas fa-shield-alt',
     title: 'Privacy First',
     description:
-      'Your photos are processed securely and never stored. Complete privacy guaranteed.',
+      'Your photos are processed securely. Complete privacy guaranteed.',
     bgColor: 'bg-yellow-100',
     iconColor: 'text-yellow-600',
   },
@@ -53,17 +53,15 @@ export const howItWorks = [
   {
     step: 1,
     title: 'Upload Your Photo',
-    description:
-      'Take or upload a clear front-facing photo of yourself',
-    image: 'https://cdn.tinykit.app/ai-hairstyle/images/upload.png',
+    description: 'Upload a clear front-facing photo of yourself',
+    image: 'https://cdn.tinykit.app/hairstyle/images/step1.png',
     gradientColors: 'from-pink-400 to-rose-400',
   },
   {
     step: 2,
     title: 'Choose a Style',
-    description:
-      'Browse hundreds of hairstyles and colors to try on',
-    image: 'https://cdn.tinykit.app/ai-hairstyle/images/choose.png',
+    description: 'Browse hundreds of hairstyles and colors to try on',
+    image: 'https://cdn.tinykit.app/hairstyle/images/step2.png',
     gradientColors: 'from-purple-400 to-pink-400',
   },
   {
@@ -71,35 +69,35 @@ export const howItWorks = [
     title: 'See Yourself',
     description:
       'AI instantly applies the hairstyle to your photo - new look, new you!',
-    image: 'https://cdn.tinykit.app/ai-hairstyle/images/result.png',
+    image: 'https://cdn.tinykit.app/hairstyle/images/step3.png',
     gradientColors: 'from-blue-400 to-purple-400',
   },
 ];
 
-export const screenshots = [
-  {
-    title: 'Style Gallery',
-    description: 'Browse hundreds of hairstyle options',
-    image: 'https://cdn.tinykit.app/ai-hairstyle/images/gallery.png',
-  },
-  {
-    title: 'Live Preview',
-    description: 'See how you look with different hairstyles',
-    image: 'https://cdn.tinykit.app/ai-hairstyle/images/preview.png',
-  },
-  {
-    title: 'Color Options',
-    description: 'Experiment with various hair colors',
-    image: 'https://cdn.tinykit.app/ai-hairstyle/images/colors.png',
-  },
-];
+// export const screenshots = [
+//   {
+//     title: 'Style Gallery',
+//     description: 'Browse hundreds of hairstyle options',
+//     image: 'https://cdn.tinykit.app/ai-hairstyle/images/gallery.png',
+//   },
+//   {
+//     title: 'Live Preview',
+//     description: 'See how you look with different hairstyles',
+//     image: '/4.png',
+//   },
+//   {
+//     title: 'Color Options',
+//     description: 'Experiment with various hair colors',
+//     image: 'https://cdn.tinykit.app/ai-hairstyle/images/colors.png',
+//   },
+// ];
 
 export const testimonials = [
   {
     name: 'Jessica Taylor',
     role: 'Fashion Blogger',
     content:
-      "AI Hairstyle saved me from a hair disaster! I tried the bob cut virtually first and realized it wasn't for me. Absolutely love this app!",
+      "AI Hairstyle Studio saved me from a hair disaster! I tried the bob cut virtually first and realized it wasn't for me. Absolutely love this app!",
     avatar: 'https://cdn.tinykit.app/ai-hairstyle/images/user1.jpg',
   },
   {
@@ -119,9 +117,9 @@ export const testimonials = [
 ];
 
 export const navItems = [
+  { label: 'Magic', href: '#magic' },
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Gallery', href: '#gallery' },
   { label: 'Pricing', href: '#pricing' },
 ];
 

@@ -1,4 +1,5 @@
-import Navigation from '@/app/components/Navigation';
+import HairstyleNavigation from './components/HairstyleNavigation';
+import BeforeAfterComparison from './components/BeforeAfterComparison';
 import FeatureCard from '@/app/components/FeatureCard';
 import UserAvatar from '@/app/components/UserAvatar';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
@@ -8,12 +9,7 @@ import StructuredData, {
   Testimonial,
 } from '@/app/components/StructuredData';
 import { siteConfig, productConfig } from './data/site-config';
-import {
-  features,
-  howItWorks,
-  screenshots,
-  testimonials,
-} from './data/page-data';
+import { features, howItWorks, testimonials } from './data/page-data';
 import { Metadata } from 'next';
 
 // Define FAQs for AI Hairstyle Studio page structured data
@@ -49,7 +45,7 @@ const aiHairstyleProductData: ProductData = {
   version: '1.0',
   price: '9.99',
   currency: 'USD',
-  screenshots: screenshots.map((s) => s.image),
+  screenshots: howItWorks.map((step) => step.image),
   features: features.map((f) => f.title),
   keywords: [
     'AI hairstyle',
@@ -157,7 +153,7 @@ export default function HairstylePage() {
   return (
     <>
       <SmoothScroll />
-      <Navigation />
+      <HairstyleNavigation />
       {/* Structured Data for AI Hairstyle Studio Product Page */}
       <StructuredData
         productData={aiHairstyleProductData}
@@ -216,16 +212,16 @@ export default function HairstylePage() {
                     <div className='absolute inset-0 rounded-full bg-white/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity'></div>
                   </a>
                   <a
-                    href='#gallery'
+                    href='#how-it-works'
                     className='px-8 py-4 rounded-full font-bold text-gray-700 border border-pink-200 bg-white/80 backdrop-blur-sm hover:bg-pink-50 hover:border-pink-300 transition-all hover:scale-105'
-                    aria-label='Watch demo of AI Hairstyle Studio app'
+                    aria-label='See how AI Hairstyle Studio works'
                   >
                     <span className='flex items-center justify-center gap-2'>
                       <FontAwesomeIcon
                         name='fas fa-play'
                         className='text-sm text-pink-500'
                       />
-                      Watch Demo
+                      See How It Works
                     </span>
                   </a>
                 </div>
@@ -289,6 +285,27 @@ export default function HairstylePage() {
             </div>
           </div>
         </div>
+
+        {/* Before/After Comparison Section */}
+        <section
+          id='magic'
+          className='py-24 relative bg-gradient-to-b from-[#fdfbf8] to-white/80 overflow-hidden'
+        >
+          {/* Decorative Background Elements */}
+          <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none'>
+            <div className='absolute top-[20%] right-[-5%] w-[400px] h-[400px] bg-[#ffd6e0] rounded-full mix-blend-multiply filter blur-[96px] opacity-40'></div>
+            <div className='absolute bottom-[10%] left-[-5%] w-[350px] h-[350px] bg-[#e6d5f7] rounded-full mix-blend-multiply filter blur-[96px] opacity-40'></div>
+          </div>
+
+          <div className='container mx-auto relative z-10'>
+            <BeforeAfterComparison
+              beforeImage='/hairstyle-before.png'
+              afterImage='/hairstyle-after.png'
+              beforeLabel='Before'
+              afterLabel='After'
+            />
+          </div>
+        </section>
 
         {/* Features Section - Soft Pastel Cards */}
         <section id='features' className='py-24 relative bg-white/50'>
@@ -376,55 +393,21 @@ export default function HairstylePage() {
                     {step.description}
                   </p>
 
-                  <div className='w-full max-w-xs aspect-[3/4] rounded-2xl overflow-hidden border border-pink-200 shadow-lg group-hover:shadow-xl transition-all bg-white'>
+                  <div className='w-full max-w-xs aspect-[3/4] rounded-2xl overflow-hidden border border-pink-200 shadow-lg group-hover:shadow-xl transition-all duration-300 bg-white relative cursor-pointer'>
                     <img
                       src={step.image}
                       alt={`Step ${step.step}: ${step.title} - ${step.description}`}
-                      className='w-full h-full object-cover'
+                      className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
                       loading='lazy'
                     />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Gallery - Masonry/Grid */}
-        <section
-          id='gallery'
-          className='py-24 relative overflow-hidden bg-white/50'
-        >
-          {/* Background Decoration */}
-          <div className='absolute top-1/2 left-0 w-full h-[500px] bg-gradient-to-r from-[#ffd6e0]/30 to-[#e6d5f7]/30 -skew-y-6 transform origin-left'></div>
-
-          <div className='container mx-auto px-6 relative z-10'>
-            <div className='text-center mb-16'>
-              <h2 className='text-4xl font-bold mb-4 text-gray-800'>
-                Real Results
-              </h2>
-              <p className='text-gray-600 text-lg'>
-                See the transformation magic
-              </p>
-            </div>
-
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-              {screenshots.map((item, i) => (
-                <div
-                  key={i}
-                  className='group relative rounded-2xl overflow-hidden aspect-[3/4] cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 bg-white'
-                >
-                  <img
-                    src={item.image}
-                    alt={`AI Hairstyle Studio Result: ${item.title}`}
-                    className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
-                    loading='lazy'
-                  />
-                  <div className='absolute inset-0 bg-gradient-to-t from-gray-800/80 via-gray-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6'>
-                    <h3 className='text-xl font-bold text-white mb-2'>
-                      {item.title}
-                    </h3>
-                    <p className='text-sm text-gray-200'>{item.description}</p>
+                    <div className='absolute inset-0 bg-gradient-to-t from-gray-800/80 via-gray-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'>
+                      <h3 className='text-lg font-bold text-white mb-1'>
+                        {step.title}
+                      </h3>
+                      <p className='text-xs text-gray-200'>
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -531,9 +514,11 @@ export default function HairstylePage() {
         <footer className='py-12 border-t border-pink-200 bg-gradient-to-b from-white/50 to-[#fdfbf8]'>
           <div className='container mx-auto px-6 text-center'>
             <div className='flex items-center justify-center gap-3 mb-8'>
-              <div className='w-8 h-8 bg-gradient-to-br from-[#d63384] to-[#e83e8c] rounded-lg flex items-center justify-center text-white font-bold'>
-                A
-              </div>
+              <img
+                src='/hairstyle-logo.png'
+                alt='AI Hairstyle Studio Logo'
+                className='w-8 h-8 rounded-lg'
+              />
               <span className='text-xl font-bold text-gray-800'>
                 AI Hairstyle Studio
               </span>
@@ -555,13 +540,13 @@ export default function HairstylePage() {
                 href='/hairstyle/privacy'
                 className='hover:text-[#d63384] transition'
               >
-                Privacy
+                Privacy Policy
               </a>
               <a
                 href='/hairstyle/terms'
                 className='hover:text-[#d63384] transition'
               >
-                Terms
+                Terms of Service
               </a>
             </div>
             <p className='text-gray-500 text-sm'>
