@@ -98,21 +98,21 @@ export const testimonials = [
     role: 'Fashion Blogger',
     content:
       "AI Hairstyle Studio saved me from a hair disaster! I tried the bob cut virtually first and realized it wasn't for me. Absolutely love this app!",
-    avatar: 'https://cdn.tinykit.app/ai-hairstyle/images/user1.jpg',
+    avatar: 'https://cdn.tinykit.app/hairstyle/images/user1.jpg',
   },
   {
     name: 'Michael Chen',
     role: 'College Student',
     content:
       "I've always wanted to try different hairstyles but was too scared to commit. This app lets me experiment risk-free. Game changer!",
-    avatar: 'https://cdn.tinykit.app/ai-hairstyle/images/user2.jpg',
+    avatar: 'https://cdn.tinykit.app/hairstyle/images/user2.jpg',
   },
   {
     name: 'Emma Williams',
     role: 'Marketing Manager',
     content:
       'The AI is incredibly realistic! I showed my stylist the results and she knew exactly what I wanted. Worth every penny!',
-    avatar: 'https://cdn.tinykit.app/ai-hairstyle/images/user3.jpg',
+    avatar: 'https://cdn.tinykit.app/hairstyle/images/user3.jpg',
   },
 ];
 
