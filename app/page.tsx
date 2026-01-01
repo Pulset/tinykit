@@ -106,7 +106,7 @@ export default function HomePage() {
                 }}
               >
                 <Image
-                  src='https://cdn.tinykit.app/hairStyle/images/logo.png'
+                  src='https://cdn.tinykit.app/hairstyle/images/logo.png'
                   alt='AI Hairstyle Logo'
                   width={80}
                   height={80}

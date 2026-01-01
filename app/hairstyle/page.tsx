@@ -299,8 +299,8 @@ export default function HairstylePage() {
 
           <div className='container mx-auto relative z-10'>
             <BeforeAfterComparison
-              beforeImage='/hairstyle-before.png'
-              afterImage='/hairstyle-after.png'
+              beforeImage='https://cdn.tinykit.app/hairstyle/images/hairstyle-before.png'
+              afterImage='https://cdn.tinykit.app/hairstyle/images/hairstyle-after.png'
               beforeLabel='Before'
               afterLabel='After'
             />

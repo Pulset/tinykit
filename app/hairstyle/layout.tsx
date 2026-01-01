@@ -76,7 +76,7 @@ export default function HairstyleLayout({
       ratingValue: '5.0',
       ratingCount: '50000',
     },
-    image: 'https://cdn.tinykit.app/hairStyle/images/logo.png',
+    image: 'https://cdn.tinykit.app/hairstyle/images/logo.png',
     description:
       'Transform your look with AI Hairstyle Studio. Try on hundreds of hairstyles instantly using advanced AI technology. See yourself with different hair colors, lengths, and styles before making the cut.',
     url: 'https://www.tinykit.app/hairstyle',
