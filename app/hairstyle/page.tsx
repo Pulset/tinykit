@@ -11,7 +11,7 @@ import StructuredData, {
 import { siteConfig, productConfig } from './data/site-config';
 import { features, howItWorks, testimonials } from './data/page-data';
 import { Metadata } from 'next';
-
+import Image from 'next/image';
 // Define FAQs for AI Hairstyle Studio page structured data
 const aiHairstyleFAQS = [
   {
@@ -394,11 +394,17 @@ export default function HairstylePage() {
                   </p>
 
                   <div className='w-full max-w-xs aspect-[3/4] rounded-2xl overflow-hidden border border-pink-200 shadow-lg group-hover:shadow-xl transition-all duration-300 bg-white relative cursor-pointer'>
-                    <img
+                    {/* <img
                       src={step.image}
                       alt={`Step ${step.step}: ${step.title} - ${step.description}`}
                       className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
                       loading='lazy'
+                    /> */}
+                    <Image
+                      loading='eager'
+                      src={step.image}
+                      alt={`Step ${step.step}: ${step.title} - ${step.description}`}
+                      className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
                     />
                     <div className='absolute inset-0 bg-gradient-to-t from-gray-800/80 via-gray-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'>
                       <h3 className='text-lg font-bold text-white mb-1'>
