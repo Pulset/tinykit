@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -113,6 +114,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased bg-gray-50`}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
