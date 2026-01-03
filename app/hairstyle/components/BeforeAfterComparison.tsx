@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ReactCompareSlider, ReactCompareSliderHandle } from 'react-compare-slider';
 
 interface BeforeAfterComparisonProps {
@@ -35,9 +36,11 @@ export default function BeforeAfterComparison({
         <ReactCompareSlider
           itemOne={
             <div className='relative w-full h-full'>
-              <img
+              <Image
                 src={beforeImage}
                 alt='Before hairstyle transformation'
+                width={1200}
+                height={900}
                 className='w-full h-full object-cover'
                 draggable={false}
               />
@@ -49,9 +52,11 @@ export default function BeforeAfterComparison({
           }
           itemTwo={
             <div className='relative w-full h-full'>
-              <img
+              <Image
                 src={afterImage}
                 alt='After hairstyle transformation'
+                width={1200}
+                height={900}
                 className='w-full h-full object-cover'
                 draggable={false}
               />

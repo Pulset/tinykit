@@ -7,6 +7,7 @@ import StructuredData, {
   ProductData,
   Testimonial,
 } from '@/app/components/StructuredData'; // Import StructuredData and types
+import Image from 'next/image';
 import { siteConfig, productConfig } from '@/app/data/site-config';
 import {
   features,
@@ -275,9 +276,11 @@ export default function Home() {
                     className={`absolute inset-0 bg-gradient-to-r ${step.gradientColors} rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform`}
                   ></div>
                   <div className='relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform'>
-                    <img
+                    <Image
                       src={step.image}
                       alt={`${step.title} Interface`}
+                      width={800}
+                      height={600}
                       className='w-full h-auto'
                       loading='lazy'
                       itemProp='image'
@@ -316,9 +319,11 @@ export default function Home() {
                 itemScope
                 itemType='https://schema.org/ImageObject'
               >
-                <img
+                <Image
                   src={screenshot.image}
                   alt={screenshot.title}
+                  width={1200}
+                  height={800}
                   className='w-full'
                   loading='lazy'
                   itemProp='contentUrl'
@@ -574,13 +579,12 @@ export default function Home() {
         <div className='container mx-auto px-6'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='flex items-center mb-4 md:mb-0'>
-              <img
+              <Image
                 src={siteConfig.logo}
                 alt='File Sortify Logo'
+                width={30}
+                height={30}
                 className='mr-3'
-                style={{ width: '30px', height: 'auto' }}
-                width='30'
-                height='30'
               />
               <span className='text-2xl font-bold text-gray-400'>
                 File Sortify

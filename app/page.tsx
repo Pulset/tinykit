@@ -10,9 +10,11 @@ export default function HomePage() {
         <div className='flex items-center justify-between'>
           <div className='flex items-center space-x-3'>
             <div className='w-12 h-12 rounded-xl flex items-center justify-center'>
-              <img
+              <Image
                 src='/tinykit-logo.png'
                 alt='TinyKit Logo'
+                width={48}
+                height={48}
                 className='w-full h-full object-contain rounded-xl'
               />
             </div>

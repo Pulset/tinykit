@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { siteConfig, productConfig } from '@/app/data/site-config';
 import { navItems } from '@/app/data/page-data';
 import { Menu, X } from 'lucide-react';
@@ -15,11 +16,12 @@ export default function Navigation() {
       <div className='container mx-auto px-6 py-4'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
-            <img
+            <Image
               src={siteConfig.logo}
               alt='File Sortify Logo'
+              width={30}
+              height={30}
               className='mr-3'
-              style={{ width: '30px', height: 'auto' }}
             />
             <span className='text-2xl font-bold text-gray-800'>
               File Sortify

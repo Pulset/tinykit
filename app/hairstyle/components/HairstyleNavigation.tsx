@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { productConfig } from '../data/site-config';
 import { navItems } from '../data/page-data';
 import { Menu, X } from 'lucide-react';
@@ -16,9 +17,11 @@ export default function HairstyleNavigation() {
         <div className='flex items-center justify-between'>
           {/* Logo */}
           <div className='flex items-center'>
-            <img
+            <Image
               src='/hairstyle-logo.png'
               alt='AI Hairstyle Logo'
+              width={40}
+              height={40}
               className='w-10 h-10 mr-3 rounded-lg'
             />
             <div className='flex flex-col'>

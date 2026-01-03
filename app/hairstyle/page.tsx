@@ -1,6 +1,5 @@
 import HairstyleNavigation from './components/HairstyleNavigation';
 import BeforeAfterComparison from './components/BeforeAfterComparison';
-import FeatureCard from '@/app/components/FeatureCard';
 import UserAvatar from '@/app/components/UserAvatar';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 import SmoothScroll from '@/app/components/SmoothScroll';
@@ -233,9 +232,11 @@ export default function HairstylePage() {
                   {/* Abstract UI Representation */}
                   <div className='absolute inset-0 bg-gradient-to-br from-white to-pink-50 p-6 flex flex-col items-center'>
                     <div className='w-full h-full rounded-2xl overflow-hidden relative group'>
-                      <img
+                      <Image
                         src='https://cdn.tinykit.app/hairstyle/images/step3.png'
                         alt='AI Hairstyle Studio App Interface showing virtual try-on result'
+                        width={800}
+                        height={600}
                         className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
                       />
                       {/* Overlay UI elements */}
@@ -394,17 +395,13 @@ export default function HairstylePage() {
                   </p>
 
                   <div className='w-full max-w-xs aspect-[3/4] rounded-2xl overflow-hidden border border-pink-200 shadow-lg group-hover:shadow-xl transition-all duration-300 bg-white relative cursor-pointer'>
-                    {/* <img
+                    <Image
                       src={step.image}
                       alt={`Step ${step.step}: ${step.title} - ${step.description}`}
+                      width={600}
+                      height={800}
                       className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
                       loading='lazy'
-                    /> */}
-                    <Image
-                      loading='eager'
-                      src={step.image}
-                      alt={`Step ${step.step}: ${step.title} - ${step.description}`}
-                      className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
                     />
                     <div className='absolute inset-0 bg-gradient-to-t from-gray-800/80 via-gray-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'>
                       <h3 className='text-lg font-bold text-white mb-1'>
@@ -520,9 +517,11 @@ export default function HairstylePage() {
         <footer className='py-12 border-t border-pink-200 bg-gradient-to-b from-white/50 to-[#fdfbf8]'>
           <div className='container mx-auto px-6 text-center'>
             <div className='flex items-center justify-center gap-3 mb-8'>
-              <img
+              <Image
                 src='/hairstyle-logo.png'
                 alt='AI Hairstyle Studio Logo'
+                width={32}
+                height={32}
                 className='w-8 h-8 rounded-lg'
               />
               <span className='text-xl font-bold text-gray-800'>
