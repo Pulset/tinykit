@@ -5,6 +5,9 @@ export const metadata: Metadata = {
     default: "AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer",
     template: "%s | AI Hairstyle Studio",
   },
+  icons: {
+    icon: '/hairstyle-icon.ico',
+  },
   description:
     'Try on hundreds of hairstyles and hair colors virtually with AI Hairstyle Studio. The #1 AI hair makeover app to transform your look instantly before making the cut.',
   keywords: [

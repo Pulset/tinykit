@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'File Sortify - Smart File Organization for Mac',
+  icons: {
+    icon: '/file-sortify-icon.ico',
+  },
   description:
     'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
   keywords: [
