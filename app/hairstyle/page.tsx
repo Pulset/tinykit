@@ -75,7 +75,7 @@ const breadcrumbList = [
 // Page metadata is inherited from layout.tsx to maintain consistency
 // Only page-specific overrides if needed
 export const metadata: Metadata = {
-  title: 'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
+  title: 'AI Hairstyle Try On - Virtual Hairstyles & Hair Colors',
 };
 
 // Helper function to generate pastel colors for features

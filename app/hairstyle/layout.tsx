@@ -2,15 +2,14 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default:
-      'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
+    default: 'AI Hairstyle Try On - Virtual Hairstyles & Hair Colors',
     template: '%s | AI Hairstyle Studio',
   },
   icons: {
     icon: '/hairstyle-icon.ico',
   },
   description:
-    'Try on hundreds of hairstyles and hair colors virtually with AI Hairstyle Studio. The #1 AI hair makeover app to transform your look instantly before making the cut.',
+    'Try on 100+ hairstyles & colors instantly with AI. Transform your look before cutting. #1 virtual hairstyle try-on app.',
   keywords: [
     'AI hairstyle',
     'virtual hairstyle try on',
@@ -36,10 +35,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.tinykit.app/hairstyle',
-    title:
-      'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
+    title: 'AI Hairstyle Try On - Virtual Hairstyles & Hair Colors',
     description:
-      'Transform your look instantly with AI. Try on hundreds of hairstyles and colors before you commit. The #1 virtual hairstyle app.',
+      'Try on 100+ hairstyles & colors instantly with AI. Transform your look before cutting.',
     siteName: 'TinyKit',
     images: [
       {
@@ -52,10 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
+    title: 'AI Hairstyle Try On - Virtual Hairstyles & Hair Colors',
     description:
-      'Transform your look instantly with advanced AI. Try on hundreds of hairstyles and colors.',
+      'Try on 100+ hairstyles & colors instantly with AI. Transform your look before cutting.',
     images: ['https://cdn.tinykit.app/hairstyle/images/og-image.png'],
     creator: '@GeekfanBo',
     site: '@tinykitapp',
@@ -115,7 +112,7 @@ export default function HairstyleLayout({
     },
     image: 'https://cdn.tinykit.app/hairstyle/images/logo.png',
     description:
-      'Transform your look with AI Hairstyle Studio. Try on hundreds of hairstyles instantly using advanced AI technology. See yourself with different hair colors, lengths, and styles before making the cut.',
+      'Try on 100+ hairstyles & colors instantly with AI. Transform your look before cutting. #1 virtual hairstyle try-on app.',
     url: 'https://www.tinykit.app/hairstyle',
     author: {
       '@type': 'Organization',
