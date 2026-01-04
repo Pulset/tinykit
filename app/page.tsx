@@ -53,7 +53,7 @@ export default function HomePage() {
                 }}
               >
                 <Image
-                  src='/fileSortify-logo-1.png'
+                  src='https://cdn.tinykit.app/file-sortify/images/fileSortify-logo.png'
                   alt='File Sortify Logo'
                   width={80}
                   height={80}
