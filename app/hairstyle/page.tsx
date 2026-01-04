@@ -72,48 +72,10 @@ const breadcrumbList = [
   },
 ];
 
+// Page metadata is inherited from layout.tsx to maintain consistency
+// Only page-specific overrides if needed
 export const metadata: Metadata = {
   title: 'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
-  description:
-    'Try on hundreds of hairstyles and hair colors virtually with AI Hairstyle Studio. The #1 AI hair makeover app to transform your look instantly.',
-  keywords: [
-    'AI hairstyle',
-    'virtual hairstyle try on',
-    'hair color changer',
-    'hairstyle simulator',
-    'AI hair makeover',
-    'women hairstyle app',
-    'men hairstyle app',
-    'hair dye app',
-  ],
-  openGraph: {
-    title:
-      'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
-    description:
-      'Transform your look instantly with advanced AI. Try on hundreds of hairstyles and colors before you commit.',
-    url: 'https://www.tinykit.app/hairstyle',
-    siteName: 'TinyKit',
-    images: [
-      {
-        url: 'https://cdn.tinykit.app/ai-hairstyle/images/preview.png',
-        width: 1200,
-        height: 630,
-        alt: 'AI Hairstyle Studio App Preview',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'AI Hairstyle Studio - Virtual Hairstyle Try On',
-    description:
-      'Transform your look instantly with advanced AI. Try on hundreds of hairstyles and colors.',
-    images: ['https://cdn.tinykit.app/ai-hairstyle/images/preview.png'],
-  },
-  alternates: {
-    canonical: 'https://www.tinykit.app/hairstyle',
-  },
 };
 
 // Helper function to generate pastel colors for features
@@ -160,11 +122,17 @@ export default function HairstylePage() {
       />
 
       {/* Main Content Wrapper with soft pastel theme */}
-      <main className='bg-[#fdfbf8] text-gray-800 selection:bg-pink-200 selection:text-gray-800 overflow-x-hidden'>
+      <main
+        className='bg-[#fdfbf8] text-gray-800 selection:bg-pink-200 selection:text-gray-800 overflow-x-hidden'
+        lang='en'
+      >
         {/* Hero Section */}
         <div className='relative min-h-screen flex items-center justify-center overflow-hidden'>
-          {/* Soft Pastel Background Elements */}
-          <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0'>
+          {/* Soft Pastel Background Elements - Decorative only */}
+          <div
+            className='absolute top-0 left-0 w-full h-full overflow-hidden z-0'
+            aria-hidden='true'
+          >
             <div className='absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#ffd6e0] rounded-full mix-blend-multiply filter blur-[128px] opacity-60 animate-blob'></div>
             <div className='absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#e6d5f7] rounded-full mix-blend-multiply filter blur-[128px] opacity-50 animate-blob animation-delay-2000'></div>
             <div className='absolute bottom-[-20%] left-[20%] w-[500px] h-[500px] bg-[#fce4ec] rounded-full mix-blend-multiply filter blur-[128px] opacity-50 animate-blob animation-delay-4000'></div>
@@ -234,7 +202,7 @@ export default function HairstylePage() {
                     <div className='w-full h-full rounded-2xl overflow-hidden relative group'>
                       <Image
                         src='https://cdn.tinykit.app/hairstyle/images/step3.png'
-                        alt='AI Hairstyle Studio App Interface showing virtual try-on result'
+                        alt='AI Hairstyle Studio app screenshot showing virtual hairstyle try-on result with side-by-side comparison of original and transformed hair'
                         width={800}
                         height={600}
                         className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
@@ -293,7 +261,10 @@ export default function HairstylePage() {
           className='py-24 relative bg-gradient-to-b from-[#fdfbf8] to-white/80 overflow-hidden'
         >
           {/* Decorative Background Elements */}
-          <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none'>
+          <div
+            className='absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none'
+            aria-hidden='true'
+          >
             <div className='absolute top-[20%] right-[-5%] w-[400px] h-[400px] bg-[#ffd6e0] rounded-full mix-blend-multiply filter blur-[96px] opacity-40'></div>
             <div className='absolute bottom-[10%] left-[-5%] w-[350px] h-[350px] bg-[#e6d5f7] rounded-full mix-blend-multiply filter blur-[96px] opacity-40'></div>
           </div>
@@ -397,7 +368,7 @@ export default function HairstylePage() {
                   <div className='w-full max-w-xs aspect-[3/4] rounded-2xl overflow-hidden border border-pink-200 shadow-lg group-hover:shadow-xl transition-all duration-300 bg-white relative cursor-pointer'>
                     <Image
                       src={step.image}
-                      alt={`Step ${step.step}: ${step.title} - ${step.description}`}
+                      alt={`AI Hairstyle Studio step ${step.step}: ${step.title}. ${step.description}`}
                       width={600}
                       height={800}
                       className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
