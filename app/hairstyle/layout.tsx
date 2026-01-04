@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: "AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer",
-    template: "%s | AI Hairstyle Studio",
+    default:
+      'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
+    template: '%s | AI Hairstyle Studio',
   },
   icons: {
     icon: '/hairstyle-icon.ico',
@@ -35,13 +36,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.tinykit.app/hairstyle',
-    title: 'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
+    title:
+      'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
     description:
       'Transform your look instantly with AI. Try on hundreds of hairstyles and colors before you commit. The #1 virtual hairstyle app.',
     siteName: 'TinyKit',
     images: [
       {
-        url: 'https://cdn.tinykit.app/ai-hairstyle/images/og-image.png',
+        url: 'https://cdn.tinykit.app/hairstyle/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'AI Hairstyle Studio - Virtual Hairstyle Try On App Interface',
@@ -50,10 +52,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
+    title:
+      'AI Hairstyle Studio - Virtual Hairstyle Try On & Hair Color Changer',
     description:
       'Transform your look instantly with advanced AI. Try on hundreds of hairstyles and colors.',
-    images: ['https://cdn.tinykit.app/ai-hairstyle/images/og-image.png'],
+    images: ['https://cdn.tinykit.app/hairstyle/images/og-image.png'],
     creator: '@GeekfanBo',
     site: '@tinykitapp',
   },
@@ -158,10 +161,7 @@ export default function HairstyleLayout({
         href='https://cdn.tinykit.app'
         crossOrigin='anonymous'
       />
-      <link
-        rel='dns-prefetch'
-        href='https://cdn.tinykit.app'
-      />
+      <link rel='dns-prefetch' href='https://cdn.tinykit.app' />
       <link
         rel='preconnect'
         href='https://apps.apple.com'

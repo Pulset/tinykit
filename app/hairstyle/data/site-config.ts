@@ -7,7 +7,7 @@ export const siteConfig = {
   url: 'https://www.tinykit.app/hairstyle',
   author: 'TinyKit Team',
   email: 'geek.bo@hotmail.com',
-  logo: '/hairstyle-logo.png',
+  logo: 'https://cdn.tinykit.app/hairstyle/images/logo.png',
   stats: {
     happyUsers: '50,000+',
     rating: 5,

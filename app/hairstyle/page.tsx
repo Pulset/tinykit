@@ -489,7 +489,7 @@ export default function HairstylePage() {
           <div className='container mx-auto px-6 text-center'>
             <div className='flex items-center justify-center gap-3 mb-8'>
               <Image
-                src='/hairstyle-logo.png'
+                src='https://cdn.tinykit.app/hairstyle/images/logo.png'
                 alt='AI Hairstyle Studio Logo'
                 width={32}
                 height={32}

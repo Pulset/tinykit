@@ -18,7 +18,7 @@ export default function HairstyleNavigation() {
           {/* Logo */}
           <div className='flex items-center'>
             <Image
-              src='/hairstyle-logo.png'
+              src='https://cdn.tinykit.app/hairstyle/images/logo.png'
               alt='AI Hairstyle Logo'
               width={40}
               height={40}
