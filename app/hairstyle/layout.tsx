@@ -165,15 +165,6 @@ export default function HairstyleLayout({
         crossOrigin='anonymous'
       />
 
-      {/* Preload Critical Fonts */}
-      <link
-        rel='preload'
-        href='/fonts/inter-var.woff2'
-        as='font'
-        type='font/woff2'
-        crossOrigin='anonymous'
-      />
-
       {/* Structured Data */}
       <script
         type='application/ld+json'
