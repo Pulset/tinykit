@@ -4,6 +4,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { PerformanceTracker } from './components/PerformanceTracker';
+
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -112,6 +114,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={`${inter.className} antialiased bg-gray-50`}>
+        <PerformanceTracker />
         {children}
         <Analytics />
         <SpeedInsights />
