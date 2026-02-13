@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy - AI Hairstyle Studio',
     description:
       'AI Hairstyle Studio Privacy Policy - We protect your photos and personal information with industry-standard security measures.',
-    url: 'https://www.tinykit.app/hairstyle/privacy',
+    url: 'https://www.tinykit.app/ai-hairstyle-studio/privacy',
     type: 'website',
   },
   twitter: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: 'summary',
   },
   alternates: {
-    canonical: '/hairstyle/privacy',
+    canonical: '/ai-hairstyle-studio/privacy',
   },
 };
 

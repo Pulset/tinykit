@@ -94,7 +94,7 @@ export default function HomePage() {
 
           {/* AI Hairstyle Card */}
           <Link
-            href='/hairstyle'
+            href='/ai-hairstyle-studio'
             className='group block bg-white rounded-2xl md:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-6 md:p-8 mb-6 md:mb-8 hover:scale-[1.02]'
           >
             <div className='flex flex-col sm:flex-row items-start sm:items-center sm:space-x-6 space-y-4 sm:space-y-0'>

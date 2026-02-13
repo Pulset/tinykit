@@ -575,10 +575,10 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className='bg-gray-900 text-white py-8' role='contentinfo'>
+      <footer className='bg-gray-900 text-white py-12' role='contentinfo'>
         <div className='container mx-auto px-6'>
-          <div className='flex flex-col md:flex-row justify-between items-center'>
-            <div className='flex items-center mb-4 md:mb-0'>
+          <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
+            <div className='flex items-center justify-center md:justify-start'>
               <Image
                 src={siteConfig.logo}
                 alt='File Sortify Logo'
@@ -586,17 +586,17 @@ export default function Home() {
                 height={30}
                 className='mr-3'
               />
-              <span className='text-2xl font-bold text-gray-400'>
+              <span className='text-xl md:text-2xl font-bold text-gray-400'>
                 File Sortify
               </span>
             </div>
             <nav
-              className='flex items-center space-x-6'
+              className='flex flex-col sm:flex-row items-center gap-4 sm:gap-6'
               aria-label='Footer navigation'
             >
               <a
                 href={`mailto:${siteConfig.email}`}
-                className='text-gray-400 hover:text-white transition'
+                className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='Contact us via email'
@@ -606,11 +606,12 @@ export default function Home() {
                   className='mr-2'
                   aria-hidden='true'
                 />
-                {siteConfig.email}
+                <span className='hidden sm:inline'>{siteConfig.email}</span>
+                <span className='sm:hidden'>Email</span>
               </a>
               <a
                 href='/file-sortify/privacy'
-                className='text-gray-400 hover:text-white transition'
+                className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
                 aria-label='View privacy policy'
               >
                 <FontAwesomeIcon
@@ -620,10 +621,22 @@ export default function Home() {
                 />
                 Privacy Policy
               </a>
+              <a
+                href='/file-sortify/terms'
+                className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
+                aria-label='View terms of service'
+              >
+                <FontAwesomeIcon
+                  name='fas fa-file-contract'
+                  className='mr-2'
+                  aria-hidden='true'
+                />
+                Terms of Service
+              </a>
             </nav>
           </div>
-          <div className='border-t border-gray-800 mt-6 pt-6 text-center text-gray-400'>
-            <p>
+          <div className='border-t border-gray-800 mt-8 pt-6 text-center text-gray-400'>
+            <p className='text-sm'>
               &copy; {new Date().getFullYear()} File Sortify. All rights
               reserved.
             </p>

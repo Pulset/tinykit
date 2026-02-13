@@ -4,7 +4,7 @@ export const siteConfig = {
     'Transform your look with AI Hairstyle. Try on hundreds of hairstyles instantly using advanced AI technology. See yourself with different hair colors, lengths, and styles before making the cut.',
   keywords:
     'AI hairstyle, virtual hairstyle try on, hair color changer, hairstyle simulator, AI hair makeover, virtual hair salon',
-  url: 'https://www.tinykit.app/hairstyle',
+  url: 'https://www.tinykit.app/ai-hairstyle-studio',
   author: 'TinyKit Team',
   email: 'geek.bo@hotmail.com',
   logo: 'https://cdn.tinykit.app/hairstyle/images/logo.png',

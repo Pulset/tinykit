@@ -1,18 +1,24 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'File Sortify - Smart File Organization for Mac',
+  title: 'Automatically Organize Mac Files | File Sortify',
   icons: {
     icon: '/file-sortify-icon.ico',
   },
   description:
     'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
   keywords: [
-    'file organizer mac',
-    'mac file management',
-    'auto file sorter',
-    'download folder organizer',
-    'file automation mac',
+    // 问题类关键词
+    'messy downloads folder mac',
+    'how to organize files on mac automatically',
+    'mac auto sort files',
+    'clean up downloads folder mac',
+    // 解决方案类关键词
+    'automatic file organizer mac',
+    'downloads folder organizer app',
+    'mac file management software',
+    'auto sort files by type mac',
+    // 品牌相关关键词 (保持在后面)
     'file sortify',
   ],
   alternates: {
@@ -22,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.tinykit.app/file-sortify',
-    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
+    title: 'Automatically Organize Mac Files | File Sortify',
     description:
       'Automatically organize your files with File Sortify. The intelligent file management tool that sorts files by type, custom rules, and real-time monitoring.',
     siteName: 'TinyKit',
@@ -31,13 +37,13 @@ export const metadata: Metadata = {
         url: 'https://cdn.tinykit.app/file-sortify/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'File Sortify - Smart File Organization for Mac',
+        alt: 'Automatically Organize Mac Files | File Sortify',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'File Sortify - Smart File Organization for Mac | TinyKit',
+    title: 'Automatically Organize Mac Files | File Sortify',
     description:
       'Automatically organize your files with File Sortify. The intelligent file management tool.',
     images: ['https://cdn.tinykit.app/file-sortify/images/og-image.png'],

@@ -23,19 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/hairstyle`,
+      url: `${baseUrl}/ai-hairstyle-studio`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/hairstyle/privacy`,
+      url: `${baseUrl}/ai-hairstyle-studio/privacy`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/hairstyle/terms`,
+      url: `${baseUrl}/ai-hairstyle-studio/terms`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,

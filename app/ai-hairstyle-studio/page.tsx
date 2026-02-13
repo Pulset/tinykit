@@ -68,14 +68,14 @@ const breadcrumbList = [
   },
   {
     name: 'AI Hairstyle Studio',
-    item: `https://www.tinykit.app/hairstyle`,
+    item: `https://www.tinykit.app/ai-hairstyle-studio`,
   },
 ];
 
 // Page metadata is inherited from layout.tsx to maintain consistency
 // Only page-specific overrides if needed
 export const metadata: Metadata = {
-  title: 'AI Hairstyle Try On - Virtual Hairstyles & Hair Colors',
+  title: 'AI Hairstyle Try On Free - Virtual Hair Makeover',
 };
 
 // Helper function to generate pastel colors for features
@@ -342,7 +342,7 @@ export default function HairstylePage() {
                 >
                   <div
                     className={`w-24 h-24 rounded-full bg-gradient-to-br ${getStepGradient(
-                      index
+                      index,
                     )} p-1 shadow-lg mb-8 transform transition-transform group-hover:scale-110 group-hover:rotate-3`}
                     style={{
                       boxShadow: `0 10px 25px -5px ${getStepShadow(index)}`,
@@ -352,7 +352,7 @@ export default function HairstylePage() {
                       <span className='relative z-10'>{step.step}</span>
                       <div
                         className={`absolute inset-0 bg-gradient-to-br ${getStepGradient(
-                          index
+                          index,
                         )} opacity-10`}
                       ></div>
                     </div>
@@ -495,37 +495,37 @@ export default function HairstylePage() {
                 height={32}
                 className='w-8 h-8 rounded-lg'
               />
-              <span className='text-xl font-bold text-gray-800'>
+              <span className='text-lg sm:text-xl font-bold text-gray-800'>
                 AI Hairstyle Studio
               </span>
             </div>
-            <div className='flex justify-center gap-8 mb-8 text-gray-600'>
+            <div className='flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-8 text-gray-600 text-sm sm:text-base'>
               <a
                 href={productConfig.appStoreUrl}
-                className='hover:text-[#d63384] transition'
+                className='hover:text-[#d63384] transition flex items-center'
               >
                 Download
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className='hover:text-[#d63384] transition'
+                className='hover:text-[#d63384] transition flex items-center'
               >
                 Support
               </a>
               <a
-                href='/hairstyle/privacy'
-                className='hover:text-[#d63384] transition'
+                href='/ai-hairstyle-studio/privacy'
+                className='hover:text-[#d63384] transition flex items-center'
               >
                 Privacy Policy
               </a>
               <a
-                href='/hairstyle/terms'
-                className='hover:text-[#d63384] transition'
+                href='/ai-hairstyle-studio/terms'
+                className='hover:text-[#d63384] transition flex items-center'
               >
                 Terms of Service
               </a>
             </div>
-            <p className='text-gray-500 text-sm'>
+            <p className='text-gray-500 text-xs sm:text-sm'>
               &copy; {new Date().getFullYear()} AI Hairstyle Studio. Built with
               ❤️ by TinyKit.
             </p>

@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     title: 'Terms of Service - AI Hairstyle Studio',
     description:
       'Read the Terms of Service for AI Hairstyle Studio. Learn about your rights and responsibilities.',
-    url: 'https://www.tinykit.app/hairstyle/terms',
+    url: 'https://www.tinykit.app/ai-hairstyle-studio/terms',
     siteName: 'TinyKit',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.tinykit.app/hairstyle/terms',
+    canonical: 'https://www.tinykit.app/ai-hairstyle-studio/terms',
   },
 };
 
@@ -354,7 +354,7 @@ export default function TermsPage() {
                 collect, use, and protect your personal information, please
                 refer to our{' '}
                 <a
-                  href='/hairstyle/privacy'
+                  href='/ai-hairstyle-studio/privacy'
                   className='text-purple-600 hover:text-purple-800 font-semibold underline'
                 >
                   Privacy Policy
