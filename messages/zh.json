@@ -1,0 +1,25 @@
+{
+  "Index": {
+    "title": "TinyKit - 打造极简实用的应用程序",
+    "heroTitle": "打造极简实用的应用程序",
+    "heroDesc": "探索 TinyKit，我们致力于构建简单、美观且高效的工具，旨在简化您的日常数字生活，远离繁杂。",
+    "fileSortify": "File Sortify",
+    "fileSortifyDesc": "Mac 智能文件整理工具。通过自定义规则和实时监控，自动分类和整理您的文件。",
+    "aiHairstyle": "AI Hairstyle",
+    "aiHairstyleDesc": "换个发型，换个心情。利用 AI 立即尝试数百种发型。无风险尝试不同的剪裁、颜色和风格。",
+    "availableNow": "现已推出",
+    "comingSoon": "更多应用即将推出",
+    "comingSoonDesc": "我们正在为您开发更多的生产力工具。敬请期待！",
+    "rights": "版权所有。"
+  },
+  "Brand": {
+    "name": "TinyKit",
+    "tagline": "打造极简实用的应用程序"
+  },
+  "Common": {
+    "download": "下载",
+    "support": "支持",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  }
+}

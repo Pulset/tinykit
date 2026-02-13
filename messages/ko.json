@@ -1,0 +1,25 @@
+{
+  "Index": {
+    "title": "TinyKit - 미니멀하고 실용적인 앱 제작",
+    "heroTitle": "미니멀하고 실용적인 앱 제작",
+    "heroDesc": "복잡함 없이 일상적인 디지털 생활을 간소화하도록 설계된 단순하고 아름답고 효과적인 도구를 만드는 TinyKit을 만나보세요.",
+    "fileSortify": "File Sortify",
+    "fileSortifyDesc": "Mac을 위한 스마트한 파일 정리. 사용자 정의 규칙 및 실시간 모니터링을 통해 파일을 자동으로 분류하고 정리합니다.",
+    "aiHairstyle": "AI Hairstyle",
+    "aiHairstyleDesc": "새로운 헤어스타일, 새로운 당신. AI로 수백 가지 헤어스타일을 즉시 시도해 보세요. 위험 부담 없이 다양한 컷, 색상, 스타일을 실험해 보세요.",
+    "availableNow": "지금 이용 가능",
+    "comingSoon": "더 많은 앱이 곧 출시됩니다",
+    "comingSoonDesc": "사용자를 위한 더 많은 생산성 도구를 개발 중입니다. 기대해 주세요!",
+    "rights": "모든 권리 보유."
+  },
+  "Brand": {
+    "name": "TinyKit",
+    "tagline": "미니멀하고 실용적인 앱 제작"
+  },
+  "Common": {
+    "download": "다운로드",
+    "support": "지원",
+    "privacy": "개인정보 처리방침",
+    "terms": "서비스 약관"
+  }
+}

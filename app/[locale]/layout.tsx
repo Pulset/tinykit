@@ -1,17 +1,26 @@
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import './globals.css';
+import '../globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { PerformanceTracker } from './components/PerformanceTracker';
+import { PerformanceTracker } from '../components/PerformanceTracker';
+import { notFound } from 'next/navigation';
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 });
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export const metadata: Metadata = {
+  // ... (keeping metadata the same for now, though it should ideally be translated later)
   title: {
     default: 'TinyKit - Crafting Minimalist & Practical Apps',
     template: '%s | TinyKit',
@@ -37,6 +46,18 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.tinykit.app'),
   alternates: {
     canonical: '/',
+    languages: {
+      'en': '/',
+      'zh': '/zh',
+      'ja': '/ja',
+      'es': '/es',
+      'pt': '/pt',
+      'de': '/de',
+      'ru': '/ru',
+      'ko': '/ko',
+      'fr': '/fr',
+      'x-default': '/',
+    },
   },
   openGraph: {
     type: 'website',
@@ -83,11 +104,27 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -100,7 +137,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang='en'>
+    <html lang={locale}>
       <head>
         <meta name='apple-mobile-web-app-title' content='TinyKit' />
         <script
@@ -114,10 +151,12 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={`${inter.className} antialiased bg-gray-50`}>
-        <PerformanceTracker />
-        {children}
-        <Analytics />
-        <SpeedInsights />
+        <NextIntlClientProvider messages={messages}>
+          <PerformanceTracker />
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

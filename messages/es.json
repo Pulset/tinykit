@@ -1,0 +1,25 @@
+{
+  "Index": {
+    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas",
+    "heroTitle": "Creando aplicaciones minimalistas y prácticas",
+    "heroDesc": "Descubre TinyKit, donde construimos herramientas simples, hermosas y efectivas diseñadas para agilizar tu vida digital diaria sin desorden.",
+    "fileSortify": "File Sortify",
+    "fileSortifyDesc": "Organización inteligente de archivos para Mac. Clasifica y organiza automáticamente tus archivos con reglas personalizadas y monitoreo en tiempo real.",
+    "aiHairstyle": "AI Hairstyle",
+    "aiHairstyleDesc": "Nuevo look, nuevo tú. Prueba cientos de peinados al instante con IA. Experimenta con diferentes cortes, colores y estilos sin riesgos.",
+    "availableNow": "Disponible ahora",
+    "comingSoon": "Más aplicaciones próximamente",
+    "comingSoonDesc": "Estamos trabajando en más herramientas de productividad para ti. ¡Mantente atento!",
+    "rights": "Todos los derechos reservados."
+  },
+  "Brand": {
+    "name": "TinyKit",
+    "tagline": "Creando aplicaciones minimalistas y prácticas"
+  },
+  "Common": {
+    "download": "Descargar",
+    "support": "Soporte",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio"
+  }
+}

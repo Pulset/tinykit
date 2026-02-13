@@ -1,7 +1,15 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+import { setRequestLocale } from 'next-intl/server';
 
-export default function HomePage() {
+export default function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const t = useTranslations('Index');
+
   return (
     <div className='min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50'>
       {/* Header */}
@@ -19,6 +27,14 @@ export default function HomePage() {
             </div>
             <p className='text-2xl font-bold text-gray-800'>TinyKit</p>
           </div>
+          {/* Language Switcher */}
+          <div className='flex gap-2 text-sm'>
+            <Link href='/' locale='en' className='hover:text-purple-600'>EN</Link>
+            <Link href='/' locale='zh' className='hover:text-purple-600'>中文</Link>
+            <Link href='/' locale='ja' className='hover:text-purple-600'>日本語</Link>
+            <Link href='/' locale='ko' className='hover:text-purple-600'>한국어</Link>
+            <Link href='/' locale='fr' className='hover:text-purple-600'>Français</Link>
+          </div>
         </div>
       </header>
 
@@ -26,12 +42,10 @@ export default function HomePage() {
       <main className='container mx-auto px-6 py-12 md:py-20'>
         <div className='text-center mb-12 md:mb-16'>
           <h1 className='text-3xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6'>
-            Crafting Minimalist & Practical Apps
+            {t('heroTitle')}
           </h1>
           <p className='text-lg md:text-xl text-gray-600 max-w-2xl mx-auto'>
-            Discover TinyKit, where we build simple, beautiful, and effective
-            tools designed to streamline your daily digital life without the
-            clutter.
+            {t('heroDesc')}
           </p>
         </div>
 
@@ -62,16 +76,14 @@ export default function HomePage() {
               <div className='flex-1 w-full'>
                 <div className='flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3'>
                   <h3 className='text-2xl md:text-3xl font-bold text-gray-800'>
-                    File Sortify
+                    {t('fileSortify')}
                   </h3>
                   <span className='bg-green-100 text-green-700 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit'>
-                    Available Now
+                    {t('availableNow')}
                   </span>
                 </div>
                 <p className='text-gray-600 text-base md:text-lg mb-4'>
-                  Smart file organization for Mac. Automatically sort and
-                  organize your files with custom rules and real-time
-                  monitoring.
+                  {t('fileSortifyDesc')}
                 </p>
               </div>
               <div className='hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-purple-50 text-purple-600 transition-all duration-300 group-hover:bg-purple-100'>
@@ -117,19 +129,14 @@ export default function HomePage() {
               <div className='flex-1 w-full'>
                 <div className='flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3'>
                   <h3 className='text-2xl md:text-3xl font-bold text-gray-800'>
-                    AI Hairstyle
+                    {t('aiHairstyle')}
                   </h3>
-                  {/* <span className='bg-yellow-100 text-yellow-700 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit'>
-                    In Development
-                  </span> */}
                   <span className='bg-green-100 text-green-700 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit'>
-                    Available Now
+                    {t('availableNow')}
                   </span>
                 </div>
                 <p className='text-gray-600 text-base md:text-lg mb-4'>
-                  New &apos;Do, New You. Try on hundreds of hairstyles instantly
-                  with AI. Experiment with different cuts, colors, and styles
-                  risk-free.
+                  {t('aiHairstyleDesc')}
                 </p>
               </div>
               <div className='hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-purple-50 text-purple-600 transition-all duration-300 group-hover:bg-purple-100'>
@@ -156,10 +163,10 @@ export default function HomePage() {
               <span className='text-4xl text-gray-400'>+</span>
             </div>
             <h3 className='text-lg md:text-xl font-bold text-gray-400 mb-2'>
-              More Apps Coming Soon
+              {t('comingSoon')}
             </h3>
             <p className='text-sm md:text-base text-gray-500'>
-              We are working on more productivity tools for you. Stay tuned!
+              {t('comingSoonDesc')}
             </p>
           </div>
         </div>
@@ -169,7 +176,7 @@ export default function HomePage() {
       <footer className='container mx-auto px-6 py-8 md:py-12 mt-12 md:mt-20 border-t border-gray-200'>
         <div className='text-center text-gray-600'>
           <p className='mb-4 text-sm md:text-base'>
-            © {new Date().getFullYear()} TinyKit. All rights reserved.
+            © {new Date().getFullYear()} TinyKit. {t('rights')}
           </p>
         </div>
       </footer>
