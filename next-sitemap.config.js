@@ -44,6 +44,9 @@ module.exports = {
   changefreq: 'weekly',
   priority: 0.7,
 
+  // Disable index sitemap generation for small sites
+  generateIndexSitemap: false,
+
   // Split large sitemap into multiple files if needed
   sitemapSize: 7000,
 
