@@ -54,6 +54,8 @@ module.exports = {
   exclude: [
     '/api/*',
     '/admin/*',
+    '/hairstyle', // Redirects to /ai-hairstyle-studio
+    '/hairstyle/*', // Subpages of /hairstyle (privacy, terms)
     '/*.png',
     '/*.jpg',
     '/*.jpeg',
@@ -81,10 +83,7 @@ module.exports = {
       path.includes('/ai-hairstyle-studio')
     ) {
       // Privacy policy and terms pages - lower priority
-      if (
-        path.includes('/privacy') ||
-        path.includes('/terms')
-      ) {
+      if (path.includes('/privacy') || path.includes('/terms')) {
         priority = 0.5;
         changefreq = 'yearly';
       } else {
@@ -129,60 +128,6 @@ module.exports = {
         userAgent: '*',
         allow: '/',
         disallow: ['/api/', '/admin/'],
-      },
-      // AI crawlers - explicitly allow for better AI SEO
-      {
-        userAgent: 'GPTBot',
-        allow: '/',
-      },
-      {
-        userAgent: 'ChatGPT-User',
-        allow: '/',
-      },
-      {
-        userAgent: 'CCBot',
-        allow: '/',
-      },
-      {
-        userAgent: 'anthropic-ai',
-        allow: '/',
-      },
-      {
-        userAgent: 'Claude-Web',
-        allow: '/',
-      },
-      {
-        userAgent: 'PerplexityBot',
-        allow: '/',
-      },
-      {
-        userAgent: 'Amazonbot',
-        allow: '/',
-      },
-      {
-        userAgent: 'Google-Extended',
-        allow: '/',
-      },
-      {
-        userAgent: 'YandexBot',
-        allow: '/',
-      },
-      // Other major search engines
-      {
-        userAgent: 'Bingbot',
-        allow: '/',
-      },
-      {
-        userAgent: 'Slurp',
-        allow: '/',
-      },
-      {
-        userAgent: 'DuckDuckBot',
-        allow: '/',
-      },
-      {
-        userAgent: 'Baiduspider',
-        allow: '/',
       },
     ],
   },
