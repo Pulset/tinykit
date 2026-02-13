@@ -30,11 +30,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const url = `${baseUrl}${localePrefix}${route}`;
 
       // 生成多语言交联 (Alternates)
-      const languages = locales.reduce((acc, l) => {
+      const languages: Record<string, string> = {
+        'x-default': `${baseUrl}${route}`, // 添加 x-default 指向默认语言版本
+      };
+
+      locales.forEach((l) => {
         const lPrefix = l === defaultLocale ? '' : `/${l}`;
-        acc[l] = `${baseUrl}${lPrefix}${route}`;
-        return acc;
-      }, {} as Record<string, string>);
+        languages[l] = `${baseUrl}${lPrefix}${route}`;
+      });
 
       sitemapEntries.push({
         url,
