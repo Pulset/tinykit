@@ -54,7 +54,7 @@ export const howItWorks = [
     step: 1,
     title: 'Choose Your Folder',
     description:
-      'Select the folder you want to organize - typically your Downloads folder',
+      'Select folder you want to organize - typically your Downloads folder',
     image: 'https://cdn.tinykit.app/file-sortify/images/add.png',
     gradientColors: 'from-purple-400 to-pink-400',
   },
@@ -70,7 +70,7 @@ export const howItWorks = [
     step: 3,
     title: 'Sit Back & Relax',
     description:
-      'File Sortify automatically organizes your files in the background',
+      'File Sortify automatically organizes your files in background',
     image: 'https://cdn.tinykit.app/file-sortify/images/start.png',
     gradientColors: 'from-green-400 to-teal-400',
   },
@@ -124,16 +124,3 @@ export const navItems = [
   { label: 'Screenshots', href: '#screenshots' },
   { label: 'Pricing', href: '#pricing' },
 ];
-
-export const footerLinks = {
-  product: [
-    { label: 'Features', href: '#features' },
-    { label: 'Pricing', href: '#pricing' },
-  ],
-  support: [
-    {
-      label: 'Contact Us',
-      href: `mailto:${process.env.NEXT_PUBLIC_EMAIL || 'support@tinykit.app'}`,
-    },
-  ],
-};

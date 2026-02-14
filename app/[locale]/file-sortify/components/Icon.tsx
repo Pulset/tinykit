@@ -1,4 +1,4 @@
-import { LucideProps } from 'lucide-react'
+import { LucideProps } from 'lucide-react';
 import {
   Star,
   Check,
@@ -8,8 +8,8 @@ import {
   Zap,
   Clock,
   Archive,
-  Settings
-} from 'lucide-react'
+  Settings,
+} from 'lucide-react';
 
 export type IconName =
   | 'star'
@@ -20,32 +20,32 @@ export type IconName =
   | 'bolt'
   | 'history'
   | 'magic'
-  | 'cog'
+  | 'cog';
 
 interface IconProps extends LucideProps {
-  name: IconName
-  className?: string
+  name: IconName;
+  className?: string;
 }
 
 const iconMap: Record<IconName, React.ComponentType<LucideProps>> = {
-  'star': Star,
-  'check': Check,
+  star: Star,
+  check: Check,
   'fab fa-apple': Apple,
-  'bell': Bell,
+  bell: Bell,
   'shield-alt': Shield,
-  'bolt': Zap,
-  'history': Clock,
-  'magic': Archive,
-  'cog': Settings,
-}
+  bolt: Zap,
+  history: Clock,
+  magic: Archive,
+  cog: Settings,
+};
 
 export default function Icon({ name, className = '', ...props }: IconProps) {
-  const IconComponent = iconMap[name]
+  const IconComponent = iconMap[name];
 
   if (!IconComponent) {
-    console.warn(`Icon "${name}" not found`)
-    return <div className={className} />
+    console.warn(`Icon "${name}" not found`);
+    return <div className={className} />;
   }
 
-  return <IconComponent className={className} {...props} />
+  return <IconComponent className={className} {...props} />;
 }

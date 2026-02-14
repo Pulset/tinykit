@@ -1,6 +1,6 @@
 'use client';
 
-import { siteConfig } from '@/app/data/site-config';
+import { siteConfig } from '../data/site-config';
 
 export default function UserAgreementPage() {
   return (

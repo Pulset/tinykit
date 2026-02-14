@@ -1,6 +1,4 @@
-import { siteConfig } from '@/app/data/site-config';
-
-// Define the structure for a testimonial, which can be reused.
+// Define structure for a testimonial, which can be reused.
 export interface Testimonial {
   name: string;
   role: string;
@@ -8,7 +6,7 @@ export interface Testimonial {
   avatar: string;
 }
 
-// Define the structure for product-specific data, making the component dynamic.
+// Define structure for product-specific data, making component dynamic.
 export interface ProductData {
   name: string;
   description: string;
@@ -21,6 +19,14 @@ export interface ProductData {
   keywords: string;
   faqs: { name: string; text: string }[];
   testimonials: Testimonial[];
+  // Add product-specific config fields
+  url: string;
+  logo: string;
+  email: string;
+  stats?: {
+    rating?: number;
+    happyUsers?: string;
+  };
 }
 
 interface StructuredDataProps {
@@ -32,14 +38,22 @@ export default function StructuredData({
   productData,
   breadcrumbList,
 }: StructuredDataProps) {
+  // Use productData or fallback to defaults
+  const organizationName = 'TinyKit';
+  const organizationUrl = productData?.url || 'https://www.tinykit.app';
+  const organizationLogo =
+    productData?.logo || 'https://cdn.tinykit.app/logo.png';
+  const organizationEmail = productData?.email || 'support@tinykit.app';
+  const rating = productData?.stats?.rating || 5;
+
   // Always include Organization and WebSite schema for brand consistency.
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'TinyKit',
-    url: siteConfig.url,
-    logo: siteConfig.logo,
-    email: siteConfig.email,
+    name: organizationName,
+    url: organizationUrl,
+    logo: organizationLogo,
+    email: organizationEmail,
     description: 'Developer of productivity apps for Mac users',
     foundingDate: '2025',
     knowsAbout: [
@@ -53,12 +67,12 @@ export default function StructuredData({
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'TinyKit',
-    url: siteConfig.url,
+    name: organizationName,
+    url: organizationUrl,
     description: 'Productivity apps for Mac users',
     publisher: {
       '@type': 'Organization',
-      name: 'TinyKit',
+      name: organizationName,
     },
   };
 
@@ -83,14 +97,14 @@ export default function StructuredData({
       },
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: siteConfig.stats.rating,
+        ratingValue: rating,
         ratingCount: productData.testimonials.length, // Dynamic count
         bestRating: 5,
         worstRating: 1,
       },
       description: productData.description,
-      author: { '@type': 'Organization', name: 'TinyKit' },
-      creator: { '@type': 'Organization', name: 'TinyKit' },
+      author: { '@type': 'Organization', name: organizationName },
+      creator: { '@type': 'Organization', name: organizationName },
       downloadUrl: productData.appStoreUrl,
       screenshot: productData.screenshots,
       featureList: productData.features,
@@ -117,8 +131,8 @@ export default function StructuredData({
       '@type': 'Product',
       name: productData.name,
       description: productData.description,
-      image: [siteConfig.logo, ...productData.screenshots],
-      brand: { '@type': 'Brand', name: 'TinyKit' },
+      image: [organizationLogo, ...productData.screenshots],
+      brand: { '@type': 'Brand', name: organizationName },
       offers: softwareSchema.offers, // Reuse from software schema
       aggregateRating: softwareSchema.aggregateRating, // Reuse from software schema
       category: 'Mac Utility Software',
@@ -134,7 +148,7 @@ export default function StructuredData({
       author: { '@type': 'Person', name: testimonial.name },
       reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
       reviewBody: testimonial.content,
-      datePublished: '2024-12-01', // This could also be part of the dynamic data
+      datePublished: '2025-12-01', // This could also be part of dynamic data
     }));
 
     schemas.push(softwareSchema, faqSchema, productSchema, ...reviewSchemas);

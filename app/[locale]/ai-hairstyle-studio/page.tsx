@@ -62,6 +62,11 @@ const aiHairstyleProductData: ProductData = {
   ].join(', '),
   faqs: aiHairstyleFAQs,
   testimonials: testimonials as Testimonial[],
+  // Product-specific config
+  url: siteConfig.url,
+  logo: siteConfig.logo,
+  email: siteConfig.email,
+  stats: siteConfig.stats,
 };
 
 // Define BreadcrumbList for StructuredData component
