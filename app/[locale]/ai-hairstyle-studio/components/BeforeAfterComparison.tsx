@@ -1,7 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import { ReactCompareSlider, ReactCompareSliderHandle } from 'react-compare-slider';
+import {
+  ReactCompareSlider,
+  ReactCompareSliderHandle,
+} from 'react-compare-slider';
 
 interface BeforeAfterComparisonProps {
   beforeImage: string;
@@ -46,7 +49,9 @@ export default function BeforeAfterComparison({
               />
               {/* Before Label */}
               <div className='absolute top-6 left-6 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-pink-200'>
-                <span className='text-sm font-bold text-gray-800'>{beforeLabel}</span>
+                <span className='text-sm font-bold text-gray-800'>
+                  {beforeLabel}
+                </span>
               </div>
             </div>
           }
@@ -62,7 +67,9 @@ export default function BeforeAfterComparison({
               />
               {/* After Label */}
               <div className='absolute top-6 right-6 px-4 py-2 bg-gradient-to-r from-[#d63384] to-[#e83e8c] rounded-full shadow-lg'>
-                <span className='text-sm font-bold text-white'>{afterLabel}</span>
+                <span className='text-sm font-bold text-white'>
+                  {afterLabel}
+                </span>
               </div>
             </div>
           }

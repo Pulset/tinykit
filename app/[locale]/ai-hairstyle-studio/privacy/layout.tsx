@@ -4,7 +4,8 @@ export const metadata: Metadata = {
   title: 'Privacy Policy - AI Hairstyle Studio',
   description:
     'AI Hairstyle Studio Privacy Policy - Learn how we protect your photos and personal data. Secure photo processing with transparent data usage.',
-  keywords: 'privacy policy, AI hairstyle studio, photo protection, mobile app privacy, data security',
+  keywords:
+    'privacy policy, AI hairstyle studio, photo protection, mobile app privacy, data security',
   openGraph: {
     title: 'Privacy Policy - AI Hairstyle Studio',
     description:

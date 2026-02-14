@@ -1,4 +1,32 @@
-export const siteConfig = {
+// Type definitions
+export interface SiteConfig {
+  title: string;
+  description: string;
+  keywords: string;
+  url: string;
+  author: string;
+  email: string;
+  logo: string;
+  stats: {
+    happyUsers: string;
+    rating: number;
+  };
+}
+
+export interface ProductConfig {
+  appStoreUrl: string;
+  pricing: {
+    free: {
+      title: string;
+      price: string;
+      period: string;
+      badge: string;
+      features: string[];
+    };
+  };
+}
+
+export const siteConfig: SiteConfig = {
   title: "AI Hairstyle - New 'Do, New You",
   description:
     'Transform your look with AI Hairstyle. Try on hundreds of hairstyles instantly using advanced AI technology. See yourself with different hair colors, lengths, and styles before making the cut.',
