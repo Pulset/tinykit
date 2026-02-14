@@ -55,7 +55,7 @@ export default async function Home({
   const fileSortifyTestimonials: Testimonial[] = testimonials.map((t) => ({
     name: t.name,
     role: t.role,
-    content: tTestimonial.raw(`${t.contentKey}.content`),
+    content: tTestimonial.raw(t.contentKey),
     avatar: t.avatar,
   }));
 

@@ -62,7 +62,7 @@ export default async function HairstylePage({
   const aiHairstyleTestimonials: Testimonial[] = testimonials.map((t) => ({
     name: t.name,
     role: t.role,
-    content: tTestimonial.raw(`${t.contentKey}.content`),
+    content: tTestimonial.raw(t.contentKey),
     avatar: t.avatar,
   }));
 
