@@ -1,6 +1,11 @@
 'use client';
 
+import { useTranslations, useLocale } from 'next-intl';
+
 export default function PrivacyPage() {
+  const t = useTranslations('Legal');
+  const locale = useLocale();
+
   return (
     <div className='min-h-screen bg-gray-50'>
       <div className='max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8'>
@@ -14,6 +19,12 @@ export default function PrivacyPage() {
           </div>
 
           <div className='p-8 md:p-12'>
+            {/* Language Notice Banner - Show for non-English locales */}
+            {locale !== 'en' && (
+              <div className='bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6'>
+                <p className='text-yellow-700'>{t('languageNotice')}</p>
+              </div>
+            )}
             {/* Summary Section */}
             <div className='bg-green-50 border-l-4 border-green-500 p-6 mb-8 rounded-lg'>
               <h3 className='text-xl font-semibold text-green-800 mb-4'>

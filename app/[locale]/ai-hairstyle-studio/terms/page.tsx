@@ -1,31 +1,12 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Terms of Service - AI Hairstyle Studio',
-  description:
-    'Read the Terms of Service for AI Hairstyle Studio. Learn about your rights and responsibilities when using our AI-powered hairstyle try-on application.',
-  keywords: [
-    'terms of service',
-    'user agreement',
-    'legal terms',
-    'AI hairstyle terms',
-    'hairstyle app terms',
-  ],
-  openGraph: {
-    title: 'Terms of Service - AI Hairstyle Studio',
-    description:
-      'Read the Terms of Service for AI Hairstyle Studio. Learn about your rights and responsibilities.',
-    url: 'https://www.tinykit.app/ai-hairstyle-studio/terms',
-    siteName: 'TinyKit',
-    type: 'website',
-  },
-  alternates: {
-    canonical: 'https://www.tinykit.app/ai-hairstyle-studio/terms',
-  },
-};
+import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function TermsPage() {
+  const t = useTranslations('Legal');
+  const locale = useLocale();
+
   return (
     <div className='min-h-screen bg-gray-50'>
       <div className='max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8'>
@@ -39,6 +20,12 @@ export default function TermsPage() {
           </div>
 
           <div className='p-8 md:p-12'>
+            {/* Language Notice Banner - Show for non-English locales */}
+            {locale !== 'en' && (
+              <div className='bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6'>
+                <p className='text-yellow-700'>{t('languageNotice')}</p>
+              </div>
+            )}
             {/* Document Info */}
             <div className='bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded'>
               <p className='text-blue-800'>

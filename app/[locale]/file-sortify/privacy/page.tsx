@@ -1,12 +1,23 @@
 'use client';
 
 import { siteConfig } from '../data/site-config';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function PrivacyPage() {
+  const t = useTranslations('Legal');
+  const locale = useLocale();
+
   return (
     <div className='min-h-screen bg-gray-50'>
       <div className='max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8'>
         <div className='bg-white rounded-2xl shadow-lg overflow-hidden'>
+          {/* Language Notice Banner - Show for non-English locales */}
+          {locale !== 'en' && (
+            <div className='bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6'>
+              <p className='text-yellow-700'>{t('languageNotice')}</p>
+            </div>
+          )}
+
           {/* Header */}
           <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 text-center'>
             <h1 className='text-4xl font-bold mb-2'>Privacy Policy</h1>
@@ -106,7 +117,7 @@ export default function PrivacyPage() {
                 </span>
                 :
               </p>
-              <ul className='space-y-2'>
+              <ul className='list-disc list-inside space-y-1 ml-4 mb-6'>
                 <li className='text-gray-700'>
                   <strong>Application Settings:</strong> Stored locally for
                   configuration
@@ -146,10 +157,13 @@ export default function PrivacyPage() {
                   when file organization is complete
                 </li>
               </ul>
+            </section>
 
-              <h3 className='text-xl font-semibold text-gray-800 mb-4 mt-8'>
+            {/* File Processing Method */}
+            <section className='mb-12'>
+              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 File Processing Method
-              </h3>
+              </h2>
               <ul className='space-y-3'>
                 <li className='text-gray-700'>
                   <strong>Extension-Based Only:</strong> The application
@@ -210,7 +224,7 @@ export default function PrivacyPage() {
                 </li>
               </ul>
 
-              <h3 className='text-xl font-semibold text-gray-800 mb-4 mt-8'>
+              <h3 className='text-xl font-semibold text-gray-800 mb-4'>
                 No Cloud Storage
               </h3>
               <ul className='space-y-3'>
@@ -220,7 +234,7 @@ export default function PrivacyPage() {
                 </li>
                 <li className='text-gray-700'>
                   <strong>No Cloud Sync:</strong> All data is stored locally
-                  only, not synchronized with the cloud
+                  only, not synchronized with cloud
                 </li>
                 <li className='text-gray-700'>
                   <strong>No Remote Backups:</strong> No remote backup creation
@@ -240,7 +254,7 @@ export default function PrivacyPage() {
               </p>
               <ul className='space-y-3'>
                 <li className='text-gray-700'>
-                  <strong>Tauri Framework:</strong> Application framework
+                  <strong>NextUI Framework:</strong> Application framework
                 </li>
                 <li className='text-gray-700'>
                   <strong>React/TypeScript:</strong> User interface development
@@ -253,7 +267,7 @@ export default function PrivacyPage() {
                 </li>
               </ul>
 
-              <h3 className='text-xl font-semibold text-gray-800 mb-4 mt-8'>
+              <h3 className='text-xl font-semibold text-gray-800 mb-4'>
                 Third Party Privacy
               </h3>
               <p className='text-gray-700 leading-relaxed'>
@@ -272,7 +286,6 @@ export default function PrivacyPage() {
                 Under applicable privacy regulations, users have the following
                 rights:
               </p>
-
               <h3 className='text-xl font-semibold text-gray-800 mb-4'>
                 Right to Data Access
               </h3>
@@ -294,10 +307,10 @@ export default function PrivacyPage() {
               <p className='text-gray-700 mb-4'>
                 Users can delete local data by:
               </p>
-              <ul className='list-disc list-inside space-y-1 ml-4 mb-6'>
+              <ul className='list-disc list-inside space-y-1 ml-4'>
                 <li className='text-gray-700'>Uninstalling the application</li>
                 <li className='text-gray-700'>
-                  Manually deleting the configuration folder
+                  Manually deleting configuration folder
                 </li>
               </ul>
 
@@ -313,7 +326,7 @@ export default function PrivacyPage() {
                   Disable file monitoring in application settings
                 </li>
                 <li className='text-gray-700'>
-                  Uninstall the application to stop all data collection
+                  Uninstall application to stop all data collection
                 </li>
               </ul>
             </section>
@@ -336,7 +349,7 @@ export default function PrivacyPage() {
                 </li>
               </ul>
 
-              <h3 className='text-xl font-semibold text-gray-800 mb-4 mt-8'>
+              <h3 className='text-xl font-semibold text-gray-800 mb-4'>
                 Data Deletion Mechanism
               </h3>
               <ul className='space-y-3'>
@@ -350,7 +363,7 @@ export default function PrivacyPage() {
                 </li>
                 <li className='text-gray-700'>
                   <strong>Uninstall Cleanup:</strong> All related data is
-                  removed when uninstalling the application
+                  removed when uninstalling application
                 </li>
               </ul>
             </section>
@@ -403,24 +416,25 @@ export default function PrivacyPage() {
                 Notification Mechanism
               </h3>
               <p className='text-gray-700 mb-6'>
-                If significant changes occur in the privacy policy, we will:
+                If significant changes occur in our privacy policy, we will:
               </p>
               <ul className='space-y-3'>
                 <li className='text-gray-700'>
-                  Display notifications within the application
+                  Display notifications within application
                 </li>
                 <li className='text-gray-700'>
-                  Update the privacy policy text within the application
+                  Update privacy policy text within application
                 </li>
                 <li className='text-gray-700'>
                   Re-request user authorization when necessary
                 </li>
               </ul>
-              <p className='text-gray-700 mt-6'>
-                <strong>Effective Date:</strong> This privacy policy is
-                effective from the date of publication.
-              </p>
             </section>
+
+            <p className='text-gray-700 mt-6'>
+              <strong>Effective Date:</strong> This privacy policy is effective
+              from date of publication.
+            </p>
 
             {/* Contact Information */}
             <section className='mb-12'>
@@ -442,8 +456,8 @@ export default function PrivacyPage() {
                   </a>
                 </li>
                 <li className='text-gray-700'>
-                  <strong>In-app Feedback:</strong> Use the feedback function
-                  within the application
+                  <strong>In-app Feedback:</strong> Use feedback function within
+                  application
                 </li>
               </ul>
             </section>
@@ -499,20 +513,20 @@ export default function PrivacyPage() {
                 </li>
               </ul>
             </div>
+          </div>
 
-            {/* Footer */}
-            <div className='text-center pt-8 border-t border-gray-200'>
-              <p className='text-gray-600 mb-2'>
-                <strong>Last Updated:</strong> October 28, 2025
-              </p>
-              <p className='text-gray-600 mb-2'>
-                <strong>Version:</strong> 1.0
-              </p>
-              <p className='text-gray-500 italic'>
-                This privacy policy is provided in English. For other language
-                versions, please contact us.
-              </p>
-            </div>
+          {/* Footer */}
+          <div className='text-center pt-8 border-t border-gray-200'>
+            <p className='text-gray-600 mb-2'>
+              <strong>Last Updated:</strong> October 28, 2025
+            </p>
+            <p className='text-gray-600 mb-2'>
+              <strong>Version:</strong> 1.0
+            </p>
+            <p className='text-gray-500 italic'>
+              This privacy policy is provided in English. For other language
+              versions, please contact us.
+            </p>
           </div>
         </div>
       </div>
