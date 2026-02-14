@@ -158,8 +158,8 @@ export default function StructuredData({
       reviewRating: {
         '@type': 'Rating',
         ratingValue: 5,
-        bestRating: '5',
-        worstRating: '1',
+        bestRating: 5,
+        worstRating: 1,
       },
       reviewBody: testimonial.content,
       datePublished: '2025-12-01', // This could also be part of dynamic data
