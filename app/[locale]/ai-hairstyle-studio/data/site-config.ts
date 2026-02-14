@@ -17,21 +17,19 @@ export interface ProductConfig {
   appStoreUrl: string;
   pricing: {
     free: {
-      title: string;
+      titleKey: string;
       price: string;
-      period: string;
-      badge: string;
-      features: string[];
+      periodKey: string;
+      badgeKey: string;
+      featureKeys: string[];
     };
   };
 }
 
 export const siteConfig: SiteConfig = {
-  title: "AI Hairstyle - New 'Do, New You",
-  description:
-    'Transform your look with AI Hairstyle. Try on hundreds of hairstyles instantly using advanced AI technology. See yourself with different hair colors, lengths, and styles before making the cut.',
-  keywords:
-    'AI hairstyle, virtual hairstyle try on, hair color changer, hairstyle simulator, AI hair makeover, virtual hair salon',
+  title: 'AI Hairstyle Studio',
+  description: 'AI Hairstyle Studio',
+  keywords: 'AI Hairstyle Studio',
   url: 'https://www.tinykit.app/ai-hairstyle-studio',
   author: 'TinyKit Team',
   email: 'geek.bo@hotmail.com',
@@ -46,17 +44,11 @@ export const productConfig = {
   appStoreUrl: 'https://apps.apple.com/app/id6756533779', // AI Hairstyle App Store URL
   pricing: {
     free: {
-      title: 'Free Download',
+      titleKey: 'freeTitle',
       price: '$0',
-      period: '/forever',
-      badge: 'GET STARTED',
-      features: [
-        'Free to download',
-        'Preview hairstyles',
-        'Purchase credits for generations',
-        'HD photo exports',
-        'Regular style updates',
-      ],
+      periodKey: 'period',
+      badgeKey: 'badgeText',
+      featureKeys: ['0', '1', '2', '3', '4'],
     },
   },
 };

@@ -24,11 +24,21 @@ export default function HomePage() {
           </div>
           {/* Language Switcher */}
           <div className='flex gap-2 text-sm'>
-            <Link href='/' locale='en' className='hover:text-purple-600'>EN</Link>
-            <Link href='/' locale='zh' className='hover:text-purple-600'>中文</Link>
-            <Link href='/' locale='ja' className='hover:text-purple-600'>日本語</Link>
-            <Link href='/' locale='ko' className='hover:text-purple-600'>한국어</Link>
-            <Link href='/' locale='fr' className='hover:text-purple-600'>Français</Link>
+            <Link href='/' locale='en' className='hover:text-purple-600'>
+              EN
+            </Link>
+            <Link href='/' locale='zh' className='hover:text-purple-600'>
+              中文
+            </Link>
+            <Link href='/' locale='ja' className='hover:text-purple-600'>
+              日本語
+            </Link>
+            <Link href='/' locale='ko' className='hover:text-purple-600'>
+              한국어
+            </Link>
+            <Link href='/' locale='fr' className='hover:text-purple-600'>
+              Français
+            </Link>
           </div>
         </div>
       </header>

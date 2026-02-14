@@ -7,123 +7,106 @@ import StructuredData, {
 } from '@/app/components/StructuredData';
 import { siteConfig, productConfig } from './data/site-config';
 import { features, howItWorks, testimonials } from './data/page-data';
-import { Metadata } from 'next';
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import HowItWorksSection from './components/HowItWorksSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import PricingSection from './components/PricingSection';
 import FooterSection from './components/FooterSection';
+import { getTranslations } from 'next-intl/server';
 
-// Define FAQs for AI Hairstyle Studio page structured data
-const aiHairstyleFAQs = [
-  {
-    name: 'What is AI Hairstyle Studio?',
-    text: 'AI Hairstyle Studio is an innovative app that uses advanced AI technology to let you try on hundreds of different hairstyles and hair colors virtually. Upload your photo and see how you would look with a new hairstyle before making any commitment.',
-  },
-  {
-    name: 'How does AI Hairstyle Studio work?',
-    text: 'Simply upload a clear front-facing photo of yourself, browse through our extensive collection of hairstyles and colors, and our AI instantly applies them to your photo with realistic results. You can try unlimited styles and save or share your favorites.',
-  },
-  {
-    name: 'Is my photo data safe?',
-    text: 'Absolutely! Your privacy is our top priority. All photos are processed securely and are never stored on our servers. Your images are deleted immediately after processing.',
-  },
-  {
-    name: 'How much does AI Hairstyle Studio cost?',
-    text: 'AI Hairstyle Studio is available for a one-time purchase of $9.99 USD. This gives you lifetime access with unlimited hairstyle try-ons, access to all collections, HD exports, and all future updates.',
-  },
-  {
-    name: 'Can I save and share my new looks?',
-    text: 'Yes! You can save your transformed photos in high-definition quality and easily share them with friends, family, or your hairstylist to show them exactly what you want.',
-  },
+// Define FAQs key references for AI Hairstyle Studio page structured data
+const faqKeys = [
+  { qKey: 'items.0.question', aKey: 'items.0.answer' },
+  { qKey: 'items.1.question', aKey: 'items.1.answer' },
+  { qKey: 'items.2.question', aKey: 'items.2.answer' },
+  { qKey: 'items.3.question', aKey: 'items.3.answer' },
+  { qKey: 'items.4.question', aKey: 'items.4.answer' },
 ];
 
-// Prepare ProductData for StructuredData component
-const aiHairstyleProductData: ProductData = {
-  name: 'AI Hairstyle Studio',
-  description:
-    'Transform your look with AI Hairstyle Studio. Try on hundreds of hairstyles instantly using advanced AI technology. See yourself with different hair colors, lengths, and styles before making a cut.',
-  appStoreUrl: productConfig.appStoreUrl,
-  version: '1.0',
-  price: '9.99',
-  currency: 'USD',
-  screenshots: howItWorks.map((step) => step.image),
-  features: features.map((f) => f.title),
-  keywords: [
-    'AI hairstyle',
-    'virtual hairstyle try on',
-    'hair color changer',
-    'hairstyle simulator',
-    'AI hair makeover',
-    'women hairstyle app',
-    'men hairstyle app',
-    'hair dye app',
-  ].join(', '),
-  faqs: aiHairstyleFAQs,
-  testimonials: testimonials as Testimonial[],
-  // Product-specific config
-  url: siteConfig.url,
-  logo: siteConfig.logo,
-  email: siteConfig.email,
-  stats: siteConfig.stats,
-};
+export default async function HairstylePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const tFaq = await getTranslations({ locale, namespace: 'AIHairstyle.faq' });
+  const tBreadcrumb = await getTranslations({
+    locale,
+    namespace: 'AIHairstyle.breadcrumb',
+  });
+  const tPage = await getTranslations({
+    locale,
+    namespace: 'AIHairstyle.page',
+  });
+  const tMeta = await getTranslations({
+    locale,
+    namespace: 'AIHairstyle.meta',
+  });
+  const tBeforeAfter = await getTranslations({
+    locale,
+    namespace: 'AIHairstyle.beforeAfter',
+  });
 
-// Define BreadcrumbList for StructuredData component
-const breadcrumbList = [
-  {
-    name: 'Home',
-    item: 'https://www.tinykit.app',
-  },
-  {
+  // Build FAQ list from translation keys
+  const aiHairstyleFAQs = faqKeys.map((faq) => ({
+    name: tFaq.raw(faq.qKey),
+    text: tFaq.raw(faq.aKey),
+  }));
+
+  // Build testimonials with translated content
+  const tTestimonial = await getTranslations({
+    locale,
+    namespace: 'AIHairstyle.testimonials',
+  });
+  const aiHairstyleTestimonials: Testimonial[] = testimonials.map((t) => ({
+    name: t.name,
+    role: t.role,
+    content: tTestimonial.raw(t.contentKey),
+    avatar: t.avatar,
+  }));
+
+  // Prepare ProductData for StructuredData component
+  const aiHairstyleProductData: ProductData = {
     name: 'AI Hairstyle Studio',
-    item: `https://www.tinykit.app/ai-hairstyle-studio`,
-  },
-];
+    description: tMeta('jsonLdDescription'),
+    appStoreUrl: productConfig.appStoreUrl,
+    version: '1.0',
+    price: '9.99',
+    currency: 'USD',
+    screenshots: howItWorks.map((step) => step.image),
+    features: features.map((f) => f.titleKey),
+    keywords: [
+      'AI hairstyle',
+      'virtual hairstyle try on',
+      'hair color changer',
+      'hairstyle simulator',
+      'AI hair makeover',
+      'women hairstyle app',
+      'men hairstyle app',
+      'hair dye app',
+    ].join(', '),
+    faqs: aiHairstyleFAQs,
+    testimonials: aiHairstyleTestimonials,
+    // Product-specific config
+    url: siteConfig.url,
+    logo: siteConfig.logo,
+    email: siteConfig.email,
+    stats: siteConfig.stats,
+  };
 
-// Page metadata is inherited from layout.tsx to maintain consistency
-// Only page-specific overrides if needed
-export const metadata: Metadata = {
-  title: 'AI Hairstyle Try On Free - Virtual Hair Makeover',
-  description:
-    'Transform your look with AI Hairstyle Studio. Try on hundreds of hairstyles and hair colors instantly using advanced AI technology. Free download, lifetime access.',
-  keywords: [
-    'AI hairstyle',
-    'virtual hairstyle try on',
-    'hair color changer',
-    'hairstyle simulator',
-    'AI hair makeover',
-    'women hairstyle app',
-    'men hairstyle app',
-    'hair dye app',
-  ],
-  openGraph: {
-    title: 'AI Hairstyle Studio - Virtual Hairstyle Try On',
-    description:
-      'Transform your look with AI. Try on hundreds of hairstyles and hair colors instantly. Free download with lifetime access.',
-    url: 'https://www.tinykit.app/ai-hairstyle-studio',
-    siteName: 'TinyKit',
-    images: [
-      {
-        url: 'https://cdn.tinykit.app/hairstyle/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'AI Hairstyle Studio App',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'AI Hairstyle Studio - Virtual Hairstyle Try On',
-    description:
-      'Transform your look with AI. Try on hundreds of hairstyles and hair colors instantly.',
-    images: ['https://cdn.tinykit.app/hairstyle/images/og-image.png'],
-  },
-};
+  // Define BreadcrumbList for StructuredData component
+  const breadcrumbList = [
+    {
+      name: tBreadcrumb('home'),
+      item: siteConfig.url,
+    },
+    {
+      name: tBreadcrumb('product'),
+      item: `${siteConfig.url}/ai-hairstyle-studio`,
+    },
+  ];
 
-export default function HairstylePage() {
   return (
     <>
       {/* Skip to main content link for accessibility */}
@@ -131,7 +114,7 @@ export default function HairstylePage() {
         href='#main-content'
         className='sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-pink-100 focus:rounded-lg focus:font-bold'
       >
-        Skip to main content
+        {tPage('skipToContent')}
       </a>
 
       <SmoothScroll />
@@ -146,7 +129,7 @@ export default function HairstylePage() {
       <main
         id='main-content'
         className='bg-[#fdfbf8] text-gray-800 selection:bg-pink-200 selection:text-gray-800 overflow-x-hidden'
-        lang='en'
+        lang={locale}
       >
         {/* Hero Section */}
         <HeroSection productConfig={productConfig} />
@@ -169,8 +152,8 @@ export default function HairstylePage() {
             <BeforeAfterComparison
               beforeImage='https://cdn.tinykit.app/hairstyle/images/hairstyle-before.png'
               afterImage='https://cdn.tinykit.app/hairstyle/images/hairstyle-after.png'
-              beforeLabel='Before'
-              afterLabel='After'
+              beforeLabel={tBeforeAfter('beforeLabel')}
+              afterLabel={tBeforeAfter('afterLabel')}
             />
           </div>
         </section>

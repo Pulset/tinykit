@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { productConfig } from '../data/site-config';
 import { navItems } from '../data/page-data';
 import { Menu, X } from 'lucide-react';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 
 export default function HairstyleNavigation() {
+  const t = useTranslations('AIHairstyle.nav');
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,14 +21,14 @@ export default function HairstyleNavigation() {
           <div className='flex items-center'>
             <Image
               src='https://cdn.tinykit.app/hairstyle/images/logo.png'
-              alt='AI Hairstyle Logo'
+              alt={t('logoAlt')}
               width={40}
               height={40}
               className='w-10 h-10 mr-3 rounded-lg'
             />
             <div className='flex flex-col'>
               <span className='text-xl font-bold text-gray-800 leading-tight'>
-                AI Hairstyle Studio
+                {t('brand')}
               </span>
             </div>
           </div>
@@ -39,7 +41,7 @@ export default function HairstyleNavigation() {
                 href={item.href}
                 className='text-gray-700 hover:text-[#d63384] transition font-medium'
               >
-                {item.label}
+                {t(item.labelKey)}
               </a>
             ))}
             <Link
@@ -47,10 +49,10 @@ export default function HairstyleNavigation() {
               className='group px-6 py-2.5 bg-gradient-to-r from-[#d63384] to-[#e83e8c] rounded-full font-semibold text-white shadow-lg shadow-[#d63384]/25 hover:shadow-[#d63384]/40 transition-all hover:scale-105 active:scale-95 inline-flex items-center'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Download AI Hairstyle Studio on the App Store'
+              aria-label={t('downloadAria')}
             >
               <FontAwesomeIcon name='fab fa-apple' className='text-lg mr-2' />
-              Download
+              {t('download')}
             </Link>
           </div>
 
@@ -59,7 +61,7 @@ export default function HairstyleNavigation() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className='text-gray-700 hover:text-[#d63384] focus:outline-none transition'
-              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-label={isOpen ? t('closeMenu') : t('openMenu')}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -77,7 +79,7 @@ export default function HairstyleNavigation() {
                   className='text-gray-700 hover:text-[#d63384] transition font-medium py-2'
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.label}
+                  {t(item.labelKey)}
                 </a>
               ))}
 
@@ -86,11 +88,11 @@ export default function HairstyleNavigation() {
                 className='group px-6 py-3 bg-gradient-to-r from-[#d63384] to-[#e83e8c] rounded-full font-semibold text-white shadow-lg shadow-[#d63384]/25 inline-flex items-center justify-center'
                 target='_blank'
                 rel='noopener noreferrer'
-                aria-label='Download AI Hairstyle Studio on the App Store'
+                aria-label={t('downloadAria')}
                 onClick={() => setIsOpen(false)}
               >
                 <FontAwesomeIcon name='fab fa-apple' className='text-lg mr-2' />
-                Download Now
+                {t('downloadNow')}
               </Link>
             </div>
           </div>

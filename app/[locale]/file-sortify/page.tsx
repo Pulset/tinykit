@@ -18,11 +18,11 @@ import { getTranslations } from 'next-intl/server';
 
 // Define FAQs key references for File Sortify page structured data
 const faqKeys = [
-  { qKey: '0.question', aKey: '0.answer' },
-  { qKey: '1.question', aKey: '1.answer' },
-  { qKey: '2.question', aKey: '2.answer' },
-  { qKey: '3.question', aKey: '3.answer' },
-  { qKey: '4.question', aKey: '4.answer' },
+  { qKey: 'items.0.question', aKey: 'items.0.answer' },
+  { qKey: 'items.1.question', aKey: 'items.1.answer' },
+  { qKey: 'items.2.question', aKey: 'items.2.answer' },
+  { qKey: 'items.3.question', aKey: 'items.3.answer' },
+  { qKey: 'items.4.question', aKey: 'items.4.answer' },
 ];
 
 export default async function Home({

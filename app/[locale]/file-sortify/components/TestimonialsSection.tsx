@@ -77,7 +77,7 @@ export default function TestimonialsSection() {
                 ))}
               </div>
               <p className='text-gray-700 mb-4' itemProp='reviewBody'>
-                {t(`items.${testimonial.contentKey}.content`)}
+                {t(`${testimonial.contentKey}.content`)}
               </p>
               <div
                 className='flex items-center'
@@ -87,15 +87,15 @@ export default function TestimonialsSection() {
               >
                 <UserAvatar
                   src={testimonial.avatar}
-                  alt={t(`items.${testimonial.contentKey}.name`)}
+                  alt={t(`${testimonial.contentKey}.name`)}
                   className='mr-4'
                 />
                 <div>
                   <p className='font-semibold text-gray-800' itemProp='name'>
-                    {t(`items.${testimonial.contentKey}.name`)}
+                    {t(`${testimonial.contentKey}.name`)}
                   </p>
                   <p className='text-sm text-gray-600' itemProp='jobTitle'>
-                    {t(`items.${testimonial.contentKey}.role`)}
+                    {t(`${testimonial.contentKey}.role`)}
                   </p>
                 </div>
               </div>

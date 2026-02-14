@@ -1,98 +1,119 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'AI Hairstyle Try On Free - Virtual Hair Makeover',
-  icons: {
-    icon: '/hairstyle-icon.ico',
-  },
-  description:
-    'Try on 100+ hairstyles & hair colors instantly with AI. Upload your photo, find the perfect look before your salon visit. Free download for iOS.',
-  keywords: [
-    'AI hairstyle',
-    'virtual hairstyle try on',
-    'hair color changer',
-    'hairstyle simulator',
-    'AI hair makeover',
-    'virtual hair salon',
-    'hairstyle app',
-    'AI beauty',
-    'women hairstyle app',
-    'men hairstyle app',
-    'hair dye app',
-    'haircut simulator',
-    'virtual salon',
-    'try hairstyle before haircut',
-    'AI hair try on free',
-    'what hairstyle suits me',
-  ],
-  authors: [{ name: 'TinyKit Team', url: 'https://www.tinykit.app' }],
-  creator: 'TinyKit',
-  publisher: 'TinyKit',
-  alternates: {
-    canonical: 'https://www.tinykit.app/ai-hairstyle-studio',
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.tinykit.app/ai-hairstyle-studio',
-    title: 'AI Hairstyle Try On Free - Virtual Hair Makeover | TinyKit',
-    description:
-      "See how you'd look with a new hairstyle before committing! AI-powered try-on with 100+ styles and colors.",
-    siteName: 'TinyKit',
-    images: [
-      {
-        url: 'https://cdn.tinykit.app/hairstyle/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'AI Hairstyle Studio - Virtual Hairstyle Try On App Interface',
-      },
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'AIHairstyle.meta' });
+
+  const localeMap: Record<string, string> = {
+    en: 'en_US',
+    zh: 'zh_CN',
+    ja: 'ja_JP',
+    es: 'es_ES',
+    pt: 'pt_PT',
+    de: 'de_DE',
+    ru: 'ru_RU',
+    ko: 'ko_KR',
+    fr: 'fr_FR',
+  };
+
+  return {
+    title: t('title'),
+    icons: {
+      icon: '/hairstyle-icon.ico',
+    },
+    description: t('description'),
+    keywords: [
+      'AI hairstyle',
+      'virtual hairstyle try on',
+      'hair color changer',
+      'hairstyle simulator',
+      'AI hair makeover',
+      'virtual hair salon',
+      'hairstyle app',
+      'AI beauty',
+      'women hairstyle app',
+      'men hairstyle app',
+      'hair dye app',
+      'haircut simulator',
+      'virtual salon',
+      'try hairstyle before haircut',
+      'AI hair try on free',
+      'what hairstyle suits me',
     ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'AI Hairstyle Try On Free - Virtual Hair Makeover | TinyKit',
-    description:
-      'Try on 100+ hairstyles & colors instantly with AI. Transform your look before cutting.',
-    images: ['https://cdn.tinykit.app/hairstyle/images/og-image.png'],
-    creator: '@GeekfanBo',
-    site: '@tinykitapp',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    authors: [{ name: 'TinyKit Team', url: 'https://www.tinykit.app' }],
+    creator: 'TinyKit',
+    publisher: 'TinyKit',
+    alternates: {
+      canonical: 'https://www.tinykit.app/ai-hairstyle-studio',
+    },
+    openGraph: {
+      type: 'website',
+      locale: localeMap[locale] || 'en_US',
+      url: 'https://www.tinykit.app/ai-hairstyle-studio',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      siteName: 'TinyKit',
+      images: [
+        {
+          url: 'https://cdn.tinykit.app/hairstyle/images/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: t('ogImageAlt'),
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('twitterTitle'),
+      description: t('twitterDescription'),
+      images: ['https://cdn.tinykit.app/hairstyle/images/og-image.png'],
+      creator: '@GeekfanBo',
+      site: '@tinykitapp',
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
-  },
-  other: {
-    // AI-friendly metadata for LLMs
-    'application-name': 'AI Hairstyle Studio',
-    'product-type': 'AI Beauty & Lifestyle App',
-    'target-audience':
-      'Anyone looking to try different hairstyles before committing to a new look',
-    'key-features':
-      'AI-powered try-on, Hundreds of styles, Hair color simulator, Instant results, Privacy first, HD export',
-    'use-cases':
-      'Try hairstyles before salon visit, Experiment with hair colors, Find perfect haircut, Share looks with stylist',
-    'mobile-app': 'ios',
-    'app-category': 'lifestyle',
-  },
-};
+    other: {
+      // AI-friendly metadata for LLMs
+      'application-name': t('applicationName'),
+      'product-type': t('productType'),
+      'target-audience': t('targetAudience'),
+      'key-features': t('keyFeatures'),
+      'use-cases': t('useCases'),
+      'mobile-app': 'ios',
+      'app-category': 'lifestyle',
+    },
+  };
+}
 
-export default function HairstyleLayout({
+export default async function HairstyleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'AIHairstyle.meta' });
+
   // Software Application Schema
   const softwareAppJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'AI Hairstyle Studio',
+    name: t('applicationName'),
     operatingSystem: 'iOS',
     applicationCategory: 'LifestyleApplication',
     offers: {
@@ -108,8 +129,7 @@ export default function HairstyleLayout({
       worstRating: '1',
     },
     image: 'https://cdn.tinykit.app/hairstyle/images/logo.png',
-    description:
-      'Try on 100+ hairstyles & hair colors instantly with AI. Upload your photo, find the perfect look before your salon visit. Free download for iOS.',
+    description: t('jsonLdDescription'),
     url: 'https://www.tinykit.app/ai-hairstyle-studio',
     author: {
       '@type': 'Organization',
@@ -121,15 +141,15 @@ export default function HairstyleLayout({
       name: 'TinyKit',
       url: 'https://www.tinykit.app',
     },
-    inLanguage: 'en',
+    inLanguage: locale,
     featureList: [
-      'AI-powered hairstyle try-on',
-      'Hundreds of hairstyle options',
-      'Hair color simulator',
-      'Instant results',
-      'Privacy-focused',
-      'HD photo export',
-      'Regular style updates',
+      t.raw('jsonLdFeatureList.0'),
+      t.raw('jsonLdFeatureList.1'),
+      t.raw('jsonLdFeatureList.2'),
+      t.raw('jsonLdFeatureList.3'),
+      t.raw('jsonLdFeatureList.4'),
+      t.raw('jsonLdFeatureList.5'),
+      t.raw('jsonLdFeatureList.6'),
     ],
   };
 

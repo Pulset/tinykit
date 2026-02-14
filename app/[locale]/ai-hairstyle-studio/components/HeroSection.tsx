@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
+import { useTranslations } from 'next-intl';
 import type { ProductConfig } from '../data/site-config';
 
 interface HeroSectionProps {
@@ -7,6 +10,8 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ productConfig }: HeroSectionProps) {
+  const t = useTranslations('AIHairstyle.hero');
+
   return (
     <div className='relative min-h-screen flex items-center justify-center overflow-hidden'>
       {/* Soft Pastel Background Elements - Decorative only */}
@@ -23,23 +28,16 @@ export default function HeroSection({ productConfig }: HeroSectionProps) {
         <div className='flex flex-col lg:flex-row items-center gap-12'>
           <div className='flex-1 text-center lg:text-left'>
             <div className='inline-block px-4 py-2 mb-6 rounded-full bg-white/80 backdrop-blur-md border border-pink-200 text-[#d63384] font-medium text-sm animate-fade-in-up'>
-              ✨ The #1 AI Hairstyle App
+              {t('badge')}
             </div>
             <h1 className='text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight text-gray-800'>
-              New{' '}
+              {t('titleLine1')}{' '}
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#d63384] via-[#e83e8c] to-[#9775fa]'>
-                &apos;Do
-              </span>
-              , <br />
-              New{' '}
-              <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#e83e8c] via-[#d63384] to-[#f06595]'>
-                You.
+                {t('titleLine2')}
               </span>
             </h1>
             <p className='text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0'>
-              Transform your look instantly with our advanced AI. Try on
-              hundreds of salon-quality hairstyles and colors in real-time
-              before you commit to a cut.
+              {t('subtitle')}
             </p>
 
             <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
@@ -48,25 +46,25 @@ export default function HeroSection({ productConfig }: HeroSectionProps) {
                 className='group relative px-8 py-4 bg-gradient-to-r from-[#d63384] to-[#e83e8c] rounded-full font-bold text-white shadow-lg shadow-[#d63384]/25 hover:shadow-[#d63384]/40 transition-all hover:scale-105 active:scale-95'
                 target='_blank'
                 rel='noopener noreferrer'
-                aria-label='Download AI Hairstyle Studio on App Store'
+                aria-label={t('ctaDownloadAria')}
               >
                 <span className='flex items-center justify-center gap-2'>
                   <FontAwesomeIcon name='fab fa-apple' className='text-xl' />
-                  Download Now
+                  {t('ctaDownload')}
                 </span>
                 <div className='absolute inset-0 rounded-full bg-white/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity'></div>
               </a>
               <a
                 href='#how-it-works'
                 className='px-8 py-4 rounded-full font-bold text-gray-700 border border-pink-200 bg-white/80 backdrop-blur-sm hover:bg-pink-50 hover:border-pink-300 transition-all hover:scale-105'
-                aria-label='See how AI Hairstyle Studio works'
+                aria-label={t('ctaHowItWorksAria')}
               >
                 <span className='flex items-center justify-center gap-2'>
                   <FontAwesomeIcon
                     name='fas fa-play'
                     className='text-sm text-pink-500'
                   />
-                  See How It Works
+                  {t('ctaHowItWorks')}
                 </span>
               </a>
             </div>
@@ -80,7 +78,7 @@ export default function HeroSection({ productConfig }: HeroSectionProps) {
                 <div className='w-full h-full rounded-2xl overflow-hidden relative group'>
                   <Image
                     src='https://cdn.tinykit.app/hairstyle/images/step3.png'
-                    alt='AI Hairstyle Studio app screenshot showing virtual hairstyle try-on result with side-by-side comparison of original and transformed hair'
+                    alt={t('screenshotAlt')}
                     width={800}
                     height={600}
                     className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
@@ -97,7 +95,9 @@ export default function HeroSection({ productConfig }: HeroSectionProps) {
                         name='fas fa-check-circle'
                         className='text-green-500 mr-2'
                       />
-                      <span className='text-sm font-medium'>Applied</span>
+                      <span className='text-sm font-medium'>
+                        {t('appliedLabel')}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -111,8 +111,12 @@ export default function HeroSection({ productConfig }: HeroSectionProps) {
                   <FontAwesomeIcon name='fas fa-magic' />
                 </div>
                 <div>
-                  <p className='text-xs text-gray-500'>AI Accuracy</p>
-                  <p className='text-lg font-bold text-gray-800'>99.8%</p>
+                  <p className='text-xs text-gray-500'>
+                    {t('aiAccuracyLabel')}
+                  </p>
+                  <p className='text-lg font-bold text-gray-800'>
+                    {t('aiAccuracyValue')}
+                  </p>
                 </div>
               </div>
             </div>
@@ -123,8 +127,10 @@ export default function HeroSection({ productConfig }: HeroSectionProps) {
                   <FontAwesomeIcon name='fas fa-heart' />
                 </div>
                 <div>
-                  <p className='text-xs text-gray-500'>Loved by</p>
-                  <p className='text-lg font-bold text-gray-800'>50K+</p>
+                  <p className='text-xs text-gray-500'>{t('lovedByLabel')}</p>
+                  <p className='text-lg font-bold text-gray-800'>
+                    {t('lovedByValue')}
+                  </p>
                 </div>
               </div>
             </div>

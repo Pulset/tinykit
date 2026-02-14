@@ -1,10 +1,14 @@
+'use client';
+
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { getStepGradient, getStepShadow } from '../constants';
 
 interface Step {
   step: number;
-  title: string;
-  description: string;
+  titleKey: string;
+  descKey: string;
+  imageAltKey: string;
   image: string;
 }
 
@@ -15,6 +19,8 @@ interface HowItWorksSectionProps {
 export default function HowItWorksSection({
   howItWorks,
 }: HowItWorksSectionProps) {
+  const t = useTranslations('AIHairstyle.howItWorks');
+
   return (
     <section
       id='how-it-works'
@@ -23,9 +29,9 @@ export default function HowItWorksSection({
       <div className='container mx-auto px-6'>
         <div className='text-center mb-20'>
           <h2 className='text-4xl font-bold mb-4 text-gray-800'>
-            Simple Steps
+            {t('heading')}
           </h2>
-          <p className='text-gray-600 text-lg'>3 steps to your new style</p>
+          <p className='text-gray-600 text-lg'>{t('subtitle')}</p>
         </div>
 
         <div className='grid md:grid-cols-3 gap-12 relative'>
@@ -56,16 +62,16 @@ export default function HowItWorksSection({
               </div>
 
               <h3 className='text-2xl font-bold mb-4 text-gray-800'>
-                {step.title}
+                {t(`steps.${step.titleKey}`)}
               </h3>
               <p className='text-gray-600 mb-8 max-w-xs mx-auto'>
-                {step.description}
+                {t(`steps.${step.descKey}`)}
               </p>
 
               <div className='w-full max-w-xs aspect-[3/4] rounded-2xl overflow-hidden border border-pink-200 shadow-lg group-hover:shadow-xl transition-all duration-300 bg-white relative cursor-pointer'>
                 <Image
                   src={step.image}
-                  alt={`AI Hairstyle Studio step ${step.step}: ${step.title}. ${step.description}`}
+                  alt={t(`steps.${step.imageAltKey}`)}
                   width={600}
                   height={800}
                   className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
@@ -73,9 +79,11 @@ export default function HowItWorksSection({
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-gray-800/80 via-gray-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'>
                   <h3 className='text-lg font-bold text-white mb-1'>
-                    {step.title}
+                    {t(`steps.${step.titleKey}`)}
                   </h3>
-                  <p className='text-xs text-gray-200'>{step.description}</p>
+                  <p className='text-xs text-gray-200'>
+                    {t(`steps.${step.descKey}`)}
+                  </p>
                 </div>
               </div>
             </div>

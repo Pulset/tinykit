@@ -1,4 +1,7 @@
+'use client';
+
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
+import { useTranslations } from 'next-intl';
 import type { ProductConfig } from '../data/site-config';
 
 interface PricingSectionProps {
@@ -6,6 +9,8 @@ interface PricingSectionProps {
 }
 
 export default function PricingSection({ productConfig }: PricingSectionProps) {
+  const t = useTranslations('AIHairstyle.pricing');
+
   return (
     <section id='pricing' className='py-24 relative bg-white/50'>
       <div className='container mx-auto px-6'>
@@ -16,24 +21,22 @@ export default function PricingSection({ productConfig }: PricingSectionProps) {
           <div className='relative bg-white rounded-[22px] p-10 ring-1 ring-pink-200 text-center shadow-xl'>
             <div className='absolute top-0 right-0 p-4'>
               <span className='bg-gradient-to-r from-green-400 to-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full'>
-                {productConfig.pricing.free.badge}
+                {t('badgeText')}
               </span>
             </div>
 
             <h3 className='text-2xl font-bold text-gray-800 mb-2'>
-              {productConfig.pricing.free.title}
+              {t('freeTitle')}
             </h3>
             <div className='flex items-baseline justify-center mb-8'>
               <span className='text-5xl font-bold text-gray-800 tracking-tight'>
-                {productConfig.pricing.free.price}
+                {t('price')}
               </span>
-              <span className='text-xl text-gray-600 ml-2'>
-                {productConfig.pricing.free.period}
-              </span>
+              <span className='text-xl text-gray-600 ml-2'>{t('period')}</span>
             </div>
 
             <ul className='space-y-4 mb-10 text-left'>
-              {productConfig.pricing.free.features.map((feature, index) => (
+              {Array.from({ length: 5 }, (_, index) => (
                 <li key={index} className='flex items-center text-gray-600'>
                   <div
                     className='w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 text-green-600 text-xs'
@@ -41,7 +44,7 @@ export default function PricingSection({ productConfig }: PricingSectionProps) {
                   >
                     <FontAwesomeIcon name='fas fa-check' />
                   </div>
-                  {feature}
+                  {t(`features.${index}`)}
                 </li>
               ))}
             </ul>
@@ -51,11 +54,11 @@ export default function PricingSection({ productConfig }: PricingSectionProps) {
               target='_blank'
               rel='noopener noreferrer'
               className='block w-full py-4 text-center rounded-xl bg-gradient-to-r from-[#d63384] to-[#e83e8c] text-white font-bold text-lg hover:from-[#e83e8c] hover:to-[#d63384] transition-all shadow-lg hover:shadow-xl transform hover:scale-105'
-              aria-label='Download AI Hairstyle Studio for free'
+              aria-label={t('ctaAria')}
             >
               <span className='flex items-center justify-center gap-2'>
                 <FontAwesomeIcon name='fab fa-apple' className='text-xl' />
-                Download Now
+                {t('cta')}
               </span>
             </a>
           </div>

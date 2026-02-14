@@ -1,10 +1,13 @@
+'use client';
+
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
+import { useTranslations } from 'next-intl';
 import { getFeatureColor } from '../constants';
 
 interface Feature {
   icon: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descKey: string;
 }
 
 interface FeaturesSectionProps {
@@ -12,16 +15,16 @@ interface FeaturesSectionProps {
 }
 
 export default function FeaturesSection({ features }: FeaturesSectionProps) {
+  const t = useTranslations('AIHairstyle.features');
+
   return (
     <section id='features' className='py-24 relative bg-white/50'>
       <div className='container mx-auto px-6'>
         <div className='text-center mb-20'>
           <h2 className='text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#d63384] via-[#e83e8c] to-[#9775fa]'>
-            Magical Features
+            {t('heading')}
           </h2>
-          <p className='text-gray-600 text-lg'>
-            Everything you need to find your perfect look
-          </p>
+          <p className='text-gray-600 text-lg'>{t('subtitle')}</p>
         </div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -46,10 +49,10 @@ export default function FeaturesSection({ features }: FeaturesSectionProps) {
                 />
               </div>
               <h3 className='text-xl font-bold mb-3 text-gray-800'>
-                {feature.title}
+                {t(`items.${feature.titleKey}`)}
               </h3>
               <p className='text-gray-600 leading-relaxed'>
-                {feature.description}
+                {t(`items.${feature.descKey}`)}
               </p>
             </div>
           ))}

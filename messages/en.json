@@ -286,6 +286,7 @@
     "pricing": {
       "badgeText": "GET STARTED",
       "freeTitle": "Free Download",
+      "price": "$0",
       "period": "/forever",
       "cta": "Download Now",
       "ctaAria": "Download AI Hairstyle Studio for free",

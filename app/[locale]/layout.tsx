@@ -1,5 +1,9 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -19,90 +23,107 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  // ... (keeping metadata the same for now, though it should ideally be translated later)
-  title: {
-    default: 'TinyKit - Crafting Minimalist & Practical Apps',
-    template: '%s | TinyKit',
-  },
-  description:
-    'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
-  keywords: [
-    'productivity apps',
-    'mac utilities',
-    'productivity tools',
-    'minimalist apps',
-    'practical apps',
-    'tinykit',
-  ],
-  authors: [{ name: 'TinyKit Team', url: 'https://www.tinykit.app' }],
-  creator: 'TinyKit',
-  publisher: 'TinyKit',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL('https://www.tinykit.app'),
-  alternates: {
-    canonical: '/',
-    languages: {
-      'en': '/',
-      'zh': '/zh',
-      'ja': '/ja',
-      'es': '/es',
-      'pt': '/pt',
-      'de': '/de',
-      'ru': '/ru',
-      'ko': '/ko',
-      'fr': '/fr',
-      'x-default': '/',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  const localeMap: Record<string, string> = {
+    en: 'en_US',
+    zh: 'zh_CN',
+    ja: 'ja_JP',
+    es: 'es_ES',
+    pt: 'pt_PT',
+    de: 'de_DE',
+    ru: 'ru_RU',
+    ko: 'ko_KR',
+    fr: 'fr_FR',
+  };
+
+  return {
+    title: {
+      default: t('title'),
+      template: t('titleTemplate'),
     },
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.tinykit.app',
-    title: 'TinyKit - Crafting Minimalist & Practical Apps',
-    description:
-      'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
-    siteName: 'TinyKit',
-    images: [
-      {
-        url: 'https://cdn.tinykit.app/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'TinyKit - Crafting Minimalist & Practical Apps',
-      },
+    description: t('description'),
+    keywords: [
+      'productivity apps',
+      'mac utilities',
+      'productivity tools',
+      'minimalist apps',
+      'practical apps',
+      'tinykit',
     ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'TinyKit - Crafting Minimalist & Practical Apps',
-    description:
-      'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
-    images: ['https://cdn.tinykit.app/images/og-image.png'],
-    creator: '@GeekfanBo',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    authors: [{ name: 'TinyKit Team', url: 'https://www.tinykit.app' }],
+    creator: 'TinyKit',
+    publisher: 'TinyKit',
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    metadataBase: new URL('https://www.tinykit.app'),
+    alternates: {
+      canonical: '/',
+      languages: {
+        en: '/',
+        zh: '/zh',
+        ja: '/ja',
+        es: '/es',
+        pt: '/pt',
+        de: '/de',
+        ru: '/ru',
+        ko: '/ko',
+        fr: '/fr',
+        'x-default': '/',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: localeMap[locale] || 'en_US',
+      url: 'https://www.tinykit.app',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      siteName: 'TinyKit',
+      images: [
+        {
+          url: 'https://cdn.tinykit.app/images/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: t('ogImageAlt'),
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('twitterTitle'),
+      description: t('twitterDescription'),
+      images: ['https://cdn.tinykit.app/images/og-image.png'],
+      creator: '@GeekfanBo',
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
-  },
-  category: 'technology',
-  classification: 'Mac Utilities',
-  appleWebApp: {
-    capable: true,
-    title: 'TinyKit',
-    statusBarStyle: 'default',
-  },
-};
+    category: 'technology',
+    classification: t('classification'),
+    appleWebApp: {
+      capable: true,
+      title: 'TinyKit',
+      statusBarStyle: 'default',
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -114,16 +135,21 @@ export default async function RootLayout({
   const { locale } = await params;
 
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as 'en' | 'zh' | 'ja' | 'ko' | 'fr' | 'es' | 'pt' | 'de' | 'ru')) {
+  if (
+    !routing.locales.includes(
+      locale as 'en' | 'zh' | 'ja' | 'ko' | 'fr' | 'es' | 'pt' | 'de' | 'ru',
+    )
+  ) {
     notFound();
   }
 
   // Enable static rendering
   setRequestLocale(locale);
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
+  // Providing all messages to client
+  // side is easiest way to get started
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'StructuredData' });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -131,8 +157,7 @@ export default async function RootLayout({
     name: 'TinyKit',
     url: 'https://www.tinykit.app',
     logo: 'https://www.tinykit.app/tinykit-logo.png',
-    description:
-      'Find your next favorite productivity tool. TinyKit crafts minimalist & practical apps for you. Simple, lightweight software with no ads and no clutter.',
+    description: t('orgDescription'),
     sameAs: ['https://twitter.com/tinykit_app'],
   };
 

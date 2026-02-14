@@ -46,25 +46,25 @@ export const features = [
 export const howItWorks = [
   {
     step: 1,
-    titleKey: '0.title',
-    descKey: '0.description',
-    imageAltKey: '0.imageAlt',
+    titleKey: 'steps.0.title',
+    descKey: 'steps.0.description',
+    imageAltKey: 'steps.0.imageAlt',
     image: 'https://cdn.tinykit.app/file-sortify/images/add.png',
     gradientColors: 'from-purple-400 to-pink-400',
   },
   {
     step: 2,
-    titleKey: '1.title',
-    descKey: '1.description',
-    imageAltKey: '1.imageAlt',
+    titleKey: 'steps.1.title',
+    descKey: 'steps.1.description',
+    imageAltKey: 'steps.1.imageAlt',
     image: 'https://cdn.tinykit.app/file-sortify/images/rules.png',
     gradientColors: 'from-blue-400 to-cyan-400',
   },
   {
     step: 3,
-    titleKey: '2.title',
-    descKey: '2.description',
-    imageAltKey: '2.imageAlt',
+    titleKey: 'steps.2.title',
+    descKey: 'steps.2.description',
+    imageAltKey: 'steps.2.imageAlt',
     image: 'https://cdn.tinykit.app/file-sortify/images/start.png',
     gradientColors: 'from-green-400 to-teal-400',
   },
@@ -92,26 +92,26 @@ export const testimonials = [
   {
     name: 'Sarah Chen',
     role: 'Designer',
-    contentKey: '0.content',
+    contentKey: 'items.0',
     avatar: 'https://cdn.tinykit.app/file-sortify/images/user5.jpg',
   },
   {
     name: 'Mark Johnson',
     role: 'Developer',
-    contentKey: '1.content',
+    contentKey: 'items.1',
     avatar: 'https://cdn.tinykit.app/file-sortify/images/user6.jpg',
   },
   {
     name: 'Emily Rodriguez',
     role: 'Photographer',
-    contentKey: '2.content',
+    contentKey: 'items.2',
     avatar: 'https://cdn.tinykit.app/file-sortify/images/user7.jpg',
   },
 ];
 
 export const navItems = [
-  { labelKey: 'FileSortify.nav.items.0.label', href: '#features' },
-  { labelKey: 'FileSortify.nav.items.1.label', href: '#how-it-works' },
-  { labelKey: 'FileSortify.nav.items.2.label', href: '#screenshots' },
-  { labelKey: 'FileSortify.nav.items.3.label', href: '#pricing' },
+  { labelKey: 'items.0.label', href: '#features' },
+  { labelKey: 'items.1.label', href: '#how-it-works' },
+  { labelKey: 'items.2.label', href: '#screenshots' },
+  { labelKey: 'items.3.label', href: '#pricing' },
 ];

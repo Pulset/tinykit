@@ -1,3 +1,7 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+
 // Define structure for a testimonial, which can be reused.
 export interface Testimonial {
   name: string;
@@ -38,6 +42,8 @@ export default function StructuredData({
   productData,
   breadcrumbList,
 }: StructuredDataProps) {
+  const t = useTranslations('StructuredData');
+
   // Use productData or fallback to defaults
   const organizationName = 'TinyKit';
   const organizationUrl = productData?.url || 'https://www.tinykit.app';
@@ -54,13 +60,13 @@ export default function StructuredData({
     url: organizationUrl,
     logo: organizationLogo,
     email: organizationEmail,
-    description: 'Developer of productivity apps for Mac users',
+    description: t('orgDescription'),
     foundingDate: '2025',
     knowsAbout: [
-      'Mac software development',
-      'File organization',
-      'Productivity tools',
-      'macOS utilities',
+      t('orgKnowsAbout.0'),
+      t('orgKnowsAbout.1'),
+      t('orgKnowsAbout.2'),
+      t('orgKnowsAbout.3'),
     ],
   };
 
@@ -69,7 +75,7 @@ export default function StructuredData({
     '@type': 'WebSite',
     name: organizationName,
     url: organizationUrl,
-    description: 'Productivity apps for Mac users',
+    description: t('websiteDescription'),
     publisher: {
       '@type': 'Organization',
       name: organizationName,
@@ -109,7 +115,7 @@ export default function StructuredData({
       screenshot: productData.screenshots,
       featureList: productData.features,
       keywords: productData.keywords,
-      applicationSubCategory: 'File Management',
+      applicationSubCategory: t('fileManagement'),
       installUrl: productData.appStoreUrl,
     };
 
@@ -135,7 +141,7 @@ export default function StructuredData({
       brand: { '@type': 'Brand', name: organizationName },
       offers: softwareSchema.offers, // Reuse from software schema
       aggregateRating: softwareSchema.aggregateRating, // Reuse from software schema
-      category: 'Mac Utility Software',
+      category: t('productCategory'),
     };
 
     const reviewSchemas = productData.testimonials.map((testimonial) => ({
