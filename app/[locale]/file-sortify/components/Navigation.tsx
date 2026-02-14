@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { siteConfig, productConfig } from '@/app/data/site-config';
 import { navItems } from '@/app/data/page-data';
 import { Menu, X } from 'lucide-react';
-import FontAwesomeIcon from './FontAwesomeIcon';
+import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

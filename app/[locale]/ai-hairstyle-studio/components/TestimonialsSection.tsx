@@ -1,4 +1,4 @@
-import UserAvatar from '@/app/components/UserAvatar';
+import UserAvatar from './UserAvatar';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 
 interface Testimonial {

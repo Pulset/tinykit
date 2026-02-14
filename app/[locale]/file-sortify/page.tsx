@@ -1,6 +1,6 @@
-import Navigation from '@/app/components/Navigation';
-import FeatureCard from '@/app/components/FeatureCard';
-import UserAvatar from '@/app/components/UserAvatar';
+import Navigation from './components/Navigation';
+import FeatureCard from './components/FeatureCard';
+import UserAvatar from './components/UserAvatar';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 import SmoothScroll from '@/app/components/SmoothScroll';
 import StructuredData, {
