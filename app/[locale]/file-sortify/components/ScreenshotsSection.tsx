@@ -1,7 +1,12 @@
+'use client';
+
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { screenshots } from '../data/page-data';
 
 export default function ScreenshotsSection() {
+  const t = useTranslations('FileSortify.screenshots');
+
   return (
     <section
       id='screenshots'
@@ -14,11 +19,9 @@ export default function ScreenshotsSection() {
             id='screenshots-heading'
             className='text-4xl font-bold text-gray-800 mb-4'
           >
-            Beautiful & Intuitive Interface
+            {t('heading')}
           </h2>
-          <p className='text-xl text-gray-600'>
-            Designed exclusively for macOS
-          </p>
+          <p className='text-xl text-gray-600'>{t('subtitle')}</p>
         </div>
         <div className='grid md:grid-cols-3 gap-8'>
           {screenshots.map((screenshot, index) => (
@@ -30,7 +33,7 @@ export default function ScreenshotsSection() {
             >
               <Image
                 src={screenshot.image}
-                alt={screenshot.title}
+                alt={t(`items.${screenshot.titleKey}`)}
                 width={1200}
                 height={800}
                 className='w-full'
@@ -39,10 +42,10 @@ export default function ScreenshotsSection() {
               />
               <div className='p-4 bg-gray-50'>
                 <h3 className='font-semibold text-gray-800' itemProp='name'>
-                  {screenshot.title}
+                  {t(`items.${screenshot.titleKey}`)}
                 </h3>
                 <p className='text-sm text-gray-600' itemProp='description'>
-                  {screenshot.description}
+                  {t(`items.${screenshot.descKey}`)}
                 </p>
               </div>
             </article>

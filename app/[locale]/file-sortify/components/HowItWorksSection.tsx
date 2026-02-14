@@ -1,7 +1,12 @@
+'use client';
+
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { howItWorks } from '../data/page-data';
 
 export default function HowItWorksSection() {
+  const t = useTranslations('FileSortify.howItWorks');
+
   return (
     <section
       id='how-it-works'
@@ -14,11 +19,9 @@ export default function HowItWorksSection() {
             id='how-it-works-heading'
             className='text-4xl font-bold text-gray-800 mb-4'
           >
-            How It Works
+            {t('heading')}
           </h2>
-          <p className='text-xl text-gray-600'>
-            Get organized in 3 simple steps
-          </p>
+          <p className='text-xl text-gray-600'>{t('subtitle')}</p>
         </div>
         <div className='grid md:grid-cols-3 gap-8'>
           {howItWorks.map((step, index) => (
@@ -30,7 +33,7 @@ export default function HowItWorksSection() {
             >
               <div
                 className={`btn-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold group-hover:btn-purple-700 transition-colors`}
-                aria-label={`Step ${step.step}`}
+                aria-label={t('stepAria', { number: step.step })}
               >
                 {step.step}
               </div>
@@ -38,10 +41,10 @@ export default function HowItWorksSection() {
                 className='text-xl font-semibold text-gray-800 mb-3'
                 itemProp='name'
               >
-                {step.title}
+                {t(step.titleKey)}
               </h3>
               <p className='text-gray-600 mb-6' itemProp='text'>
-                {step.description}
+                {t(step.descKey)}
               </p>
               <div className='relative mx-auto max-w-sm'>
                 <div
@@ -50,7 +53,7 @@ export default function HowItWorksSection() {
                 <div className='relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform'>
                   <Image
                     src={step.image}
-                    alt={`${step.title} Interface`}
+                    alt={t(step.imageAltKey)}
                     width={800}
                     height={600}
                     className='w-full h-auto'

@@ -1,7 +1,11 @@
+'use client';
+
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 import { productConfig } from '../data/site-config';
+import { useTranslations } from 'next-intl';
 
 export default function PricingSection() {
+  const t = useTranslations('FileSortify.pricing');
   return (
     <section
       id='pricing'
@@ -16,11 +20,9 @@ export default function PricingSection() {
             id='pricing-heading'
             className='text-4xl font-bold text-gray-800 mb-4'
           >
-            One-Time Purchase
+            {t('heading')}
           </h2>
-          <p className='text-xl text-gray-700'>
-            Get lifetime access to File Sortify
-          </p>
+          <p className='text-xl text-gray-700'>{t('subtitle')}</p>
         </div>
         <div className='max-w-md mx-auto'>
           <div
@@ -28,11 +30,8 @@ export default function PricingSection() {
             itemScope
             itemType='https://schema.org/Product'
           >
-            <meta itemProp='name' content='File Sortify Lifetime License' />
-            <meta
-              itemProp='description'
-              content='Lifetime access to File Sortify with all features and updates'
-            />
+            <meta itemProp='name' content={t('licenseName')} />
+            <meta itemProp='description' content={t('licenseDescription')} />
             <meta
               itemProp='image'
               content='https://cdn.tinykit.app/file-sortify/images/logo.png'
@@ -61,27 +60,29 @@ export default function PricingSection() {
               <meta itemProp='bestRating' content='5' />
             </div>
             <div className='absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-800 px-4 py-1 rounded-full text-sm font-semibold'>
-              {productConfig.pricing.lifetime.badge}
+              {t(productConfig.pricing.lifetime.badgeKey)}
             </div>
             <h3 className='text-2xl font-bold mb-4'>
-              {productConfig.pricing.lifetime.title}
+              {t(productConfig.pricing.lifetime.titleKey)}
             </h3>
             <div className='text-4xl font-bold mb-6'>
               {productConfig.pricing.lifetime.price}
               <span className='text-lg text-purple-200'>
-                {productConfig.pricing.lifetime.period}
+                {t(productConfig.pricing.lifetime.periodKey)}
               </span>
             </div>
             <ul className='space-y-3 mb-8'>
-              {productConfig.pricing.lifetime.features.map((feature, index) => (
-                <li key={index} className='flex items-center'>
-                  <FontAwesomeIcon
-                    name='fas fa-check'
-                    className='text-green-300 mr-3'
-                  />
-                  {feature}
-                </li>
-              ))}
+              {productConfig.pricing.lifetime.featureKeys.map(
+                (featureKey, index) => (
+                  <li key={index} className='flex items-center'>
+                    <FontAwesomeIcon
+                      name='fas fa-check'
+                      className='text-green-300 mr-3'
+                    />
+                    {t(`features.${featureKey}`)}
+                  </li>
+                ),
+              )}
             </ul>
             <a
               href={productConfig.appStoreUrl}
@@ -90,7 +91,7 @@ export default function PricingSection() {
               rel='noopener noreferrer'
             >
               <FontAwesomeIcon name='fab fa-apple' className='inline mr-2' />
-              Buy for $9.99
+              {t('cta')}
             </a>
           </div>
         </div>

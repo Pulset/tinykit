@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { siteConfig, productConfig } from '../data/site-config';
 import { navItems } from '../data/page-data';
 import { Menu, X } from 'lucide-react';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 
 export default function Navigation() {
+  const t = useTranslations('FileSortify.nav');
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,13 +20,13 @@ export default function Navigation() {
           <div className='flex items-center'>
             <Image
               src={siteConfig.logo}
-              alt='File Sortify Logo'
+              alt={t('logoAlt')}
               width={30}
               height={30}
               className='mr-3'
             />
             <span className='text-2xl font-bold text-gray-800'>
-              File Sortify
+              {t('brand')}
             </span>
           </div>
 
@@ -36,7 +38,7 @@ export default function Navigation() {
                 href={item.href}
                 className='text-gray-700 hover:text-purple-600 transition'
               >
-                {item.label}
+                {t(item.labelKey)}
               </a>
             ))}
             <Link
@@ -46,7 +48,7 @@ export default function Navigation() {
               rel='noopener noreferrer'
             >
               <FontAwesomeIcon name='fab fa-apple' className='mr-2' />
-              Download for Mac
+              {t('downloadForMac')}
             </Link>
           </div>
 
@@ -72,7 +74,7 @@ export default function Navigation() {
                   className='text-gray-700 hover:text-purple-600 transition'
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.label}
+                  {t(item.labelKey)}
                 </a>
               ))}
 
@@ -83,7 +85,7 @@ export default function Navigation() {
                 rel='noopener noreferrer'
               >
                 <FontAwesomeIcon name='fab fa-apple' className='mr-2' />
-                Download for Mac
+                {t('downloadForMac')}
               </Link>
             </div>
           </div>

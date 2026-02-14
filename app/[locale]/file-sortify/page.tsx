@@ -14,72 +14,90 @@ import PricingSection from './components/PricingSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import CTASection from './components/CTASection';
 import FooterSection from './components/FooterSection';
+import { getTranslations } from 'next-intl/server';
 
-// Define FAQs specifically for File Sortify page structured data
-const fileSortifyFAQs = [
-  {
-    name: 'What is File Sortify?',
-    text: 'File Sortify is an intelligent file organization tool for Mac that automatically sorts and organizes your files based on type, custom rules, and real-time monitoring. It is perfect for keeping your Downloads folder and desktop clean and organized.',
-  },
-  {
-    name: 'How does File Sortify organize files?',
-    text: 'File Sortify uses smart auto-categorization to sort files by type (documents, images, videos, etc.), allows you to create custom rules for specific file types or names, and monitors folders in real-time to automatically organize new files as they arrive.',
-  },
-  {
-    name: 'Is File Sortify compatible with my Mac?',
-    text: 'File Sortify is designed exclusively for macOS. It works with all modern Mac computers running macOS and integrates seamlessly with the Mac file system.',
-  },
-  {
-    name: 'How much does File Sortify cost?',
-    text: 'File Sortify is available for a one-time purchase of $20 USD. This includes lifetime access, unlimited usage, lifetime updates, and all future features with no subscription required.',
-  },
-  {
-    name: 'Can I undo file organization changes?',
-    text: 'Yes, File Sortify includes an Operation History feature that allows you to review and revert file organization actions if needed, ensuring your files are always safe.',
-  },
+// Define FAQs key references for File Sortify page structured data
+const faqKeys = [
+  { qKey: '0.question', aKey: '0.answer' },
+  { qKey: '1.question', aKey: '1.answer' },
+  { qKey: '2.question', aKey: '2.answer' },
+  { qKey: '3.question', aKey: '3.answer' },
+  { qKey: '4.question', aKey: '4.answer' },
 ];
 
-// Prepare ProductData for StructuredData component
-const fileSortifyProductData: ProductData = {
-  name: 'File Sortify',
-  description:
-    'Automatically organize your Mac files with File Sortify. Smart file management tool with auto-sorting, custom rules, and real-time monitoring for Downloads folder.',
-  appStoreUrl: productConfig.appStoreUrl,
-  version: '1.0',
-  price: '9.99',
-  currency: 'USD',
-  screenshots: screenshots.map((s) => s.image),
-  features: features.map((f) => f.title),
-  keywords: [
-    'file organizer mac',
-    'mac file management',
-    'auto file sorter',
-    'download folder organizer',
-    'file automation mac',
-    'file sortify',
-  ].join(', '),
-  faqs: fileSortifyFAQs,
-  testimonials: testimonials as Testimonial[],
-  // Product-specific config
-  url: siteConfig.url,
-  logo: siteConfig.logo,
-  email: siteConfig.email,
-  stats: siteConfig.stats,
-};
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const tFaq = await getTranslations({ locale, namespace: 'FileSortify.faq' });
+  const tBreadcrumb = await getTranslations({
+    locale,
+    namespace: 'FileSortify.breadcrumb',
+  });
+  const tMeta = await getTranslations({
+    locale,
+    namespace: 'FileSortify.meta',
+  });
 
-// Define BreadcrumbList for StructuredData component
-const breadcrumbList = [
-  {
-    name: 'Home',
-    item: siteConfig.url,
-  },
-  {
+  // Build FAQ list from translation keys
+  const fileSortifyFAQs = faqKeys.map((faq) => ({
+    name: tFaq.raw(faq.qKey),
+    text: tFaq.raw(faq.aKey),
+  }));
+
+  // Build testimonials with translated content
+  const tTestimonial = await getTranslations({
+    locale,
+    namespace: 'FileSortify.testimonials',
+  });
+  const fileSortifyTestimonials: Testimonial[] = testimonials.map((t) => ({
+    name: t.name,
+    role: t.role,
+    content: tTestimonial.raw(t.contentKey),
+    avatar: t.avatar,
+  }));
+
+  // Prepare ProductData for StructuredData component
+  const fileSortifyProductData: ProductData = {
     name: 'File Sortify',
-    item: `${siteConfig.url}/file-sortify`,
-  },
-];
+    description: tMeta('jsonLdDescription'),
+    appStoreUrl: productConfig.appStoreUrl,
+    version: '1.0',
+    price: '9.99',
+    currency: 'USD',
+    screenshots: screenshots.map((s) => s.image),
+    features: features.map((f) => f.titleKey),
+    keywords: [
+      'file organizer mac',
+      'mac file management',
+      'auto file sorter',
+      'download folder organizer',
+      'file automation mac',
+      'file sortify',
+    ].join(', '),
+    faqs: fileSortifyFAQs,
+    testimonials: fileSortifyTestimonials,
+    // Product-specific config
+    url: siteConfig.url,
+    logo: siteConfig.logo,
+    email: siteConfig.email,
+    stats: siteConfig.stats,
+  };
 
-export default function Home() {
+  // Define BreadcrumbList for StructuredData component
+  const breadcrumbList = [
+    {
+      name: tBreadcrumb('home'),
+      item: siteConfig.url,
+    },
+    {
+      name: tBreadcrumb('product'),
+      item: `${siteConfig.url}/file-sortify`,
+    },
+  ];
+
   return (
     <>
       <SmoothScroll />

@@ -1,8 +1,12 @@
+'use client';
+
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 import UserAvatar from './UserAvatar';
 import { testimonials } from '../data/page-data';
+import { useTranslations } from 'next-intl';
 
 export default function TestimonialsSection() {
+  const t = useTranslations('FileSortify.testimonials');
   return (
     <section className='py-20 bg-white' aria-labelledby='testimonials-heading'>
       <div className='container mx-auto px-6'>
@@ -11,11 +15,9 @@ export default function TestimonialsSection() {
             id='testimonials-heading'
             className='text-4xl font-bold text-gray-800 mb-4'
           >
-            Loved by Mac Users
+            {t('heading')}
           </h2>
-          <p className='text-xl text-gray-600'>
-            See what our customers are saying
-          </p>
+          <p className='text-xl text-gray-600'>{t('subtitle')}</p>
         </div>
         <div className='grid md:grid-cols-3 gap-8'>
           {testimonials.map((testimonial, index) => (
@@ -55,7 +57,7 @@ export default function TestimonialsSection() {
               </div>
               <div
                 className='flex text-yellow-400 mb-4'
-                aria-label='5 star rating'
+                aria-label={t('starRatingAria')}
               >
                 <div
                   itemProp='reviewRating'
@@ -75,7 +77,7 @@ export default function TestimonialsSection() {
                 ))}
               </div>
               <p className='text-gray-700 mb-4' itemProp='reviewBody'>
-                {testimonial.content}
+                {t(`items.${testimonial.contentKey}.content`)}
               </p>
               <div
                 className='flex items-center'
@@ -85,15 +87,15 @@ export default function TestimonialsSection() {
               >
                 <UserAvatar
                   src={testimonial.avatar}
-                  alt={testimonial.name}
+                  alt={t(`items.${testimonial.contentKey}.name`)}
                   className='mr-4'
                 />
                 <div>
                   <p className='font-semibold text-gray-800' itemProp='name'>
-                    {testimonial.name}
+                    {t(`items.${testimonial.contentKey}.name`)}
                   </p>
                   <p className='text-sm text-gray-600' itemProp='jobTitle'>
-                    {testimonial.role}
+                    {t(`items.${testimonial.contentKey}.role`)}
                   </p>
                 </div>
               </div>

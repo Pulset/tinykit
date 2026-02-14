@@ -1,49 +1,43 @@
 export const features = [
   {
     icon: 'fas fa-magic',
-    title: 'Smart Auto-Categorization',
-    description:
-      'Automatically sorts files into appropriate folders based on file types, names, and content patterns.',
+    titleKey: '0.title',
+    descKey: '0.description',
     bgColor: 'bg-blue-100',
     iconColor: 'text-blue-600',
   },
   {
     icon: 'fas fa-cog',
-    title: 'Custom Rules Engine',
-    description:
-      'Create personalized sorting rules tailored to your specific workflow and preferences.',
+    titleKey: '1.title',
+    descKey: '1.description',
     bgColor: 'bg-green-100',
     iconColor: 'text-green-600',
   },
   {
     icon: 'fas fa-bell',
-    title: 'Real-Time Monitoring',
-    description:
-      'Watch folders in real-time and automatically organize new files as they arrive.',
+    titleKey: '2.title',
+    descKey: '2.description',
     bgColor: 'bg-purple-100',
     iconColor: 'text-purple-600',
   },
   {
     icon: 'fas fa-history',
-    title: 'Operation History',
-    description:
-      'Track all file movements with a comprehensive history log and undo any changes if needed.',
+    titleKey: '3.title',
+    descKey: '3.description',
     bgColor: 'bg-red-100',
     iconColor: 'text-red-600',
   },
   {
     icon: 'fas fa-shield-alt',
-    title: 'Safe & Secure',
-    description:
-      'Built with security in mind. Your files never leave your Mac and all operations are safe.',
+    titleKey: '4.title',
+    descKey: '4.description',
     bgColor: 'bg-yellow-100',
     iconColor: 'text-yellow-600',
   },
   {
     icon: 'fas fa-bolt',
-    title: 'Lightning Fast',
-    description:
-      'Optimized for macOS with native performance. Organize thousands of files in seconds.',
+    titleKey: '5.title',
+    descKey: '5.description',
     bgColor: 'bg-indigo-100',
     iconColor: 'text-indigo-600',
   },
@@ -52,25 +46,25 @@ export const features = [
 export const howItWorks = [
   {
     step: 1,
-    title: 'Choose Your Folder',
-    description:
-      'Select folder you want to organize - typically your Downloads folder',
+    titleKey: '0.title',
+    descKey: '0.description',
+    imageAltKey: '0.imageAlt',
     image: 'https://cdn.tinykit.app/file-sortify/images/add.png',
     gradientColors: 'from-purple-400 to-pink-400',
   },
   {
     step: 2,
-    title: 'Configure Rules',
-    description:
-      'Set up custom rules or use our smart defaults for automatic categorization',
+    titleKey: '1.title',
+    descKey: '1.description',
+    imageAltKey: '1.imageAlt',
     image: 'https://cdn.tinykit.app/file-sortify/images/rules.png',
     gradientColors: 'from-blue-400 to-cyan-400',
   },
   {
     step: 3,
-    title: 'Sit Back & Relax',
-    description:
-      'File Sortify automatically organizes your files in background',
+    titleKey: '2.title',
+    descKey: '2.description',
+    imageAltKey: '2.imageAlt',
     image: 'https://cdn.tinykit.app/file-sortify/images/start.png',
     gradientColors: 'from-green-400 to-teal-400',
   },
@@ -78,18 +72,18 @@ export const howItWorks = [
 
 export const screenshots = [
   {
-    title: 'Main Dashboard',
-    description: 'Monitor and control all your file operations',
+    titleKey: '0.title',
+    descKey: '0.description',
     image: 'https://cdn.tinykit.app/file-sortify/images/dashboard.png',
   },
   {
-    title: 'Custom Rules',
-    description: 'Create powerful organization rules',
+    titleKey: '1.title',
+    descKey: '1.description',
     image: 'https://cdn.tinykit.app/file-sortify/images/rules.png',
   },
   {
-    title: 'Operation History',
-    description: 'Track and review all file movements',
+    titleKey: '2.title',
+    descKey: '2.description',
     image: 'https://cdn.tinykit.app/file-sortify/images/revert.png',
   },
 ];
@@ -98,29 +92,26 @@ export const testimonials = [
   {
     name: 'Sarah Chen',
     role: 'Designer',
-    content:
-      "File Sortify has completely transformed how I manage my Downloads folder. It's like having a personal assistant for file organization!",
+    contentKey: '0.content',
     avatar: 'https://cdn.tinykit.app/file-sortify/images/user5.jpg',
   },
   {
     name: 'Mark Johnson',
     role: 'Developer',
-    content:
-      "The custom rules feature is incredible. I've set it up to organize my work files perfectly. Saves me hours every week!",
+    contentKey: '1.content',
     avatar: 'https://cdn.tinykit.app/file-sortify/images/user6.jpg',
   },
   {
     name: 'Emily Rodriguez',
     role: 'Photographer',
-    content:
-      'Finally, a Mac app that just works! Clean interface, powerful features, and it respects my privacy. Highly recommended!',
+    contentKey: '2.content',
     avatar: 'https://cdn.tinykit.app/file-sortify/images/user7.jpg',
   },
 ];
 
 export const navItems = [
-  { label: 'Features', href: '#features' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Screenshots', href: '#screenshots' },
-  { label: 'Pricing', href: '#pricing' },
+  { labelKey: 'FileSortify.nav.items.0.label', href: '#features' },
+  { labelKey: 'FileSortify.nav.items.1.label', href: '#how-it-works' },
+  { labelKey: 'FileSortify.nav.items.2.label', href: '#screenshots' },
+  { labelKey: 'FileSortify.nav.items.3.label', href: '#pricing' },
 ];

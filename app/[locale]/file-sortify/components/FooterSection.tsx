@@ -1,9 +1,14 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
 import FontAwesomeIcon from '@/app/components/FontAwesomeIcon';
 import { siteConfig } from '../data/site-config';
 
 export default function FooterSection() {
+  const t = useTranslations('FileSortify.footer');
+
   return (
     <footer className='bg-gray-900 text-white py-12' role='contentinfo'>
       <div className='container mx-auto px-6'>
@@ -11,13 +16,13 @@ export default function FooterSection() {
           <div className='flex items-center justify-center md:justify-start'>
             <Image
               src={siteConfig.logo}
-              alt='File Sortify Logo'
+              alt={t('logoAlt')}
               width={30}
               height={30}
               className='mr-3'
             />
             <span className='text-xl md:text-2xl font-bold text-gray-400'>
-              File Sortify
+              {t('brand')}
             </span>
           </div>
           <nav
@@ -29,7 +34,7 @@ export default function FooterSection() {
               className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Contact us via email'
+              aria-label={t('contactAria')}
             >
               <FontAwesomeIcon
                 name='fas fa-envelope'
@@ -37,37 +42,37 @@ export default function FooterSection() {
                 aria-hidden='true'
               />
               <span className='hidden sm:inline'>{siteConfig.email}</span>
-              <span className='sm:hidden'>Email</span>
+              <span className='sm:hidden'>{t('emailLabel')}</span>
             </a>
             <Link
               href='/file-sortify/privacy'
               className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
-              aria-label='View privacy policy'
+              aria-label={t('privacyAria')}
             >
               <FontAwesomeIcon
                 name='fas fa-shield-alt'
                 className='mr-2'
                 aria-hidden='true'
               />
-              Privacy Policy
+              {t('privacyLink')}
             </Link>
             <Link
               href='/file-sortify/terms'
               className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
-              aria-label='View terms of service'
+              aria-label={t('termsAria')}
             >
               <FontAwesomeIcon
                 name='fas fa-file-contract'
                 className='mr-2'
                 aria-hidden='true'
               />
-              Terms of Service
+              {t('termsLink')}
             </Link>
           </nav>
         </div>
         <div className='border-t border-gray-800 mt-8 pt-6 text-center text-gray-400'>
           <p className='text-sm'>
-            &copy; {new Date().getFullYear()} File Sortify. All rights reserved.
+            {t('copyright', { year: new Date().getFullYear() })}
           </p>
         </div>
       </div>
