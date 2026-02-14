@@ -23,21 +23,33 @@ export default function HomePage() {
             <p className='text-2xl font-bold text-gray-800'>TinyKit</p>
           </div>
           {/* Language Switcher */}
-          <div className='flex gap-2 text-sm'>
-            <Link href='/' locale='en' className='hover:text-purple-600'>
+          <div className='flex flex-wrap gap-1.5 sm:gap-2 text-xs sm:text-sm'>
+            <Link href='/' locale='en' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
               EN
             </Link>
-            <Link href='/' locale='zh' className='hover:text-purple-600'>
+            <Link href='/' locale='zh' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
               中文
             </Link>
-            <Link href='/' locale='ja' className='hover:text-purple-600'>
+            <Link href='/' locale='ja' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
               日本語
             </Link>
-            <Link href='/' locale='ko' className='hover:text-purple-600'>
+            <Link href='/' locale='ko' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
               한국어
             </Link>
-            <Link href='/' locale='fr' className='hover:text-purple-600'>
-              Français
+            <Link href='/' locale='es' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
+              ES
+            </Link>
+            <Link href='/' locale='pt' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
+              PT
+            </Link>
+            <Link href='/' locale='de' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
+              DE
+            </Link>
+            <Link href='/' locale='ru' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
+              RU
+            </Link>
+            <Link href='/' locale='fr' className='hover:text-purple-600 px-1.5 py-0.5 rounded hover:bg-purple-50 transition-colors'>
+              FR
             </Link>
           </div>
         </div>
