@@ -151,8 +151,16 @@ export default function StructuredData({
         '@type': 'SoftwareApplication',
         name: productData.name,
       },
-      author: { '@type': 'Person', name: testimonial.name },
-      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+      author: {
+        '@type': 'Person',
+        name: testimonial.name,
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: 5,
+        bestRating: '5',
+        worstRating: '1',
+      },
       reviewBody: testimonial.content,
       datePublished: '2025-12-01', // This could also be part of dynamic data
     }));
