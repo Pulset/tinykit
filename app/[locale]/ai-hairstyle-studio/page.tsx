@@ -11,6 +11,7 @@ import { siteConfig, productConfig } from './data/site-config';
 import { features, howItWorks, testimonials } from './data/page-data';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 // Define FAQs for AI Hairstyle Studio page structured data
 const aiHairstyleFAQS = [
   {
@@ -304,7 +305,7 @@ export default function HairstylePage() {
                       color: getFeatureColor(index).iconColor,
                     }}
                   >
-                    <FontAwesomeIcon name={feature.icon as any} />
+                    <FontAwesomeIcon name={feature.icon as React.ComponentProps<typeof FontAwesomeIcon>['name']} />
                   </div>
                   <h3 className='text-xl font-bold mb-3 text-gray-800'>
                     {feature.title}
@@ -417,7 +418,7 @@ export default function HairstylePage() {
                     </div>
                   </div>
                   <p className='text-gray-600 leading-relaxed italic'>
-                    "{t.content}"
+                    &quot;{t.content}&quot;
                   </p>
                   <div className='flex text-yellow-500 mt-4 text-sm gap-1'>
                     {[...Array(5)].map((_, i) => (
@@ -512,18 +513,18 @@ export default function HairstylePage() {
               >
                 Support
               </a>
-              <a
+              <Link
                 href='/ai-hairstyle-studio/privacy'
                 className='hover:text-[#d63384] transition flex items-center'
               >
                 Privacy Policy
-              </a>
-              <a
+              </Link>
+              <Link
                 href='/ai-hairstyle-studio/terms'
                 className='hover:text-[#d63384] transition flex items-center'
               >
                 Terms of Service
-              </a>
+              </Link>
             </div>
             <p className='text-gray-500 text-xs sm:text-sm'>
               &copy; {new Date().getFullYear()} AI Hairstyle Studio. Built with

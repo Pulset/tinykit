@@ -11,7 +11,7 @@ import {
   Settings
 } from 'lucide-react'
 
-type IconName =
+export type IconName =
   | 'star'
   | 'check'
   | 'fab fa-apple'

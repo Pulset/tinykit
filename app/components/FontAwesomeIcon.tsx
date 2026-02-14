@@ -1,5 +1,6 @@
 'use client'
 
+import type { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faStar as fasStar,
@@ -34,7 +35,7 @@ import {
   faYoutube as fabYoutube
 } from '@fortawesome/free-brands-svg-icons'
 
-type FontAwesomeIconName =
+export type FontAwesomeIconName =
   | 'fas fa-star'
   | 'fas fa-magic'
   | 'fas fa-cog'
@@ -64,7 +65,7 @@ type FontAwesomeIconName =
   | 'fas fa-quote-left'
   | 'fas fa-file-contract'
 
-const iconMap: Record<FontAwesomeIconName, any> = {
+const iconMap: Record<FontAwesomeIconName, IconProp> = {
   // Solid icons
   'fas fa-star': fasStar,
   'fas fa-magic': fasMagic,
@@ -112,5 +113,5 @@ export default function FontAwesomeIconComponent({ name, className = '', style }
     return <span className={className} />
   }
 
-  return <FontAwesomeIcon icon={icon} className={className} style={style as any} />
+  return <FontAwesomeIcon icon={icon} className={className} style={style} />
 }

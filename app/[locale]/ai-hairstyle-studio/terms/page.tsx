@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Terms of Service - AI Hairstyle Studio',
@@ -51,12 +52,12 @@ export default function TermsPage() {
                 1. Acceptance of Terms
               </h2>
               <p className='text-gray-700 mb-6 leading-relaxed'>
-                Welcome to AI Hairstyle App (the "App"). Please read this Terms
-                of Service agreement (the "Agreement") carefully before
-                downloading, installing, or using the App. By using the App, you
-                agree to be bound by all terms and conditions of this Agreement.
-                If you do not agree to any part of this Agreement, do not use
-                the App.
+                Welcome to AI Hairstyle App (the &quot;App&quot;). Please read
+                this Terms of Service agreement (the &quot;Agreement&quot;)
+                carefully before downloading, installing, or using the App. By
+                using the App, you agree to be bound by all terms and conditions
+                of this Agreement. If you do not agree to any part of this
+                Agreement, do not use the App.
               </p>
             </section>
 
@@ -176,7 +177,7 @@ export default function TermsPage() {
                   <span className='font-semibold text-gray-800'>
                     • Infringing
                   </span>{' '}
-                  - Any photos or content that infringe upon others'
+                  - Any photos or content that infringe upon others&apos;
                   intellectual property rights, privacy rights, or other rights
                 </li>
                 <li className='text-gray-700'>
@@ -353,12 +354,12 @@ export default function TermsPage() {
                 We take your privacy seriously. For information on how we
                 collect, use, and protect your personal information, please
                 refer to our{' '}
-                <a
+                <Link
                   href='/ai-hairstyle-studio/privacy'
                   className='text-purple-600 hover:text-purple-800 font-semibold underline'
                 >
                   Privacy Policy
-                </a>
+                </Link>
                 .
               </p>
             </section>
@@ -370,12 +371,13 @@ export default function TermsPage() {
               </h2>
 
               <h3 className='text-xl font-semibold text-gray-800 mb-4'>
-                8.1 Service "As Is"
+                8.1 Service &quot;As Is&quot;
               </h3>
               <ul className='space-y-3 mb-8'>
                 <li className='text-gray-700'>
-                  The service is provided on an "AS IS" and "AS AVAILABLE" basis
-                  without any warranties of any kind, either express or implied.
+                  The service is provided on an &quot;AS IS&quot; and &quot;AS
+                  AVAILABLE&quot; basis without any warranties of any kind,
+                  either express or implied.
                 </li>
               </ul>
 
@@ -435,9 +437,9 @@ export default function TermsPage() {
                 You agree to indemnify and hold harmless the Company and its
                 subsidiaries, affiliates, officers, agents, and employees from
                 any claim, damage, liability, loss, cost, and expense (including
-                reasonable attorneys' fees) arising from or related to your use
-                of the App, your violation of this Agreement, or your violation
-                of any third-party rights.
+                reasonable attorneys&apos; fees) arising from or related to your
+                use of the App, your violation of this Agreement, or your
+                violation of any third-party rights.
               </p>
             </section>
 
@@ -498,8 +500,8 @@ export default function TermsPage() {
               </h2>
               <p className='text-gray-700 leading-relaxed'>
                 This Agreement shall be governed by and construed in accordance
-                with the laws of the People's Republic of China (excluding its
-                conflict of law principles).
+                with the laws of the People&apos;s Republic of China (excluding
+                its conflict of law principles).
               </p>
             </section>
 
@@ -525,7 +527,7 @@ export default function TermsPage() {
               <ul className='space-y-3'>
                 <li className='text-gray-700'>
                   If negotiation fails, either party may bring a lawsuit to a
-                  competent people's court at our location.
+                  competent people&apos;s court at our location.
                 </li>
               </ul>
             </section>

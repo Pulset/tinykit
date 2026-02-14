@@ -8,6 +8,7 @@ import StructuredData, {
   Testimonial,
 } from '@/app/components/StructuredData'; // Import StructuredData and types
 import Image from 'next/image';
+import Link from 'next/link';
 import { siteConfig, productConfig } from '@/app/data/site-config';
 import {
   features,
@@ -223,7 +224,6 @@ export default function Home() {
                 title={feature.title}
                 description={feature.description}
                 bgColor={feature.bgColor}
-                iconColor={feature.iconColor}
               />
             ))}
           </div>
@@ -553,7 +553,7 @@ export default function Home() {
             Ready to Organize Your Digital Life?
           </h2>
           <p className='text-xl mb-8 text-gray-100'>
-            Join thousands of Mac users who've simplified their file management
+            Join thousands of Mac users who&apos;ve simplified their file management
           </p>
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
             <a
@@ -609,7 +609,7 @@ export default function Home() {
                 <span className='hidden sm:inline'>{siteConfig.email}</span>
                 <span className='sm:hidden'>Email</span>
               </a>
-              <a
+              <Link
                 href='/file-sortify/privacy'
                 className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
                 aria-label='View privacy policy'
@@ -620,8 +620,8 @@ export default function Home() {
                   aria-hidden='true'
                 />
                 Privacy Policy
-              </a>
-              <a
+              </Link>
+              <Link
                 href='/file-sortify/terms'
                 className='text-gray-400 hover:text-white transition flex items-center text-sm sm:text-base'
                 aria-label='View terms of service'
@@ -632,7 +632,7 @@ export default function Home() {
                   aria-hidden='true'
                 />
                 Terms of Service
-              </a>
+              </Link>
             </nav>
           </div>
           <div className='border-t border-gray-800 mt-8 pt-6 text-center text-gray-400'>

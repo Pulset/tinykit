@@ -17,7 +17,7 @@ export default function PrivacyPage() {
             {/* Summary Section */}
             <div className='bg-green-50 border-l-4 border-green-500 p-6 mb-8 rounded-lg'>
               <h3 className='text-xl font-semibold text-green-800 mb-4'>
-                AI Hairstyle Studio's Core Privacy Commitments:
+                AI Hairstyle Studio&apos;s Core Privacy Commitments:
               </h3>
               <ul className='space-y-2'>
                 <li className='text-green-800'>
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
                 that allows users to try on different hairstyles and colors
                 using their photos. This Privacy Policy explains how we collect,
                 use, store, share, and protect your personal information when
-                you use our mobile application ("App").
+                you use our mobile application (&quot;App&quot;).
               </p>
               <p className='text-gray-700 mb-6 leading-relaxed'>
                 AI Hairstyle Studio is committed to protecting your privacy and
@@ -111,7 +111,8 @@ export default function PrivacyPage() {
                   <strong className='text-gray-800'>User Photos:</strong>
                   <span className='text-gray-700 ml-2'>
                     When you use the app to try on hairstyles, we collect the
-                    photos you upload or capture through your device's camera.
+                    photos you upload or capture through your device&apos;s
+                    camera.
                   </span>
                 </li>
                 <li className='text-gray-700'>
@@ -461,7 +462,7 @@ export default function PrivacyPage() {
             {/* Children's Privacy */}
             <section className='mb-12'>
               <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
-                8. Children's Privacy
+                8. Children&apos;s Privacy
               </h2>
               <ul className='space-y-3'>
                 <li className='text-gray-700'>
@@ -499,7 +500,7 @@ export default function PrivacyPage() {
                 </li>
                 <li className='text-gray-700'>
                   <strong>User Control:</strong> You can grant or deny these
-                  permissions through your device's settings.
+                  permissions through your device&apos;s settings.
                 </li>
                 <li className='text-gray-700'>
                   <strong>Local Processing:</strong> Photos are processed

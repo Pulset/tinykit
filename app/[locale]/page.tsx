@@ -1,13 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
-import { setRequestLocale } from 'next-intl/server';
 
-export default function HomePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default function HomePage() {
   const t = useTranslations('Index');
 
   return (
