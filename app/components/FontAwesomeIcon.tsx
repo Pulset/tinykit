@@ -1,6 +1,7 @@
-'use client'
+'use client';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import type { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faStar as fasStar,
   faMagic as fasMagic,
@@ -25,16 +26,16 @@ import {
   faDownload as fasDownload,
   faHeart as fasHeart,
   faQuoteLeft as fasQuoteLeft,
-  faFileContract as fasFileContract
-} from '@fortawesome/free-solid-svg-icons'
+  faFileContract as fasFileContract,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faApple as fabApple,
   faGithub as fabGithub,
   faDiscord as fabDiscord,
-  faYoutube as fabYoutube
-} from '@fortawesome/free-brands-svg-icons'
+  faYoutube as fabYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 
-type FontAwesomeIconName =
+export type FontAwesomeIconName =
   | 'fas fa-star'
   | 'fas fa-magic'
   | 'fas fa-cog'
@@ -62,9 +63,9 @@ type FontAwesomeIconName =
   | 'fas fa-download'
   | 'fas fa-heart'
   | 'fas fa-quote-left'
-  | 'fas fa-file-contract'
+  | 'fas fa-file-contract';
 
-const iconMap: Record<FontAwesomeIconName, any> = {
+const iconMap: Record<FontAwesomeIconName, IconProp> = {
   // Solid icons
   'fas fa-star': fasStar,
   'fas fa-magic': fasMagic,
@@ -96,21 +97,27 @@ const iconMap: Record<FontAwesomeIconName, any> = {
   'fab fa-github': fabGithub,
   'fab fa-discord': fabDiscord,
   'fab fa-youtube': fabYoutube,
-}
+};
 
 interface FontAwesomeIconProps {
-  name: FontAwesomeIconName
-  className?: string
-  style?: React.CSSProperties
+  name: FontAwesomeIconName;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
-export default function FontAwesomeIconComponent({ name, className = '', style }: FontAwesomeIconProps) {
-  const icon = iconMap[name]
+export default function FontAwesomeIconComponent({
+  name,
+  className = '',
+  style,
+}: FontAwesomeIconProps) {
+  const icon = iconMap[name];
 
   if (!icon) {
-    console.warn(`Font Awesome icon "${name}" not found`)
-    return <span className={className} />
+    console.warn(`Font Awesome icon "${name}" not found`);
+    return <span className={className} />;
   }
 
-  return <FontAwesomeIcon icon={icon} className={className} style={style as any} />
+  return (
+    <FontAwesomeIcon icon={icon} className={className} style={style as any} />
+  );
 }

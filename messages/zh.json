@@ -1,0 +1,474 @@
+{
+  "AIHairstyle": {
+    "beforeAfter": {
+      "afterAlt": "发型改造后",
+      "afterDescription": "惊艳的齐肩波浪卷，丰盈时尚",
+      "afterLabel": "改造后",
+      "beforeAlt": "发型改造前",
+      "beforeDescription": "清新现代风格的短波波头",
+      "beforeLabel": "改造前",
+      "cta": "尝试此改造",
+      "heading": "见证魔法",
+      "subtitle": "拖动滑块查看改造效果"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "product": "AI Hairstyle Studio"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "AI Hairstyle Studio 是一款创新应用，利用先进的 AI 技术让您虚拟试用数百种不同发型和发色。上传您的照片，在做出任何承诺前查看自己换新发型的样子。",
+          "question": "什么是 AI Hairstyle Studio？"
+        },
+        "1": {
+          "answer": "只需上传一张清晰的正面照片，浏览我们丰富的发型和颜色收藏，我们的 AI 会即刻以逼真的效果将它们应用到您的照片上。您可以尝试无限风格并保存或分享您的最爱。",
+          "question": "AI Hairstyle Studio 如何工作？"
+        },
+        "2": {
+          "answer": "绝对安全！您的隐私是我们的首要任务。所有照片都经过安全处理，绝不会存储在我们的服务器上。您的图像会在处理后立即删除。",
+          "question": "我的照片数据安全吗？"
+        },
+        "3": {
+          "answer": "AI Hairstyle Studio 可通过一次性购买 9.99 美元获得。这为您提供终身访问，包括无限发型试用、访问所有收藏、高清导出和所有未来更新。",
+          "question": "AI Hairstyle Studio 需要多少钱？"
+        },
+        "4": {
+          "answer": "可以！您可以以高清晰度质量保存改造后的照片，并轻松与朋友、家人或发型师分享，向他们准确展示您想要的造型。",
+          "question": "我可以保存和分享我的新造型吗？"
+        }
+      }
+    },
+    "features": {
+      "heading": "魔法功能",
+      "items": {
+        "0": {
+          "description": "先进的 AI 技术分析您的脸型和特征，真实地应用不同发型。",
+          "title": "AI 驱动的试用"
+        },
+        "1": {
+          "description": "从经典剪裁到时尚风格 - 探索适合各种场合的丰富发型收藏。",
+          "title": "数百种风格"
+        },
+        "2": {
+          "description": "即刻尝试不同发色 - 金色、深色、红色、柔和色调或大胆的幻想色。",
+          "title": "发色模拟器"
+        },
+        "3": {
+          "description": "上传您的照片，几秒钟内看到真实效果。无需等待，无需预约沙龙。",
+          "title": "即时结果"
+        },
+        "4": {
+          "description": "您的照片将得到安全处理。完全保证隐私。",
+          "title": "隐私优先"
+        },
+        "5": {
+          "description": "以高清晰度保存和分享您的新造型。非常适合展示给您的发型师。",
+          "title": "高清导出"
+        }
+      },
+      "subtitle": "找到完美造型所需的一切"
+    },
+    "footer": {
+      "brand": "AI Hairstyle Studio",
+      "contactLink": "联系我们",
+      "copyright": "© {year} AI Hairstyle Studio。由 TinyKit 用 ❤️ 打造。",
+      "downloadLink": "下载",
+      "featuresLink": "功能",
+      "logoAlt": "AI Hairstyle Studio 标志",
+      "pricingLink": "定价",
+      "privacyLink": "隐私政策",
+      "supportLink": "支持",
+      "termsLink": "服务条款"
+    },
+    "hero": {
+      "aiAccuracyLabel": "AI 准确率",
+      "aiAccuracyValue": "99.8%",
+      "appliedLabel": "已应用",
+      "badge": "✨ #1 AI 发型应用",
+      "ctaDownload": "立即下载",
+      "ctaDownloadAria": "在 App Store 下载 AI Hairstyle Studio",
+      "ctaHowItWorks": "查看工作原理",
+      "ctaHowItWorksAria": "查看 AI Hairstyle Studio 的工作原理",
+      "lovedByLabel": "深受喜爱",
+      "lovedByValue": "50K+",
+      "screenshotAlt": "AI Hairstyle Studio 应用截图，展示虚拟发型试用结果，以及原始发型和改造后发型的并排对比",
+      "subtitle": "利用我们的先进 AI 即刻改变您的造型。在做出剪发决定前，实时尝试数百种沙龙级发型和颜色。",
+      "titleLine1": "焕新发型，",
+      "titleLine2": "焕新自我。"
+    },
+    "howItWorks": {
+      "heading": "简单步骤",
+      "steps": {
+        "0": {
+          "description": "上传一张清晰的正面照片",
+          "imageAlt": "AI Hairstyle Studio 步骤 1：上传您的照片。上传一张清晰的正面照片",
+          "title": "上传您的照片"
+        },
+        "1": {
+          "description": "浏览数百种可试用的发型和颜色",
+          "imageAlt": "AI Hairstyle Studio 步骤 2：选择风格。浏览数百种可试用的发型和颜色",
+          "title": "选择风格"
+        },
+        "2": {
+          "description": "AI 即刻将发型应用到您的照片 - 新造型，新你！",
+          "imageAlt": "AI Hairstyle Studio 步骤 3：查看效果。AI 即刻将发型应用到您的照片 - 新造型，新你！",
+          "title": "查看效果"
+        }
+      },
+      "subtitle": "3 步开启新造型"
+    },
+    "meta": {
+      "applicationName": "AI Hairstyle Studio",
+      "description": "利用 AI 即刻尝试 100+ 种发型和发色。上传您的照片，在光顾沙龙前找到完美造型。iOS 免费下载。",
+      "jsonLdDescription": "利用 AI 即刻尝试 100+ 种发型和发色。上传您的照片，在光顾沙龙前找到完美造型。iOS 免费下载。",
+      "jsonLdFeatureList": {
+        "0": "AI 驱动的发型试用",
+        "1": "数百种发型选项",
+        "2": "发色模拟器",
+        "3": "即时结果",
+        "4": "隐私保护",
+        "5": "高清照片导出",
+        "6": "定期风格更新"
+      },
+      "keyFeatures": "AI 驱动的试用、数百种风格、发色模拟器、即时结果、隐私优先、高清导出",
+      "ogDescription": "在做出决定前先看看自己换新发型的样子！AI 驱动的试用功能，提供 100+ 种风格和颜色。",
+      "ogImageAlt": "AI Hairstyle Studio - 虚拟发型试用应用界面",
+      "ogTitle": "AI 发型免费试用 - 虚拟发型改造 | TinyKit",
+      "productType": "AI 美妆与生活方式应用",
+      "targetAudience": "希望在承诺新造型前尝试不同发型的任何人",
+      "title": "AI 发型免费试用 - 虚拟发型改造",
+      "twitterDescription": "利用 AI 即刻尝试 100+ 种发型和颜色。在剪发前改变您的造型。",
+      "twitterTitle": "AI 发型免费试用 - 虚拟发型改造 | TinyKit",
+      "useCases": "在光顾沙龙前尝试发型、试验发色、找到完美发型、与发型师分享造型"
+    },
+    "nav": {
+      "brand": "AI Hairstyle Studio",
+      "closeMenu": "关闭菜单",
+      "download": "下载",
+      "downloadAria": "在 App Store 下载 AI Hairstyle Studio",
+      "downloadNow": "立即下载",
+      "items": {
+        "0": {
+          "label": "魔法"
+        },
+        "1": {
+          "label": "功能"
+        },
+        "2": {
+          "label": "工作原理"
+        },
+        "3": {
+          "label": "定价"
+        }
+      },
+      "logoAlt": "AI Hairstyle 标志",
+      "openMenu": "打开菜单"
+    },
+    "page": {
+      "skipToContent": "跳转到主要内容"
+    },
+    "pricing": {
+      "badgeText": "立即开始",
+      "cta": "立即下载",
+      "ctaAria": "免费下载 AI Hairstyle Studio",
+      "features": {
+        "0": "免费下载",
+        "1": "预览发型",
+        "2": "购买生成积分",
+        "3": "高清照片导出",
+        "4": "定期风格更新"
+      },
+      "freeTitle": "免费下载",
+      "period": "/永久",
+      "price": "$0"
+    },
+    "testimonials": {
+      "avatarAlt": "{name} 的头像",
+      "heading": "用户好评",
+      "items": {
+        "0": {
+          "content": "AI Hairstyle Studio 拯救了我，避免了发型灾难！我先虚拟尝试了波波头，发现不适合我。绝对爱死这个应用了！",
+          "name": "Jessica Taylor",
+          "role": "时尚博主"
+        },
+        "1": {
+          "content": "我一直想尝试不同发型，但不敢下定决心。这个应用让我无风险地进行实验。改变游戏规则！",
+          "name": "Michael Chen",
+          "role": "大学生"
+        },
+        "2": {
+          "content": "AI 效果非常逼真！我给发型师看了效果，她完全明白我想要什么。物有所值！",
+          "name": "Emma Williams",
+          "role": "营销经理"
+        }
+      },
+      "ratingAria": "评分：5 星中的 5 星"
+    }
+  },
+  "Brand": {
+    "name": "TinyKit",
+    "tagline": "打造极简实用的应用程序"
+  },
+  "Common": {
+    "allRightsReserved": "版权所有。",
+    "contactViaEmail": "通过电子邮件联系我们",
+    "download": "下载",
+    "downloadForMac": "Mac 版下载",
+    "downloadNow": "立即下载",
+    "downloadOnAppStore": "在 Mac App Store 下载",
+    "downloadOnMacAppStore": "在 Mac App Store 下载",
+    "email": "电子邮件",
+    "features": "功能",
+    "home": "首页",
+    "howItWorks": "工作原理",
+    "pricing": "定价",
+    "privacy": "隐私政策",
+    "seeHowItWorks": "查看工作原理",
+    "starRating": "五星评分",
+    "step": "第 {number} 步",
+    "support": "支持",
+    "terms": "服务条款",
+    "viewPrivacy": "查看隐私政策",
+    "viewTerms": "查看服务条款"
+  },
+  "FileSortify": {
+    "breadcrumb": {
+      "home": "首页",
+      "product": "File Sortify"
+    },
+    "cta": {
+      "button": "在 Mac App Store 下载",
+      "buttonAria": "在 Mac App Store 下载 File Sortify",
+      "heading": "准备好整理您的数字生活了吗？",
+      "subtitle": "加入数千名已简化文件管理的 Mac 用户行列"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "File Sortify 是一款专为 Mac 设计的智能文件整理工具，可基于类型、自定义规则和实时监控自动分类和整理您的文件。非常适合保持下载文件夹和桌面的整洁有序。",
+          "question": "什么是 File Sortify？"
+        },
+        "1": {
+          "answer": "File Sortify 使用智能自动分类功能按类型（文档、图片、视频等）整理文件，允许您为特定文件类型或名称创建自定义规则，并实时监控文件夹以自动整理新到达的文件。",
+          "question": "File Sortify 如何整理文件？"
+        },
+        "2": {
+          "answer": "File Sortify 专为 macOS 独家设计。适用于运行 macOS 的所有现代 Mac 计算机，并与 Mac 文件系统无缝集成。",
+          "question": "File Sortify 与我的 Mac 兼容吗？"
+        },
+        "3": {
+          "answer": "File Sortify 可通过一次性购买 20 美元获得。这包括终身访问、无限使用、终身更新和所有未来功能，无需订阅。",
+          "question": "File Sortify 需要多少钱？"
+        },
+        "4": {
+          "answer": "可以！File Sortify 包含操作历史功能，允许您在需要时查看和恢复文件整理操作，确保您的文件始终安全。",
+          "question": "我可以撤消文件整理更改吗？"
+        }
+      }
+    },
+    "features": {
+      "heading": "强大功能",
+      "items": {
+        "0": {
+          "description": "基于文件类型、名称和内容模式，自动将文件分类到相应的文件夹中。",
+          "title": "智能自动分类"
+        },
+        "1": {
+          "description": "创建针对您特定工作流程和偏好量身定制的整理规则。",
+          "title": "自定义规则引擎"
+        },
+        "2": {
+          "description": "实时监控文件夹，并在新文件到达时自动整理。",
+          "title": "实时监控"
+        },
+        "3": {
+          "description": "通过全面的历史记录跟踪所有文件移动，并在需要时撤消任何更改。",
+          "title": "操作历史"
+        },
+        "4": {
+          "description": "以安全为核心构建。您的文件永远不会离开您的 Mac，所有操作都是安全的。",
+          "title": "安全可靠"
+        },
+        "5": {
+          "description": "针对 macOS 原生性能优化。在几秒钟内整理数千个文件。",
+          "title": "闪电般快速"
+        }
+      },
+      "subtitle": "完美整理文件所需的一切"
+    },
+    "footer": {
+      "brand": "File Sortify",
+      "contactAria": "通过电子邮件联系我们",
+      "copyright": "© {year} File Sortify。版权所有。",
+      "emailLabel": "电子邮件",
+      "logoAlt": "File Sortify 标志",
+      "privacyAria": "查看隐私政策",
+      "privacyLink": "隐私政策",
+      "termsAria": "查看服务条款",
+      "termsLink": "服务条款"
+    },
+    "hero": {
+      "ctaDemo": "观看演示",
+      "ctaDemoAria": "观看演示视频",
+      "ctaDownload": "在 Mac App Store 下载",
+      "ctaDownloadAria": "在 Mac App Store 下载 File Sortify",
+      "subtitle": "将您混乱的下载文件夹转变为整洁的天堂。File Sortify 基于类型、自定义规则和实时监控智能分类您的文件。",
+      "title": "自动整理您的文件！"
+    },
+    "howItWorks": {
+      "heading": "工作原理",
+      "stepAria": "第 {number} 步",
+      "steps": {
+        "0": {
+          "description": "选择要整理的文件夹 - 通常是您的下载文件夹",
+          "imageAlt": "选择文件夹界面",
+          "title": "选择文件夹"
+        },
+        "1": {
+          "description": "设置自定义规则或使用我们的智能默认值进行自动分类",
+          "imageAlt": "配置规则界面",
+          "title": "配置规则"
+        },
+        "2": {
+          "description": "File Sortify 在后台自动整理您的文件",
+          "imageAlt": "坐享其成界面",
+          "title": "坐享其成"
+        }
+      },
+      "subtitle": "3 个简单步骤完成整理"
+    },
+    "meta": {
+      "applicationName": "File Sortify",
+      "description": "使用 File Sortify 自动整理您的 Mac 文件。智能文件管理工具，支持自动分类、自定义规则和下载文件夹实时监控。",
+      "jsonLdDescription": "使用 File Sortify 自动整理您的文件。智能文件管理工具，支持按类型、自定义规则和实时监控整理文件。",
+      "keyFeatures": "自动分类、自定义规则、实时监控、操作历史",
+      "ogDescription": "使用 File Sortify 自动整理您的文件。智能文件管理工具，支持按类型、自定义规则和实时监控整理文件。",
+      "ogImageAlt": "自动整理 Mac 文件 | File Sortify",
+      "ogTitle": "自动整理 Mac 文件 | File Sortify",
+      "productType": "Mac 实用软件",
+      "targetAudience": "需要自动整理文件的 Mac 用户",
+      "title": "自动整理 Mac 文件 | File Sortify",
+      "twitterDescription": "使用 File Sortify 自动整理您的文件。智能文件管理工具。",
+      "twitterTitle": "自动整理 Mac 文件 | File Sortify",
+      "useCases": "整理下载文件夹、按类型排序文件、自动化文件管理、清理桌面文件"
+    },
+    "nav": {
+      "brand": "File Sortify",
+      "downloadForMac": "Mac 版下载",
+      "items": {
+        "0": {
+          "label": "功能"
+        },
+        "1": {
+          "label": "工作原理"
+        },
+        "2": {
+          "label": "截图"
+        },
+        "3": {
+          "label": "定价"
+        }
+      },
+      "logoAlt": "File Sortify 标志"
+    },
+    "pricing": {
+      "badgeText": "超值之选",
+      "cta": "购买 $9.99",
+      "features": {
+        "0": "免费试用中的所有功能",
+        "1": "无限使用",
+        "2": "终身更新",
+        "3": "所有未来功能",
+        "4": "一次付费，永久使用"
+      },
+      "heading": "一次性购买",
+      "licenseDescription": "终身访问 File Sortify，包含所有功能和更新",
+      "licenseName": "File Sortify 终身许可证",
+      "lifetimeTitle": "终身许可证",
+      "period": "/一次性",
+      "subtitle": "获得 File Sortify 的终身访问权限"
+    },
+    "screenshots": {
+      "heading": "美观直观的界面",
+      "items": {
+        "0": {
+          "description": "监控和控制所有文件操作",
+          "title": "主仪表板"
+        },
+        "1": {
+          "description": "创建强大的整理规则",
+          "title": "自定义规则"
+        },
+        "2": {
+          "description": "跟踪和查看所有文件移动",
+          "title": "操作历史"
+        }
+      },
+      "subtitle": "专为 macOS 设计"
+    },
+    "testimonials": {
+      "heading": "Mac 用户喜爱的工具",
+      "items": {
+        "0": {
+          "content": "File Sortify 完全改变了我管理下载文件夹的方式。就像有一个专门处理文件整理的私人助理！",
+          "name": "Sarah Chen",
+          "role": "设计师"
+        },
+        "1": {
+          "content": "自定义规则功能令人难以置信。我已经设置好完美整理我的工作文件。每周为我节省数小时！",
+          "name": "Mark Johnson",
+          "role": "开发者"
+        },
+        "2": {
+          "content": "终于找到一个真正好用的 Mac 应用！界面简洁、功能强大，而且尊重我的隐私。强烈推荐！",
+          "name": "Emily Rodriguez",
+          "role": "摄影师"
+        }
+      },
+      "starRatingAria": "五星评分",
+      "subtitle": "听听我们的客户怎么说"
+    }
+  },
+  "Index": {
+    "aiHairstyle": "AI 发型试用",
+    "aiHairstyleDesc": "换个发型，换个心情。利用 AI 立即尝试数百种发型。无风险尝试不同的剪裁、颜色和风格。",
+    "availableNow": "现已推出",
+    "comingSoon": "更多应用即将推出",
+    "comingSoonDesc": "我们正在为您开发更多的生产力工具。敬请期待！",
+    "fileSortify": "File Sortify",
+    "fileSortifyDesc": "Mac 智能文件整理工具。通过自定义规则和实时监控，自动分类和整理您的文件。",
+    "heroDesc": "探索 TinyKit，我们致力于构建简单、美观且高效的工具，旨在简化您的日常数字生活，远离繁杂。",
+    "heroTitle": "打造极简实用的应用程序",
+    "rights": "版权所有。",
+    "title": "TinyKit - 打造极简实用的应用程序"
+  },
+  "Legal": {
+    "languageNotice": "本文件仅提供英文版本。",
+    "privacyTitle": "隐私政策",
+    "termsTitle": "服务条款"
+  },
+  "Metadata": {
+    "classification": "Mac 实用工具",
+    "description": "找到您下一个心仪的生产力工具。TinyKit 为您打造极简实用的应用程序。简单、轻量的软件，无广告、无繁杂。",
+    "ogDescription": "找到您下一个心仪的生产力工具。TinyKit 为您打造极简实用的应用程序。简单、轻量的软件，无广告、无繁杂。",
+    "ogImageAlt": "TinyKit - 打造极简实用的应用程序",
+    "ogTitle": "TinyKit - 打造极简实用的应用程序",
+    "title": "TinyKit - 打造极简实用的应用程序",
+    "titleTemplate": "%s | TinyKit",
+    "twitterDescription": "找到您下一个心仪的生产力工具。TinyKit 为您打造极简实用的应用程序。简单、轻量的软件，无广告、无繁杂。",
+    "twitterTitle": "TinyKit - 打造极简实用的应用程序"
+  },
+  "StructuredData": {
+    "fileManagement": "文件管理",
+    "orgDescription": "Mac 用户生产力应用开发者",
+    "orgKnowsAbout": {
+      "0": "Mac 软件开发",
+      "1": "文件整理",
+      "2": "生产力工具",
+      "3": "macOS 实用程序"
+    },
+    "productCategory": "Mac 实用软件",
+    "websiteDescription": "面向 Mac 用户的生产力应用"
+  }
+}
