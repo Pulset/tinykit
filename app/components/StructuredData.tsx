@@ -161,10 +161,7 @@ export default function StructuredData({
         bestRating: 5,
         worstRating: 1,
       },
-      reviewBody: {
-        '@type': 'Text',
-        '@value': testimonial.content,
-      },
+      reviewBody: testimonial.content,
       datePublished: '2025-12-01', // This could also be part of dynamic data
     }));
 
