@@ -2,13 +2,13 @@
   "AIHairstyle": {
     "beforeAfter": {
       "afterAlt": "헤어스타일 변환 이후",
-      "afterDescription": "볼륨과 볼륨이 있는 어깨까지 롱",
+      "afterDescription": "풍성하고 스타일리시한 어깨 길이 웨이브",
       "afterLabel": "이후",
       "beforeAlt": "헤어스타일 변환 이전",
-      "beforeDescription": "신선하고 현대적인 짧은 컷",
+      "beforeDescription": "상큼하고 현대적인 짧은 픽시 컷",
       "beforeLabel": "이전",
-      "cta": "이 변화 체험해보세요",
-      "heading": "매직 보기",
+      "cta": "이 스타일 체험하기",
+      "heading": "마법 같은 변화",
       "subtitle": "슬라이더를 드래그하여 변화를 확인하세요"
     },
     "breadcrumb": {
@@ -18,61 +18,61 @@
     "faq": {
       "items": {
         "0": {
-          "answer": "AI Hairstyle Studio는 고급 AI 기술을 사용하여 가상으로 수백 개의 다양한 헤어스타일과 헤어 색상을 체험해 볼 수 있는 혁신적인 앱입니다. 사진을 업로드하고 컷을 자르기 전에 새로운 헤어스타일로 어떻게 보일지 확인해 보세요.",
+          "answer": "AI Hairstyle Studio는 고급 AI 기술을 사용하여 수백 가지의 다양한 헤어스타일과 헤어 컬러를 가상으로 체험해 볼 수 있는 혁신적인 앱입니다. 사진을 업로드하여 실제 머리를 자르기 전에 새로운 스타일이 본인에게 어울리는지 미리 확인해 보세요.",
           "question": "AI Hairstyle Studio란 무엇인가요?"
         },
         "1": {
-          "answer": "정면에서 찍힌 본인의 사진을 업로드하고, 방대한 헤어스타일과 색상 컬렉션을 �러보세요, 그리고 우리 AI가 즉시 사진에 현실적인 결과를 적용합니다. 무제한 스타일을 체험하고 즐겨운 항목을 저장하거나 공유할 수 있습니다.",
+          "answer": "정면에서 찍은 본인의 선명한 사진을 업로드하고 방대한 헤어스타일 및 컬러 컬렉션을 둘러보세요. AI가 즉시 사진에 사실적인 스타일을 적용해 드립니다. 무제한으로 스타일을 체험하고 마음에 드는 룩을 저장하거나 공유할 수 있습니다.",
           "question": "AI Hairstyle Studio는 어떻게 작동하나요?"
         },
         "2": {
-          "answer": "전적으로 안전합니다! 개인정보는 우리의 최우선 사항입니다. 모든 사진이 안전하게 처리되며 우리 서버에 절대 저장되지 않습니다. 이미지는 처리 즉시 삭제됩니다.",
-          "question": "내 사진 데이터가 안전한가요?"
+          "answer": "네, 전적으로 안전합니다! 사용자의 개인정보 보호는 저희의 최우선 과제입니다. 모든 사진은 안전하게 처리되며 서버에 저장되지 않습니다. 사진은 처리 즉시 삭제됩니다.",
+          "question": "내 사진 데이터는 안전한가요?"
         },
         "3": {
-          "answer": "AI Hairstyle Studio는 $9.99 USD의 일회 구매로 이용 가능합니다. 무제한 헤어스타일 체험, 모든 컬렉션 접근, HD 내보내기 및 모든 향후 업데이트가 포함된 평생 사용권을 제공합니다.",
-          "question": "AI Hairstyle Studio는 얼마인가요?"
+          "answer": "AI Hairstyle Studio는 9.99달러(USD)의 일회성 구매로 이용 가능합니다. 한 번의 구매로 평생 무제한 헤어스타일 체험, 모든 컬렉션 이용, HD 내보내기 및 모든 향후 업데이트를 제공받으실 수 있습니다.",
+          "question": "AI Hairstyle Studio의 가격은 얼마인가요?"
         },
         "4": {
-          "answer": "네! 고화질로 새 모습 사진을 저장하고 친구, 가족 또는 헤어스타일리스트에게 쉽게 공유할 수 있습니다.",
-          "question": "새로운 모습을 저장하고 공유할 수 있나요?"
+          "answer": "네! 변환된 사진을 고화질로 저장하여 친구, 가족 또는 헤어 디자이너에게 보여주며 원하는 스타일을 정확하게 전달할 수 있습니다.",
+          "question": "새로운 스타일을 저장하고 공유할 수 있나요?"
         }
       }
     },
     "features": {
-      "heading": "매직적인 기능",
+      "heading": "마법 같은 기능",
       "items": {
         "0": {
-          "description": "고급 AI 기술이 얼굴 모양과 특징을 분석하여 다양한 헤어스타일을 현실적으로 적용합니다.",
-          "title": "AI 지원 체험"
+          "description": "고급 AI 기술이 얼굴형과 특징을 분석하여 다양한 헤어스타일을 사실적으로 적용합니다.",
+          "title": "AI 기반 가상 체험"
         },
         "1": {
-          "description": "클래식 컷부터 트렌디 스타일까지 모든 기회의 방대한 헤어스타일을 탐색하세요.",
-          "title": "수백 개의 스타일"
+          "description": "클래식한 컷부터 최신 유행 스타일까지, 모든 상황에 어울리는 방대한 헤어스타일을 탐색하세요.",
+          "title": "수백 가지 스타일"
         },
         "2": {
-          "description": "블론드, 브루넷, �드, 파스텔 또는 대담한 판타지 색상을 즉시 체험해 보세요.",
-          "title": "헤어 색상 시뮬레이터"
+          "description": "금발, 갈색, 레드, 파스텔 또는 대담한 컬러까지 다양한 헤어 컬러를 즉시 적용해 보세요.",
+          "title": "헤어 컬러 시뮬레이터"
         },
         "3": {
-          "description": "사진을 업로드하고 몇 초 만에 현실적인 결과를 확인하세요. 기다릴 없이 salon 예약이 필요 없습니다.",
-          "title": "즉시 결과"
+          "description": "사진을 업로드하면 몇 초 만에 사실적인 결과를 확인할 수 있습니다. 대기 시간이나 미용실 예약이 필요 없습니다.",
+          "title": "즉각적인 결과"
         },
         "4": {
-          "description": "사진이 안전하게 처리됩니다. 완벽한 개인정보 보장이 보장됩니다.",
-          "title": "개인정보 우선"
+          "description": "모든 사진은 안전하게 처리됩니다. 완벽한 개인정보 보호를 보장합니다.",
+          "title": "개인정보 보호 우선"
         },
         "5": {
-          "description": "고화질로 새 모습을 저장하고 공유하세요. 헤어스타일리스트에게 보여주기 완벽합니다.",
+          "description": "새로운 모습을 고화질로 저장하고 공유하세요. 헤어 디자이너에게 보여주기에 완벽합니다.",
           "title": "HD 내보내기"
         }
       },
-      "subtitle": "완벽한 스타일을 찾는 데 필요한 모든 것"
+      "subtitle": "완벽한 룩을 찾는 데 필요한 모든 기능"
     },
     "footer": {
       "brand": "AI Hairstyle Studio",
       "contactLink": "문의하기",
-      "copyright": "© {year} AI Hairstyle Studio. TinyKit에서 ❤️로 제작.",
+      "copyright": "© {year} AI Hairstyle Studio. TinyKit에서 ❤️으로 제작.",
       "downloadLink": "다운로드",
       "featuresLink": "기능",
       "logoAlt": "AI Hairstyle Studio 로고",
@@ -88,59 +88,59 @@
       "badge": "✨ 1위 AI 헤어스타일 앱",
       "ctaDownload": "지금 다운로드",
       "ctaDownloadAria": "App Store에서 AI Hairstyle Studio 다운로드",
-      "ctaHowItWorks": "작동 방식 보기",
-      "ctaHowItWorksAria": "AI Hairstyle Studio 작동 방식 보기",
-      "lovedByLabel": "사랑받은 사용자",
-      "lovedByValue": "50K+",
-      "screenshotAlt": "원본 및 변형된 헤어스타일의 나란히 비교를 보여주는 AI Hairstyle Studio 앱 스�린샷",
-      "subtitle": "우리의 고급 AI 기술로 모습을 즉시 변환하세요. 컷을 자르기 전에 salon 품질의 헤어스타일과 색상을 실시간으로 체험해 보세요.",
-      "titleLine1": "헤어스타일을 바꾸면,",
-      "titleLine2": "나도 바뀐다."
+      "ctaHowItWorks": "사용법 보기",
+      "ctaHowItWorksAria": "AI Hairstyle Studio 사용법 보기",
+      "lovedByLabel": "사용자 수",
+      "lovedByValue": "5만 명 이상",
+      "screenshotAlt": "AI Hairstyle Studio 앱 스크린샷: 원본과 가상 헤어스타일 적용 후의 나란히 비교 화면",
+      "subtitle": "고급 AI 기술로 즉시 외모를 바꿔보세요. 실제로 머리를 자르기 전에 수백 가지 미용실 품질의 헤어스타일과 컬러를 실시간으로 체험할 수 있습니다.",
+      "titleLine1": "새로운 머리,",
+      "titleLine2": "새로운 나."
     },
     "howItWorks": {
       "heading": "간단한 단계",
       "steps": {
         "0": {
-          "description": "정면에서 찍힌 본인의 사진을 업로드하세요",
-          "imageAlt": "AI Hairstyle Studio 단계 1: 사진 업로드. 정면에서 찍힌 본인의 사진을 업로드하세요",
+          "description": "본인의 선명한 정면 사진을 업로드하세요",
+          "imageAlt": "AI Hairstyle Studio 1단계: 사진 업로드. 본인의 선명한 정면 사진을 업로드하세요",
           "title": "사진 업로드"
         },
         "1": {
-          "description": "체험해 볼 수백 개의 헤어스타일과 색상을 찾아보세요",
-          "imageAlt": "AI Hairstyle Studio 단계 2: 스타일 선택. 체험해 볼 수백 개의 헤어스타일과 색상을 찾아보세요",
+          "description": "체험해 보고 싶은 수백 가지 헤어스타일과 컬러를 둘러보세요",
+          "imageAlt": "AI Hairstyle Studio 2단계: 스타일 선택. 체험해 보고 싶은 수백 가지 헤어스타일과 컬러를 둘러보세요",
           "title": "스타일 선택"
         },
         "2": {
-          "description": "AI가 사진에 헤어스타일을 즉시 적용합니다 - 새로운 모습, 새로운 당신!",
-          "imageAlt": "AI Hairstyle Studio 단계 3: 자신을 확인하세요. AI가 사진에 헤어스타일을 즉시 적용합니다 - 새로운 모습, 새로운 당신!",
-          "title": "자신을 확인하세요"
+          "description": "AI가 사진에 스타일을 즉시 적용합니다 - 새로운 스타일의 나를 확인하세요!",
+          "imageAlt": "AI Hairstyle Studio 3단계: 확인하기. AI가 사진에 헤어스타일을 즉시 적용합니다 - 새로운 스타일의 나를 확인하세요!",
+          "title": "결과 확인"
         }
       },
-      "subtitle": "새로운 스타일 3단계"
+      "subtitle": "단 3단계로 찾는 나만의 스타일"
     },
     "meta": {
       "applicationName": "AI Hairstyle Studio",
-      "description": "AI로 100개 이상의 헤어스타일 및 헤어 색상을 즉시 체험하세요. 사진을 업로드하고, 미용 salon 방문 전에 완벽한 스타일을 찾아보세요. iOS 무료 다운로드.",
-      "jsonLdDescription": "AI로 100개 이상의 헤어스타일 및 헤어 색상을 즉시 체험하세요. 사진을 업로드하고, 미용 salon 방문 전에 완벽한 스타일을 찾아보세요. iOS 무료 다운로드.",
+      "description": "AI로 100가지 이상의 헤어스타일과 컬러를 즉시 체험하세요. 사진을 업로드하고 미용실 방문 전에 완벽한 스타일을 찾아보세요. iOS 무료 다운로드.",
+      "jsonLdDescription": "AI로 100가지 이상의 헤어스타일과 컬러를 즉시 체험하세요. 사진을 업로드하고 미용실 방문 전에 완벽한 스타일을 찾아보세요. iOS 무료 다운로드.",
       "jsonLdFeatureList": {
-        "0": "AI 지원 헤어스타일 체험",
-        "1": "수백 개의 헤어스타일 옵션",
-        "2": "헤어 색상 시뮬레이터",
-        "3": "즉시 결과",
-        "4": "개인정보 중심",
+        "0": "AI 기반 가상 헤어 체험",
+        "1": "수백 가지 헤어스타일 옵션",
+        "2": "헤어 컬러 시뮬레이터",
+        "3": "즉각적인 결과",
+        "4": "개인정보 보호 중심",
         "5": "HD 사진 내보내기",
         "6": "정기적인 스타일 업데이트"
       },
-      "keyFeatures": "AI 지원 체험, 수백 개의 스타일, 헤어 색상 시뮬레이터, 즉시 결과, 개인정보 우선, HD 내보내기",
-      "ogDescription": "헤어스타일을 바꾸 결정하기 전에 새로운 헤어스타일이 어떻게 보일지 확인해 보세요! AI 지원 체험으로 100개 이상의 스타일 및 색상.",
+      "keyFeatures": "AI 기반 체험, 수백 가지 스타일, 헤어 컬러 시뮬레이터, 즉각적인 결과, 개인정보 보호, HD 내보내기",
+      "ogDescription": "머리를 자르기 전에 새로운 스타일이 어울리는지 확인해 보세요! 100가지 이상의 스타일과 컬러를 지원하는 AI 가상 체험.",
       "ogImageAlt": "AI Hairstyle Studio - 가상 헤어스타일 체험 앱 인터페이스",
-      "ogTitle": "AI 헤어스타일 무료 체험 | 가상 헤어 스타일 | TinyKit",
-      "productType": "AI 뷰티 & 라이프스타일 앱",
-      "targetAudience": "새로운 스타일을 시도해 보려는 사용자",
-      "title": "AI 헤어스타일 무료 체험 | 가상 헤어 스타일",
-      "twitterDescription": "AI로 100개 이상의 헤어스타일 및 색상을 즉시 체험하세요. 컷을 자르기 전에 새로운 모습을 만들어보세요.",
-      "twitterTitle": "AI 헤어스타일 무료 체험 | 가상 헤어 스타일 | TinyKit",
-      "useCases": "salon 방문 전에 헤어스타일 체험, 헤어 색상 실험, 완벽한 헤어스타일 찾기, 스타일리스트와 모습 공유"
+      "ogTitle": "AI 헤어스타일 무료 가상 체험 - 스타일 변신 | TinyKit",
+      "productType": "AI 뷰티 및 라이프스타일 앱",
+      "targetAudience": "새로운 헤어스타일을 시도하기 전에 미리 확인하고 싶은 분들",
+      "title": "AI 헤어스타일 무료 가상 체험 - 스타일 변신",
+      "twitterDescription": "AI로 100가지 이상의 헤어스타일과 컬러를 즉시 체험하세요. 자르기 전에 미리 확인하세요.",
+      "twitterTitle": "AI 헤어스타일 무료 가상 체험 - 스타일 변신 | TinyKit",
+      "useCases": "미용실 방문 전 스타일 확인, 헤어 컬러 실험, 완벽한 헤어컷 찾기, 디자이너와 스타일 공유"
     },
     "nav": {
       "brand": "AI Hairstyle Studio",
@@ -150,13 +150,13 @@
       "downloadNow": "지금 다운로드",
       "items": {
         "0": {
-          "label": "매직"
+          "label": "체험"
         },
         "1": {
           "label": "기능"
         },
         "2": {
-          "label": "작동 방식"
+          "label": "사용법"
         },
         "3": {
           "label": "가격"
@@ -166,16 +166,16 @@
       "openMenu": "메뉴 열기"
     },
     "page": {
-      "skipToContent": "주요 내용 건너뛰기"
+      "skipToContent": "본문으로 건너뛰기"
     },
     "pricing": {
-      "badgeText": "지금 시작",
+      "badgeText": "시작하기",
       "cta": "지금 다운로드",
       "ctaAria": "AI Hairstyle Studio 무료 다운로드",
       "features": {
-        "0": "무료로 다운로드",
+        "0": "무료 다운로드",
         "1": "헤어스타일 미리보기",
-        "2": "생성 크레딧 구매",
+        "2": "생성을 위한 크레딧 구매",
         "3": "HD 사진 내보내기",
         "4": "정기적인 스타일 업데이트"
       },
@@ -185,34 +185,34 @@
     },
     "testimonials": {
       "avatarAlt": "{name}의 아바타",
-      "heading": "사용자 사랑",
+      "heading": "사용자 리뷰",
       "items": {
         "0": {
-          "content": "AI Hairstyle Studio가 헤어스타일 재앙에서 구해줬어요! 가상으로 bob 컷을 시도해보고 내게 맞지 않는다는 것을 깨달았어요. 이 앱을 정말 사랑해요!",
+          "content": "AI Hairstyle Studio 덕분에 머리를 망칠 뻔한 위기를 넘겼어요! 단발머리를 가상으로 해봤는데 저랑 안 어울린다는 걸 깨달았거든요. 정말 사랑스러운 앱이에요!",
           "name": "Jessica Taylor",
           "role": "패션 블로거"
         },
         "1": {
-          "content": "항상 다른 헤어스타일을 시도해보고 싶었지만 너무 두려워서 결정하지 못했어요. 이 앱은 무료로 실�험할 수 있게 해주어서 게임 체인저예요!",
+          "content": "항상 다른 스타일을 해보고 싶었지만 겁이 나서 못 했거든요. 이 앱은 위험 부담 없이 마음껏 실험해 볼 수 있게 해줘요. 정말 혁신적입니다!",
           "name": "Michael Chen",
           "role": "대학생"
         },
         "2": {
-          "content": "AI가 믿을 수 없을 정도로 현실적이에요! 헤어스타일리스트에게 결과를 보여주었고 그녀가 내가 원하는 것을 정확히 알았어요. 모든 돈이 가치 있습니다!",
+          "content": "AI가 믿을 수 없을 정도로 사실적이에요! 헤어 디자이너분께 결과물을 보여드렸더니 제가 원하는 걸 정확히 이해하시더라고요. 돈이 전혀 아깝지 않아요!",
           "name": "Emma Williams",
           "role": "마케팅 매니저"
         }
       },
-      "ratingAria": "평점: 5점 만점 5점"
+      "ratingAria": "평점: 5점 만점에 5점"
     }
   },
   "Brand": {
     "name": "TinyKit",
-    "tagline": "미니멀리스트 및 실용적인 앱 제작"
+    "tagline": "미니멀하고 실용적인 앱을 만듭니다"
   },
   "Common": {
     "allRightsReserved": "모든 권리 보유.",
-    "contactViaEmail": "이메일로 문의하기",
+    "contactViaEmail": "이메일 문의",
     "download": "다운로드",
     "downloadForMac": "Mac용 다운로드",
     "downloadNow": "지금 다운로드",
@@ -221,12 +221,12 @@
     "email": "이메일",
     "features": "기능",
     "home": "홈",
-    "howItWorks": "작동 방식",
+    "howItWorks": "사용법",
     "pricing": "가격",
     "privacy": "개인정보 처리방침",
-    "seeHowItWorks": "작동 방식 보기",
-    "starRating": "5별 평점",
-    "step": "단계 {number}",
+    "seeHowItWorks": "사용법 보기",
+    "starRating": "5점 평점",
+    "step": "{number}단계",
     "support": "지원",
     "terms": "서비스 약관",
     "viewPrivacy": "개인정보 처리방침 보기",
@@ -240,30 +240,30 @@
     "cta": {
       "button": "Mac App Store에서 다운로드",
       "buttonAria": "Mac App Store에서 File Sortify 다운로드",
-      "heading": "디지털 라이프를 정리할 준비 되셨나요?",
+      "heading": "디지털 환경을 정리할 준비가 되셨나요?",
       "subtitle": "파일 관리를 간소화한 수천 명의 Mac 사용자와 함께하세요"
     },
     "faq": {
       "items": {
         "0": {
-          "answer": "File Sortify는 파일 유형, 사용자 정의 규칙 및 실시간 모니터링을 기반으로 파일을 자동으로 분류하고 정리하는 Mac 전용 스마트 파일 관리 도구입니다. 다운로드 폴더와 데스크탑을 깔끖하게 정리하는 데 완벽합니다.",
+          "answer": "File Sortify는 파일 유형, 사용자 정의 규칙 및 실시간 모니터링을 기반으로 파일을 자동으로 분류하고 정리하는 Mac 전용 스마트 파일 관리 도구입니다. 다운로드 폴더와 데스크탑을 깔끔하게 유지하는 데 완벽한 솔루션입니다.",
           "question": "File Sortify란 무엇인가요?"
         },
         "1": {
-          "answer": "File Sortify는 파일 유형(문서, 이미지, 비디오 등)에 따라 파일을 정리하는 스마트 자동 분류를 사용하여 특정 파일 유형이나 이름에 대한 사용자 정의 규칙 생성을 가능하게 하고, 폴더를 실시간으로 모니터링하여 새 파일이 도착하는 대로 자동으로 정리합니다.",
-          "question": "File Sortify는 파일을 어떻게 정리하나요?"
+          "answer": "File Sortify는 스마트 자동 분류 기능을 사용하여 파일 유형(문서, 이미지, 비디오 등)별로 파일을 정리합니다. 특정 파일 유형이나 이름에 대한 사용자 정의 규칙을 만들 수 있으며, 폴더를 실시간으로 감시하여 새로운 파일이 들어오는 즉시 자동으로 정리합니다.",
+          "question": "File Sortify는 어떻게 파일을 정리하나요?"
         },
         "2": {
-          "answer": "File Sortify는 macOS 전용으로 설계되었습니다. macOS를 실행하는 모든 최신 Mac 컴퓨에서 작동하며 Mac 파일 시스템과 완벽하게 통합됩니다.",
+          "answer": "File Sortify는 macOS 전용으로 설계되었습니다. macOS를 실행하는 모든 최신 Mac에서 작동하며 Mac 파일 시스템과 완벽하게 통합됩니다.",
           "question": "File Sortify는 내 Mac과 호환되나요?"
         },
         "3": {
-          "answer": "File Sortify는 $20 USD의 일회 구매로 이용 가능합니다. 여기에는 평생 사용권, 무제한 사용, 평생 업데이트 및 모든 향후 기능이 포함되어 있으며 구독이 필요 없습니다.",
-          "question": "File Sortify는 얼마인가요?"
+          "answer": "File Sortify는 20달러(USD)의 일회성 구매로 이용 가능합니다. 평생 이용권, 무제한 사용, 평생 업데이트 및 향후 추가될 모든 기능을 포함하며 구독료가 전혀 없습니다.",
+          "question": "File Sortify의 가격은 얼마인가요?"
         },
         "4": {
-          "answer": "네! File Sortify에는 필요시 파일 정리 작업을 검토하고 되돌릴 수 있는 작업 내역 기능이 포함되어 있어, 파일이 항상 안전하도록 보장합니다.",
-          "question": "파일 정리 변경 사항을 되돌릴 수 있나요?"
+          "answer": "네! File Sortify에는 작업 내역 기능이 있어 파일 정리 작업을 검토하고 필요한 경우 되돌릴 수 있으므로 파일이 항상 안전하게 보호됩니다.",
+          "question": "파일 정리 작업을 취소할 수 있나요?"
         }
       }
     },
@@ -271,35 +271,35 @@
       "heading": "강력한 기능",
       "items": {
         "0": {
-          "description": "파일 유형, 이름 및 콘텐츠 패턴을 기반으로 파일을 적절한 폴더에 자동으로 정리합니다.",
+          "description": "파일 유형, 이름 및 내용 패턴을 기반으로 파일을 적절한 폴더로 자동 분류합니다.",
           "title": "스마트 자동 분류"
         },
         "1": {
-          "description": "특정 작업 흐름 및 선호도에 맞춤화된 사용자 정의 정렬 규칙을 만드세요.",
+          "description": "사용자의 워크플로우와 선호도에 맞춘 개인화된 정렬 규칙을 만듭니다.",
           "title": "사용자 정의 규칙 엔진"
         },
         "2": {
-          "description": "폴더를 실시간으로 모니터링하고 새 파일이 도착하는 대로 자동으로 정리합니다.",
+          "description": "폴더를 실시간으로 모니터링하여 새로운 파일이 들어오면 즉시 자동으로 정리합니다.",
           "title": "실시간 모니터링"
         },
         "3": {
-          "description": "포�벽한 기록 로그로 모든 파일 이동을 추적하고 필요시 변경 사항을 되돌릴 수 있습니다.",
+          "description": "포괄적인 기록 로그를 통해 모든 파일 이동을 추적하고 필요한 경우 변경 사항을 되돌릴 수 있습니다.",
           "title": "작업 내역"
         },
         "4": {
-          "description": "보안을 고려하여 설계되었습니다. 파일은 Mac에서 나가지 않으며 모든 작업이 안전합니다.",
-          "title": "안전하고 신�해"
+          "description": "보안을 최우선으로 구축되었습니다. 파일은 Mac 외부로 나가지 않으며 모든 작업이 안전합니다.",
+          "title": "안전 및 보안"
         },
         "5": {
-          "description": "macOS 네이티브 성능으로 최적화되었습니다. 몇 초 만에 수천 개의 파일을 정리합니다.",
-          "title": "번개처럼 빠름"
+          "description": "macOS 네이티브 성능에 최적화되어 수천 개의 파일을 몇 초 만에 정리합니다.",
+          "title": "압도적인 속도"
         }
       },
-      "subtitle": "파일을 완벽하게 정리하는 데 필요한 모든 것"
+      "subtitle": "파일을 완벽하게 정리하는 데 필요한 모든 기능"
     },
     "footer": {
       "brand": "File Sortify",
-      "contactAria": "이메일로 문의하기",
+      "contactAria": "이메일 문의",
       "copyright": "© {year} File Sortify. 모든 권리 보유.",
       "emailLabel": "이메일",
       "logoAlt": "File Sortify 로고",
@@ -313,45 +313,45 @@
       "ctaDemoAria": "데모 비디오 보기",
       "ctaDownload": "Mac App Store에서 다운로드",
       "ctaDownloadAria": "Mac App Store에서 File Sortify 다운로드",
-      "subtitle": "복잡한 다운로드 폴더를 정리된 낙원으로 바꾸 주세요. File Sortify는 파일 유형, 사용자 정의 규칙 및 실시간 모니터링을 기반으로 파일을 지능적으로 분류합니다.",
-      "title": "파일을 자동으로 정리하세요!"
+      "subtitle": "무질서한 다운로드 폴더를 정리된 낙원으로 바꿔보세요. File Sortify는 파일 유형, 사용자 정의 규칙 및 실시간 모니터링을 기반으로 파일을 지능적으로 분류합니다.",
+      "title": "파일 정리의 자동화!"
     },
     "howItWorks": {
-      "heading": "작동 방식",
-      "stepAria": "단계 {number}",
+      "heading": "사용법",
+      "stepAria": "{number}단계",
       "steps": {
         "0": {
-          "description": "정리하려는 폴더를 선택하세요 - 보통 다운로드 폴더",
+          "description": "정리하려는 폴더를 선택하세요 (일반적으로 다운로드 폴더)",
           "imageAlt": "폴더 선택 인터페이스",
           "title": "폴더 선택"
         },
         "1": {
-          "description": "자동 분류를 위한 스마트 기본값을 사용하거나 사용자 정의 규칙을 설정하세요.",
-          "imageAlt": "규칙 구성 인터페이스",
-          "title": "규칙 구성"
+          "description": "사용자 정의 규칙을 설정하거나 스마트 기본 설정으로 자동 분류하세요",
+          "imageAlt": "규칙 설정 인터페이스",
+          "title": "규칙 설정"
         },
         "2": {
-          "description": "File Sortify가 백그라운드에서 파일을 자동으로 정리합니다.",
-          "imageAlt": "편안히 계세요 인터페이스",
-          "title": "편안히 계세요"
+          "description": "File Sortify가 백그라운드에서 파일을 자동으로 정리합니다",
+          "imageAlt": "편안하게 기다리세요",
+          "title": "자동 정리"
         }
       },
-      "subtitle": "3단계로 파일 정리"
+      "subtitle": "단 3단계로 끝나는 깔끔한 정리"
     },
     "meta": {
       "applicationName": "File Sortify",
-      "description": "File Sortify로 Mac 파일을 자동으로 정리하세요. 다운로드 폴더를 위한 자동 분류, 사용자 정의 규칙 및 실시간 모니터링을 갖춘 스마트 파일 관리 도구입니다.",
-      "jsonLdDescription": "File Sortify로 Mac 파일을 자동으로 정리하세요. 파일 유형, 사용자 정의 규칙 및 실시간 모니터링에 따라 파일을 정리하는 스마트 파일 관리 도구입니다.",
+      "description": "File Sortify로 Mac 파일을 자동으로 정리하세요. 다운로드 폴더를 위한 자동 분류, 사용자 정의 규칙 및 실시간 모니터링을 지원하는 스마트 파일 관리 도구입니다.",
+      "jsonLdDescription": "File Sortify로 파일을 자동으로 정리하세요. 파일 유형, 사용자 정의 규칙 및 실시간 모니터링을 통해 파일을 분류하는 지능형 파일 관리 도구입니다.",
       "keyFeatures": "자동 분류, 사용자 정의 규칙, 실시간 모니터링, 작업 내역",
-      "ogDescription": "File Sortify로 파일을 자동으로 정리하세요. 파일 유형, 사용자 정의 규칙 및 실시간 모니터링에 따라 파일을 정리하는 스마트 파일 관리 도구입니다.",
+      "ogDescription": "File Sortify로 파일을 자동으로 정리하세요. 파일 유형, 사용자 정의 규칙 및 실시간 모니터링을 통해 파일을 분류하는 지능형 파일 관리 도구입니다.",
       "ogImageAlt": "Mac 파일 자동 정리 | File Sortify",
       "ogTitle": "Mac 파일 자동 정리 | File Sortify",
       "productType": "Mac 유틸리티 소프트웨어",
-      "targetAudience": "파일을 자동으로 정리해야 하는 Mac 사용자",
+      "targetAudience": "파일 자동 정리가 필요한 Mac 사용자",
       "title": "Mac 파일 자동 정리 | File Sortify",
-      "twitterDescription": "File Sortify로 파일을 자동으로 정리하세요. 스마트 파일 관리 도구입니다.",
+      "twitterDescription": "File Sortify로 파일을 자동으로 정리하세요. 지능형 파일 관리 도구입니다.",
       "twitterTitle": "Mac 파일 자동 정리 | File Sortify",
-      "useCases": "다운로드 폴더 정리, 파일 유형별 정리, 파일 관리 자동화, 데스크탑 파일 정리"
+      "useCases": "다운로드 폴더 정리, 파일 유형별 정렬, 파일 관리 자동화, 바탕화면 정리"
     },
     "nav": {
       "brand": "File Sortify",
@@ -361,7 +361,7 @@
           "label": "기능"
         },
         "1": {
-          "label": "작동 방식"
+          "label": "사용법"
         },
         "2": {
           "label": "스크린샷"
@@ -373,21 +373,21 @@
       "logoAlt": "File Sortify 로고"
     },
     "pricing": {
-      "badgeText": "최고 가치",
-      "cta": "$9.99에 구매",
+      "badgeText": "최고의 가치",
+      "cta": "9.99달러에 구매",
       "features": {
         "0": "무료 체험판의 모든 기능",
         "1": "무제한 사용",
         "2": "평생 업데이트",
-        "3": "모든 향후 기능",
-        "4": "한 번 결제, 영구 사용"
+        "3": "향후 모든 신기능",
+        "4": "일회성 결제로 평생 소장"
       },
-      "heading": "일회 구매",
-      "licenseDescription": "모든 기능 및 업데이트와 함께 File Sortify 평생 사용",
+      "heading": "일회성 구매",
+      "licenseDescription": "모든 기능과 업데이트를 포함하는 File Sortify 평생 이용권",
       "licenseName": "File Sortify 평생 라이선스",
       "lifetimeTitle": "평생 라이선스",
-      "period": "/한 번",
-      "subtitle": "File Sortify 평생 사용권"
+      "period": "/일회성",
+      "subtitle": "File Sortify 평생 이용권을 확보하세요"
     },
     "screenshots": {
       "heading": "아름답고 직관적인 인터페이스",
@@ -397,51 +397,51 @@
           "title": "메인 대시보드"
         },
         "1": {
-          "description": "강력한 파일 정리 규칙을 만드세요",
+          "description": "강력한 정리 규칙을 만드세요",
           "title": "사용자 정의 규칙"
         },
         "2": {
-          "description": "모든 파일 이동을 추적하고 검토하세요",
+          "description": "모든 파일 이동 내역을 추적하고 검토하세요",
           "title": "작업 내역"
         }
       },
-      "subtitle": "macOS 전용으로 설계"
+      "subtitle": "macOS만을 위해 설계되었습니다"
     },
     "testimonials": {
-      "heading": "Mac 사용자들의 사랑",
+      "heading": "Mac 사용자들이 사랑하는 앱",
       "items": {
         "0": {
-          "content": "File Sortify는 다운로드 폴더 관리 방식을 완전히 바꾸주었습니다. 파일 정리를 위한 개인 비서트가 있는 것 같아요!",
+          "content": "File Sortify는 제 다운로드 폴더 관리 방식을 완전히 바꿔 놓았습니다. 파일 정리를 위한 개인 비서를 둔 것 같아요!",
           "name": "Sarah Chen",
           "role": "디자이너"
         },
         "1": {
-          "content": "사용자 정의 규칙 기능은 믿을 수 없습니다. 업무 파일을 완벽하게 정리하도록 설정했어요. 매주 몇 시간을 절약하고 있어요!",
+          "content": "사용자 정의 규칙 기능이 정말 훌륭합니다. 업무용 파일을 완벽하게 정리하도록 설정해 두었더니 매주 몇 시간의 업무 시간이 절약되네요!",
           "name": "Mark Johnson",
           "role": "개발자"
         },
         "2": {
-          "content": "드디어 Mac 앱이 등장합니다! 깔끔한 인터페이스, 강력한 기능, 개인정보 존중을 존중해요. 강력 추천합니다!",
+          "content": "드디어 제대로 작동하는 Mac 앱을 만났네요! 깔끔한 인터페이스, 강력한 기능, 그리고 개인정보 보호까지. 적극 추천합니다!",
           "name": "Emily Rodriguez",
-          "role": "사진가"
+          "role": "사진작가"
         }
       },
-      "starRatingAria": "5별 평점",
-      "subtitle": "고객들의 의견을 확인하세요"
+      "starRatingAria": "5점 평점",
+      "subtitle": "고객들의 생생한 리뷰를 확인하세요"
     }
   },
   "Index": {
     "aiHairstyle": "AI Hairstyle",
-    "aiHairstyleDesc": "새로운 헤어스타일, 새로운 당신. AI로 수백 가지 헤어스타일을 즉시 체험해 보세요. 위험 부담 없이 다양한 컷, 색상, 스타일을 실�험해 보세요.",
+    "aiHairstyleDesc": "새로운 스타일, 새로운 나. AI로 수백 가지 헤어스타일을 즉시 체험하세요. 위험 부담 없이 다양한 컷, 컬러, 스타일을 시도해 보세요.",
     "availableNow": "지금 이용 가능",
     "comingSoon": "더 많은 앱이 곧 출시됩니다",
-    "comingSoonDesc": "사용자를 위한 더 많은 생산성 도구를 개발 중입니다. 기대해 주세요!",
+    "comingSoonDesc": "사용자의 생산성을 높여줄 더 많은 도구를 개발 중입니다. 기대해 주세요!",
     "fileSortify": "File Sortify",
-    "fileSortifyDesc": "Mac을 위한 스마트한 파일 정리. 사용자 정의 규칙 및 실시간 모니터링을 통해 파일을 자동으로 분류하고 정리합니다.",
-    "heroDesc": "복잡함 없이 단순하고 아름다운 디지털 생활을 최적화하는 데 설정된 단순하고 아름다운 도구를 만드는 TinyKit을 만나보세요.",
-    "heroTitle": "미니멀리스트 및 실용적인 앱 제작",
+    "fileSortifyDesc": "Mac을 위한 스마트 파일 정리. 사용자 정의 규칙과 실시간 모니터링으로 파일을 자동으로 분류하고 정리합니다.",
+    "heroDesc": "복잡함 없이 심플하고 아름다우며 효율적인 도구들을 만드는 TinyKit입니다. 일상의 디지털 생활을 간소화하기 위해 디자인되었습니다.",
+    "heroTitle": "미니멀하고 실용적인 앱을 만듭니다",
     "rights": "모든 권리 보유.",
-    "title": "TinyKit - 미니멀리스트 및 실용적인 앱 제작"
+    "title": "TinyKit - 미니멀하고 실용적인 앱 제작"
   },
   "Legal": {
     "languageNotice": "이 문서는 영어로만 제공됩니다.",
@@ -450,14 +450,14 @@
   },
   "Metadata": {
     "classification": "Mac 유틸리티",
-    "description": "좋의 다음 좋아하는 생산성 도구를 찾아보세요. TinyKit은 당신을 위한 미니멀리스트 및 실용적인 앱을 만듭니다. 단순하고 가벼운 소프트웨어로 광고 및 복잡함 없습니다.",
-    "ogDescription": "좋의 다음 좋아하는 생산성 도구를 찾아보세요. TinyKit은 당신을 위한 미니멀리스트 및 실용적인 앱을 만듭니다. 단순하고 가벼운 소프트웨어로 광고 및 복잡함 없습니다.",
-    "ogImageAlt": "TinyKit - 미니멀리스트 및 실용적인 앱 제작",
-    "ogTitle": "TinyKit - 미니멀리스트 및 실용적인 앱 제작",
-    "title": "TinyKit - 미니멀리스트 및 실용적인 앱 제작",
+    "description": "가장 마음에 드는 생산성 도구를 찾아보세요. TinyKit은 미니멀하고 실용적인 앱을 만듭니다. 광고와 군더더기 없는 가볍고 심플한 소프트웨어입니다.",
+    "ogDescription": "가장 마음에 드는 생산성 도구를 찾아보세요. TinyKit은 미니멀하고 실용적인 앱을 만듭니다. 광고와 군더더기 없는 가볍고 심플한 소프트웨어입니다.",
+    "ogImageAlt": "TinyKit - 미니멀하고 실용적인 앱 제작",
+    "ogTitle": "TinyKit - 미니멀하고 실용적인 앱 제작",
+    "title": "TinyKit - 미니멀하고 실용적인 앱 제작",
     "titleTemplate": "%s | TinyKit",
-    "twitterDescription": "좋의 다음 좋아하는 생산성 도구를 찾아보세요. TinyKit은 당신을 위한 미니멀리스트 및 실용적인 앱을 만듭니다. 단순하고 가벼운 소프트웨어로 광고 및 복잡함 없습니다.",
-    "twitterTitle": "TinyKit - 미니멀리스트 및 실용적인 앱 제작"
+    "twitterDescription": "가장 마음에 드는 생산성 도구를 찾아보세요. TinyKit은 미니멀하고 실용적인 앱을 만듭니다. 광고와 군더더기 없는 가볍고 심플한 소프트웨어입니다.",
+    "twitterTitle": "TinyKit - 미니멀하고 실용적인 앱 제작"
   },
   "StructuredData": {
     "fileManagement": "파일 관리",

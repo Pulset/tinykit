@@ -193,12 +193,12 @@
           "role": "Blogueira de Moda"
         },
         "1": {
-          "content": "Sempre quis experimentar diferentes penteados mas estava com muito medo de comprometer. Este aplicativo me experimentar sem riscos. Mudador de jogo!",
+          "content": "Sempre quis experimentar diferentes penteados mas estava com muito medo de comprometer. Este aplicativo me permite experimentar sem riscos. Mudador de jogo!",
           "name": "Michael Chen",
           "role": "Estudante Universitário"
         },
         "2": {
-          "content": "A IA é incrivelmente realista! Mostru os resultados ao meu estilista e ela soube exatamente o que eu queria. Vale cada centavo!",
+          "content": "A IA é incrivelmente realista! Mostrei os resultados ao meu estilista e ela soube exatamente o que eu queria. Vale cada centavo!",
           "name": "Emma Williams",
           "role": "Gerente de Marketing"
         }
@@ -427,7 +427,7 @@
         }
       },
       "starRatingAria": "Avaliação de 5 estrelas",
-      "subtitle": "Ve o que nossos clientes estão dizendo"
+      "subtitle": "Veja o que nossos clientes estão dizendo"
     }
   },
   "Index": {

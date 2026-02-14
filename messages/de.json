@@ -34,7 +34,7 @@
           "question": "Wie viel kostet AI Hairstyle Studio?"
         },
         "4": {
-          "answer": "Ja! Sie können Ihre transformierten Fotos in hoher Auflösung speichern und sie einfach mit Freunden, Familie oder Ihrem:em Friseur teilen, um ihnen genau zu zeigen, was Sie möchten.",
+          "answer": "Ja! Sie können Ihre transformierten Fotos in hoher Auflösung speichern und sie einfach mit Freunden, Familie oder Ihrem Friseur teilen, um ihnen genau zu zeigen, was Sie möchten.",
           "question": "Kann ich meine neuen Looks speichern und teilen?"
         }
       }
@@ -63,7 +63,7 @@
           "title": "Datenschutz zuerst"
         },
         "5": {
-          "description": "Speichern und teilen Sie Ihren neuen Look in hoher Auflösung. Perfekt, um Ihrem:em Friseur zu zeigen.",
+          "description": "Speichern und teilen Sie Ihren neuen Look in hoher Auflösung. Perfekt, um Ihrem Friseur zu zeigen.",
           "title": "HD-Export"
         }
       },
@@ -134,13 +134,13 @@
       "keyFeatures": "KI-gestütztes Anprobieren, Hunderte von Stilen, Haarfarben-Simulator, Sofortige Ergebnisse, Datenschutz zuerst, HD-Export",
       "ogDescription": "Sehen Sie, wie Sie mit einem neuen Frisur aussehen würden, bevor Sie sich festlegen! KI-gestütztes Anprobieren mit 100+ Stilen und Farben.",
       "ogImageAlt": "AI Hairstyle Studio - Virtuelle Frisur-Anprobe-App-Schnittstelle",
-      "ogTitle": "KI-Frisuren kostenlos testen | Virtuelle Haar-Styling | TinyKit",
+      "ogTitle": "KI-Frisuren kostenlos testen | Virtuelles Haar-Styling | TinyKit",
       "productType": "KI-Schönheits- & Lifestyle-App",
       "targetAudience": "Personen, die verschiedene Frisuren testen möchten, bevor sie sich für einen neuen Look entscheiden",
-      "title": "KI-Frisuren kostenlos testen | Virtuelle Haar-Styling",
+      "title": "KI-Frisuren kostenlos testen | Virtuelles Haar-Styling",
       "twitterDescription": "Testen Sie sofort 100+ Frisuren und Haarfarben mit KI. Verwandeln Sie Ihren Look vor dem Schneiden.",
-      "twitterTitle": "KI-Frisuren kostenlos testen | Virtuelle Haar-Styling | TinyKit",
-      "useCases": "Frisuren vor Salon-Besuch testen, Mit Haarfarben experimentieren, Perfekten Schnitt finden, Looks mit Friseur:in teilen"
+      "twitterTitle": "KI-Frisuren kostenlos testen | Virtuelles Haar-Styling | TinyKit",
+      "useCases": "Frisuren vor Salon-Besuch testen, Mit Haarfarben experimentieren, Perfekten Schnitt finden, Looks mit Friseur teilen"
     },
     "nav": {
       "brand": "AI Hairstyle Studio",
@@ -198,7 +198,7 @@
           "role": "College-Student"
         },
         "2": {
-          "content": "Die KI ist unglaublich realistisch! Ich habe meinem:em Friseur die Ergebnisse gezeigt und sie wusste genau, was ich wollte. Jeden Cent wert!",
+          "content": "Die KI ist unglaublich realistisch! Ich habe meinem Friseur die Ergebnisse gezeigt und sie wusste genau, was ich wollte. Jeden Cent wert!",
           "name": "Emma Williams",
           "role": "Marketing-Managerin"
         }
