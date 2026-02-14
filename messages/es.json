@@ -1,25 +1,474 @@
 {
-  "Index": {
-    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas",
-    "heroTitle": "Creando aplicaciones minimalistas y prácticas",
-    "heroDesc": "Descubre TinyKit, donde construimos herramientas simples, hermosas y efectivas diseñadas para agilizar tu vida digital diaria sin desorden.",
-    "fileSortify": "File Sortify",
-    "fileSortifyDesc": "Organización inteligente de archivos para Mac. Clasifica y organiza automáticamente tus archivos con reglas personalizadas y monitoreo en tiempo real.",
-    "aiHairstyle": "AI Hairstyle",
-    "aiHairstyleDesc": "Nuevo look, nuevo tú. Prueba cientos de peinados al instante con IA. Experimenta con diferentes cortes, colores y estilos sin riesgos.",
-    "availableNow": "Disponible ahora",
-    "comingSoon": "Más aplicaciones próximamente",
-    "comingSoonDesc": "Estamos trabajando en más herramientas de productividad para ti. ¡Mantente atento!",
-    "rights": "Todos los derechos reservados."
+  "AIHairstyle": {
+    "beforeAfter": {
+      "afterAlt": "Transformación de peinado después",
+      "afterDescription": "Ondas fascinantes al hombro con volumen y estilo",
+      "afterLabel": "Después",
+      "beforeAlt": "Transformación de peinado antes",
+      "beforeDescription": "Corte pixie corto con look fresco y moderno",
+      "beforeLabel": "Antes",
+      "cta": "Probar esta transformación",
+      "heading": "Ver la magia",
+      "subtitle": "Arrastra el control deslizante para revelar la transformación"
+    },
+    "breadcrumb": {
+      "home": "Inicio",
+      "product": "AI Hairstyle Studio"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "AI Hairstyle Studio es una aplicación innovadora que utiliza tecnología IA avanzada para permitirte probar virtualmente cientos de diferentes peinados y colores de cabello. Sube tu foto y ve cómo te verías con un nuevo peinado antes de hacer ningún compromiso.",
+          "question": "¿Qué es AI Hairstyle Studio?"
+        },
+        "1": {
+          "answer": "Simplemente sube una foto frontal clara de ti mismo, explora nuestra extensa colección de peinados y colores, y nuestra IA los aplica instantáneamente a tu foto con resultados realistas. Puedes probar estilos ilimitados y guardar o compartir tus favoritos.",
+          "question": "¿Cómo funciona AI Hairstyle Studio?"
+        },
+        "2": {
+          "answer": "¡Absolutamente! Tu privacidad es nuestra máxima prioridad. Todas las fotos se procesan de forma segura y nunca se almacenan en nuestros servidores. Tus imágenes se eliminan inmediatamente después del procesamiento.",
+          "question": "¿Están seguros mis datos de foto?"
+        },
+        "3": {
+          "answer": "AI Hairstyle Studio está disponible por una compra de una sola vez de $9.99 USD. Esto te da acceso de por vida con pruebas ilimitadas de peinados, acceso a todas las colecciones, exportaciones HD y todas las actualizaciones futuras.",
+          "question": "¿Cuánto cuesta AI Hairstyle Studio?"
+        },
+        "4": {
+          "answer": "¡Sí! Puedes guardar tus fotos transformadas en calidad de alta definición y compartilas fácilmente con amigos, familia o tu estilista para mostrarles exactamente lo que quieres.",
+          "question": "¿Puedo guardar y compartir mis nuevos looks?"
+        }
+      }
+    },
+    "features": {
+      "heading": "Características mágicas",
+      "items": {
+        "0": {
+          "description": "Tecnología IA avanzada analiza la forma de tu rostro y características para aplicar realistamente diferentes peinados.",
+          "title": "Prueba virtual con IA"
+        },
+        "1": {
+          "description": "Desde cortes clásicos hasta estilos modernos - explora una vasta colección de peinados para cada ocasión.",
+          "title": "Cientos de estilos"
+        },
+        "2": {
+          "description": "Prueba diferentes colores de cabello al instante - rubio, castaño, rojo, pastel o colores fantasas atrevidados.",
+          "title": "Simulador de color de cabello"
+        },
+        "3": {
+          "description": "Sube tu foto y ve resultados realistas en segundos. Sin esperar, sin cita de salón necesaria.",
+          "title": "Resultados al instante"
+        },
+        "4": {
+          "description": "Tus fotos se procesan de forma segura. Privacidad completa garantizada.",
+          "title": "Privacidad primero"
+        },
+        "5": {
+          "description": "Guarda y comparte tu nuevo look en alta definición. Perfecto para mostrar a tu estilista.",
+          "title": "Exportación HD"
+        }
+      },
+      "subtitle": "Todo lo que necesitas para encontrar tu look perfecto"
+    },
+    "footer": {
+      "brand": "AI Hairstyle Studio",
+      "contactLink": "Contáctanos",
+      "copyright": "© {year} AI Hairstyle Studio. Construido con ❤️ por TinyKit.",
+      "downloadLink": "Descargar",
+      "featuresLink": "Características",
+      "logoAlt": "Logo de AI Hairstyle Studio",
+      "pricingLink": "Precios",
+      "privacyLink": "Política de privacidad",
+      "supportLink": "Soporte",
+      "termsLink": "Términos de servicio"
+    },
+    "hero": {
+      "aiAccuracyLabel": "Precisión IA",
+      "aiAccuracyValue": "99.8%",
+      "appliedLabel": "Aplicado",
+      "badge": "✨ La #1 aplicación de peinados AI",
+      "ctaDownload": "Descargar ahora",
+      "ctaDownloadAria": "Descargar AI Hairstyle Studio en App Store",
+      "ctaHowItWorks": "Ver cómo funciona",
+      "ctaHowItWorksAria": "Ver cómo funciona AI Hairstyle Studio",
+      "lovedByLabel": "Amado por",
+      "lovedByValue": "50K+",
+      "screenshotAlt": "Captura de pantalla de aplicación AI Hairstyle Studio mostrando resultado de prueba virtual de peinado con comparación lado a lado de cabello original y transformado",
+      "subtitle": "Transforma tu look al instante con nuestra IA avanzada. Prueba cientos de peinados de calidad de salón y colores en tiempo real antes de comprometerte con un corte.",
+      "titleLine1": "Cambia tu peinado,",
+      "titleLine2": "cambia tu vida."
+    },
+    "howItWorks": {
+      "heading": "Pasos simples",
+      "steps": {
+        "0": {
+          "description": "Sube una foto frontal clara de ti mismo",
+          "imageAlt": "AI Hairstyle Studio paso 1: Sube tu foto. Sube una foto frontal clara de ti mismo",
+          "title": "Sube tu foto"
+        },
+        "1": {
+          "description": "Explora cientos de peinados y colores para probar",
+          "imageAlt": "AI Hairstyle Studio paso 2: Elige un estilo. Explora cientos de peinados y colores para probar",
+          "title": "Elige un estilo"
+        },
+        "2": {
+          "description": "IA aplica instantáneamente el peinado a tu foto - ¡nuevo look, nuevo tú!",
+          "imageAlt": "AI Hairstyle Studio paso 3: Véete a ti mismo. IA aplica instantáneamente el peinado a tu foto - ¡nuevo look, nuevo tú!",
+          "title": "Véete a ti mismo"
+        }
+      },
+      "subtitle": "3 pasos para tu nuevo estilo"
+    },
+    "meta": {
+      "applicationName": "AI Hairstyle Studio",
+      "description": "Prueba 100+ peinados y colores de cabello al instante con IA. Sube tu foto, encuentra el look perfecto antes de tu visita al salón. Descarga gratuita para iOS.",
+      "jsonLdDescription": "Prueba 100+ peinados y colores de cabello al instante con IA. Sube tu foto, encuentra el look perfecto antes de tu visita al salón. Descarga gratuita para iOS.",
+      "jsonLdFeatureList": {
+        "0": "Prueba virtual de peinados con IA",
+        "1": "Cientos de opciones de peinados",
+        "2": "Simulador de color de cabello",
+        "3": "Resultados al instante",
+        "4": "Enfoque en privacidad",
+        "5": "Exportación de fotos HD",
+        "6": "Actualizaciones regulares de estilos"
+      },
+      "keyFeatures": "Prueba virtual con IA, Cientos de estilos, Simulador de color de cabello, Resultados al instante, Privacidad primero, Exportación HD",
+      "ogDescription": "Vé cómo te verías con un nuevo peinado antes de comprometerte. ¡Prueba virtual con IA con 100+ estilos y colores.",
+      "ogImageAlt": "AI Hairstyle Studio - Interfaz de aplicación de prueba virtual de peinados",
+      "ogTitle": "Prueba peinados AI gratis - Virtual cambio de look | TinyKit",
+      "productType": "Aplicación de belleza y estilo de vida AI",
+      "targetAudience": "Cualquiera que busque probar diferentes peinados antes de comprometerse con un nuevo look",
+      "title": "Prueba peinados AI gratis - Virtual cambio de look",
+      "twitterDescription": "Prueba 100+ peinados y colores al instante con IA. Transforma tu look antes de cortar.",
+      "twitterTitle": "Prueba peinados AI gratis - Virtual cambio de look | TinyKit",
+      "useCases": "Prueba peinados antes de visita al salón, Experimenta con colores de cabello, Encuentra el corte perfecto, Comparte looks con estilista"
+    },
+    "nav": {
+      "brand": "AI Hairstyle Studio",
+      "closeMenu": "Cerrar menú",
+      "download": "Descargar",
+      "downloadAria": "Descargar AI Hairstyle Studio en App Store",
+      "downloadNow": "Descargar ahora",
+      "items": {
+        "0": {
+          "label": "Magia"
+        },
+        "1": {
+          "label": "Características"
+        },
+        "2": {
+          "label": "Cómo funciona"
+        },
+        "3": {
+          "label": "Precios"
+        }
+      },
+      "logoAlt": "Logo de AI Hairstyle",
+      "openMenu": "Abrir menú"
+    },
+    "page": {
+      "skipToContent": "Saltar al contenido principal"
+    },
+    "pricing": {
+      "badgeText": "EMPEZAR AHORA",
+      "cta": "Descargar ahora",
+      "ctaAria": "Descargar AI Hairstyle Studio gratis",
+      "features": {
+        "0": "Gratis para descargar",
+        "1": "Vista previa de peinados",
+        "2": "Comprar créditos para generaciones",
+        "3": "Exportaciones de fotos HD",
+        "4": "Actualizaciones regulares de estilos"
+      },
+      "freeTitle": "Descarga gratuita",
+      "period": "/para siempre",
+      "price": "$0"
+    },
+    "testimonials": {
+      "avatarAlt": "Avatar de {name}",
+      "heading": "Amor de usuarios",
+      "items": {
+        "0": {
+          "content": "¡AI Hairstyle Studio me salvó de un desastre de peinado! Probé virtualmente un corte bob y me di cuenta de que no era para mí. ¡Absolutamente amo esta aplicación!",
+          "name": "Jessica Taylor",
+          "role": "Bloguera de moda"
+        },
+        "1": {
+          "content": "Siempre quise probar diferentes peinados pero tenía demasiado miedo de comprometerme. Esta aplicación me permite experimentar sin riesgos. ¡Cambiador de juego!",
+          "name": "Michael Chen",
+          "role": "Estudiante universitario"
+        },
+        "2": {
+          "content": "¡La IA es increíblemente realista! Mostré los resultados a mi estilista y ella supo exactamente lo que quería. ¡Cada centavo vale la pena!",
+          "name": "Emma Williams",
+          "role": "Gerente de marketing"
+        }
+      },
+      "ratingAria": "Calificación: 5 de 5 estrellas"
+    }
   },
   "Brand": {
     "name": "TinyKit",
     "tagline": "Creando aplicaciones minimalistas y prácticas"
   },
   "Common": {
+    "allRightsReserved": "Todos los derechos reservados.",
+    "contactViaEmail": "Contáctanos por correo",
     "download": "Descargar",
-    "support": "Soporte",
+    "downloadForMac": "Descargar para Mac",
+    "downloadNow": "Descargar ahora",
+    "downloadOnAppStore": "Descargar en Mac App Store",
+    "downloadOnMacAppStore": "Descargar en Mac App Store",
+    "email": "Correo",
+    "features": "Características",
+    "home": "Inicio",
+    "howItWorks": "Cómo funciona",
+    "pricing": "Precios",
     "privacy": "Política de privacidad",
-    "terms": "Términos de servicio"
+    "seeHowItWorks": "Ver cómo funciona",
+    "starRating": "Calificación de 5 estrellas",
+    "step": "Paso {number}",
+    "support": "Soporte",
+    "terms": "Términos de servicio",
+    "viewPrivacy": "Ver política de privacidad",
+    "viewTerms": "Ver términos de servicio"
+  },
+  "FileSortify": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "product": "File Sortify"
+    },
+    "cta": {
+      "button": "Descargar en Mac App Store",
+      "buttonAria": "Descargar File Sortify en Mac App Store",
+      "heading": "¿Listo para organizar tu vida digital?",
+      "subtitle": "Únete a miles de usuarios Mac que han simplificado su gestión de archivos"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "File Sortify es una herramienta inteligente de organización de archivos para Mac que clasifica y organiza automáticamente tus archivos basándose en tipo, reglas personalizadas y monitoreo en tiempo real. Es perfecta para mantener tu carpeta de descargas y escritorio limpios y organizados.",
+          "question": "¿Qué es File Sortify?"
+        },
+        "1": {
+          "answer": "File Sortify usa clasificación automática inteligente para clasificar archivos por tipo (documentos, imágenes, vídeos, etc.), te permite crear reglas personalizadas para tipos de archivo específicos o nombres, y monitorea carpetas en tiempo real para organizar automáticamente nuevos archivos a medida que llegan.",
+          "question": "¿Cómo organiza File Sortify los archivos?"
+        },
+        "2": {
+          "answer": "File Sortify está diseñado exclusivamente para macOS. Funciona con todas las computadoras Mac modernas que ejecutan macOS y se integra perfectamente con el sistema de archivos Mac.",
+          "question": "¿Es File Sortify compatible con mi Mac?"
+        },
+        "3": {
+          "answer": "File Sortify está disponible por una compra de una sola vez de $20 USD. Esto incluye acceso de por vida, uso ilimitado, actualizaciones de por vida y todas las características futuras sin suscripción requerida.",
+          "question": "¿Cuánto cuesta File Sortify?"
+        },
+        "4": {
+          "answer": "¡Sí! File Sortify incluye una función de Historial de Operaciones que te permite revisar y revertir acciones de organización de archivos si es necesario, asegurando que tus archivos siempre estén seguros.",
+          "question": "¿Puedo deshacer cambios de organización de archivos?"
+        }
+      }
+    },
+    "features": {
+      "heading": "Características poderosas",
+      "items": {
+        "0": {
+          "description": "Clasifica automáticamente archivos en carpetas apropiadas basándose en tipos de archivo, nombres y patrones de contenido.",
+          "title": "Clasificación automática inteligente"
+        },
+        "1": {
+          "description": "Crea reglas de clasificación personalizadas adaptadas a tu flujo de trabajo y preferencias específicas.",
+          "title": "Motor de reglas personalizadas"
+        },
+        "2": {
+          "description": "Monitorea carpetas en tiempo real y organiza automáticamente nuevos archivos a medida que llegan.",
+          "title": "Monitoreo en tiempo real"
+        },
+        "3": {
+          "description": "Rastrea todos los movimientos de archivos con un registro historial completo y deshace cambios si es necesario.",
+          "title": "Historial de operaciones"
+        },
+        "4": {
+          "description": "Construido con seguridad en mente. Tus archivos nunca salen de tu Mac y todas las operaciones son seguras.",
+          "title": "Seguro y confidencial"
+        },
+        "5": {
+          "description": "Optimizado para macOS con rendimiento nativo. Organiza miles de archivos en segundos.",
+          "title": "Ultrarrápido"
+        }
+      },
+      "subtitle": "Todo lo que necesitas para mantener tus archivos perfectamente organizados"
+    },
+    "footer": {
+      "brand": "File Sortify",
+      "contactAria": "Contáctanos por correo",
+      "copyright": "© {year} File Sortify. Todos los derechos reservados.",
+      "emailLabel": "Correo",
+      "logoAlt": "Logo de File Sortify",
+      "privacyAria": "Ver política de privacidad",
+      "privacyLink": "Política de privacidad",
+      "termsAria": "Ver términos de servicio",
+      "termsLink": "Términos de servicio"
+    },
+    "hero": {
+      "ctaDemo": "Ver demo",
+      "ctaDemoAria": "Ver video de demo",
+      "ctaDownload": "Descargar en Mac App Store",
+      "ctaDownloadAria": "Descargar File Sortify en Mac App Store",
+      "subtitle": "Transforma tu caótica carpeta de descargas en un paraíso organizado. File Sortify clasifica inteligentemente tus archivos basándose en tipo, reglas personalizadas y monitoreo en tiempo real.",
+      "title": "¡Organiza tus archivos automáticamente!"
+    },
+    "howItWorks": {
+      "heading": "Cómo funciona",
+      "stepAria": "Paso {number}",
+      "steps": {
+        "0": {
+          "description": "Selecciona la carpeta que quieres organizar - típicamente tu carpeta de descargas",
+          "imageAlt": "Interfaz de elección de carpeta",
+          "title": "Elige tu carpeta"
+        },
+        "1": {
+          "description": "Establece reglas personalizadas o usa nuestros valores predeterminados inteligentes para clasificación automática",
+          "imageAlt": "Interfaz de configuración de reglas",
+          "title": "Configura reglas"
+        },
+        "2": {
+          "description": "File Sortify organiza automáticamente tus archivos en segundo plano",
+          "imageAlt": "Interfaz de siéntate y relájate",
+          "title": "Siéntate y relájate"
+        }
+      },
+      "subtitle": "Orgánzate en 3 simples pasos"
+    },
+    "meta": {
+      "applicationName": "File Sortify",
+      "description": "Organiza automáticamente tus archivos Mac con File Sortify. Herramienta inteligente de gestión de archivos con clasificación automática, reglas personalizadas y monitoreo en tiempo real para carpeta de descargas.",
+      "jsonLdDescription": "Organiza automáticamente tus archivos con File Sortify. La herramienta inteligente de gestión de archivos que clasifica archivos por tipo, reglas personalizadas y monitoreo en tiempo real.",
+      "keyFeatures": "Clasificación automática, Reglas personalizadas, Monitoreo en tiempo real, Historial de operaciones",
+      "ogDescription": "Organiza automáticamente tus archivos con File Sortify. La herramienta inteligente de gestión de archivos que clasifica archivos por tipo, reglas personalizadas y monitoreo en tiempo real.",
+      "ogImageAlt": "Organiza archivos Mac automáticamente | File Sortify",
+      "ogTitle": "Organiza archivos Mac automáticamente | File Sortify",
+      "productType": "Software de utilidad Mac",
+      "targetAudience": "Usuarios Mac que necesitan organizar archivos automáticamente",
+      "title": "Organiza archivos Mac automáticamente | File Sortify",
+      "twitterDescription": "Organiza automáticamente tus archivos con File Sortify. La herramienta inteligente de gestión de archivos.",
+      "twitterTitle": "Organiza archivos Mac automáticamente | File Sortify",
+      "useCases": "Organizar carpeta de descargas, Clasificar archivos por tipo, Automatizar gestión de archivos, Limpiar archivos del escritorio"
+    },
+    "nav": {
+      "brand": "File Sortify",
+      "downloadForMac": "Descargar para Mac",
+      "items": {
+        "0": {
+          "label": "Características"
+        },
+        "1": {
+          "label": "Cómo funciona"
+        },
+        "2": {
+          "label": "Capturas"
+        },
+        "3": {
+          "label": "Precios"
+        }
+      },
+      "logoAlt": "Logo de File Sortify"
+    },
+    "pricing": {
+      "badgeText": "MEJOR VALOR",
+      "cta": "Comprar por $9.99",
+      "features": {
+        "0": "Todo en prueba gratuita",
+        "1": "Uso ilimitado",
+        "2": "Actualizaciones de por vida",
+        "3": "Todas las características futuras",
+        "4": "Paga una vez, usa para siempre"
+      },
+      "heading": "Compra de una sola vez",
+      "licenseDescription": "Acceso de por vida a File Sortify con todas las características y actualizaciones",
+      "licenseName": "Licencia de por vida de File Sortify",
+      "lifetimeTitle": "Licencia de por vida",
+      "period": "/una sola vez",
+      "subtitle": "Obtén acceso de por vida a File Sortify"
+    },
+    "screenshots": {
+      "heading": "Interfaz hermosa e intuitiva",
+      "items": {
+        "0": {
+          "description": "Monitorea y controla todas tus operaciones de archivos",
+          "title": "Panel principal"
+        },
+        "1": {
+          "description": "Crea potentes reglas de organización",
+          "title": "Reglas personalizadas"
+        },
+        "2": {
+          "description": "Rastrea y revisa todos los movimientos de archivos",
+          "title": "Historial de operaciones"
+        }
+      },
+      "subtitle": "Diseñado exclusivamente para macOS"
+    },
+    "testimonials": {
+      "heading": "Amado por usuarios Mac",
+      "items": {
+        "0": {
+          "content": "File Sortify ha transformado completamente cómo gestiono mi carpeta de descargas. Es como tener un asistente personal para la organización de archivos!",
+          "name": "Sarah Chen",
+          "role": "Diseñadora"
+        },
+        "1": {
+          "content": "La función de reglas personalizadas es increíble. Lo he configurado para organizar perfectamente mis archivos de trabajo. ¡Me ahorra horas cada semana!",
+          "name": "Mark Johnson",
+          "role": "Desarrollador"
+        },
+        "2": {
+          "content": "¡Finalmente una aplicación Mac que simplemente funciona! Interfaz limpia, características poderosas y respeta mi privacidad. ¡Muy recomendada!",
+          "name": "Emily Rodriguez",
+          "role": "Fotógrafa"
+        }
+      },
+      "starRatingAria": "Calificación de 5 estrellas",
+      "subtitle": "Vé lo que dicen nuestros clientes"
+    }
+  },
+  "Index": {
+    "aiHairstyle": "AI Hairstyle",
+    "aiHairstyleDesc": "Nuevo look, nuevo tú. Prueba cientos de peinados al instante con IA. Experimenta con diferentes cortes, colores y estilos sin riesgos.",
+    "availableNow": "Disponible ahora",
+    "comingSoon": "Más aplicaciones próximamente",
+    "comingSoonDesc": "Estamos trabajando en más herramientas de productividad para ti. ¡Mantente atento!",
+    "fileSortify": "File Sortify",
+    "fileSortifyDesc": "Organización inteligente de archivos para Mac. Clasifica y organiza automáticamente tus archivos con reglas personalizadas y monitoreo en tiempo real.",
+    "heroDesc": "Descubre TinyKit, donde construimos herramientas simples, hermosas y efectivas diseñadas para agilizar tu vida digital diaria sin desorden.",
+    "heroTitle": "Creando aplicaciones minimalistas y prácticas",
+    "rights": "Todos los derechos reservados.",
+    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas"
+  },
+  "Legal": {
+    "languageNotice": "Este documento está disponible solo en inglés.",
+    "privacyTitle": "Política de privacidad",
+    "termsTitle": "Términos de servicio"
+  },
+  "Metadata": {
+    "classification": "Utilidades Mac",
+    "description": "Encuentra tu próxima herramienta de productividad favorita. TinyKit crea aplicaciones minimalistas y prácticas para ti. Software simple, ligero sin anuncios y sin desorden.",
+    "ogDescription": "Encuentra tu próxima herramienta de productividad favorita. TinyKit crea aplicaciones minimalistas y prácticas para ti. Software simple, ligero sin anuncios y sin desorden.",
+    "ogImageAlt": "TinyKit - Creando aplicaciones minimalistas y prácticas",
+    "ogTitle": "TinyKit - Creando aplicaciones minimalistas y prácticas",
+    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas",
+    "titleTemplate": "%s | TinyKit",
+    "twitterDescription": "Encuentra tu próxima herramienta de productividad favorita. TinyKit crea aplicaciones minimalistas y prácticas para ti. Software simple, ligero sin anuncios y sin desorden.",
+    "twitterTitle": "TinyKit - Creando aplicaciones minimalistas y prácticas"
+  },
+  "StructuredData": {
+    "fileManagement": "Gestión de archivos",
+    "orgDescription": "Desarrollador de aplicaciones de productividad para usuarios Mac",
+    "orgKnowsAbout": {
+      "0": "Desarrollo de software Mac",
+      "1": "Organización de archivos",
+      "2": "Herramientas de productividad",
+      "3": "Utilidades macOS"
+    },
+    "productCategory": "Software de utilidad Mac",
+    "websiteDescription": "Aplicaciones de productividad para usuarios Mac"
   }
 }

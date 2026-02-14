@@ -1,25 +1,474 @@
 {
-  "Index": {
-    "title": "TinyKit - ミニマリストで実用的なアプリを制作",
-    "heroTitle": "ミニマリストで実用的なアプリを制作",
-    "heroDesc": "TinyKitをご紹介します。私たちは、毎日のデジタルライフをシンプルにし、乱雑さを排除するために設計された、シンプルで美しく、効果的なツールを構築しています。",
-    "fileSortify": "File Sortify",
-    "fileSortifyDesc": "Mac用のスマートなファイル整理。カスタムルールとリアルタイム監視により、ファイルを自動的に分類および整理します。",
-    "aiHairstyle": "AI Hairstyle",
-    "aiHairstyleDesc": "新しい髪型、新しいあなた。AIで何百もの髪型を即座に試せます。リスクなしでさまざまなカット、カラー、スタイルを試してみてください。",
-    "availableNow": "利用可能",
-    "comingSoon": "さらなるアプリが間もなく登場",
-    "comingSoonDesc": "私たちはあなたのためのより多くの生産性ツールに取り組んでいます。ご期待ください！",
-    "rights": "All rights reserved."
+  "AIHairstyle": {
+    "beforeAfter": {
+      "afterAlt": "ヘアスタイル変換後",
+      "afterDescription": "ボリュームとスタイルを備えた見事な肩丈ウェーブ",
+      "afterLabel": "変換後",
+      "beforeAlt": "ヘアスタイル変換前",
+      "beforeDescription": "新しくてモダンなショートピクシーカット",
+      "beforeLabel": "変換前",
+      "cta": "この変換を試用",
+      "heading": "マジックを見る",
+      "subtitle": "スライダーをドラッグして変換を明らかにします"
+    },
+    "breadcrumb": {
+      "home": "ホーム",
+      "product": "AI Hairstyle Studio"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "AI Hairstyle Studioは、先進的なAIテクノロジーを使用して数百の異なるヘアスタイルとヘアカラーをバーチャルで試用可能にする革新的なアプリです。写真をアップロードし、コミットする前に新しいヘアスタイルでどのように見えるかを確認してください。",
+          "question": "AI Hairstyle Studioとは何ですか？"
+        },
+        "1": {
+          "answer": "あなたの鮮明な正面写真をアップロードし、ヘアスタイルとカラーの大規模なコレクションを閲覧し、私たちのAIがリアルティックな結果でそれらをあなたの写真に即座に適用します。無制限にスタイルを試用し、お気に入りを保存・共有できます。",
+          "question": "AI Hairstyle Studioはどのように動作しますか？"
+        },
+        "2": {
+          "answer": "絶対に安全です！あなたのプライバシーは私たちの最優先事項です。すべての写真は安全に処理され、私たちのサバーに保存されることはありません。画像は処理直後に削除されます。",
+          "question": "私の写真データは安全ですか？"
+        },
+        "3": {
+          "answer": "AI Hairstyle Studioは一回限りの購入9.99米ドルで利用可能です。これには無制限のヘアスタイル試用、すべてのコレクションへのアクセス、HDエクスポート、すべての将来のアップデートを含むライフタイムアクセスが提供されます。",
+          "question": "AI Hairstyle Studioはいくらかか？"
+        },
+        "4": {
+          "answer": "はい！ハイビジョン画質で変換後の写真を保存し、友達、家族、またはヘアスタイリストと簡単に共有して、望むものを正確に伝えることができます。",
+          "question": "新しいルックを保存・共有できますか？"
+        }
+      }
+    },
+    "features": {
+      "heading": "マジカルな機能",
+      "items": {
+        "0": {
+          "description": "先進的なAIテクノロジーが顔の形と特徴を分析し、様々なヘアスタイルをリアルティックに適用します。",
+          "title": "AI駆動の試用"
+        },
+        "1": {
+          "description": "クラシックなカットからトレンディスタイルまで - あらゆる機会向けのヘアスタイルの大規模なコレクションを探索。",
+          "title": "数百のスタイル"
+        },
+        "2": {
+          "description": "様々なヘアカラーを即座に試用 - ブロンド、ブリュネット、レッド、ペーストカラー、または大胆なファンタジーカラー。",
+          "title": "ヘアカラーシミュレーター"
+        },
+        "3": {
+          "description": "写真をアップロードし、数秒でリアルティックな結果を確認。待機なし、サロン予約不要。",
+          "title": "即座の結果"
+        },
+        "4": {
+          "description": "写真は安全に処理されます。完全なプライバシー保証。",
+          "title": "プライバシーファースト"
+        },
+        "5": {
+          "description": "ハイビジョンで新しいルックを保存・共有。スタイリストに見せるのに完璧。",
+          "title": "HDエクスポート"
+        }
+      },
+      "subtitle": "完璧なルックを見つけるために必要なすべて"
+    },
+    "footer": {
+      "brand": "AI Hairstyle Studio",
+      "contactLink": "お問い合わせ",
+      "copyright": "© {year} AI Hairstyle Studio。TinyKitによって❤️で構築。",
+      "downloadLink": "ダウンロード",
+      "featuresLink": "機能",
+      "logoAlt": "AI Hairstyle Studioロゴ",
+      "pricingLink": "料金",
+      "privacyLink": "プライバシーポリシー",
+      "supportLink": "サポート",
+      "termsLink": "利用規約"
+    },
+    "hero": {
+      "aiAccuracyLabel": "AI正確率",
+      "aiAccuracyValue": "99.8%",
+      "appliedLabel": "適用済み",
+      "badge": "✨ #1 AIヘアスタイルアプリ",
+      "ctaDownload": "今すぐダウンロード",
+      "ctaDownloadAria": "App StoreでAI Hairstyle Studioをダウンロード",
+      "ctaHowItWorks": "使い方を見る",
+      "ctaHowItWorksAria": "AI Hairstyle Studioの使い方を見る",
+      "lovedByLabel": "愛用者数",
+      "lovedByValue": "50K+",
+      "screenshotAlt": "AI Hairstyle Studioアプリスクリーンショット、バーチャルヘアスタイル試用結果と元の髪型と変換後の髪型の並列比較を表示",
+      "subtitle": "先進的なAIでルックを即座に変えます。カットをコミットする前に、サロンクオリティの数百のヘアスタイルとカラーをリアルタイムで試用できます。",
+      "titleLine1": "髪型を変えて、",
+      "titleLine2": "自分も変える。"
+    },
+    "howItWorks": {
+      "heading": "シンプルなステップ",
+      "steps": {
+        "0": {
+          "description": "あなたの鮮明な正面写真をアップロード",
+          "imageAlt": "AI Hairstyle Studioステップ1：写真をアップロード。あなたの鮮明な正面写真をアップロード",
+          "title": "写真をアップロード"
+        },
+        "1": {
+          "description": "試用可能な数百のヘアスタイルとカラーを閲覧",
+          "imageAlt": "AI Hairstyle Studioステップ2：スタイルを選択。試用可能な数百のヘアスタイルとカラーを閲覧",
+          "title": "スタイルを選択"
+        },
+        "2": {
+          "description": "AIが写真にヘアスタイルを即座に適用 - 新しいルック、新しいあなた！",
+          "imageAlt": "AI Hairstyle Studioステップ3：自分を見る。AIが写真にヘアスタイルを即座に適用 - 新しいルック、新しいあなた！",
+          "title": "自分を見る"
+        }
+      },
+      "subtitle": "新しいスタイルへの3ステップ"
+    },
+    "meta": {
+      "applicationName": "AI Hairstyle Studio",
+      "description": "AIで100+のヘアスタイルとヘアカラーを即座に試用可能。写真をアップロードし、サロン訪問前に完璧なルックを見つけます。iOS無料ダウンロード。",
+      "jsonLdDescription": "AIで100+のヘアスタイルとヘアカラーを即座に試用可能。写真をアップロードし、サロン訪問前に完璧なルックを見つけます。iOS無料ダウンロード。",
+      "jsonLdFeatureList": {
+        "0": "AI駆動のヘアスタイル試用",
+        "1": "数百のヘアスタイルオプション",
+        "2": "ヘアカラーシミュレーター",
+        "3": "即座の結果",
+        "4": "プライバシー重視",
+        "5": "HD写真エクスポート",
+        "6": "定期的なスタイルアップデート"
+      },
+      "keyFeatures": "AI駆動の試用、数百のスタイル、ヘアカラーシミュレーター、即座の結果、プライバシーファースト、HDエクスポート",
+      "ogDescription": "コミット前に新しいヘアスタイルがどのように見えるかを確認してください！AI駆動の試用機能で100+のスタイルとカラー。",
+      "ogImageAlt": "AI Hairstyle Studio - バーチャルヘアスタイル試用アプリインターフェース",
+      "ogTitle": "AIヘアスタイル無料試用 - バーチャルヘアメイク | TinyKit",
+      "productType": "AIビューティ＆ライフスタイルアプリ",
+      "targetAudience": "新しいルックにコミットする前に様々なヘアスタイルを試してみたい方",
+      "title": "AIヘアスタイル無料試用 - バーチャルヘアメイク",
+      "twitterDescription": "AIで100+のヘアスタイルとカラーを即座に試用。カット前にルックを変えます。",
+      "twitterTitle": "AIヘアスタイル無料試用 - バーチャルヘアメイク | TinyKit",
+      "useCases": "サロン訪問前にヘアスタイルを試用、ヘアカラーを実験、完璧なヘアカットを見つける、スタイリストとルックを共有"
+    },
+    "nav": {
+      "brand": "AI Hairstyle Studio",
+      "closeMenu": "メニューを閉じる",
+      "download": "ダウンロード",
+      "downloadAria": "App StoreでAI Hairstyle Studioをダウンロード",
+      "downloadNow": "今すぐダウンロード",
+      "items": {
+        "0": {
+          "label": "マジック"
+        },
+        "1": {
+          "label": "機能"
+        },
+        "2": {
+          "label": "使い方"
+        },
+        "3": {
+          "label": "料金"
+        }
+      },
+      "logoAlt": "AI Hairstyleロゴ",
+      "openMenu": "メニューを開く"
+    },
+    "page": {
+      "skipToContent": "メインコンテンツへスキップ"
+    },
+    "pricing": {
+      "badgeText": "今すぐ開始",
+      "cta": "今すぐダウンロード",
+      "ctaAria": "AI Hairstyle Studioを無料ダウンロード",
+      "features": {
+        "0": "無料ダウンロード",
+        "1": "ヘアスタイルプレビュー",
+        "2": "生成用クレジット購入",
+        "3": "HD写真エクスポート",
+        "4": "定期的なスタイルアップデート"
+      },
+      "freeTitle": "無料ダウンロード",
+      "period": "/永遠",
+      "price": "$0"
+    },
+    "testimonials": {
+      "avatarAlt": "{name}のアバター",
+      "heading": "ユーザーの愛",
+      "items": {
+        "0": {
+          "content": "AI Hairstyle Studioは私をヘアスタイルの災から救いました！私は仮想的にボブカットを試用し、自分に合わないと気づきました。このアプリが大好きです！",
+          "name": "Jessica Taylor",
+          "role": "ファッションブロガー"
+        },
+        "1": {
+          "content": "私はずっと様々なヘアスタイルを試用してみたかったのですが、コミットするには怖すぎました。このアプリはリスクなしで実験させてくれます。ゲームチェンジャーです！",
+          "name": "Michael Chen",
+          "role": "大学生"
+        },
+        "2": {
+          "content": "AIは信じられないほどリアルティックです！スタイリストに結果を見せたら、私が望むものを正確に理解してくれました。すべてのペニに値します！",
+          "name": "Emma Williams",
+          "role": "マーケティングマネージャー"
+        }
+      },
+      "ratingAria": "評価：5つ星中5つ星"
+    }
   },
   "Brand": {
     "name": "TinyKit",
     "tagline": "ミニマリストで実用的なアプリを制作"
   },
   "Common": {
+    "allRightsReserved": "All rights reserved.",
+    "contactViaEmail": "メールでお問い合わせ",
     "download": "ダウンロード",
-    "support": "サポート",
+    "downloadForMac": "Mac版ダウンロード",
+    "downloadNow": "今すぐダウンロード",
+    "downloadOnAppStore": "Mac App Storeでダウンロード",
+    "downloadOnMacAppStore": "Mac App Storeでダウンロード",
+    "email": "メール",
+    "features": "機能",
+    "home": "ホーム",
+    "howItWorks": "使い方",
+    "pricing": "料金",
     "privacy": "プライバシーポリシー",
-    "terms": "利用規約"
+    "seeHowItWorks": "使い方を見る",
+    "starRating": "5つ星評価",
+    "step": "ステップ{number}",
+    "support": "サポート",
+    "terms": "利用規約",
+    "viewPrivacy": "プライバシーポリシーを見る",
+    "viewTerms": "利用規約を見る"
+  },
+  "FileSortify": {
+    "breadcrumb": {
+      "home": "ホーム",
+      "product": "File Sortify"
+    },
+    "cta": {
+      "button": "Mac App Storeでダウンロード",
+      "buttonAria": "Mac App StoreでFile Sortifyをダウンロード",
+      "heading": "デジタルライフを整理する準備はできましたか？",
+      "subtitle": "ファイル管理をシンプルにした数千人のMacユーザーに参加しませんか"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "File Sortifyは、ファイルタイプ、カスタムルール、リアルタイム監視に基づいてファイルを自動的に分類・整理するMac向けのインテリジェントファイル整理ツールです。ダウンロードフォルダーとデスクトップをきれいに整理された状態に保つのに完璧です。",
+          "question": "File Sortifyとは何ですか？"
+        },
+        "1": {
+          "answer": "File Sortifyはスマート自動分類を使用してファイルタイプ（ドキュメント、画像、ビデオなど）でファイルを整理し、特定のファイルタイプや名前向けのカスタムルール作成を可能にし、リアルタイムでフォルダーを監視して到達した新しいファイルを自動的に整理します。",
+          "question": "File Sortifyはファイルを整理しますか？"
+        },
+        "2": {
+          "answer": "File SortifyはmacOS専用に設計されています。macOSを実行するすべての最新Macコンピュータで動作し、Macファイルシステムとシームレスに統合します。",
+          "question": "File Sortifyは私のMacと互換性がありますか？"
+        },
+        "3": {
+          "answer": "File Sortifyは一回限りの購入20米ドルで利用可能です。これにはライフタイムアクセス、無制限使用、ライフタイムアップデート、サブスクリプション不要のすべての将来機能が含まれます。",
+          "question": "File Sortifyはいくらかか？"
+        },
+        "4": {
+          "answer": "はい！File Sortifyには操作履歴機能が含まれており、必要に応じてファイル整理操作をレビューや元に戻し、ファイルが常に安全であることを保証します。",
+          "question": "ファイル整理の変更を元に戻せますか？"
+        }
+      }
+    },
+    "features": {
+      "heading": "パワフルな機能",
+      "items": {
+        "0": {
+          "description": "ファイルタイプ、名前、コンテンツパターンに基づいて、ファイルを適切なフォルダーに自動的に分類します。",
+          "title": "スマート自動分類"
+        },
+        "1": {
+          "description": "特定のワークフローと好みに合わせたパーソナル化された整理ルールを作成します。",
+          "title": "カスタムルールエンジン"
+        },
+        "2": {
+          "description": "フォルダーをリアルタイムで監視し、新しいファイルが到達したときに自動的に整理します。",
+          "title": "リアルタイム監視"
+        },
+        "3": {
+          "description": "包括的な履歴ログですべてのファイル移動を追跡し、必要に応じて変更を元に戻します。",
+          "title": "操作履歴"
+        },
+        "4": {
+          "description": "セキュリティを考慮して構築。ファイルはMacから離れることはなく、すべての操作は安全です。",
+          "title": "安全でセキュア"
+        },
+        "5": {
+          "description": "macOSネイティブパフォーマンス向けに最適化。数秒で数千のファイルを整理します。",
+          "title": "超高速"
+        }
+      },
+      "subtitle": "ファイルを完璧に整理するために必要なすべて"
+    },
+    "footer": {
+      "brand": "File Sortify",
+      "contactAria": "メールでお問い合わせ",
+      "copyright": "© {year} File Sortify。All rights reserved.",
+      "emailLabel": "メール",
+      "logoAlt": "File Sortifyロゴ",
+      "privacyAria": "プライバシーポリシーを見る",
+      "privacyLink": "プライバシーポリシー",
+      "termsAria": "利用規約を見る",
+      "termsLink": "利用規約"
+    },
+    "hero": {
+      "ctaDemo": "デモを見る",
+      "ctaDemoAria": "デモビデオを見る",
+      "ctaDownload": "Mac App Storeでダウンロード",
+      "ctaDownloadAria": "Mac App StoreでFile Sortifyをダウンロード",
+      "subtitle": "カオスなダウンロードフォルダーを整然とした楽園に変えます。File Sortifyはファイルタイプ、カスタムルール、リアルタイム監視に基づいてファイルをインテリジェントに分類します。",
+      "title": "ファイルを自動的に整理！"
+    },
+    "howItWorks": {
+      "heading": "使い方",
+      "stepAria": "ステップ{number}",
+      "steps": {
+        "0": {
+          "description": "整理したいフォルダーを選択 - 通常はダウンロードフォルダー",
+          "imageAlt": "フォルダー選択インターフェース",
+          "title": "フォルダーを選択"
+        },
+        "1": {
+          "description": "カスタムルールを設定するか、自動分類にスマートデフォルトを使用",
+          "imageAlt": "ルール設定インターフェース",
+          "title": "ルールを設定"
+        },
+        "2": {
+          "description": "File Sortifyがバックグラウンドでファイルを自動的に整理します",
+          "imageAlt": "座ってお楽しみインターフェース",
+          "title": "座ってお楽しみ"
+        }
+      },
+      "subtitle": "3つのシンプルなステップで整理"
+    },
+    "meta": {
+      "applicationName": "File Sortify",
+      "description": "File SortifyでMacファイルを自動的に整理します。ダウンロードフォルダー向けの自動分類、カスタムルール、リアルタイム監視機能を備えたスマートファイル管理ツール。",
+      "jsonLdDescription": "File Sortifyでファイルを自動的に整理します。ファイルタイプ、カスタムルール、リアルタイム監視に基づいてファイルを整理するインテリジェントファイル管理ツール。",
+      "keyFeatures": "自動分類、カスタムルール、リアルタイム監視、操作履歴",
+      "ogDescription": "File Sortifyでファイルを自動的に整理します。ファイルタイプ、カスタムルール、リアルタイム監視に基づいてファイルを整理するインテリジェントファイル管理ツール。",
+      "ogImageAlt": "Macファイルを自動整理 | File Sortify",
+      "ogTitle": "Macファイルを自動整理 | File Sortify",
+      "productType": "Macユーティリティソフトウェア",
+      "targetAudience": "ファイルを自動的に整理する必要のあるMacユーザー",
+      "title": "Macファイルを自動整理 | File Sortify",
+      "twitterDescription": "File Sortifyでファイルを自動的に整理します。インテリジェントファイル管理ツール。",
+      "twitterTitle": "Macファイルを自動整理 | File Sortify",
+      "useCases": "ダウンロードフォルダーの整理、ファイルタイプ別の整理、ファイル管理の自動化、デスクトップファイルのクリーンアップ"
+    },
+    "nav": {
+      "brand": "File Sortify",
+      "downloadForMac": "Mac版ダウンロード",
+      "items": {
+        "0": {
+          "label": "機能"
+        },
+        "1": {
+          "label": "使い方"
+        },
+        "2": {
+          "label": "スクリーンショット"
+        },
+        "3": {
+          "label": "料金"
+        }
+      },
+      "logoAlt": "File Sortifyロゴ"
+    },
+    "pricing": {
+      "badgeText": "最もお得",
+      "cta": "$9.99で購入",
+      "features": {
+        "0": "無料トライアルのすべて",
+        "1": "無制限使用",
+        "2": "ライフタイムアップデート",
+        "3": "すべての将来の機能",
+        "4": "一回の支払いで永久使用"
+      },
+      "heading": "一回限りの購入",
+      "licenseDescription": "すべての機能とアップデートを備えたFile Sortifyへのライフタイムアクセス",
+      "licenseName": "File Sortifyライフタイムライセンス",
+      "lifetimeTitle": "ライフタイムライセンス",
+      "period": "/一回限り",
+      "subtitle": "File Sortifyのライフタイムアクセスを取得"
+    },
+    "screenshots": {
+      "heading": "美しく直観的なインターフェース",
+      "items": {
+        "0": {
+          "description": "すべてのファイル操作を監視・制御",
+          "title": "メインダッシュボード"
+        },
+        "1": {
+          "description": "パワフルな整理ルールを作成",
+          "title": "カスタムルール"
+        },
+        "2": {
+          "description": "すべてのファイル移動を追跡・レビュー",
+          "title": "操作履歴"
+        }
+      },
+      "subtitle": "macOS専用に設計"
+    },
+    "testimonials": {
+      "heading": "Macユーザーに愛用",
+      "items": {
+        "0": {
+          "content": "File Sortifyは私のダウンロードフォルダーの管理方法を完全に変えました。ファイル整理用の個人アシスタントを持っているようです！",
+          "name": "Sarah Chen",
+          "role": "デザイナー"
+        },
+        "1": {
+          "content": "カスタムルール機能は信じられないほどです。私の仕事用ファイルを完璧に整理するように設定しました。毎週何時間も節約しています！",
+          "name": "Mark Johnson",
+          "role": "デベロッパー"
+        },
+        "2": {
+          "content": "ついに、ただ動作するMacアプリが登場！クリーンなインターフェース、パワフルな機能、プライバシーの尊重。強くおすすめします！",
+          "name": "Emily Rodriguez",
+          "role": "フォトグラファー"
+        }
+      },
+      "starRatingAria": "5つ星評価",
+      "subtitle": "お客様の声をご覧ください"
+    }
+  },
+  "Index": {
+    "aiHairstyle": "AI Hairstyle",
+    "aiHairstyleDesc": "新しい髪型、新しいあなた。AIで数百もの髪型を即座に試せます。リスクなしでさまざまなカット、カラー、スタイルを試してみてください。",
+    "availableNow": "利用可能",
+    "comingSoon": "さらなるアプリが間もなく登場",
+    "comingSoonDesc": "私たちはあなたのためのより多くの生産性ツールに取り組んでいます。ご期待ください！",
+    "fileSortify": "File Sortify",
+    "fileSortifyDesc": "Mac用のスマートなファイル整理。カスタムルールとリアルタイム監視により、ファイルを自動的に分類および整理します。",
+    "heroDesc": "TinyKitをご紹介します。私たちは、毎日のデジタルライフをシンプルにし、乱雑さを排除するために設計された、シンプルで美しく、効果的なツールを構築しています。",
+    "heroTitle": "ミニマリストで実用的なアプリを制作",
+    "rights": "All rights reserved.",
+    "title": "TinyKit - ミニマリストで実用的なアプリを制作"
+  },
+  "Legal": {
+    "languageNotice": "このドキュメントは英語のみでの提供となります。",
+    "privacyTitle": "プライバシーポリシー",
+    "termsTitle": "利用規約"
+  },
+  "Metadata": {
+    "classification": "Macユーティリティ",
+    "description": "次のお気に入りの生産性ツールを見つけてください。TinyKitはあなたのためにミニマリストで実用的なアプリを作ります。シンプルで軽量のソフトウェア、広告なし、乱雑さなし。",
+    "ogDescription": "次のお気に入りの生産性ツールを見つけてください。TinyKitはあなたのためにミニマリストで実用的なアプリを作ります。シンプルで軽量のソフトウェア、広告なし、乱雑さなし。",
+    "ogImageAlt": "TinyKit - ミニマリストで実用的なアプリを制作",
+    "ogTitle": "TinyKit - ミニマリストで実用的なアプリを制作",
+    "title": "TinyKit - ミニマリストで実用的なアプリを制作",
+    "titleTemplate": "%s | TinyKit",
+    "twitterDescription": "次のお気に入りの生産性ツールを見つけてください。TinyKitはあなたのためにミニマリストで実用的なアプリを作ります。シンプルで軽量のソフトウェア、広告なし、乱雑さなし。",
+    "twitterTitle": "TinyKit - ミニマリストで実用的なアプリを制作"
+  },
+  "StructuredData": {
+    "fileManagement": "ファイル管理",
+    "orgDescription": "Macユーザー向けの生産性アプリの開発者",
+    "orgKnowsAbout": {
+      "0": "Macソフトウェア開発",
+      "1": "ファイル整理",
+      "2": "生産性ツール",
+      "3": "macOSユーティリティ"
+    },
+    "productCategory": "Macユーティリティソフトウェア",
+    "websiteDescription": "Macユーザー向けの生産性アプリ"
   }
 }
