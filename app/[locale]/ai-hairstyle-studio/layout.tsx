@@ -49,12 +49,27 @@ export async function generateMetadata({
     creator: 'TinyKit',
     publisher: 'TinyKit',
     alternates: {
-      canonical: 'https://www.tinykit.app/ai-hairstyle-studio',
+      canonical:
+        locale === 'en'
+          ? '/ai-hairstyle-studio'
+          : `/${locale}/ai-hairstyle-studio`,
+      languages: {
+        en: '/ai-hairstyle-studio',
+        zh: '/zh/ai-hairstyle-studio',
+        ja: '/ja/ai-hairstyle-studio',
+        es: '/es/ai-hairstyle-studio',
+        pt: '/pt/ai-hairstyle-studio',
+        de: '/de/ai-hairstyle-studio',
+        ru: '/ru/ai-hairstyle-studio',
+        ko: '/ko/ai-hairstyle-studio',
+        fr: '/fr/ai-hairstyle-studio',
+        'x-default': '/ai-hairstyle-studio',
+      },
     },
     openGraph: {
       type: 'website',
       locale: localeMap[locale] || 'en_US',
-      url: 'https://www.tinykit.app/ai-hairstyle-studio',
+      url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}/ai-hairstyle-studio`,
       title: t('ogTitle'),
       description: t('ogDescription'),
       siteName: 'TinyKit',
@@ -130,7 +145,7 @@ export default async function HairstyleLayout({
     },
     image: 'https://cdn.tinykit.app/hairstyle/images/logo.png',
     description: t('jsonLdDescription'),
-    url: 'https://www.tinykit.app/ai-hairstyle-studio',
+    url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}/ai-hairstyle-studio`,
     author: {
       '@type': 'Organization',
       name: 'TinyKit',

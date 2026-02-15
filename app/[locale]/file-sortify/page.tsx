@@ -80,21 +80,22 @@ export default async function Home({
     faqs: fileSortifyFAQs,
     testimonials: fileSortifyTestimonials,
     // Product-specific config
-    url: siteConfig.url,
+    url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}/file-sortify`,
     logo: siteConfig.logo,
     email: siteConfig.email,
     stats: siteConfig.stats,
   };
 
   // Define BreadcrumbList for StructuredData component
+  const baseUrl = `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}`;
   const breadcrumbList = [
     {
       name: tBreadcrumb('home'),
-      item: siteConfig.url,
+      item: baseUrl,
     },
     {
       name: tBreadcrumb('product'),
-      item: `${siteConfig.url}/file-sortify`,
+      item: `${baseUrl}/file-sortify`,
     },
   ];
 

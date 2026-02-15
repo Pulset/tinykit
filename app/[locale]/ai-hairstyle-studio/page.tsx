@@ -89,21 +89,22 @@ export default async function HairstylePage({
     faqs: aiHairstyleFAQs,
     testimonials: aiHairstyleTestimonials,
     // Product-specific config
-    url: siteConfig.url,
+    url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}/ai-hairstyle-studio`,
     logo: siteConfig.logo,
     email: siteConfig.email,
     stats: siteConfig.stats,
   };
 
   // Define BreadcrumbList for StructuredData component
+  const baseUrl = `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}`;
   const breadcrumbList = [
     {
       name: tBreadcrumb('home'),
-      item: siteConfig.url,
+      item: baseUrl,
     },
     {
       name: tBreadcrumb('product'),
-      item: `${siteConfig.url}/ai-hairstyle-studio`,
+      item: `${baseUrl}/ai-hairstyle-studio`,
     },
   ];
 

@@ -43,6 +43,8 @@ export async function generateMetadata({
     fr: 'fr_FR',
   };
 
+  const canonicalPath = locale === 'en' ? '/' : `/${locale}`;
+
   return {
     title: {
       default: t('title'),
@@ -67,7 +69,7 @@ export async function generateMetadata({
     },
     metadataBase: new URL('https://www.tinykit.app'),
     alternates: {
-      canonical: '/',
+      canonical: canonicalPath,
       languages: {
         en: '/',
         zh: '/zh',
@@ -84,7 +86,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'website',
       locale: localeMap[locale] || 'en_US',
-      url: 'https://www.tinykit.app',
+      url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}`,
       title: t('ogTitle'),
       description: t('ogDescription'),
       siteName: 'TinyKit',
@@ -155,7 +157,7 @@ export default async function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'TinyKit',
-    url: 'https://www.tinykit.app',
+    url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}`,
     logo: 'https://www.tinykit.app/tinykit-logo.png',
     description: t('orgDescription'),
     sameAs: ['https://twitter.com/tinykit_app'],

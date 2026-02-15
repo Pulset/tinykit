@@ -42,12 +42,24 @@ export async function generateMetadata({
       'file sortify',
     ],
     alternates: {
-      canonical: '/file-sortify',
+      canonical: locale === 'en' ? '/file-sortify' : `/${locale}/file-sortify`,
+      languages: {
+        en: '/file-sortify',
+        zh: '/zh/file-sortify',
+        ja: '/ja/file-sortify',
+        es: '/es/file-sortify',
+        pt: '/pt/file-sortify',
+        de: '/de/file-sortify',
+        ru: '/ru/file-sortify',
+        ko: '/ko/file-sortify',
+        fr: '/fr/file-sortify',
+        'x-default': '/file-sortify',
+      },
     },
     openGraph: {
       type: 'website',
       locale: localeMap[locale] || 'en_US',
-      url: 'https://www.tinykit.app/file-sortify',
+      url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}/file-sortify`,
       title: t('ogTitle'),
       description: t('ogDescription'),
       siteName: 'TinyKit',
@@ -106,7 +118,7 @@ export default async function FileSortifyLayout({
     },
     image: 'https://cdn.tinykit.app/file-sortify/images/logo.png',
     description: t('jsonLdDescription'),
-    url: 'https://www.tinykit.app/file-sortify',
+    url: `https://www.tinykit.app${locale === 'en' ? '' : `/${locale}`}/file-sortify`,
   };
 
   return (
