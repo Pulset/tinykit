@@ -120,7 +120,7 @@
     },
     "meta": {
       "applicationName": "AI Hairstyle Studio",
-      "description": "Essayez plus de 100 coiffures et couleurs de cheveux instantanément avec l'IA. Téléchargez votre photo, trouvez votre look idéal avant votre visite chez le coiffeur. Téléchargement gratuit pour iOS.",
+      "description": "Essayez 100+ coiffures avec l'IA. Téléchargez votre photo, trouvez votre look idéal avant le coiffeur. Téléchargement gratuit pour iOS.",
       "jsonLdDescription": "Essayez plus de 100 coiffures et couleurs de cheveux instantanément avec l'IA. Téléchargez votre photo, trouvez votre look idéal avant votre visite chez le coiffeur. Téléchargement gratuit pour iOS.",
       "jsonLdFeatureList": {
         "0": "Essai virtuel de coiffure alimenté par l'IA",
@@ -340,7 +340,7 @@
     },
     "meta": {
       "applicationName": "File Sortify",
-      "description": "Organisez automatiquement vos fichiers Mac avec File Sortify. Outil intelligent de gestion de fichiers avec tri automatique, règles personnalisées et surveillance en temps réel pour le dossier Téléchargements.",
+      "description": "Organisez vos fichiers Mac avec File Sortify. Tri automatique, règles personnalisées et surveillance en temps réel pour le dossier Téléchargements.",
       "jsonLdDescription": "Organisez automatiquement vos fichiers avec File Sortify. L'outil intelligent de gestion de fichiers qui trie les fichiers par type, règles personnalisées et surveillance en temps réel.",
       "keyFeatures": "Auto-catégorisation, Règles personnalisées, Surveillance en temps réel, Historique des opérations",
       "ogDescription": "Organisez automatiquement vos fichiers avec File Sortify. L'outil intelligent de gestion de fichiers qui trie les fichiers par type, règles personnalisées et surveillance en temps réel.",
@@ -450,7 +450,7 @@
   },
   "Metadata": {
     "classification": "Utilitaires Mac",
-    "description": "Trouvez votre prochain outil de productivité préféré. TinyKit crée des applications minimalistes et pratiques pour vous. Des logiciels simples et légers sans publicité ni encombrement.",
+    "description": "Trouvez votre outil de productivité idéal. TinyKit crée des apps minimalistas et pratiques. Logiciels simples et légers sans publicité ni encombrement.",
     "ogDescription": "Trouvez votre prochain outil de productivité préféré. TinyKit crée des applications minimalistes et pratiques pour vous. Des logiciels simples et légers sans publicité ni encombrement.",
     "ogImageAlt": "TinyKit - Création d'applications minimalistes et pratiques",
     "ogTitle": "TinyKit - Création d'applications minimalistes et pratiques",

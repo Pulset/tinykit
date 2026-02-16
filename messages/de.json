@@ -120,7 +120,7 @@
     },
     "meta": {
       "applicationName": "AI Hairstyle Studio",
-      "description": "Testen Sie sofort 100+ Frisuren und Haarfarben mit KI. Laden Sie Ihr Foto hoch, finden Sie den perfekten Look vor Ihrem Salon-Besuch. Kostenloser Download für iOS.",
+      "description": "100+ Frisuren und Haarfarben sofort mit KI testen. Foto hochladen, perfekten Look vor dem Salon-Besuch finden. Kostenloser Download für iOS.",
       "jsonLdDescription": "Testen Sie 100+ Frisuren und Haarfarben sofort mit KI. Laden Sie Ihr Foto hoch, finden Sie den perfekten Look vor Ihrem Salon-Besuch. Kostenloser Download für iOS.",
       "jsonLdFeatureList": {
         "0": "KI-gestütztes Frisuren-Anprobieren",
@@ -340,7 +340,7 @@
     },
     "meta": {
       "applicationName": "File Sortify",
-      "description": "Organisieren Sie Ihre Mac-Dateien automatisch mit File Sortify. Intelligente Dateiverwaltungs-Tool mit automatischer Sortierung, benutzerdefinierten Regeln und Echtzeit-Überwachung für Downloads-Ordner.",
+      "description": "Mac-Dateien automatisch organisieren mit File Sortify. Intelligente Sortierung, benutzerdefinierte Regeln und Echtzeit-Überwachung für den Downloads-Ordner.",
       "jsonLdDescription": "Organisieren Sie Ihre Dateien automatisch mit File Sortify. Das intelligente Dateiverwaltungs-Tool, das Dateien nach Typ, benutzerdefinierten Regeln und Echtzeit-Überwachung sortiert.",
       "keyFeatures": "Automatische Kategorisierung, Benutzerdefinierte Regeln, Echtzeit-Überwachung, Operationsverlauf",
       "ogDescription": "Organisieren Sie Ihre Dateien automatisch mit File Sortify. Das intelligente Dateiverwaltungs-Tool, das Dateien nach Typ, benutzerdefinierten Regeln und Echtzeit-Überwachung sortiert.",
@@ -450,7 +450,7 @@
   },
   "Metadata": {
     "classification": "Mac-Dienstprogramme",
-    "description": "Finden Sie Ihr nächstes Lieblings-Produktivitäts-Tool. TinyKit entwickelt minimalistische und praktische Apps für Sie. Einfache, leichtgewichtige Software ohne Werbung und ohne unnötigen Ballast.",
+    "description": "Finden Sie Ihr nächstes Produktivitäts-Tool. TinyKit entwickelt minimalistische Apps für Sie. Einfache Software ohne Werbung und ohne unnötigen Ballast.",
     "ogDescription": "Finden Sie Ihr nächstes Lieblings-Produktivitäts-Tool. TinyKit entwickelt minimalistische und praktische Apps für Sie. Einfache, leichtgewichtige Software ohne Werbung und ohne unnötigen Ballast.",
     "ogImageAlt": "TinyKit - Entwicklung minimalistischer und praktischer Apps",
     "ogTitle": "TinyKit - Entwicklung minimalistischer und praktischer Apps",

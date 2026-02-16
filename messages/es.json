@@ -340,7 +340,7 @@
     },
     "meta": {
       "applicationName": "File Sortify",
-      "description": "Organiza automáticamente tus archivos Mac con File Sortify. Herramienta inteligente de gestión de archivos con clasificación automática, reglas personalizadas y monitoreo en tiempo real para carpeta de descargas.",
+      "description": "Organiza archivos Mac con File Sortify. Gestión inteligente con clasificación automática, reglas y monitoreo en tiempo real de descargas.",
       "jsonLdDescription": "Organiza automáticamente tus archivos con File Sortify. La herramienta inteligente de gestión de archivos que clasifica archivos por tipo, reglas personalizadas y monitoreo en tiempo real.",
       "keyFeatures": "Clasificación automática, Reglas personalizadas, Monitoreo en tiempo real, Historial de operaciones",
       "ogDescription": "Organiza automáticamente tus archivos con File Sortify. La herramienta inteligente de gestión de archivos que clasifica archivos por tipo, reglas personalizadas y monitoreo en tiempo real.",
@@ -450,7 +450,7 @@
   },
   "Metadata": {
     "classification": "Utilidades Mac",
-    "description": "Encuentra tu próxima herramienta de productividad favorita. TinyKit crea aplicaciones minimalistas y prácticas para ti. Software simple, ligero sin anuncios y sin desorden.",
+    "description": "Encuentra tu herramienta de productividad. TinyKit crea apps minimalistas y prácticas. Software simple y ligero, sin anuncios ni desorden.",
     "ogDescription": "Encuentra tu próxima herramienta de productividad favorita. TinyKit crea aplicaciones minimalistas y prácticas para ti. Software simple, ligero sin anuncios y sin desorden.",
     "ogImageAlt": "TinyKit - Creando aplicaciones minimalistas y prácticas",
     "ogTitle": "TinyKit - Creando aplicaciones minimalistas y prácticas",
