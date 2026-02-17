@@ -50,6 +50,9 @@ export async function generateMetadata({
       default: t('title'),
       template: t('titleTemplate'),
     },
+    icons: {
+      apple: '/apple-icon.png',
+    },
     description: t('description'),
     keywords: [
       'productivity apps',
