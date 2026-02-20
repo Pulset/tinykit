@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "indexnow": "npx tsx scripts/submit-indexnow.ts",
+    "indexnow:dry": "npx tsx scripts/submit-indexnow.ts --dry-run"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
