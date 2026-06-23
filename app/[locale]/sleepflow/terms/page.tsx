@@ -1,36 +1,15 @@
 'use client';
 
-import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
-import { Moon } from 'lucide-react';
 
 export default function TermsPage() {
   const t = useTranslations('Legal');
-  const tNav = useTranslations('SleepFlow.footer');
   const locale = useLocale();
 
   const showNotice = locale !== 'en';
 
   return (
     <div className='min-h-screen bg-[#0A0B14] text-gray-200'>
-      {/* Minimal nav back to product */}
-      <div className='border-b border-white/10 bg-[#06070F]/80 backdrop-blur-md sticky top-0 z-10'>
-        <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between'>
-          <div className='flex items-center gap-3'>
-            <span className='w-8 h-8 rounded-lg bg-gradient-to-br from-[#6B78E8] to-[#9775FA] flex items-center justify-center'>
-              <Moon className='w-4 h-4 text-white' fill='currentColor' />
-            </span>
-            <span className='font-bold text-white'>SleepFlow</span>
-          </div>
-          <Link
-            href='/sleepflow'
-            className='text-sm text-[#97A3FF] hover:text-white transition'
-          >
-            ← {tNav('backHome')}
-          </Link>
-        </div>
-      </div>
-
       <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
         <div className='bg-white/[0.03] rounded-2xl shadow-lg overflow-hidden border border-white/10'>
           {/* Header */}
@@ -50,13 +29,6 @@ export default function TermsPage() {
                 <p className='text-amber-200'>{t('languageNotice')}</p>
               </div>
             )}
-
-            {/* Document Info */}
-            <div className='bg-blue-500/10 border-l-4 border-blue-500 p-4 mb-8 rounded-r-lg'>
-              <p className='text-blue-200'>
-                <strong>Effective Date:</strong> June 22, 2026
-              </p>
-            </div>
 
             {/* Controlling Language */}
             <div className='bg-emerald-500/10 border-l-4 border-emerald-500 p-4 mb-8 rounded-r-lg'>
