@@ -12,25 +12,35 @@ export default function UserAgreementPage() {
       <div className='max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8'>
         <div className='bg-white rounded-2xl shadow-lg overflow-hidden'>
           {/* Header */}
-          <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 text-center'>
-            <h1 className='text-4xl font-bold mb-2'>
+          <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-6 sm:p-8 text-center'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-2'>
               File Sortify Terms of Service
             </h1>
-            <p className='text-purple-100'>
+            <p className='text-sm sm:text-base text-purple-100'>
               Effective Date: October 29, 2025 | Version: 1.0
             </p>
           </div>
 
-          <div className='p-8 md:p-12'>
+          <div className='p-5 sm:p-8 md:p-12'>
             {/* Language Notice Banner - Show for non-English locales */}
             {locale !== 'en' && (
               <div className='bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6'>
-                <p className='text-yellow-700'>{t('languageNotice')}</p>
+                <p className='text-sm sm:text-base text-yellow-700'>{t('languageNotice')}</p>
               </div>
             )}
+            {/* Controlling Language */}
+            <div className='bg-emerald-50 border-l-4 border-emerald-500 p-4 mb-8 rounded-lg'>
+              <p className='text-sm sm:text-base text-emerald-800 leading-relaxed'>
+                <strong>Controlling Language:</strong> These Terms are written
+                in English. Any translation is provided for convenience only. In
+                the event of any conflict or inconsistency between the English
+                version and a translation, the English version shall govern.
+              </p>
+            </div>
+
             {/* Welcome Notice */}
             <div className='bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-lg'>
-              <p className='text-blue-800'>
+              <p className='text-sm sm:text-base text-blue-800'>
                 Welcome to File Sortify (hereinafter referred to as &quot;the
                 Application&quot;). Please read these Terms of Service
                 (hereinafter referred to as &quot;these Terms&quot;) carefully
@@ -40,7 +50,7 @@ export default function UserAgreementPage() {
 
             {/* Section 1: Agreement Acceptance and Modification */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 1. Acceptance of Terms
               </h2>
 
@@ -66,7 +76,7 @@ export default function UserAgreementPage() {
 
             {/* Section 2: Service Description */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 2. Service Description
               </h2>
 
@@ -142,7 +152,7 @@ export default function UserAgreementPage() {
 
             {/* Section 3: User Rights and Obligations */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 3. User Rights and Obligations
               </h2>
 
@@ -205,7 +215,7 @@ export default function UserAgreementPage() {
 
             {/* Section 4: Intellectual Property */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 4. Intellectual Property
               </h2>
 
@@ -251,7 +261,7 @@ export default function UserAgreementPage() {
 
             {/* Section 5: Purchase and License */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 5. Purchase and License
               </h2>
 
@@ -346,7 +356,7 @@ export default function UserAgreementPage() {
 
             {/* Section 6: Disclaimer */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 6. Disclaimer
               </h2>
 
@@ -442,7 +452,7 @@ export default function UserAgreementPage() {
 
             {/* Section 7: Privacy Protection */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 7. Privacy Protection
               </h2>
 
@@ -521,7 +531,7 @@ export default function UserAgreementPage() {
 
             {/* Section 8: Breach of Contract Liability */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 8. Termination
               </h2>
 
@@ -550,7 +560,7 @@ export default function UserAgreementPage() {
 
             {/* Section 9: Dispute Resolution */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 9. Dispute Resolution
               </h2>
 
@@ -638,7 +648,7 @@ export default function UserAgreementPage() {
 
             {/* Section 10: Other Terms */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 10. General Terms
               </h2>
 
@@ -670,7 +680,7 @@ export default function UserAgreementPage() {
 
             {/* Section 11: Contact Information */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 11. Contact Us
               </h2>
               <p className='text-gray-700 mb-4 leading-relaxed'>
@@ -691,7 +701,7 @@ export default function UserAgreementPage() {
 
             {/* Section 12: Privacy Rights Special Statement */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 12. Your Privacy Rights
               </h2>
               <p className='text-gray-700 mb-6 leading-relaxed'>
@@ -750,10 +760,10 @@ export default function UserAgreementPage() {
 
             {/* Closing Statement */}
             <div className='bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-purple-500 p-6 mb-8 rounded-lg text-center'>
-              <h3 className='text-2xl font-bold text-purple-800 mb-4'>
+              <h3 className='text-lg sm:text-2xl font-bold text-purple-800 mb-4'>
                 Thank You for Choosing File Sortify!
               </h3>
-              <p className='text-purple-700 italic'>
+              <p className='text-sm sm:text-base text-purple-700 italic'>
                 This Agreement was last updated on October 29, 2025
               </p>
             </div>

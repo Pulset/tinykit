@@ -16,11 +16,22 @@ const routeConfigs: RouteConfig[] = [
   // 产品页面 - 高优先级
   { path: '/file-sortify', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/ai-hairstyle-studio', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/sleepflow', priority: 0.9, changeFrequency: 'weekly' },
   // 法律页面 - 低优先级,低更新频率
   { path: '/file-sortify/privacy', priority: 0.3, changeFrequency: 'yearly' },
   { path: '/file-sortify/terms', priority: 0.3, changeFrequency: 'yearly' },
-  { path: '/ai-hairstyle-studio/privacy', priority: 0.3, changeFrequency: 'yearly' },
-  { path: '/ai-hairstyle-studio/terms', priority: 0.3, changeFrequency: 'yearly' },
+  {
+    path: '/ai-hairstyle-studio/privacy',
+    priority: 0.3,
+    changeFrequency: 'yearly',
+  },
+  {
+    path: '/ai-hairstyle-studio/terms',
+    priority: 0.3,
+    changeFrequency: 'yearly',
+  },
+  { path: '/sleepflow/privacy', priority: 0.3, changeFrequency: 'yearly' },
+  { path: '/sleepflow/terms', priority: 0.3, changeFrequency: 'yearly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

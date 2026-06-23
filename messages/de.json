@@ -441,7 +441,9 @@
     "heroDesc": "Entdecken Sie TinyKit, wo wir einfache, schöne und effektive Tools entwickeln, die Ihren digitalen Alltag ohne unnötigen Ballast optimieren.",
     "heroTitle": "Entwicklung minimalistischer und praktischer Apps",
     "rights": "Alle Rechte vorbehalten.",
-    "title": "TinyKit - Entwicklung minimalistischer und praktischer Apps"
+    "title": "TinyKit - Entwicklung minimalistischer und praktischer Apps",
+    "sleepFlow": "SleepFlow",
+    "sleepFlowDesc": "White Noise und Ambient-Sounds für besseren Schlaf. Mische Regen, Natur und White Noise, erzeuge individuelle KI-Soundscapes und schlafe mit einem Sleep-Timer ein."
   },
   "Legal": {
     "languageNotice": "Dieses Dokument ist nur auf Englisch verfügbar.",
@@ -470,5 +472,190 @@
     },
     "productCategory": "Mac-Nutzsoftware",
     "websiteDescription": "Produktivitäts-Apps für Mac-Nutzer:innen"
+  },
+  "SleepFlow": {
+    "breadcrumb": {
+      "home": "Startseite",
+      "product": "SleepFlow"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "SleepFlow ist eine White-Noise- und Ambient-Sound-App zum Schlafen. Mische mehrere Klänge —Regen, Wind, Wellen und mehr—, stelle einen Sleep-Timer ein und lass KI aus einer Textbeschreibung individuelle Klänge erzeugen. Alles ist darauf ausgelegt, dich schneller und tiefer schlafen zu lassen.",
+          "question": "Was ist SleepFlow?"
+        },
+        "1": {
+          "answer": "Durchsuche einfach die Klangbibliothek, tippe, um Klänge zu deinem Mix hinzuzufügen, passe die Lautstärke jeder Ebene an und drücke auf Play. Du kannst mehrere Klänge gleichzeitig überlagern, um deine perfekte Schlafumgebung zu schaffen.",
+          "question": "Wie funktioniert SleepFlow?"
+        },
+        "2": {
+          "answer": "Ja! Die KI-Klanggenerierung ermöglicht es dir, jeden Klang in Worten zu beschreiben —z. B. 'sanfter Regen auf einem Blechdach' oder 'ein knisterndes Lagerfeuer'— und erzeugt einen individuellen Ambient-Track für dich. Abonnenten erhalten 5 KI-Generierungen pro Monat.",
+          "question": "Kann ich mit KI eigene Klänge erzeugen?"
+        },
+        "3": {
+          "answer": "SleepFlow ist kostenlos herunterladbar und umfasst eine großzügige Klangbibliothek, den Mixer, den Sleep-Timer und die Hintergrundwiedergabe. SleepFlow Premium (wöchentlich, monatlich oder jährlich) schaltet die vollständige Premium-Klangbibliothek und die KI-Klanggenerierung frei.",
+          "question": "Ist SleepFlow kostenlos?"
+        },
+        "4": {
+          "answer": "Ja. SleepFlow läuft im Hintergrund und spielt auch bei gesperrtem Bildschirm weiter, sodass deine Klänge die ganze Nacht laufen. Du kannst auch einen Fade-out-Timer einstellen, damit der Ton sanft leiser wird, während du einschläfst.",
+          "question": "Spielt SleepFlow weiter, wenn das Handy gesperrt ist?"
+        }
+      }
+    },
+    "features": {
+      "heading": "Für tieferen Schlaf entwickelt",
+      "items": {
+        "0": {
+          "description": "Überlagere mehrere Klänge gleichzeitig und feinjustiere die Lautstärke jedes einzelnen. Mische Regen mit White Noise, Wellen mit Wind oder jede Kombination, die dich einschlafen lässt.",
+          "title": "Klang-Mixer"
+        },
+        "1": {
+          "description": "Beschreibe jeden Klang in Worten und lass die KI einen individuellen Ambient-Track nur für dich erstellen. Endlose, personalisierte Schlaf-Soundscapes.",
+          "title": "KI-Klanggenerierung"
+        },
+        "2": {
+          "description": "Stelle einen Sleep-Timer ein, damit Klänge sanft ausblenden, während du einschläfst. Wähle voreingestellte Dauern oder lege deine eigene fest.",
+          "title": "Sleep-Timer & Fade"
+        },
+        "3": {
+          "description": "Eine kuratierte Auswahl babysicherer Klänge —von Schuckern bis Schlafliedern—, die den Kleinen hilft, sich zu beruhigen und friedlich zu schlafen.",
+          "title": "Babysichere Klänge"
+        },
+        "4": {
+          "description": "Klänge laufen im Hintergrund und bei gesperrtem Bildschirm weiter, damit dein Schlaf nie gestört wird.",
+          "title": "Hintergrundwiedergabe"
+        },
+        "5": {
+          "description": "Schalte die vollständige Premium-Klangbibliothek frei —starker Regen, Meereswellen, knisterndes Feuer und mehr— mit einem SleepFlow-Premium-Abo.",
+          "title": "Premium-Klangbibliothek"
+        }
+      },
+      "subtitle": "Alles, was du brauchst, um zu entspannen und einzuschlafen"
+    },
+    "footer": {
+      "backHome": "Zurück zu SleepFlow",
+      "brand": "SleepFlow",
+      "copyright": "© {year} SleepFlow. Mit ❤️ von TinyKit erstellt.",
+      "downloadLink": "Laden",
+      "featuresLink": "Funktionen",
+      "pricingLink": "Preise",
+      "privacyLink": "Datenschutzrichtlinie",
+      "supportLink": "Support",
+      "termsLink": "Nutzungsbedingungen"
+    },
+    "hero": {
+      "badge": "🌙 White Noise & Ambient-Sounds",
+      "ctaDownload": "Jetzt laden",
+      "ctaDownloadAria": "SleepFlow im App Store laden",
+      "ctaHowItWorks": "So funktioniert's",
+      "ctaHowItWorksAria": "Sieh, wie SleepFlow funktioniert",
+      "mixLayersLabel": "Klang-Ebenen",
+      "mixLayersValue": "Unbegrenzt",
+      "mixName": "Regen + Wind",
+      "playing": "Wiedergabe",
+      "sleptBetterLabel": "Besser geschlafen",
+      "sleptBetterValue": "92%",
+      "subtitle": "Gleite mit einer sanften Bibliothek aus White Noise, Regen und Ambient-Sounds in tiefen Schlaf —plus KI-generierte Soundscapes nur für dich.",
+      "titleLine1": "Heute Nacht",
+      "titleLine2": "schneller einschlafen."
+    },
+    "howItWorks": {
+      "heading": "Einfache Schritte",
+      "steps": {
+        "0": {
+          "description": "Entdecke White Noise, Regen, Natur und Ambient-Sounds in sechs Kategorien.",
+          "title": "Wähle deine Klänge"
+        },
+        "1": {
+          "description": "Überlagere Klänge und passe die Lautstärke jedes einzelnen an, bis es genau passt.",
+          "title": "Mixen & Anpassen"
+        },
+        "2": {
+          "description": "Stelle einen Fade-Timer ein, drücke Play und lass die Nacht dich in den Schlaf führen.",
+          "title": "Sanft einschlafen"
+        }
+      },
+      "subtitle": "3 Schritte zu einer besseren Nachtruhe"
+    },
+    "meta": {
+      "applicationName": "SleepFlow",
+      "description": "SleepFlow ist eine White-Noise- und Ambient-Sound-App für besseren Schlaf. Mische Regen, Naturklänge und White Noise, erzeuge individuelle KI-Soundscapes und schlafe mit einem Sleep-Timer ein. Kostenlos für iOS.",
+      "jsonLdDescription": "SleepFlow ist eine White-Noise- und Ambient-Sound-App für besseren Schlaf. Mische Regen, Naturklänge und White Noise, erzeuge individuelle KI-Soundscapes und schlafe mit einem Sleep-Timer ein. Kostenlos für iOS.",
+      "jsonLdFeatureList": {
+        "0": "Mehrschichtiger Klang-Mixer",
+        "1": "KI-generierte individuelle Klänge",
+        "2": "Sleep-Timer mit Fade-out",
+        "3": "Babysichere Klangbibliothek",
+        "4": "Hintergrund- und Sperrbildschirmwiedergabe",
+        "5": "Premium-Ambient-Sound-Kollektion"
+      },
+      "keyFeatures": "Klang-Mixer, KI-Klanggenerierung, Sleep-Timer & Fade, Babysichere Klänge, Hintergrundwiedergabe, Premium-Bibliothek",
+      "ogDescription": "Gleite mit White Noise, Regen und Ambient-Sounds in tiefen Schlaf —plus KI-generierte Soundscapes nur für dich.",
+      "ogTitle": "SleepFlow — White Noise & Ambient-Sounds für besseren Schlaf",
+      "productType": "Schlaf- & Wellness-App",
+      "targetAudience": "Alle, die schwer einschlafen oder sich mit sanften Ambient-Sounds entspannen möchten",
+      "title": "SleepFlow — White Noise & Ambient-Sounds zum Schlafen",
+      "twitterDescription": "Mische White Noise, Regen und Ambient-Sounds oder erzeuge eigene mit KI. Schlafe heute Nacht schneller ein.",
+      "twitterTitle": "SleepFlow — White Noise & Ambient-Sounds für besseren Schlaf",
+      "useCases": "Schneller einschlafen, Lärm ausblenden, Entspannen, Babys beruhigen, Fokus & Lernen"
+    },
+    "nav": {
+      "brand": "SleepFlow",
+      "closeMenu": "Menü schließen",
+      "download": "Laden",
+      "downloadAria": "SleepFlow im App Store laden",
+      "downloadNow": "Jetzt laden",
+      "items": {
+        "0": {
+          "label": "Funktionen"
+        },
+        "1": {
+          "label": "So funktioniert's"
+        },
+        "2": {
+          "label": "Preise"
+        }
+      },
+      "openMenu": "Menü öffnen"
+    },
+    "page": {
+      "skipToContent": "Zum Hauptinhalt springen"
+    },
+    "pricing": {
+      "annualBadge": "Bestes Angebot",
+      "annualDetail": "Jährlich abgerechnet · 50% sparen",
+      "annualTitle": "Jährlich",
+      "cta": "Jetzt laden",
+      "ctaAria": "SleepFlow kostenlos laden",
+      "features": {
+        "0": "Vollständige Premium-Klangbibliothek",
+        "1": "Unbegrenztes Klang-Mixing",
+        "2": "5 KI-Generierungen / Monat",
+        "3": "Sleep-Timer & Fade-out"
+      },
+      "heading": "Einfache, flexible Preise",
+      "legalNote": "Das Abo verlängert sich automatisch, sofern es nicht mindestens 24 Stunden vor Periodenende gekündigt wird. Jederzeit in deinen Apple-ID-Einstellungen verwalten oder kündigen.",
+      "monthlyDetail": "Monatlich abgerechnet",
+      "monthlyTitle": "Monatlich",
+      "period": "/Zeitraum",
+      "subtitle": "Kostenlos starten. Jederzeit upgraden für Premium-Klänge und KI-Generierung.",
+      "weeklyDetail": "Wöchentlich abgerechnet",
+      "weeklyTitle": "Wöchentlich"
+    },
+    "testimonials": {
+      "heading": "Süße Träume",
+      "items": {
+        "0": {
+          "content": "Die babysicheren Klänge sind ein Lebensretter. Die Mischung aus Schucker und Schlaflied beruhigt mein Neugeborenes in Minuten —endlich Schlaf für uns beide!"
+        },
+        "1": {
+          "content": "Ich arbeite Nachtschichten und schlafe tagsüber. SleepFlows Mixer übertönt all den Lärm am Tag. Der KI-Regen-Generator ist pure Magie."
+        },
+        "2": {
+          "content": "Ich reise beruflich viel. Der Kabinensound und die Ambient-Mixe helfen mir, in jedem Flugzeug zu schlafen. Diese App begleitet mich überall hin."
+        }
+      },
+      "ratingAria": "5 von 5 Sternen"
+    }
   }
 }

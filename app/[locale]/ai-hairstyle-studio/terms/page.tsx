@@ -12,30 +12,42 @@ export default function TermsPage() {
       <div className='max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8'>
         <div className='bg-white rounded-2xl shadow-lg overflow-hidden'>
           {/* Header */}
-          <div className='bg-gradient-to-r from-purple-600 to-pink-600 text-white p-8 text-center'>
-            <h1 className='text-4xl font-bold mb-2'>Terms of Service</h1>
-            <p className='text-purple-100'>
+          <div className='bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6 sm:p-8 text-center'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-2'>
+              Terms of Service
+            </h1>
+            <p className='text-sm sm:text-base text-purple-100'>
               Please read these terms carefully before using AI Hairstyle App
             </p>
           </div>
 
-          <div className='p-8 md:p-12'>
+          <div className='p-5 sm:p-8 md:p-12'>
             {/* Language Notice Banner - Show for non-English locales */}
             {locale !== 'en' && (
               <div className='bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6'>
-                <p className='text-yellow-700'>{t('languageNotice')}</p>
+              <p className='text-sm sm:text-base text-yellow-700'>{t('languageNotice')}</p>
               </div>
             )}
             {/* Document Info */}
             <div className='bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded'>
-              <p className='text-blue-800'>
+              <p className='text-sm sm:text-base text-blue-800'>
                 <strong>Last Updated:</strong> December 27, 2025
+              </p>
+            </div>
+
+            {/* Controlling Language */}
+            <div className='bg-emerald-50 border-l-4 border-emerald-500 p-4 mb-8 rounded-lg'>
+              <p className='text-sm sm:text-base text-emerald-800 leading-relaxed'>
+                <strong>Controlling Language:</strong> This Agreement is written
+                in English. Any translation is provided for convenience only. In
+                the event of any conflict or inconsistency between the English
+                version and a translation, the English version shall govern.
               </p>
             </div>
 
             {/* 1. Acceptance of Terms */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 1. Acceptance of Terms
               </h2>
               <p className='text-gray-700 mb-6 leading-relaxed'>
@@ -50,7 +62,7 @@ export default function TermsPage() {
 
             {/* 2. Service Description */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 2. Service Description
               </h2>
               <p className='text-gray-700 mb-6 leading-relaxed'>
@@ -92,7 +104,7 @@ export default function TermsPage() {
 
             {/* 3. User Accounts */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 3. User Accounts
               </h2>
 
@@ -141,7 +153,7 @@ export default function TermsPage() {
 
             {/* 4. User Conduct */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 4. User Conduct
               </h2>
 
@@ -215,7 +227,7 @@ export default function TermsPage() {
 
             {/* 5. Intellectual Property */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 5. Intellectual Property
               </h2>
 
@@ -275,7 +287,7 @@ export default function TermsPage() {
 
             {/* 6. Credit System and Payment */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 6. Credit System and Payment
               </h2>
 
@@ -334,7 +346,7 @@ export default function TermsPage() {
 
             {/* 7. Privacy Protection */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 7. Privacy Protection
               </h2>
               <p className='text-gray-700 mb-6 leading-relaxed'>
@@ -353,7 +365,7 @@ export default function TermsPage() {
 
             {/* 8. Disclaimer */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 8. Disclaimer
               </h2>
 
@@ -400,7 +412,7 @@ export default function TermsPage() {
 
             {/* 9. Limitation of Liability */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 9. Limitation of Liability
               </h2>
               <div className='bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg'>
@@ -417,7 +429,7 @@ export default function TermsPage() {
 
             {/* 10. Indemnification */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 10. Indemnification
               </h2>
               <p className='text-gray-700 leading-relaxed'>
@@ -432,7 +444,7 @@ export default function TermsPage() {
 
             {/* 11. Agreement Changes */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 11. Agreement Changes
               </h2>
               <ul className='space-y-3'>
@@ -454,7 +466,7 @@ export default function TermsPage() {
 
             {/* 12. Termination */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 12. Termination
               </h2>
 
@@ -482,7 +494,7 @@ export default function TermsPage() {
 
             {/* 13. Governing Law */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 13. Governing Law
               </h2>
               <p className='text-gray-700 leading-relaxed'>
@@ -494,7 +506,7 @@ export default function TermsPage() {
 
             {/* 14. Dispute Resolution */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 14. Dispute Resolution
               </h2>
 
@@ -521,7 +533,7 @@ export default function TermsPage() {
 
             {/* 15. Miscellaneous */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 15. Miscellaneous
               </h2>
 
@@ -561,7 +573,7 @@ export default function TermsPage() {
 
             {/* 16. Contact Information */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 16. Contact Us
               </h2>
               <p className='text-gray-700 mb-6'>

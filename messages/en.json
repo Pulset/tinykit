@@ -441,7 +441,9 @@
     "heroDesc": "Discover TinyKit, where we build simple, beautiful, and effective tools designed to streamline your daily digital life without the clutter.",
     "heroTitle": "Crafting Minimalist & Practical Apps",
     "rights": "All rights reserved.",
-    "title": "TinyKit - Crafting Minimalist & Practical Apps"
+    "title": "TinyKit - Crafting Minimalist & Practical Apps",
+    "sleepFlow": "SleepFlow",
+    "sleepFlowDesc": "White noise & ambient sounds for better sleep. Mix rain, nature, and white noise, generate custom AI soundscapes, and drift off with a sleep timer."
   },
   "Legal": {
     "languageNotice": "This document is available in English only.",
@@ -470,5 +472,190 @@
     },
     "productCategory": "Mac Utility Software",
     "websiteDescription": "Productivity apps for Mac users"
+  },
+  "SleepFlow": {
+    "breadcrumb": {
+      "home": "Home",
+      "product": "SleepFlow"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "SleepFlow is a white noise and ambient sound app for sleep. Mix multiple sounds together — rain, wind, waves, and more — set a sleep timer, and let AI generate custom sounds from a text description. Everything is designed to help you fall asleep faster and sleep more deeply.",
+          "question": "What is SleepFlow?"
+        },
+        "1": {
+          "answer": "Simply browse the sound library, tap to add any sounds to your mix, adjust each layer's volume, and press play. You can layer up to multiple sounds at once to create your perfect sleep environment.",
+          "question": "How does SleepFlow work?"
+        },
+        "2": {
+          "answer": "Yes! The AI sound generation feature lets you describe any sound in words — like 'gentle rain on a tin roof' or 'a crackling campfire' — and it creates a custom ambient track for you. Subscribers get 5 AI generations per month.",
+          "question": "Can I generate my own sounds with AI?"
+        },
+        "3": {
+          "answer": "SleepFlow is free to download and includes a generous library of sounds, the mixer, sleep timer, and background playback. SleepFlow Premium (weekly, monthly, or annual) unlocks the full premium sound library and AI sound generation.",
+          "question": "Is SleepFlow free?"
+        },
+        "4": {
+          "answer": "Yes. SleepFlow runs in the background and keeps playing even when your screen is locked, so your sounds continue all night. You can also set a fade-out timer so the audio gently dims as you drift off.",
+          "question": "Does SleepFlow keep playing when my phone is locked?"
+        }
+      }
+    },
+    "features": {
+      "heading": "Designed for Deeper Sleep",
+      "items": {
+        "0": {
+          "description": "Layer multiple sounds at once and fine-tune each one's volume. Blend rain with white noise, waves with wind, or create any combination that helps you drift off.",
+          "title": "Sound Mixer"
+        },
+        "1": {
+          "description": "Describe any sound in words and let AI generate a custom ambient track just for you. Endless, personalized sleep soundscapes.",
+          "title": "AI Sound Generation"
+        },
+        "2": {
+          "description": "Set a sleep timer so sounds fade out gently as you fall asleep. Choose from preset durations or set your own.",
+          "title": "Sleep Timer & Fade"
+        },
+        "3": {
+          "description": "A curated set of baby-safe sounds — from shushing to lullabies — to help the little ones settle and sleep peacefully.",
+          "title": "Baby-Safe Sounds"
+        },
+        "4": {
+          "description": "Sounds keep playing in the background and with your screen locked, so your sleep is never interrupted.",
+          "title": "Background Playback"
+        },
+        "5": {
+          "description": "Unlock the full premium sound library — heavy rain, ocean waves, crackling fire, and more — with a SleepFlow Premium subscription.",
+          "title": "Premium Sound Library"
+        }
+      },
+      "subtitle": "Everything you need to relax, unwind, and fall asleep"
+    },
+    "footer": {
+      "backHome": "Back to SleepFlow",
+      "brand": "SleepFlow",
+      "copyright": "© {year} SleepFlow. Built with ❤️ by TinyKit.",
+      "downloadLink": "Download",
+      "featuresLink": "Features",
+      "pricingLink": "Pricing",
+      "privacyLink": "Privacy Policy",
+      "supportLink": "Support",
+      "termsLink": "Terms of Service"
+    },
+    "hero": {
+      "badge": "🌙 White Noise & Ambient Sounds",
+      "ctaDownload": "Download Now",
+      "ctaDownloadAria": "Download SleepFlow on the App Store",
+      "ctaHowItWorks": "See How It Works",
+      "ctaHowItWorksAria": "See how SleepFlow works",
+      "mixLayersLabel": "Sound Layers",
+      "mixLayersValue": "Unlimited",
+      "mixName": "Rain + Wind",
+      "playing": "Now Playing",
+      "sleptBetterLabel": "Slept Better",
+      "sleptBetterValue": "92%",
+      "subtitle": "Drift into deep sleep with a soothing library of white noise, rain, and ambient sounds — plus AI-generated soundscapes made just for you.",
+      "titleLine1": "Fall Asleep",
+      "titleLine2": "Faster Tonight."
+    },
+    "howItWorks": {
+      "heading": "Simple Steps",
+      "steps": {
+        "0": {
+          "description": "Explore white noise, rain, nature, and ambient sounds across six categories.",
+          "title": "Pick Your Sounds"
+        },
+        "1": {
+          "description": "Layer sounds together and adjust each one's volume until it feels just right.",
+          "title": "Mix & Customize"
+        },
+        "2": {
+          "description": "Set a fade-out timer, press play, and let the night carry you to sleep.",
+          "title": "Drift Off to Sleep"
+        }
+      },
+      "subtitle": "3 steps to a better night's rest"
+    },
+    "meta": {
+      "applicationName": "SleepFlow",
+      "description": "SleepFlow is a white noise & ambient sound app for better sleep. Mix rain, nature sounds, and white noise, generate custom AI soundscapes, and drift off with a sleep timer. Free download for iOS.",
+      "jsonLdDescription": "SleepFlow is a white noise & ambient sound app for better sleep. Mix rain, nature sounds, and white noise, generate custom AI soundscapes, and drift off with a sleep timer. Free download for iOS.",
+      "jsonLdFeatureList": {
+        "0": "Multi-layer sound mixer",
+        "1": "AI-generated custom sounds",
+        "2": "Sleep timer with fade-out",
+        "3": "Baby-safe sound library",
+        "4": "Background & lock-screen playback",
+        "5": "Premium ambient sound collection"
+      },
+      "keyFeatures": "Sound mixer, AI sound generation, Sleep timer & fade, Baby-safe sounds, Background playback, Premium library",
+      "ogDescription": "Drift into deep sleep with white noise, rain, and ambient sounds — plus AI-generated soundscapes made just for you.",
+      "ogTitle": "SleepFlow — White Noise & Ambient Sounds for Better Sleep",
+      "productType": "Sleep & Wellness App",
+      "targetAudience": "Anyone who struggles to fall asleep or wants to relax with soothing ambient sounds",
+      "title": "SleepFlow — White Noise & Ambient Sounds for Sleep",
+      "twitterDescription": "Mix white noise, rain & ambient sounds, or generate your own with AI. Fall asleep faster tonight.",
+      "twitterTitle": "SleepFlow — White Noise & Ambient Sounds for Better Sleep",
+      "useCases": "Fall asleep faster, Block out noise, Relax & unwind, Soothe babies, Focus & study"
+    },
+    "nav": {
+      "brand": "SleepFlow",
+      "closeMenu": "Close menu",
+      "download": "Download",
+      "downloadAria": "Download SleepFlow on the App Store",
+      "downloadNow": "Download Now",
+      "items": {
+        "0": {
+          "label": "Features"
+        },
+        "1": {
+          "label": "How It Works"
+        },
+        "2": {
+          "label": "Pricing"
+        }
+      },
+      "openMenu": "Open menu"
+    },
+    "page": {
+      "skipToContent": "Skip to main content"
+    },
+    "pricing": {
+      "annualBadge": "Best Value",
+      "annualDetail": "Billed yearly · Save 50%",
+      "annualTitle": "Annual",
+      "cta": "Download Now",
+      "ctaAria": "Download SleepFlow for free",
+      "features": {
+        "0": "Full premium sound library",
+        "1": "Unlimited sound mixing",
+        "2": "5 AI sound generations / month",
+        "3": "Sleep timer & fade-out"
+      },
+      "heading": "Simple, Flexible Pricing",
+      "legalNote": "Subscription auto-renews unless cancelled at least 24 hours before the period ends. Manage or cancel anytime in your Apple ID settings.",
+      "monthlyDetail": "Billed monthly",
+      "monthlyTitle": "Monthly",
+      "period": "/period",
+      "subtitle": "Start free. Upgrade anytime for premium sounds and AI generation.",
+      "weeklyDetail": "Billed weekly",
+      "weeklyTitle": "Weekly"
+    },
+    "testimonials": {
+      "heading": "Sweet Dreams",
+      "items": {
+        "0": {
+          "content": "The baby-safe sounds are a lifesaver. The shushing and lullaby mix calms my newborn in minutes — finally some sleep for both of us!"
+        },
+        "1": {
+          "content": "I work night shifts and sleep during the day. SleepFlow's mixer drowns out all the daytime noise. The AI rain generator is pure magic."
+        },
+        "2": {
+          "content": "I travel constantly for work. The airplane cabin sound and ambient mixes help me sleep on every flight. This app goes everywhere with me."
+        }
+      },
+      "ratingAria": "5 out of 5 stars"
+    }
   }
 }

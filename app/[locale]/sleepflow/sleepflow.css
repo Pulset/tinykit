@@ -1,0 +1,49 @@
+/*
+ * SleepFlow night-theme animations.
+ *
+ * Loaded only on /sleepflow routes (imported by the SleepFlow layout), so the
+ * keyframes below don't ship with the rest of the site. All classes are
+ * `sf-` prefixed to avoid clashing with global utilities.
+ */
+
+@keyframes sf-twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.sf-twinkle {
+  animation: sf-twinkle 4s ease-in-out infinite;
+}
+
+@keyframes sf-wave {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+.sf-wave-bar {
+  animation: sf-wave 1.4s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@keyframes sf-drift {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.sf-drift {
+  animation: sf-drift 7s ease-in-out infinite;
+}

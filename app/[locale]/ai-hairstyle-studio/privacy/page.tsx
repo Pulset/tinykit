@@ -11,36 +11,40 @@ export default function PrivacyPage() {
       <div className='max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8'>
         <div className='bg-white rounded-2xl shadow-lg overflow-hidden'>
           {/* Header */}
-          <div className='bg-gradient-to-r from-purple-600 to-pink-600 text-white p-8 text-center'>
-            <h1 className='text-4xl font-bold mb-2'>Privacy Policy</h1>
-            <p className='text-purple-100'>
+          <div className='bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6 sm:p-8 text-center'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-2'>
+              Privacy Policy
+            </h1>
+            <p className='text-sm sm:text-base text-purple-100'>
               AI Hairstyle Studio is committed to protecting your privacy
             </p>
           </div>
 
-          <div className='p-8 md:p-12'>
+          <div className='p-5 sm:p-8 md:p-12'>
             {/* Language Notice Banner - Show for non-English locales */}
             {locale !== 'en' && (
               <div className='bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6'>
-                <p className='text-yellow-700'>{t('languageNotice')}</p>
+                <p className='text-sm sm:text-base text-yellow-700'>
+                  {t('languageNotice')}
+                </p>
               </div>
             )}
             {/* Summary Section */}
-            <div className='bg-green-50 border-l-4 border-green-500 p-6 mb-8 rounded-lg'>
-              <h3 className='text-xl font-semibold text-green-800 mb-4'>
+            <div className='bg-green-50 border-l-4 border-green-500 p-4 sm:p-6 mb-8 rounded-lg'>
+              <h3 className='text-sm sm:text-base font-semibold text-green-800 mb-4'>
                 AI Hairstyle Studio&apos;s Core Privacy Commitments:
               </h3>
               <ul className='space-y-2'>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>Secure photo processing</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>Transparent data usage</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>User control over data</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>Compliance with privacy laws</strong>
                 </li>
               </ul>
@@ -48,15 +52,26 @@ export default function PrivacyPage() {
 
             {/* Document Info */}
             <div className='bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded'>
-              <p className='text-blue-800'>
+              <p className='text-sm sm:text-base text-blue-800'>
                 <strong>Effective Date:</strong> December 18, 2025 |
                 <strong> Last Updated:</strong> December 18, 2025
               </p>
             </div>
 
+            {/* Controlling Language */}
+            <div className='bg-emerald-50 border-l-4 border-emerald-500 p-4 mb-8 rounded-lg'>
+              <p className='text-sm sm:text-base text-emerald-800 leading-relaxed'>
+                <strong>Controlling Language:</strong> This Privacy Policy is
+                written in English. Any translation is provided for convenience
+                only. In the event of any conflict or inconsistency between the
+                English version and a translation, the English version shall
+                govern.
+              </p>
+            </div>
+
             {/* Introduction */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 1. Introduction
               </h2>
               <p className='text-gray-700 mb-6 leading-relaxed'>
@@ -81,7 +96,7 @@ export default function PrivacyPage() {
 
             {/* Information We Collect */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 2. Information We Collect
               </h2>
 
@@ -202,7 +217,7 @@ export default function PrivacyPage() {
 
             {/* How We Use Your Information */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 3. How We Use Your Information
               </h2>
 
@@ -267,7 +282,7 @@ export default function PrivacyPage() {
 
             {/* Data Storage and Retention */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 4. Information Storage and Retention
               </h2>
 
@@ -319,7 +334,7 @@ export default function PrivacyPage() {
 
             {/* Information Sharing */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 5. Information Sharing and Disclosure
               </h2>
 
@@ -365,7 +380,7 @@ export default function PrivacyPage() {
 
             {/* Data Security */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 6. Data Security
               </h2>
               <h3 className='text-xl font-semibold text-gray-800 mb-4'>
@@ -413,7 +428,7 @@ export default function PrivacyPage() {
 
             {/* Your Rights and Choices */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 7. Your Rights and Choices
               </h2>
 
@@ -472,7 +487,7 @@ export default function PrivacyPage() {
 
             {/* Children's Privacy */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 8. Children&apos;s Privacy
               </h2>
               <ul className='space-y-3'>
@@ -496,7 +511,7 @@ export default function PrivacyPage() {
 
             {/* App-Specific Permissions */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 13. App-Specific Permissions
               </h2>
 
@@ -539,7 +554,7 @@ export default function PrivacyPage() {
 
             {/* California Privacy Rights */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 15. California Privacy Rights (CCPA)
               </h2>
               <p className='text-gray-700 mb-6'>
@@ -569,7 +584,7 @@ export default function PrivacyPage() {
 
             {/* Contact Information */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 12. Contact Information
               </h2>
               <p className='text-gray-700 mb-6'>

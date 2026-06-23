@@ -441,7 +441,9 @@
     "heroDesc": "探索 TinyKit，我们致力于构建简单、美观且高效的工具，旨在简化您的日常数字生活，远离繁杂。",
     "heroTitle": "打造极简实用的应用程序",
     "rights": "版权所有。",
-    "title": "TinyKit - 打造极简实用的应用程序"
+    "title": "TinyKit - 打造极简实用的应用程序",
+    "sleepFlow": "SleepFlow",
+    "sleepFlowDesc": "助眠的白噪音与环境音。混合雨声、自然声与白噪音，用 AI 生成专属声景，配合睡眠定时器安然入睡。"
   },
   "Legal": {
     "languageNotice": "本文件仅提供英文版本。",
@@ -470,5 +472,190 @@
     },
     "productCategory": "Mac 实用软件",
     "websiteDescription": "面向 Mac 用户的生产力应用"
+  },
+  "SleepFlow": {
+    "breadcrumb": {
+      "home": "首页",
+      "product": "SleepFlow"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "SleepFlow 是一款助眠的白噪音与环境音应用。你可以把雨声、风声、海浪声等多种声音混合在一起，设置睡眠定时器，还能用文字描述让 AI 生成专属声音。一切设计都是为了帮你更快入睡、睡得更沉。",
+          "question": "SleepFlow 是什么？"
+        },
+        "1": {
+          "answer": "只需浏览声音库，点击即可将任意声音加入混音，调节每一层的音量，然后按下播放。你可以同时叠加多种声音，打造属于自己的完美睡眠环境。",
+          "question": "SleepFlow 怎么用？"
+        },
+        "2": {
+          "answer": "可以！AI 声音生成功能让你用文字描述任何声音——比如「铁皮屋顶上的细雨」或「噼啪作响的篝火」——它就会为你生成一段专属的环境音。订阅用户每月可生成 5 次。",
+          "question": "我可以用 AI 生成自己的声音吗？"
+        },
+        "3": {
+          "answer": "SleepFlow 免费下载，包含丰富的声音库、混音器、睡眠定时器和后台播放。SleepFlow 高级版（按周、按月或按年订阅）可解锁完整的高级声音库和 AI 声音生成功能。",
+          "question": "SleepFlow 是免费的吗？"
+        },
+        "4": {
+          "answer": "可以。SleepFlow 支持后台运行，即使屏幕锁定也会持续播放，让你的声音整夜相伴。你还可以设置淡出定时器，让声音在你入睡时缓缓减弱。",
+          "question": "锁屏后 SleepFlow 还会继续播放吗？"
+        }
+      }
+    },
+    "features": {
+      "heading": "为深度睡眠而生",
+      "items": {
+        "0": {
+          "description": "同时叠加多种声音，精细调节每一层的音量。让雨声搭配白噪音，海浪搭配风声，或打造任何让你安然入梦的组合。",
+          "title": "声音混音器"
+        },
+        "1": {
+          "description": "用文字描述任何声音，让 AI 为你生成专属的环境音轨。无限的、个性化的助眠声景。",
+          "title": "AI 声音生成"
+        },
+        "2": {
+          "description": "设置睡眠定时器，让声音在你入睡时缓缓淡出。可选择预设时长，也可自定义。",
+          "title": "睡眠定时与淡出"
+        },
+        "3": {
+          "description": "精选的婴儿安全声音——从嘘声到摇篮曲——帮助小宝贝安静下来，安然入睡。",
+          "title": "婴儿安全声音"
+        },
+        "4": {
+          "description": "声音支持后台播放与锁屏持续播放，让你的睡眠永不被打断。",
+          "title": "后台播放"
+        },
+        "5": {
+          "description": "订阅 SleepFlow 高级版，解锁完整的高级声音库——暴雨、海浪、噼啪篝火等等。",
+          "title": "高级声音库"
+        }
+      },
+      "subtitle": "放松、舒缓、安然入睡，你所需要的一切"
+    },
+    "footer": {
+      "backHome": "返回 SleepFlow",
+      "brand": "SleepFlow",
+      "copyright": "© {year} SleepFlow. 由 TinyKit 用 ❤️ 打造。",
+      "downloadLink": "下载",
+      "featuresLink": "功能",
+      "pricingLink": "价格",
+      "privacyLink": "隐私政策",
+      "supportLink": "支持",
+      "termsLink": "服务条款"
+    },
+    "hero": {
+      "badge": "🌙 白噪音与环境音",
+      "ctaDownload": "立即下载",
+      "ctaDownloadAria": "在 App Store 下载 SleepFlow",
+      "ctaHowItWorks": "了解工作原理",
+      "ctaHowItWorksAria": "了解 SleepFlow 如何工作",
+      "mixLayersLabel": "声音层数",
+      "mixLayersValue": "无限",
+      "mixName": "雨声 + 风声",
+      "playing": "正在播放",
+      "sleptBetterLabel": "睡得更好",
+      "sleptBetterValue": "92%",
+      "subtitle": "用丰富的白噪音、雨声与环境音沉入深眠——还有 AI 专为你生成的助眠声景。",
+      "titleLine1": "今夜",
+      "titleLine2": "更快入眠。"
+    },
+    "howItWorks": {
+      "heading": "简单三步",
+      "steps": {
+        "0": {
+          "description": "在六大类别中探索白噪音、雨声、自然声与环境音。",
+          "title": "挑选声音"
+        },
+        "1": {
+          "description": "把声音叠加在一起，调节每一层的音量，直到恰到好处。",
+          "title": "混音定制"
+        },
+        "2": {
+          "description": "设置淡出定时器，按下播放，让夜晚伴你入眠。",
+          "title": "安然入梦"
+        }
+      },
+      "subtitle": "三步拥有更好的夜晚安眠"
+    },
+    "meta": {
+      "applicationName": "SleepFlow",
+      "description": "SleepFlow 是一款助眠的白噪音与环境音应用。混合雨声、自然声与白噪音，用 AI 生成专属声景，配合睡眠定时器安然入睡。iOS 免费下载。",
+      "jsonLdDescription": "SleepFlow 是一款助眠的白噪音与环境音应用。混合雨声、自然声与白噪音，用 AI 生成专属声景，配合睡眠定时器安然入睡。iOS 免费下载。",
+      "jsonLdFeatureList": {
+        "0": "多层声音混音器",
+        "1": "AI 生成专属声音",
+        "2": "带淡出的睡眠定时器",
+        "3": "婴儿安全声音库",
+        "4": "后台与锁屏播放",
+        "5": "高级环境声音合集"
+      },
+      "keyFeatures": "声音混音器, AI 声音生成, 睡眠定时与淡出, 婴儿安全声音, 后台播放, 高级声音库",
+      "ogDescription": "用白噪音、雨声与环境音沉入深眠——还有 AI 专为你生成的助眠声景。",
+      "ogTitle": "SleepFlow — 助眠白噪音与环境音",
+      "productType": "睡眠与健康应用",
+      "targetAudience": "难以入睡，或想用舒缓环境音放松身心的人群",
+      "title": "SleepFlow — 助眠白噪音与环境音",
+      "twitterDescription": "混合白噪音、雨声与环境音，或用 AI 生成专属声音。今夜更快入眠。",
+      "twitterTitle": "SleepFlow — 助眠白噪音与环境音",
+      "useCases": "更快入睡, 隔绝噪音, 放松舒缓, 哄睡宝宝, 专注学习"
+    },
+    "nav": {
+      "brand": "SleepFlow",
+      "closeMenu": "关闭菜单",
+      "download": "下载",
+      "downloadAria": "在 App Store 下载 SleepFlow",
+      "downloadNow": "立即下载",
+      "items": {
+        "0": {
+          "label": "功能"
+        },
+        "1": {
+          "label": "工作原理"
+        },
+        "2": {
+          "label": "价格"
+        }
+      },
+      "openMenu": "打开菜单"
+    },
+    "page": {
+      "skipToContent": "跳转到主要内容"
+    },
+    "pricing": {
+      "annualBadge": "最超值",
+      "annualDetail": "按年付费 · 省 50%",
+      "annualTitle": "年度",
+      "cta": "立即下载",
+      "ctaAria": "免费下载 SleepFlow",
+      "features": {
+        "0": "完整高级声音库",
+        "1": "无限声音混音",
+        "2": "每月 5 次 AI 声音生成",
+        "3": "睡眠定时器与淡出"
+      },
+      "heading": "简单灵活的价格",
+      "legalNote": "订阅自动续费，除非在到期前至少 24 小时取消。可在 Apple ID 设置中随时管理或取消。",
+      "monthlyDetail": "按月付费",
+      "monthlyTitle": "月度",
+      "period": "/周期",
+      "subtitle": "免费开始。随时升级以获取高级声音与 AI 生成。",
+      "weeklyDetail": "按周付费",
+      "weeklyTitle": "周度"
+    },
+    "testimonials": {
+      "heading": "甜美梦境",
+      "items": {
+        "0": {
+          "content": "婴儿安全的声音简直是救星。嘘声加摇篮曲的混音几分钟就能让我家新生儿安静下来——我们俩终于都能睡会儿了！"
+        },
+        "1": {
+          "content": "我上夜班，白天睡觉。SleepFlow 的混音器能盖住所有白天的噪音。AI 雨声生成器简直太神奇了。"
+        },
+        "2": {
+          "content": "我经常出差。机舱环境声和各种混音帮我在每次航班上入睡。这个应用我走到哪带到哪。"
+        }
+      },
+      "ratingAria": "5 星满分"
+    }
   }
 }

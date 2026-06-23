@@ -14,38 +14,51 @@ export default function PrivacyPage() {
           {/* Language Notice Banner - Show for non-English locales */}
           {locale !== 'en' && (
             <div className='bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6'>
-              <p className='text-yellow-700'>{t('languageNotice')}</p>
+              <p className='text-sm sm:text-base text-yellow-700'>{t('languageNotice')}</p>
             </div>
           )}
 
           {/* Header */}
-          <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 text-center'>
-            <h1 className='text-4xl font-bold mb-2'>Privacy Policy</h1>
-            <p className='text-purple-100'>
+          <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-6 sm:p-8 text-center'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-2'>
+              Privacy Policy
+            </h1>
+            <p className='text-sm sm:text-base text-purple-100'>
               File Sortify is committed to protecting your privacy
             </p>
           </div>
 
-          <div className='p-8 md:p-12'>
+          <div className='p-5 sm:p-8 md:p-12'>
+            {/* Controlling Language */}
+            <div className='bg-emerald-50 border-l-4 border-emerald-500 p-4 mb-8 rounded-lg'>
+              <p className='text-sm sm:text-base text-emerald-800 leading-relaxed'>
+                <strong>Controlling Language:</strong> This Privacy Policy is
+                written in English. Any translation is provided for convenience
+                only. In the event of any conflict or inconsistency between the
+                English version and a translation, the English version shall
+                govern.
+              </p>
+            </div>
+
             {/* Summary Section */}
-            <div className='bg-green-50 border-l-4 border-green-500 p-6 mb-8 rounded-lg'>
-              <h3 className='text-xl font-semibold text-green-800 mb-4'>
+            <div className='bg-green-50 border-l-4 border-green-500 p-4 sm:p-6 mb-8 rounded-lg'>
+              <h3 className='text-sm sm:text-base font-semibold text-green-800 mb-4'>
                 File Sortify&apos;s Core Privacy Commitments:
               </h3>
               <ul className='space-y-2'>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>No personal information collection</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>All data stored locally</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>File content protection</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>Minimal network access</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>User complete control over data</strong>
                 </li>
               </ul>
@@ -53,7 +66,7 @@ export default function PrivacyPage() {
 
             {/* Data Collection & Usage */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Data Collection & Usage
               </h2>
               <p className='text-gray-700 mb-6 leading-relaxed'>
@@ -136,7 +149,7 @@ export default function PrivacyPage() {
 
             {/* File System Access */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 File System Access
               </h2>
               <p className='text-gray-700 mb-6'>
@@ -161,7 +174,7 @@ export default function PrivacyPage() {
 
             {/* File Processing Method */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 File Processing Method
               </h2>
               <ul className='space-y-3'>
@@ -183,7 +196,7 @@ export default function PrivacyPage() {
 
             {/* Network Communication */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Network Communication
               </h2>
               <h3 className='text-xl font-semibold text-gray-800 mb-4'>
@@ -207,7 +220,7 @@ export default function PrivacyPage() {
 
             {/* Data Security */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Data Security
               </h2>
               <h3 className='text-xl font-semibold text-gray-800 mb-4'>
@@ -245,7 +258,7 @@ export default function PrivacyPage() {
 
             {/* Third Party Services */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Third Party Services
               </h2>
               <p className='text-gray-700 mb-6'>
@@ -279,7 +292,7 @@ export default function PrivacyPage() {
 
             {/* User Rights */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 User Rights
               </h2>
               <p className='text-gray-700 mb-6'>
@@ -333,7 +346,7 @@ export default function PrivacyPage() {
 
             {/* Data Retention */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Data Retention
               </h2>
               <h3 className='text-xl font-semibold text-gray-800 mb-4'>
@@ -370,7 +383,7 @@ export default function PrivacyPage() {
 
             {/* Children's Privacy */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Children&apos;s Privacy Protection
               </h2>
               <ul className='space-y-3'>
@@ -392,7 +405,7 @@ export default function PrivacyPage() {
 
             {/* International Data Transfer */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 International Data Transfer
               </h2>
               <ul className='space-y-3'>
@@ -409,7 +422,7 @@ export default function PrivacyPage() {
 
             {/* Policy Updates */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Policy Updates
               </h2>
               <h3 className='text-xl font-semibold text-gray-800 mb-4'>
@@ -438,7 +451,7 @@ export default function PrivacyPage() {
 
             {/* Contact Information */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Contact Information
               </h2>
               <p className='text-gray-700 mb-6'>
@@ -464,7 +477,7 @@ export default function PrivacyPage() {
 
             {/* Compliance Statement */}
             <section className='mb-12'>
-              <h2 className='text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
+              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-3'>
                 Compliance Statement
               </h2>
               <p className='text-gray-700 mb-6'>
@@ -488,27 +501,27 @@ export default function PrivacyPage() {
             </section>
 
             {/* Final Summary */}
-            <div className='bg-green-50 border-l-4 border-green-500 p-6 mb-8 rounded-lg'>
-              <h3 className='text-xl font-semibold text-green-800 mb-4'>
+            <div className='bg-green-50 border-l-4 border-green-500 p-4 sm:p-6 mb-8 rounded-lg'>
+              <h3 className='text-sm sm:text-base font-semibold text-green-800 mb-4'>
                 Privacy Policy Summary
               </h3>
-              <p className='text-green-700 mb-4'>
+              <p className='text-sm sm:text-base text-green-700 mb-4'>
                 <strong>File Sortify&apos;s Core Privacy Commitments:</strong>
               </p>
               <ul className='space-y-2'>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>No personal information collection</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>All data stored locally</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>File content protection</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>Minimal network access</strong>
                 </li>
-                <li className='text-green-800'>
+                <li className='text-sm sm:text-base text-green-800'>
                   <strong>User complete control over data</strong>
                 </li>
               </ul>

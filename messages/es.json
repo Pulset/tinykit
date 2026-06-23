@@ -441,7 +441,9 @@
     "heroDesc": "Descubre TinyKit, donde construimos herramientas simples, hermosas y efectivas diseñadas para agilizar tu vida digital diaria sin desorden.",
     "heroTitle": "Creando aplicaciones minimalistas y prácticas",
     "rights": "Todos los derechos reservados.",
-    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas"
+    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas",
+    "sleepFlow": "SleepFlow",
+    "sleepFlowDesc": "Ruido blanco y sonidos ambientales para dormir mejor. Mezcla lluvia, naturaleza y ruido blanco, genera paisajes sonoros con IA y duerme con un temporizador."
   },
   "Legal": {
     "languageNotice": "Este documento está disponible solo en inglés.",
@@ -470,5 +472,190 @@
     },
     "productCategory": "Software de utilidad Mac",
     "websiteDescription": "Aplicaciones de productividad para usuarios Mac"
+  },
+  "SleepFlow": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "product": "SleepFlow"
+    },
+    "faq": {
+      "items": {
+        "0": {
+          "answer": "SleepFlow es una app de ruido blanco y sonidos ambientales para dormir. Mezcla varios sonidos —lluvia, viento, olas y más—, configura un temporizador y deja que la IA genere sonidos personalizados a partir de una descripción de texto. Todo está diseñado para que te duermas más rápido y descanses mejor.",
+          "question": "¿Qué es SleepFlow?"
+        },
+        "1": {
+          "answer": "Solo explora la biblioteca de sonidos, toca para añadir sonidos a tu mezcla, ajusta el volumen de cada capa y pulsa reproducir. Puedes superponer varios sonidos a la vez para crear tu entorno de sueño perfecto.",
+          "question": "¿Cómo funciona SleepFlow?"
+        },
+        "2": {
+          "answer": "¡Sí! La función de generación de sonido por IA te permite describir cualquier sonido con palabras —como 'lluvia suave sobre un techo de lata' o 'una fogata crepitante'— y crea una pista ambiental personalizada para ti. Los suscriptores reciben 5 generaciones de IA al mes.",
+          "question": "¿Puedo generar mis propios sonidos con IA?"
+        },
+        "3": {
+          "answer": "SleepFlow es gratis para descargar e incluye una amplia biblioteca de sonidos, el mezclador, el temporizador y la reproducción en segundo plano. SleepFlow Premium (semanal, mensual o anual) desbloquea la biblioteca premium completa y la generación de sonido por IA.",
+          "question": "¿SleepFlow es gratis?"
+        },
+        "4": {
+          "answer": "Sí. SleepFlow se ejecuta en segundo plano y sigue reproduciéndose incluso con la pantalla bloqueada, así que tus sonidos continúan toda la noche. También puedes configurar un temporizador de atenuación para que el audio baje suavemente mientras te duermes.",
+          "question": "¿SleepFlow sigue sonando con el teléfono bloqueado?"
+        }
+      }
+    },
+    "features": {
+      "heading": "Diseñado para dormir mejor",
+      "items": {
+        "0": {
+          "description": "Superpone varios sonidos a la vez y ajusta el volumen de cada uno. Mezcla lluvia con ruido blanco, olas con viento, o crea cualquier combinación que te ayude a dormir.",
+          "title": "Mezclador de sonidos"
+        },
+        "1": {
+          "description": "Describe cualquier sonido con palabras y deja que la IA cree una pista ambiental personalizada solo para ti. Paisajes sonoros infinitos y personalizados.",
+          "title": "Generación de sonido por IA"
+        },
+        "2": {
+          "description": "Configura un temporizador para que los sonidos se atenúen suavemente al quedarte dormido. Elige duraciones predefinidas o define la tuya.",
+          "title": "Temporizador y atenuación"
+        },
+        "3": {
+          "description": "Un conjunto curado de sonidos seguros para bebés —del chasquido a las nanas— para ayudar a los más pequeños a calmarse y dormir tranquilos.",
+          "title": "Sonidos seguros para bebés"
+        },
+        "4": {
+          "description": "Los sonidos siguen reproduciéndose en segundo plano y con la pantalla bloqueada, para que tu sueño nunca se interrumpa.",
+          "title": "Reproducción en segundo plano"
+        },
+        "5": {
+          "description": "Desbloquea la biblioteca premium completa —lluvia intensa, olas del océano, fogata crepitante y más— con una suscripción a SleepFlow Premium.",
+          "title": "Biblioteca de sonidos premium"
+        }
+      },
+      "subtitle": "Todo lo que necesitas para relajarte y dormir"
+    },
+    "footer": {
+      "backHome": "Volver a SleepFlow",
+      "brand": "SleepFlow",
+      "copyright": "© {year} SleepFlow. Hecho con ❤️ por TinyKit.",
+      "downloadLink": "Descargar",
+      "featuresLink": "Funciones",
+      "pricingLink": "Precios",
+      "privacyLink": "Política de privacidad",
+      "supportLink": "Soporte",
+      "termsLink": "Términos del servicio"
+    },
+    "hero": {
+      "badge": "🌙 Ruido blanco y sonidos ambientales",
+      "ctaDownload": "Descargar ahora",
+      "ctaDownloadAria": "Descargar SleepFlow en la App Store",
+      "ctaHowItWorks": "Cómo funciona",
+      "ctaHowItWorksAria": "Ver cómo funciona SleepFlow",
+      "mixLayersLabel": "Capas de sonido",
+      "mixLayersValue": "Ilimitadas",
+      "mixName": "Lluvia + Viento",
+      "playing": "Reproduciendo",
+      "sleptBetterLabel": "Durmió mejor",
+      "sleptBetterValue": "92%",
+      "subtitle": "Déjate llevar a un sueño profundo con una biblioteca de ruido blanco, lluvia y sonidos ambientales —además de paisajes sonoros generados por IA solo para ti.",
+      "titleLine1": "Duerme",
+      "titleLine2": "más rápido esta noche."
+    },
+    "howItWorks": {
+      "heading": "Pasos sencillos",
+      "steps": {
+        "0": {
+          "description": "Explora ruido blanco, lluvia, naturaleza y sonidos ambientales en seis categorías.",
+          "title": "Elige tus sonidos"
+        },
+        "1": {
+          "description": "Superpone sonidos y ajusta el volumen de cada uno hasta que se sienta perfecto.",
+          "title": "Mezcla y personaliza"
+        },
+        "2": {
+          "description": "Configura un temporizador de atenuación, pulsa reproducir y deja que la noche te lleve a dormir.",
+          "title": "Déjate llevar al sueño"
+        }
+      },
+      "subtitle": "3 pasos hacia un mejor descanso nocturno"
+    },
+    "meta": {
+      "applicationName": "SleepFlow",
+      "description": "SleepFlow es una app de ruido blanco y sonidos ambientales para dormir mejor. Mezcla lluvia, sonidos de la naturaleza y ruido blanco, genera paisajes sonoros personalizados con IA y duerme con un temporizador. Descarga gratis para iOS.",
+      "jsonLdDescription": "SleepFlow es una app de ruido blanco y sonidos ambientales para dormir mejor. Mezcla lluvia, sonidos de la naturaleza y ruido blanco, genera paisajes sonoros personalizados con IA y duerme con un temporizador. Descarga gratis para iOS.",
+      "jsonLdFeatureList": {
+        "0": "Mezclador de sonidos multicapa",
+        "1": "Sonidos personalizados generados por IA",
+        "2": "Temporizador con atenuación",
+        "3": "Biblioteca de sonidos seguros para bebés",
+        "4": "Reproducción en segundo plano y con pantalla bloqueada",
+        "5": "Colección de sonidos ambientales premium"
+      },
+      "keyFeatures": "Mezclador de sonidos, Generación de sonido por IA, Temporizador y atenuación, Sonidos seguros para bebés, Reproducción en segundo plano, Biblioteca premium",
+      "ogDescription": "Déjate llevar a un sueño profundo con ruido blanco, lluvia y sonidos ambientales —además de paisajes sonoros generados por IA solo para ti.",
+      "ogTitle": "SleepFlow — Ruido blanco y sonidos ambientales para dormir mejor",
+      "productType": "App de sueño y bienestar",
+      "targetAudience": "Cualquiera que tenga dificultades para dormirse o quiera relajarse con sonidos ambientales suaves",
+      "title": "SleepFlow — Ruido blanco y sonidos ambientales para dormir",
+      "twitterDescription": "Mezcla ruido blanco, lluvia y sonidos ambientales, o genera los tuyos con IA. Duerme más rápido esta noche.",
+      "twitterTitle": "SleepFlow — Ruido blanco y sonidos ambientales para dormir mejor",
+      "useCases": "Dormirse más rápido, Bloquear ruido, Relajarse, Calmar bebés, Concentrarse y estudiar"
+    },
+    "nav": {
+      "brand": "SleepFlow",
+      "closeMenu": "Cerrar menú",
+      "download": "Descargar",
+      "downloadAria": "Descargar SleepFlow en la App Store",
+      "downloadNow": "Descargar ahora",
+      "items": {
+        "0": {
+          "label": "Funciones"
+        },
+        "1": {
+          "label": "Cómo funciona"
+        },
+        "2": {
+          "label": "Precios"
+        }
+      },
+      "openMenu": "Abrir menú"
+    },
+    "page": {
+      "skipToContent": "Saltar al contenido principal"
+    },
+    "pricing": {
+      "annualBadge": "Mejor valor",
+      "annualDetail": "Facturación anual · Ahorra 50%",
+      "annualTitle": "Anual",
+      "cta": "Descargar ahora",
+      "ctaAria": "Descargar SleepFlow gratis",
+      "features": {
+        "0": "Biblioteca premium completa",
+        "1": "Mezcla de sonidos ilimitada",
+        "2": "5 generaciones de IA / mes",
+        "3": "Temporizador y atenuación"
+      },
+      "heading": "Precios sencillos y flexibles",
+      "legalNote": "La suscripción se renueva automáticamente salvo que se cancele al menos 24 horas antes del final del periodo. Gestiona o cancela cuando quieras en los ajustes de tu Apple ID.",
+      "monthlyDetail": "Facturación mensual",
+      "monthlyTitle": "Mensual",
+      "period": "/periodo",
+      "subtitle": "Empieza gratis. Mejora cuando quieras para sonidos premium y generación con IA.",
+      "weeklyDetail": "Facturación semanal",
+      "weeklyTitle": "Semanal"
+    },
+    "testimonials": {
+      "heading": "Dulces sueños",
+      "items": {
+        "0": {
+          "content": "Los sonidos seguros para bebés son salvavidas. La mezcla de chasquido y nana calma a mi recién nacido en minutos —¡por fin dormimos los dos!"
+        },
+        "1": {
+          "content": "Hago turnos de noche y duermo de día. El mezclador de SleepFlow tapa todo el ruido del día. El generador de lluvia con IA es pura magia."
+        },
+        "2": {
+          "content": "Viajo mucho por trabajo. El sonido de cabina y las mezclas ambientales me ayudan a dormir en cada vuelo. Esta app va conmigo a todas partes."
+        }
+      },
+      "ratingAria": "5 de 5 estrellas"
+    }
   }
 }

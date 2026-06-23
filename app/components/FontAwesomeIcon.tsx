@@ -27,6 +27,9 @@ import {
   faHeart as fasHeart,
   faQuoteLeft as fasQuoteLeft,
   faFileContract as fasFileContract,
+  faLayerGroup as fasLayerGroup,
+  faBaby as fasBaby,
+  faCrown as fasCrown,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faApple as fabApple,
@@ -63,7 +66,10 @@ export type FontAwesomeIconName =
   | 'fas fa-download'
   | 'fas fa-heart'
   | 'fas fa-quote-left'
-  | 'fas fa-file-contract';
+  | 'fas fa-file-contract'
+  | 'fas fa-layer-group'
+  | 'fas fa-baby'
+  | 'fas fa-crown';
 
 const iconMap: Record<FontAwesomeIconName, IconProp> = {
   // Solid icons
@@ -91,6 +97,9 @@ const iconMap: Record<FontAwesomeIconName, IconProp> = {
   'fas fa-heart': fasHeart,
   'fas fa-quote-left': fasQuoteLeft,
   'fas fa-file-contract': fasFileContract,
+  'fas fa-layer-group': fasLayerGroup,
+  'fas fa-baby': fasBaby,
+  'fas fa-crown': fasCrown,
 
   // Brand icons
   'fab fa-apple': fabApple,
