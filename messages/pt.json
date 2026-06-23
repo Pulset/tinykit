@@ -538,17 +538,14 @@
       "copyright": "© {year} SleepFlow. Feito com ❤️ pela TinyKit.",
       "downloadLink": "Baixar",
       "featuresLink": "Recursos",
-      "pricingLink": "Preços",
       "privacyLink": "Política de Privacidade",
       "supportLink": "Suporte",
       "termsLink": "Termos de Serviço"
     },
     "hero": {
-      "badge": "🌙 Ruído Branco e Sons Ambientais",
+      "badge": "Ruído Branco e Sons Ambientais",
       "ctaDownload": "Baixar Agora",
       "ctaDownloadAria": "Baixar SleepFlow na App Store",
-      "ctaHowItWorks": "Veja Como Funciona",
-      "ctaHowItWorksAria": "Veja como o SleepFlow funciona",
       "mixLayersLabel": "Camadas de Som",
       "mixLayersValue": "Ilimitadas",
       "mixName": "Chuva + Vento",
@@ -558,24 +555,6 @@
       "subtitle": "Mergulhe em um sono profundo com uma biblioteca suave de ruído branco, chuva e sons ambientais —além de paisagens sonoras geradas por IA só para você.",
       "titleLine1": "Adormeça",
       "titleLine2": "Mais Rápido Hoje."
-    },
-    "howItWorks": {
-      "heading": "Passos Simples",
-      "steps": {
-        "0": {
-          "description": "Explore ruído branco, chuva, natureza e sons ambientais em seis categorias.",
-          "title": "Escolha Seus Sons"
-        },
-        "1": {
-          "description": "Sobreponha sons e ajuste o volume de cada um até ficar perfeito.",
-          "title": "Misture e Personalize"
-        },
-        "2": {
-          "description": "Defina um temporizador de fade, pressione play e deixe a noite levá-lo ao sono.",
-          "title": "Adormeça Tranquilamente"
-        }
-      },
-      "subtitle": "3 passos para uma noite de sono melhor"
     },
     "meta": {
       "applicationName": "SleepFlow",
@@ -610,37 +589,13 @@
           "label": "Recursos"
         },
         "1": {
-          "label": "Como Funciona"
-        },
-        "2": {
-          "label": "Preços"
+          "label": "Baixar"
         }
       },
       "openMenu": "Abrir menu"
     },
     "page": {
       "skipToContent": "Pular para o conteúdo principal"
-    },
-    "pricing": {
-      "annualBadge": "Melhor Valor",
-      "annualDetail": "Cobrança anual · Economize 50%",
-      "annualTitle": "Anual",
-      "cta": "Baixar Agora",
-      "ctaAria": "Baixar SleepFlow grátis",
-      "features": {
-        "0": "Biblioteca premium completa",
-        "1": "Mixagem de sons ilimitada",
-        "2": "5 gerações de IA / mês",
-        "3": "Temporizador e fade-out"
-      },
-      "heading": "Preços Simples e Flexíveis",
-      "legalNote": "A assinatura é renovada automaticamente a menos que seja cancelada pelo menos 24 horas antes do fim do período. Gerencie ou cancele quando quiser nas configurações do seu Apple ID.",
-      "monthlyDetail": "Cobrança mensal",
-      "monthlyTitle": "Mensal",
-      "period": "/período",
-      "subtitle": "Comece grátis. Faça upgrade quando quiser para sons premium e geração com IA.",
-      "weeklyDetail": "Cobrança semanal",
-      "weeklyTitle": "Semanal"
     },
     "testimonials": {
       "heading": "Sonhos Doces",
@@ -656,6 +611,13 @@
         }
       },
       "ratingAria": "5 de 5 estrelas"
+    },
+    "download": {
+      "badge": "Baixe grátis",
+      "heading": "Pronto para dormir melhor?",
+      "subtitle": "Junte-se a milhares que dormem mais profundo com o SleepFlow. Baixe grátis no iOS e durma esta noite.",
+      "cta": "Baixar na App Store",
+      "ctaAria": "Baixar SleepFlow na App Store"
     }
   }
 }

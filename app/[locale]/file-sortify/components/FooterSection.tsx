@@ -10,9 +10,9 @@ export default function FooterSection() {
   const t = useTranslations('FileSortify.footer');
 
   return (
-    <footer className='bg-gray-900 text-white py-12' role='contentinfo'>
+    <footer className='bg-gray-900 text-white py-8 sm:py-12' role='contentinfo'>
       <div className='container mx-auto px-6'>
-        <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
+        <div className='flex flex-col md:flex-row justify-between items-center gap-5 sm:gap-8'>
           <div className='flex items-center justify-center md:justify-start'>
             <Image
               src={siteConfig.logo}
@@ -26,7 +26,7 @@ export default function FooterSection() {
             </span>
           </div>
           <nav
-            className='flex flex-col sm:flex-row items-center gap-4 sm:gap-6'
+            className='flex flex-wrap justify-center items-center gap-x-5 sm:gap-x-6 gap-y-2 sm:gap-y-4'
             aria-label='Footer navigation'
           >
             <a
@@ -70,7 +70,7 @@ export default function FooterSection() {
             </Link>
           </nav>
         </div>
-        <div className='border-t border-gray-800 mt-8 pt-6 text-center text-gray-400'>
+        <div className='border-t border-gray-800 mt-5 sm:mt-8 pt-4 sm:pt-6 text-center text-gray-400'>
           <p className='text-sm'>
             {t('copyright', { year: new Date().getFullYear() })}
           </p>

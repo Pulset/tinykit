@@ -92,19 +92,6 @@ export default function HeroSection({ productConfig }: HeroSectionProps) {
                   {t('ctaDownload')}
                 </span>
               </a>
-              <a
-                href='#how-it-works'
-                className='px-8 py-4 rounded-full font-bold text-gray-200 border border-white/15 bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-white/25 transition-all hover:scale-105'
-                aria-label={t('ctaHowItWorksAria')}
-              >
-                <span className='flex items-center justify-center gap-2'>
-                  <FontAwesomeIcon
-                    name='fas fa-play'
-                    className='text-sm text-[#97A3FF]'
-                  />
-                  {t('ctaHowItWorks')}
-                </span>
-              </a>
             </div>
           </div>
 

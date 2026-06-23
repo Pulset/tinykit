@@ -441,9 +441,9 @@
     "heroDesc": "Descubre TinyKit, donde construimos herramientas simples, hermosas y efectivas diseñadas para agilizar tu vida digital diaria sin desorden.",
     "heroTitle": "Creando aplicaciones minimalistas y prácticas",
     "rights": "Todos los derechos reservados.",
-    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas",
     "sleepFlow": "SleepFlow",
-    "sleepFlowDesc": "Ruido blanco y sonidos ambientales para dormir mejor. Mezcla lluvia, naturaleza y ruido blanco, genera paisajes sonoros con IA y duerme con un temporizador."
+    "sleepFlowDesc": "Ruido blanco y sonidos ambientales para dormir mejor. Mezcla lluvia, naturaleza y ruido blanco, genera paisajes sonoros con IA y duerme con un temporizador.",
+    "title": "TinyKit - Creando aplicaciones minimalistas y prácticas"
   },
   "Legal": {
     "languageNotice": "Este documento está disponible solo en inglés.",
@@ -461,22 +461,17 @@
     "twitterDescription": "Encuentra tu próxima herramienta de productividad favorita. TinyKit crea aplicaciones minimalistas y prácticas para ti. Software simple, ligero sin anuncios y sin desorden.",
     "twitterTitle": "TinyKit - Creando aplicaciones minimalistas y prácticas"
   },
-  "StructuredData": {
-    "fileManagement": "Gestión de archivos",
-    "orgDescription": "Desarrollador de aplicaciones de productividad para usuarios Mac",
-    "orgKnowsAbout": {
-      "0": "Desarrollo de software Mac",
-      "1": "Organización de archivos",
-      "2": "Herramientas de productividad",
-      "3": "Utilidades macOS"
-    },
-    "productCategory": "Software de utilidad Mac",
-    "websiteDescription": "Aplicaciones de productividad para usuarios Mac"
-  },
   "SleepFlow": {
     "breadcrumb": {
       "home": "Inicio",
       "product": "SleepFlow"
+    },
+    "download": {
+      "badge": " Descarga gratis",
+      "cta": "Descargar en la App Store",
+      "ctaAria": "Descargar SleepFlow en la App Store",
+      "heading": "¿Listo para dormir mejor?",
+      "subtitle": "Únete a miles que duermen más profundo con SleepFlow. Descarga gratis en iOS y duérmete esta noche."
     },
     "faq": {
       "items": {
@@ -538,17 +533,14 @@
       "copyright": "© {year} SleepFlow. Hecho con ❤️ por TinyKit.",
       "downloadLink": "Descargar",
       "featuresLink": "Funciones",
-      "pricingLink": "Precios",
       "privacyLink": "Política de privacidad",
       "supportLink": "Soporte",
       "termsLink": "Términos del servicio"
     },
     "hero": {
-      "badge": "🌙 Ruido blanco y sonidos ambientales",
+      "badge": "Ruido blanco y sonidos ambientales",
       "ctaDownload": "Descargar ahora",
       "ctaDownloadAria": "Descargar SleepFlow en la App Store",
-      "ctaHowItWorks": "Cómo funciona",
-      "ctaHowItWorksAria": "Ver cómo funciona SleepFlow",
       "mixLayersLabel": "Capas de sonido",
       "mixLayersValue": "Ilimitadas",
       "mixName": "Lluvia + Viento",
@@ -558,24 +550,6 @@
       "subtitle": "Déjate llevar a un sueño profundo con una biblioteca de ruido blanco, lluvia y sonidos ambientales —además de paisajes sonoros generados por IA solo para ti.",
       "titleLine1": "Duerme",
       "titleLine2": "más rápido esta noche."
-    },
-    "howItWorks": {
-      "heading": "Pasos sencillos",
-      "steps": {
-        "0": {
-          "description": "Explora ruido blanco, lluvia, naturaleza y sonidos ambientales en seis categorías.",
-          "title": "Elige tus sonidos"
-        },
-        "1": {
-          "description": "Superpone sonidos y ajusta el volumen de cada uno hasta que se sienta perfecto.",
-          "title": "Mezcla y personaliza"
-        },
-        "2": {
-          "description": "Configura un temporizador de atenuación, pulsa reproducir y deja que la noche te lleve a dormir.",
-          "title": "Déjate llevar al sueño"
-        }
-      },
-      "subtitle": "3 pasos hacia un mejor descanso nocturno"
     },
     "meta": {
       "applicationName": "SleepFlow",
@@ -610,37 +584,13 @@
           "label": "Funciones"
         },
         "1": {
-          "label": "Cómo funciona"
-        },
-        "2": {
-          "label": "Precios"
+          "label": "Descargar"
         }
       },
       "openMenu": "Abrir menú"
     },
     "page": {
       "skipToContent": "Saltar al contenido principal"
-    },
-    "pricing": {
-      "annualBadge": "Mejor valor",
-      "annualDetail": "Facturación anual · Ahorra 50%",
-      "annualTitle": "Anual",
-      "cta": "Descargar ahora",
-      "ctaAria": "Descargar SleepFlow gratis",
-      "features": {
-        "0": "Biblioteca premium completa",
-        "1": "Mezcla de sonidos ilimitada",
-        "2": "5 generaciones de IA / mes",
-        "3": "Temporizador y atenuación"
-      },
-      "heading": "Precios sencillos y flexibles",
-      "legalNote": "La suscripción se renueva automáticamente salvo que se cancele al menos 24 horas antes del final del periodo. Gestiona o cancela cuando quieras en los ajustes de tu Apple ID.",
-      "monthlyDetail": "Facturación mensual",
-      "monthlyTitle": "Mensual",
-      "period": "/periodo",
-      "subtitle": "Empieza gratis. Mejora cuando quieras para sonidos premium y generación con IA.",
-      "weeklyDetail": "Facturación semanal",
-      "weeklyTitle": "Semanal"
     },
     "testimonials": {
       "heading": "Dulces sueños",
@@ -657,5 +607,17 @@
       },
       "ratingAria": "5 de 5 estrellas"
     }
+  },
+  "StructuredData": {
+    "fileManagement": "Gestión de archivos",
+    "orgDescription": "Desarrollador de aplicaciones de productividad para usuarios Mac",
+    "orgKnowsAbout": {
+      "0": "Desarrollo de software Mac",
+      "1": "Organización de archivos",
+      "2": "Herramientas de productividad",
+      "3": "Utilidades macOS"
+    },
+    "productCategory": "Software de utilidad Mac",
+    "websiteDescription": "Aplicaciones de productividad para usuarios Mac"
   }
 }

@@ -441,9 +441,9 @@
     "heroDesc": "探索 TinyKit，我们致力于构建简单、美观且高效的工具，旨在简化您的日常数字生活，远离繁杂。",
     "heroTitle": "打造极简实用的应用程序",
     "rights": "版权所有。",
-    "title": "TinyKit - 打造极简实用的应用程序",
     "sleepFlow": "SleepFlow",
-    "sleepFlowDesc": "助眠的白噪音与环境音。混合雨声、自然声与白噪音，用 AI 生成专属声景，配合睡眠定时器安然入睡。"
+    "sleepFlowDesc": "助眠的白噪音与环境音。混合雨声、自然声与白噪音，用 AI 生成专属声景，配合睡眠定时器安然入睡。",
+    "title": "TinyKit - 打造极简实用的应用程序"
   },
   "Legal": {
     "languageNotice": "本文件仅提供英文版本。",
@@ -461,22 +461,17 @@
     "twitterDescription": "找到您下一个心仪的生产力工具。TinyKit 为您打造极简实用的应用程序。简单、轻量的软件，无广告、无繁杂。",
     "twitterTitle": "TinyKit - 打造极简实用的应用程序"
   },
-  "StructuredData": {
-    "fileManagement": "文件管理",
-    "orgDescription": "Mac 用户生产力应用开发者",
-    "orgKnowsAbout": {
-      "0": "Mac 软件开发",
-      "1": "文件整理",
-      "2": "生产力工具",
-      "3": "macOS 实用程序"
-    },
-    "productCategory": "Mac 实用软件",
-    "websiteDescription": "面向 Mac 用户的生产力应用"
-  },
   "SleepFlow": {
     "breadcrumb": {
       "home": "首页",
       "product": "SleepFlow"
+    },
+    "download": {
+      "badge": "免费下载",
+      "cta": "在 App Store 下载",
+      "ctaAria": "在 App Store 下载 SleepFlow",
+      "heading": "准备好拥有更好的睡眠了吗？",
+      "subtitle": "加入数千名用户的行列，用 SleepFlow 睡得更香。iOS 免费下载，今晚就安然入睡。"
     },
     "faq": {
       "items": {
@@ -538,17 +533,14 @@
       "copyright": "© {year} SleepFlow. 由 TinyKit 用 ❤️ 打造。",
       "downloadLink": "下载",
       "featuresLink": "功能",
-      "pricingLink": "价格",
       "privacyLink": "隐私政策",
       "supportLink": "支持",
       "termsLink": "服务条款"
     },
     "hero": {
-      "badge": "🌙 白噪音与环境音",
+      "badge": "白噪音与环境音",
       "ctaDownload": "立即下载",
       "ctaDownloadAria": "在 App Store 下载 SleepFlow",
-      "ctaHowItWorks": "了解工作原理",
-      "ctaHowItWorksAria": "了解 SleepFlow 如何工作",
       "mixLayersLabel": "声音层数",
       "mixLayersValue": "无限",
       "mixName": "雨声 + 风声",
@@ -558,24 +550,6 @@
       "subtitle": "用丰富的白噪音、雨声与环境音沉入深眠——还有 AI 专为你生成的助眠声景。",
       "titleLine1": "今夜",
       "titleLine2": "更快入眠。"
-    },
-    "howItWorks": {
-      "heading": "简单三步",
-      "steps": {
-        "0": {
-          "description": "在六大类别中探索白噪音、雨声、自然声与环境音。",
-          "title": "挑选声音"
-        },
-        "1": {
-          "description": "把声音叠加在一起，调节每一层的音量，直到恰到好处。",
-          "title": "混音定制"
-        },
-        "2": {
-          "description": "设置淡出定时器，按下播放，让夜晚伴你入眠。",
-          "title": "安然入梦"
-        }
-      },
-      "subtitle": "三步拥有更好的夜晚安眠"
     },
     "meta": {
       "applicationName": "SleepFlow",
@@ -610,37 +584,13 @@
           "label": "功能"
         },
         "1": {
-          "label": "工作原理"
-        },
-        "2": {
-          "label": "价格"
+          "label": "下载"
         }
       },
       "openMenu": "打开菜单"
     },
     "page": {
       "skipToContent": "跳转到主要内容"
-    },
-    "pricing": {
-      "annualBadge": "最超值",
-      "annualDetail": "按年付费 · 省 50%",
-      "annualTitle": "年度",
-      "cta": "立即下载",
-      "ctaAria": "免费下载 SleepFlow",
-      "features": {
-        "0": "完整高级声音库",
-        "1": "无限声音混音",
-        "2": "每月 5 次 AI 声音生成",
-        "3": "睡眠定时器与淡出"
-      },
-      "heading": "简单灵活的价格",
-      "legalNote": "订阅自动续费，除非在到期前至少 24 小时取消。可在 Apple ID 设置中随时管理或取消。",
-      "monthlyDetail": "按月付费",
-      "monthlyTitle": "月度",
-      "period": "/周期",
-      "subtitle": "免费开始。随时升级以获取高级声音与 AI 生成。",
-      "weeklyDetail": "按周付费",
-      "weeklyTitle": "周度"
     },
     "testimonials": {
       "heading": "甜美梦境",
@@ -657,5 +607,17 @@
       },
       "ratingAria": "5 星满分"
     }
+  },
+  "StructuredData": {
+    "fileManagement": "文件管理",
+    "orgDescription": "Mac 用户生产力应用开发者",
+    "orgKnowsAbout": {
+      "0": "Mac 软件开发",
+      "1": "文件整理",
+      "2": "生产力工具",
+      "3": "macOS 实用程序"
+    },
+    "productCategory": "Mac 实用软件",
+    "websiteDescription": "面向 Mac 用户的生产力应用"
   }
 }

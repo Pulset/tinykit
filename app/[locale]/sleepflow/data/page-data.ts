@@ -47,27 +47,6 @@ export const features: Feature[] = [
   },
 ];
 
-export const howItWorks = [
-  {
-    step: 1,
-    titleKey: '0.title',
-    descKey: '0.description',
-    gradientColors: 'from-[#6B78E8] to-[#9775FA]',
-  },
-  {
-    step: 2,
-    titleKey: '1.title',
-    descKey: '1.description',
-    gradientColors: 'from-[#7C8AFF] to-[#BCC4FF]',
-  },
-  {
-    step: 3,
-    titleKey: '2.title',
-    descKey: '2.description',
-    gradientColors: 'from-[#5563D4] to-[#6B78E8]',
-  },
-];
-
 export const testimonials = [
   {
     name: 'Olivia Bennett',
@@ -88,14 +67,13 @@ export const testimonials = [
 
 export const navItems = [
   { labelKey: 'items.0.label', href: '#features' },
-  { labelKey: 'items.1.label', href: '#how-it-works' },
-  { labelKey: 'items.2.label', href: '#pricing' },
+  { labelKey: 'items.1.label', href: '#download' },
 ];
 
 export const footerLinks = {
   product: [
     { labelKey: 'SleepFlow.footer.featuresLink', href: '#features' },
-    { labelKey: 'SleepFlow.footer.pricingLink', href: '#pricing' },
+    { labelKey: 'SleepFlow.footer.downloadLink', href: '#download' },
   ],
   support: [
     {

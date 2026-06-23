@@ -15,20 +15,6 @@ export interface SiteConfig {
 
 export interface ProductConfig {
   appStoreUrl: string;
-  pricing: {
-    plans: PricingPlan[];
-  };
-}
-
-export interface PricingPlan {
-  id: 'weekly' | 'monthly' | 'annual';
-  price: string;
-  periodKey: string;
-  titleKey: string;
-  detailKey: string;
-  badgeKey: string | null;
-  featureKeys: string[];
-  highlighted: boolean;
 }
 
 export const siteConfig: SiteConfig = {
@@ -48,29 +34,4 @@ export const siteConfig: SiteConfig = {
 // Placeholder App Store URL — swap with the real id once the app is live.
 export const productConfig: ProductConfig = {
   appStoreUrl: 'https://apps.apple.com/app/idSLEEPFLOW_PLACEHOLDER',
-  pricing: {
-    // Pricing tiers mirror the iOS app's RevenueCat PurchasePlan config.
-    plans: [
-      {
-        id: 'monthly',
-        price: '$2.99',
-        periodKey: 'period',
-        titleKey: 'monthlyTitle',
-        detailKey: 'monthlyDetail',
-        badgeKey: null,
-        featureKeys: ['0', '1', '2'],
-        highlighted: false,
-      },
-      {
-        id: 'annual',
-        price: '$19.99',
-        periodKey: 'period',
-        titleKey: 'annualTitle',
-        detailKey: 'annualDetail',
-        badgeKey: 'annualBadge',
-        featureKeys: ['0', '1', '2', '3'],
-        highlighted: true,
-      },
-    ],
-  },
 };

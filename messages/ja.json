@@ -441,9 +441,9 @@
     "heroDesc": "TinyKitをご紹介します。私たちは、毎日のデジタルライフをシンプルにし、乱雑さを排除するために設計された、シンプルで美しく、効果的なツールを構築しています。",
     "heroTitle": "ミニマリストで実用的なアプリを制作",
     "rights": "All rights reserved.",
-    "title": "TinyKit - ミニマリストで実用的なアプリを制作",
     "sleepFlow": "SleepFlow",
-    "sleepFlowDesc": "睡眠のためのホワイトノイズ＆環境音。雨、自然音、ホワイトノイズをミックスし、AIでカスタムサウンドスケープを生成、スリープタイマーで眠りへ。"
+    "sleepFlowDesc": "睡眠のためのホワイトノイズ＆環境音。雨、自然音、ホワイトノイズをミックスし、AIでカスタムサウンドスケープを生成、スリープタイマーで眠りへ。",
+    "title": "TinyKit - ミニマリストで実用的なアプリを制作"
   },
   "Legal": {
     "languageNotice": "このドキュメントは英語のみでの提供となります。",
@@ -461,22 +461,17 @@
     "twitterDescription": "次のお気に入りの生産性ツールを見つけてください。TinyKitはあなたのためにミニマリストで実用的なアプリを作ります。シンプルで軽量のソフトウェア、広告なし、乱雑さなし。",
     "twitterTitle": "TinyKit - ミニマリストで実用的なアプリを制作"
   },
-  "StructuredData": {
-    "fileManagement": "ファイル管理",
-    "orgDescription": "Macユーザー向けの生産性アプリの開発者",
-    "orgKnowsAbout": {
-      "0": "Macソフトウェア開発",
-      "1": "ファイル整理",
-      "2": "生産性ツール",
-      "3": "macOSユーティリティ"
-    },
-    "productCategory": "Macユーティリティソフトウェア",
-    "websiteDescription": "Macユーザー向けの生産性アプリ"
-  },
   "SleepFlow": {
     "breadcrumb": {
       "home": "ホーム",
       "product": "SleepFlow"
+    },
+    "download": {
+      "badge": "無料ダウンロード",
+      "cta": "App Storeでダウンロード",
+      "ctaAria": "App StoreでSleepFlowをダウンロード",
+      "heading": "より良い眠りの準備はできましたか？",
+      "subtitle": "SleepFlowで深い眠りを手に入れた数千人の一員に。iOSで無料ダウンロード、今夜からぐっすり。"
     },
     "faq": {
       "items": {
@@ -538,17 +533,14 @@
       "copyright": "© {year} SleepFlow. TinyKitが❤️で制作。",
       "downloadLink": "ダウンロード",
       "featuresLink": "機能",
-      "pricingLink": "価格",
       "privacyLink": "プライバシーポリシー",
       "supportLink": "サポート",
       "termsLink": "利用規約"
     },
     "hero": {
-      "badge": "🌙 ホワイトノイズ＆環境音",
+      "badge": "ホワイトノイズ＆環境音",
       "ctaDownload": "今すぐダウンロード",
       "ctaDownloadAria": "App StoreでSleepFlowをダウンロード",
-      "ctaHowItWorks": "使い方を見る",
-      "ctaHowItWorksAria": "SleepFlowの使い方を見る",
       "mixLayersLabel": "音のレイヤー",
       "mixLayersValue": "無制限",
       "mixName": "雨 + 風",
@@ -558,24 +550,6 @@
       "subtitle": "ホワイトノイズ、雨、環境音の豊かなライブラリで深い眠りへ——さらにAIがあなただけのサウンドスケープを生成。",
       "titleLine1": "今夜",
       "titleLine2": "もっと早く眠る。"
-    },
-    "howItWorks": {
-      "heading": "シンプルなステップ",
-      "steps": {
-        "0": {
-          "description": "6つのカテゴリーでホワイトノイズ、雨、自然音、環境音を探索。",
-          "title": "音を選ぶ"
-        },
-        "1": {
-          "description": "音を重ねて、各音量をちょうど良くなるまで調整。",
-          "title": "ミックス＆カスタマイズ"
-        },
-        "2": {
-          "description": "フェードアウトタイマーを設定し、再生して、夜が眠りへ導く。",
-          "title": "眠りにつく"
-        }
-      },
-      "subtitle": "より良い夜の眠りへの3ステップ"
     },
     "meta": {
       "applicationName": "SleepFlow",
@@ -610,37 +584,13 @@
           "label": "機能"
         },
         "1": {
-          "label": "使い方"
-        },
-        "2": {
-          "label": "価格"
+          "label": "ダウンロード"
         }
       },
       "openMenu": "メニューを開く"
     },
     "page": {
       "skipToContent": "メインコンテンツへスキップ"
-    },
-    "pricing": {
-      "annualBadge": "お得",
-      "annualDetail": "年額請求 · 50%オフ",
-      "annualTitle": "年額",
-      "cta": "今すぐダウンロード",
-      "ctaAria": "SleepFlowを無料でダウンロード",
-      "features": {
-        "0": "フルプレミアムサウンドライブラリ",
-        "1": "無制限のサウンドミキシング",
-        "2": "月5回AIサウンド生成",
-        "3": "スリープタイマー＆フェードアウト"
-      },
-      "heading": "シンプルで柔軟な料金",
-      "legalNote": "サブスクリプションは期間終了の少なくとも24時間前にキャンセルしない限り自動更新されます。Apple IDの設定でいつでも管理・キャンセルできます。",
-      "monthlyDetail": "月額請求",
-      "monthlyTitle": "月額",
-      "period": "/期間",
-      "subtitle": "無料で開始。プレミアム音源とAI生成はいつでもアップグレード。",
-      "weeklyDetail": "週額請求",
-      "weeklyTitle": "週額"
     },
     "testimonials": {
       "heading": "甘い夢を",
@@ -657,5 +607,17 @@
       },
       "ratingAria": "5つ星中5つ"
     }
+  },
+  "StructuredData": {
+    "fileManagement": "ファイル管理",
+    "orgDescription": "Macユーザー向けの生産性アプリの開発者",
+    "orgKnowsAbout": {
+      "0": "Macソフトウェア開発",
+      "1": "ファイル整理",
+      "2": "生産性ツール",
+      "3": "macOSユーティリティ"
+    },
+    "productCategory": "Macユーティリティソフトウェア",
+    "websiteDescription": "Macユーザー向けの生産性アプリ"
   }
 }

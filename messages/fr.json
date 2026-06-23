@@ -441,9 +441,9 @@
     "heroDesc": "Découvrez TinyKit, où nous créons des outils simples, beaux et efficaces conçus pour simplifier votre vie numérique quotidienne sans encombrement.",
     "heroTitle": "Création d'applications minimalistes et pratiques",
     "rights": "Tous droits réservés.",
-    "title": "TinyKit - Création d'applications minimalistes et pratiques",
     "sleepFlow": "SleepFlow",
-    "sleepFlowDesc": "Bruit blanc et sons d'ambiance pour mieux dormir. Mélangez pluie, nature et bruit blanc, générez des paysages sonores avec l'IA et endormez-vous avec un minuteur."
+    "sleepFlowDesc": "Bruit blanc et sons d'ambiance pour mieux dormir. Mélangez pluie, nature et bruit blanc, générez des paysages sonores avec l'IA et endormez-vous avec un minuteur.",
+    "title": "TinyKit - Création d'applications minimalistes et pratiques"
   },
   "Legal": {
     "languageNotice": "Ce document est disponible uniquement en anglais.",
@@ -461,22 +461,17 @@
     "twitterDescription": "Trouvez votre prochain outil de productivité préféré. TinyKit crée des applications minimalistes et pratiques pour vous. Des logiciels simples et légers sans publicité ni encombrement.",
     "twitterTitle": "TinyKit - Création d'applications minimalistes et pratiques"
   },
-  "StructuredData": {
-    "fileManagement": "Gestion des fichiers",
-    "orgDescription": "Développeur d'applications de productivité pour les utilisateurs Mac",
-    "orgKnowsAbout": {
-      "0": "Développement de logiciels Mac",
-      "1": "Organisation de fichiers",
-      "2": "Outils de productivité",
-      "3": "Utilitaires macOS"
-    },
-    "productCategory": "Logiciel utilitaire Mac",
-    "websiteDescription": "Applications de productivité pour les utilisateurs Mac"
-  },
   "SleepFlow": {
     "breadcrumb": {
       "home": "Accueil",
       "product": "SleepFlow"
+    },
+    "download": {
+      "badge": "Téléchargement gratuit",
+      "cta": "Télécharger sur l'App Store",
+      "ctaAria": "Télécharger SleepFlow sur l'App Store",
+      "heading": "Prêt pour un meilleur sommeil ?",
+      "subtitle": "Rejoignez des milliers de personnes qui dorment plus profondément avec SleepFlow. Téléchargement gratuit sur iOS, endormez-vous ce soir."
     },
     "faq": {
       "items": {
@@ -538,17 +533,14 @@
       "copyright": "© {year} SleepFlow. Conçu avec ❤️ par TinyKit.",
       "downloadLink": "Télécharger",
       "featuresLink": "Fonctions",
-      "pricingLink": "Tarifs",
       "privacyLink": "Politique de confidentialité",
       "supportLink": "Assistance",
       "termsLink": "Conditions d'utilisation"
     },
     "hero": {
-      "badge": "🌙 Bruit blanc et sons d'ambiance",
+      "badge": "Bruit blanc et sons d'ambiance",
       "ctaDownload": "Télécharger",
       "ctaDownloadAria": "Télécharger SleepFlow sur l'App Store",
-      "ctaHowItWorks": "Voir comment ça marche",
-      "ctaHowItWorksAria": "Voir comment SleepFlow fonctionne",
       "mixLayersLabel": "Couches de son",
       "mixLayersValue": "Illimitées",
       "mixName": "Pluie + Vent",
@@ -558,24 +550,6 @@
       "subtitle": "Plongez dans un sommeil profond avec une bibliothèque apaisante de bruit blanc, pluie et sons d'ambiance —plus des paysages sonores générés par IA rien que pour vous.",
       "titleLine1": "Endormez-vous",
       "titleLine2": "plus vite cette nuit."
-    },
-    "howItWorks": {
-      "heading": "Étapes simples",
-      "steps": {
-        "0": {
-          "description": "Explorez bruit blanc, pluie, nature et sons d'ambiance dans six catégories.",
-          "title": "Choisissez vos sons"
-        },
-        "1": {
-          "description": "Superposez des sons et ajustez le volume de chacun jusqu'à ce que ce soit parfait.",
-          "title": "Mélangez et personnalisez"
-        },
-        "2": {
-          "description": "Réglez un minuteur de fondu, appuyez sur lecture et laissez la nuit vous porter vers le sommeil.",
-          "title": "Plongez dans le sommeil"
-        }
-      },
-      "subtitle": "3 étapes vers une meilleure nuit de sommeil"
     },
     "meta": {
       "applicationName": "SleepFlow",
@@ -610,37 +584,13 @@
           "label": "Fonctions"
         },
         "1": {
-          "label": "Comment ça marche"
-        },
-        "2": {
-          "label": "Tarifs"
+          "label": "Télécharger"
         }
       },
       "openMenu": "Ouvrir le menu"
     },
     "page": {
       "skipToContent": "Aller au contenu principal"
-    },
-    "pricing": {
-      "annualBadge": "Meilleure valeur",
-      "annualDetail": "Facturation annuelle · Économisez 50%",
-      "annualTitle": "Annuel",
-      "cta": "Télécharger",
-      "ctaAria": "Télécharger SleepFlow gratuitement",
-      "features": {
-        "0": "Bibliothèque de sons premium complète",
-        "1": "Mixage de sons illimité",
-        "2": "5 générations IA / mois",
-        "3": "Minuteur et fondu"
-      },
-      "heading": "Tarifs simples et flexibles",
-      "legalNote": "L'abonnement se renouvelle automatiquement sauf annulation au moins 24 heures avant la fin de la période. Gérez ou annulez à tout moment dans les réglages de votre identifiant Apple.",
-      "monthlyDetail": "Facturation mensuelle",
-      "monthlyTitle": "Mensuel",
-      "period": "/période",
-      "subtitle": "Commencez gratuitement. Passez au premium pour les sons premium et l'IA à tout moment.",
-      "weeklyDetail": "Facturation hebdomadaire",
-      "weeklyTitle": "Hebdomadaire"
     },
     "testimonials": {
       "heading": "Doux rêves",
@@ -657,5 +607,17 @@
       },
       "ratingAria": "5 étoiles sur 5"
     }
+  },
+  "StructuredData": {
+    "fileManagement": "Gestion des fichiers",
+    "orgDescription": "Développeur d'applications de productivité pour les utilisateurs Mac",
+    "orgKnowsAbout": {
+      "0": "Développement de logiciels Mac",
+      "1": "Organisation de fichiers",
+      "2": "Outils de productivité",
+      "3": "Utilitaires macOS"
+    },
+    "productCategory": "Logiciel utilitaire Mac",
+    "websiteDescription": "Applications de productivité pour les utilisateurs Mac"
   }
 }

@@ -7,12 +7,11 @@ import StructuredData, {
   Testimonial,
 } from '@/app/components/StructuredData';
 import { siteConfig, productConfig } from './data/site-config';
-import { features, howItWorks, testimonials } from './data/page-data';
+import { features, testimonials } from './data/page-data';
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
-import HowItWorksSection from './components/HowItWorksSection';
 import TestimonialsSection from './components/TestimonialsSection';
-import PricingSection from './components/PricingSection';
+import DownloadSection from './components/DownloadSection';
 import FooterSection from './components/FooterSection';
 import { getTranslations } from 'next-intl/server';
 
@@ -124,9 +123,8 @@ export default async function SleepFlowPage({
       >
         <HeroSection productConfig={productConfig} />
         <FeaturesSection features={features} />
-        <HowItWorksSection howItWorks={howItWorks} />
-        <TestimonialsSection testimonials={testimonials} />
-        <PricingSection productConfig={productConfig} />
+        {/* <TestimonialsSection testimonials={testimonials} /> */}
+        <DownloadSection productConfig={productConfig} />
         <FooterSection siteConfig={siteConfig} productConfig={productConfig} />
       </main>
     </>
