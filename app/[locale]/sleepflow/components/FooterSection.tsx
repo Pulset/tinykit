@@ -16,9 +16,9 @@ export default function FooterSection({
   const t = useTranslations('SleepFlow.footer');
 
   return (
-    <footer className='py-8 sm:py-12 border-t border-white/10 bg-[#2A2F4D]'>
-      <div className='container mx-auto px-6 text-center'>
-        <div className='flex items-center justify-center gap-3 mb-5 sm:mb-8'>
+    <footer className='py-4 sm:py-6 border-t border-white/10 bg-[#191C31]'>
+      <div className='container mx-auto px-4 text-center'>
+        <div className='flex items-center justify-center gap-3 mb-4 sm:mb-6'>
           <Image
             src='https://cdn.tinykit.app/sleepflow/images/logo.png'
             alt='logo'
@@ -30,7 +30,7 @@ export default function FooterSection({
             {t('brand')}
           </span>
         </div>
-        <div className='flex flex-wrap justify-center items-center gap-x-5 sm:gap-x-6 gap-y-2 sm:gap-y-3 mb-5 sm:mb-8 text-gray-400 text-sm sm:text-base'>
+        <div className='flex flex-wrap justify-center items-center gap-x-5 sm:gap-x-6 gap-y-2 sm:gap-y-3 mb-4 sm:mb-6 text-gray-400 text-sm sm:text-base'>
           <a
             href={productConfig.appStoreUrl}
             className='hover:text-[#97A3FF] transition flex items-center'

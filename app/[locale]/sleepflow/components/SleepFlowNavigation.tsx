@@ -14,7 +14,7 @@ export default function SleepFlowNavigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='bg-[#14172A]/80 backdrop-blur-xl shadow-sm sticky top-0 z-50 border-b border-white/10'>
+    <nav className='bg-[#191C31] backdrop-blur-xl shadow-sm sticky top-0 z-50 border-b border-white/10'>
       <div className='container mx-auto px-6 py-4'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
