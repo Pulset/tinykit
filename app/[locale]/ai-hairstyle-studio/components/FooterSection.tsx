@@ -58,7 +58,19 @@ export default function FooterSection({
           </Link>
         </div>
         <p className='text-gray-500 text-xs sm:text-sm'>
-          {t('copyright', { year: new Date().getFullYear() })}
+          {t.rich('copyright', {
+            year: new Date().getFullYear(),
+            link: (chunks) => (
+              <a
+                href='https://tinykit.app'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-gray-700 hover:text-[#d63384] transition'
+              >
+                {chunks}
+              </a>
+            ),
+          })}
         </p>
       </div>
     </footer>

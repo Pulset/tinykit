@@ -72,7 +72,7 @@
     "footer": {
       "brand": "AI Hairstyle Studio",
       "contactLink": "联系我们",
-      "copyright": "© {year} AI Hairstyle Studio。由 TinyKit 用 ❤️ 打造。",
+      "copyright": "© {year} AI Hairstyle Studio。由 <link>TinyKit</link> 用 ❤️ 打造。",
       "downloadLink": "下载",
       "featuresLink": "功能",
       "logoAlt": "AI Hairstyle Studio 标志",
@@ -300,7 +300,7 @@
     "footer": {
       "brand": "File Sortify",
       "contactAria": "通过电子邮件联系我们",
-      "copyright": "© {year} File Sortify。版权所有。",
+      "copyright": "© {year} File Sortify。由 <link>TinyKit</link> 用 ❤️ 打造。",
       "emailLabel": "电子邮件",
       "logoAlt": "File Sortify 标志",
       "privacyAria": "查看隐私政策",
@@ -532,7 +532,7 @@
     "footer": {
       "backHome": "返回 SleepFlow",
       "brand": "SleepFlow",
-      "copyright": "© {year} SleepFlow. 由 TinyKit 用 ❤️ 打造。",
+      "copyright": "© {year} SleepFlow。由 <link>TinyKit</link> 用 ❤️ 打造。",
       "downloadLink": "下载",
       "featuresLink": "功能",
       "privacyLink": "隐私政策",

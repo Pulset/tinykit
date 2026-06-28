@@ -72,7 +72,7 @@
     "footer": {
       "brand": "AI Hairstyle Studio",
       "contactLink": "Contact Us",
-      "copyright": "© {year} AI Hairstyle Studio. Built with ❤️ by TinyKit.",
+      "copyright": "© {year} AI Hairstyle Studio. Built with ❤️ by <link>TinyKit</link>.",
       "downloadLink": "Download",
       "featuresLink": "Features",
       "logoAlt": "AI Hairstyle Studio Logo",
@@ -300,7 +300,7 @@
     "footer": {
       "brand": "File Sortify",
       "contactAria": "Contact us via email",
-      "copyright": "© {year} File Sortify. All rights reserved.",
+      "copyright": "© {year} File Sortify. Built with ❤️ by <link>TinyKit</link>.",
       "emailLabel": "Email",
       "logoAlt": "File Sortify Logo",
       "privacyAria": "View privacy policy",
@@ -532,7 +532,7 @@
     "footer": {
       "backHome": "Back to SleepFlow",
       "brand": "SleepFlow",
-      "copyright": "© {year} SleepFlow. Built with ❤️ by TinyKit.",
+      "copyright": "© {year} SleepFlow. Built with ❤️ by <link>TinyKit</link>.",
       "downloadLink": "Download",
       "featuresLink": "Features",
       "privacyLink": "Privacy Policy",

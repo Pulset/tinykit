@@ -72,7 +72,7 @@
     "footer": {
       "brand": "AI Hairstyle Studio",
       "contactLink": "문의하기",
-      "copyright": "© {year} AI Hairstyle Studio. TinyKit에서 ❤️으로 제작.",
+      "copyright": "© {year} AI Hairstyle Studio. <link>TinyKit</link>에서 ❤️로 제작.",
       "downloadLink": "다운로드",
       "featuresLink": "기능",
       "logoAlt": "AI Hairstyle Studio 로고",
@@ -300,7 +300,7 @@
     "footer": {
       "brand": "File Sortify",
       "contactAria": "이메일 문의",
-      "copyright": "© {year} File Sortify. 모든 권리 보유.",
+      "copyright": "© {year} File Sortify. <link>TinyKit</link>에서 ❤️로 제작.",
       "emailLabel": "이메일",
       "logoAlt": "File Sortify 로고",
       "privacyAria": "개인정보 처리방침 보기",
@@ -532,7 +532,7 @@
     "footer": {
       "backHome": "SleepFlow로 돌아가기",
       "brand": "SleepFlow",
-      "copyright": "© {year} SleepFlow. TinyKit에서 ❤️로 제작.",
+      "copyright": "© {year} SleepFlow. <link>TinyKit</link>에서 ❤️로 제작.",
       "downloadLink": "다운로드",
       "featuresLink": "기능",
       "privacyLink": "개인정보 처리방침",
