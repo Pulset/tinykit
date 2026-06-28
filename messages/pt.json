@@ -588,10 +588,10 @@
       "downloadNow": "Baixar Agora",
       "items": {
         "0": {
-          "label": "Recursos"
+          "label": "Mágica de IA"
         },
         "1": {
-          "label": "Baixar"
+          "label": "Recursos"
         }
       },
       "logoAlt": "Logo SleepFlow",
@@ -613,7 +613,8 @@
           "content": "Viajo muito a trabalho. O som de cabine e as mixagens ambientais me ajudam a dormir em todos os voos. Este app vai comigo a qualquer lugar."
         }
       },
-      "ratingAria": "5 de 5 estrelas"
+      "ratingAria": "5 de 5 estrelas",
+      "subtitle": "Sono real, de pessoas reais que finalmente encontraram o seu som."
     },
     "download": {
       "badge": "Baixe grátis",
@@ -621,6 +622,17 @@
       "subtitle": "Junte-se a milhares que dormem mais profundo com o SleepFlow. Baixe grátis no iOS e durma esta noite.",
       "cta": "Baixar na App Store",
       "ctaAria": "Baixar SleepFlow na App Store"
+    },
+    "aiDemo": {
+      "badge": "Geração de som com IA",
+      "heading": "Descreva. Ouça.",
+      "subtitle": "Digite qualquer som que você imaginar — 'chuva suave num telhado de zinco', 'uma fogueira crepitando', 'um gato ronronando' — e a IA do SleepFlow dá vida a ele como uma faixa ambiente personalizada, só para você.",
+      "promptLabel": "Descreva o seu som",
+      "promptPlaceholder": "ex.: chuva suave num telhado de zinco",
+      "promptValue": "Chuva suave num telhado de zinco, leve e constante",
+      "generatingLabel": "Gerando a sua paisagem sonora",
+      "resultLabel": "O seu som personalizado",
+      "note": "O SleepFlow Premium inclui 5 gerações com IA todos os meses."
     }
   }
 }

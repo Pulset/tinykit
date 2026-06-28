@@ -41,12 +41,12 @@ export default function DownloadSection({
 
         <a
           href={productConfig.appStoreUrl}
-          className='group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-gradient-to-r from-[#6B78E8] to-[#7C8AFF] text-white shadow-xl shadow-[#6B78E8]/40 hover:shadow-[#6B78E8]/60 transition-all hover:scale-105 active:scale-95'
+          className='group inline-flex items-center justify-center gap-2 md:gap-3 px-6 py-4 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg whitespace-nowrap bg-gradient-to-r from-[#6B78E8] to-[#7C8AFF] text-white shadow-xl shadow-[#6B78E8]/40 hover:shadow-[#6B78E8]/60 transition-all hover:scale-105 active:scale-95'
           target='_blank'
           rel='noopener noreferrer'
           aria-label={t('ctaAria')}
         >
-          <FontAwesomeIcon name='fab fa-apple' className='text-2xl' />
+          <FontAwesomeIcon name='fab fa-apple' className='text-xl md:text-2xl' />
           {t('cta')}
         </a>
       </div>

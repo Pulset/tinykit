@@ -33,5 +33,5 @@ export const siteConfig: SiteConfig = {
 
 // Placeholder App Store URL — swap with the real id once the app is live.
 export const productConfig: ProductConfig = {
-  appStoreUrl: 'https://apps.apple.com/app/idSLEEPFLOW_PLACEHOLDER',
+  appStoreUrl: 'https://apps.apple.com/app/6777714786',
 };

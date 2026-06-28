@@ -21,9 +21,9 @@ export default function FeaturesSection({ features }: FeaturesSectionProps) {
   return (
     <section
       id='features'
-      className='py-24 relative bg-gradient-to-b from-[#0A0B14] to-[#0E1020] overflow-hidden'
+      className='py-24 relative bg-gradient-to-b from-[#0E1020] via-[#0A0B14] to-[#0E1020] overflow-hidden'
     >
-      {/* Subtle glow */}
+      {/* Subtle glow — echoes the hero/ai orb language */}
       <div
         className='absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[#6B78E8] rounded-full mix-blend-screen filter blur-[140px] opacity-10 pointer-events-none'
         aria-hidden='true'

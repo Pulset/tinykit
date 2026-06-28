@@ -583,10 +583,10 @@
       "downloadNow": "Jetzt laden",
       "items": {
         "0": {
-          "label": "Funktionen"
+          "label": "KI-Magie"
         },
         "1": {
-          "label": "Laden"
+          "label": "Funktionen"
         }
       },
       "logoAlt": "SleepFlow Logo",
@@ -608,7 +608,19 @@
           "content": "Ich reise beruflich viel. Der Kabinensound und die Ambient-Mixe helfen mir, in jedem Flugzeug zu schlafen. Diese App begleitet mich überall hin."
         }
       },
-      "ratingAria": "5 von 5 Sternen"
+      "ratingAria": "5 von 5 Sternen",
+      "subtitle": "Echter Schlaf, von echten Menschen, die endlich ihren Sound gefunden haben."
+    },
+    "aiDemo": {
+      "badge": "KI-Soundgenerierung",
+      "heading": "Beschreib es. Hör es.",
+      "subtitle": "Tippe jeden Sound ein, den du dir vorstellen kannst — 'sanfter Regen auf einem Blechdach', 'ein knisterndes Lagerfeuer', 'schnurrende Katze' — und die KI von SleepFlow erweckt ihn als individuellen Ambient-Track zum Leben, nur für dich.",
+      "promptLabel": "Beschreibe deinen Sound",
+      "promptPlaceholder": "z. B. sanfter Regen auf einem Blechdach",
+      "promptValue": "Sanfter Regen auf einem Blechdach, weich und gleichmäßig",
+      "generatingLabel": "Deine Klanglandschaft wird erstellt",
+      "resultLabel": "Dein individueller Sound",
+      "note": "SleepFlow Premium enthält jeden Monat 5 KI-Generierungen."
     }
   },
   "StructuredData": {

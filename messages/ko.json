@@ -583,10 +583,10 @@
       "downloadNow": "지금 다운로드",
       "items": {
         "0": {
-          "label": "기능"
+          "label": "AI 매직"
         },
         "1": {
-          "label": "다운로드"
+          "label": "기능"
         }
       },
       "logoAlt": "SleepFlow 로고",
@@ -608,7 +608,19 @@
           "content": "출장을 많이 가요. 기내 소리와 환경 믹스가 매 비행에서 잠들게 해줘요. 이 앱은 어딜 가든 함께해요."
         }
       },
-      "ratingAria": "5점 만점에 5점"
+      "ratingAria": "5점 만점에 5점",
+      "subtitle": "비로소 자신만의 소리를 찾은 사람들의 진짜 수면 이야기."
+    },
+    "aiDemo": {
+      "badge": "AI 사운드 생성",
+      "heading": "설명하세요. 들어보세요.",
+      "subtitle": "상상할 수 있는 어떤 소리든 입력하세요 — '함석 지붕 위의 잔잔한 빗소리', '딱딱거리는 캠프파이어', '그르렁거리는 고양이' — SleepFlow의 AI가 당신만을 위한 맞춤 환경 사운드 트랙으로 만들어 줍니다.",
+      "promptLabel": "원하는 소리를 설명하세요",
+      "promptPlaceholder": "예: 함석 지붕 위의 잔잔한 빗소리",
+      "promptValue": "함석 지붕 위의 잔잔한 빗소리, 부드럽고 고르게",
+      "generatingLabel": "사운드스케이프 생성 중",
+      "resultLabel": "당신만의 맞춤 사운드",
+      "note": "SleepFlow 프리미엄에는 매월 5회의 AI 생성이 포함됩니다."
     }
   },
   "StructuredData": {

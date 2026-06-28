@@ -9,8 +9,9 @@ import StructuredData, {
 import { siteConfig, productConfig } from './data/site-config';
 import { features, testimonials } from './data/page-data';
 import HeroSection from './components/HeroSection';
+import AIDemoSection from './components/AIDemoSection';
 import FeaturesSection from './components/FeaturesSection';
-import TestimonialsSection from './components/TestimonialsSection';
+// import TestimonialsSection from './components/TestimonialsSection';
 import DownloadSection from './components/DownloadSection';
 import FooterSection from './components/FooterSection';
 import { getTranslations } from 'next-intl/server';
@@ -122,6 +123,7 @@ export default async function SleepFlowPage({
         lang={locale}
       >
         <HeroSection productConfig={productConfig} />
+        <AIDemoSection />
         <FeaturesSection features={features} />
         {/* <TestimonialsSection testimonials={testimonials} /> */}
         <DownloadSection productConfig={productConfig} />

@@ -25,16 +25,27 @@ export default function TestimonialsSection({
   const t = useTranslations('SleepFlow.testimonials');
 
   return (
-    <section className='py-24 bg-gradient-to-b from-[#0A0B14] to-[#0E1020]'>
-      <div className='container mx-auto px-6'>
-        <h2 className='text-4xl md:text-5xl font-bold mb-16 text-center text-white'>
+    <section
+      id='testimonials'
+      className='py-24 relative bg-gradient-to-b from-[#0E1020] to-[#0A0B14] overflow-hidden'
+    >
+      {/* Soft glow echoing the hero/ai orbs */}
+      <div
+        className='absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[360px] bg-[#9775FA] rounded-full mix-blend-screen filter blur-[140px] opacity-10 pointer-events-none'
+        aria-hidden='true'
+      />
+      <div className='container mx-auto px-6 relative z-10'>
+        <h2 className='text-4xl md:text-5xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#97A3FF] via-[#BCC4FF] to-[#9775FA]'>
           {t('heading')}
         </h2>
+        <p className='text-gray-400 text-lg text-center mb-16 max-w-2xl mx-auto'>
+          {t('subtitle')}
+        </p>
         <div className='grid md:grid-cols-3 gap-8'>
           {testimonials.map((testimonial, i) => (
             <div
               key={i}
-              className='bg-white/[0.04] p-8 rounded-2xl border border-white/10 shadow-lg hover:shadow-xl hover:border-white/20 transition-all relative backdrop-blur-sm'
+              className='group bg-white/[0.04] p-8 rounded-3xl border border-white/10 shadow-lg hover:shadow-xl hover:border-white/20 hover:-translate-y-2 transition-all duration-300 relative backdrop-blur-sm'
             >
               <FontAwesomeIcon
                 name='fas fa-quote-left'

@@ -583,10 +583,10 @@
       "downloadNow": "Télécharger",
       "items": {
         "0": {
-          "label": "Fonctions"
+          "label": "Magie de l'IA"
         },
         "1": {
-          "label": "Télécharger"
+          "label": "Fonctions"
         }
       },
       "logoAlt": "Logo SleepFlow",
@@ -608,7 +608,19 @@
           "content": "Je voyage constamment pour le travail. Le bruit de cabine et les mixs d'ambiance m'aident à dormir à chaque vol. Cette application me suit partout."
         }
       },
-      "ratingAria": "5 étoiles sur 5"
+      "ratingAria": "5 étoiles sur 5",
+      "subtitle": "Du vrai sommeil, de vraies personnes qui ont enfin trouvé leur son."
+    },
+    "aiDemo": {
+      "badge": "Génération de sons par IA",
+      "heading": "Décrivez-le. Écoutez-le.",
+      "subtitle": "Saisissez n'importe quel son que vous imaginez — « pluie douce sur un toit en tôle », « feu de camp crépitant », « chat qui ronronne » — et l'IA de SleepFlow lui donne vie sous forme de piste ambiante personnalisée, rien que pour vous.",
+      "promptLabel": "Décrivez votre son",
+      "promptPlaceholder": "ex. pluie douce sur un toit en tôle",
+      "promptValue": "Pluie douce sur un toit en tôle, douce et régulière",
+      "generatingLabel": "Génération de votre paysage sonore",
+      "resultLabel": "Votre son personnalisé",
+      "note": "SleepFlow Premium inclut 5 générations par IA chaque mois."
     }
   },
   "StructuredData": {

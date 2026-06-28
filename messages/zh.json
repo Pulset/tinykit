@@ -583,10 +583,10 @@
       "downloadNow": "立即下载",
       "items": {
         "0": {
-          "label": "功能"
+          "label": "AI 魔法"
         },
         "1": {
-          "label": "下载"
+          "label": "功能"
         }
       },
       "logoAlt": "SleepFlow 标志",
@@ -608,7 +608,19 @@
           "content": "我经常出差。机舱环境声和各种混音帮我在每次航班上入睡。这个应用我走到哪带到哪。"
         }
       },
-      "ratingAria": "5 星满分"
+      "ratingAria": "5 星满分",
+      "subtitle": "真实的睡眠，来自终于找到属于自己声音的真实用户。"
+    },
+    "aiDemo": {
+      "badge": "AI 声音生成",
+      "heading": "描述出来，即刻聆听。",
+      "subtitle": "输入任何你能想象到的声音——「锡屋顶上的轻柔雨声」、「噼啪作响的篝火」、「呼噜的小猫」——SleepFlow 的 AI 会把它变成一条专属于你的环境音轨。",
+      "promptLabel": "描述你想要的声音",
+      "promptPlaceholder": "例如：锡屋顶上的轻柔雨声",
+      "promptValue": "锡屋顶上的轻柔雨声，柔和而绵密",
+      "generatingLabel": "正在生成你的声音景观",
+      "resultLabel": "你的专属声音",
+      "note": "SleepFlow 高级版每月包含 5 次 AI 生成。"
     }
   },
   "StructuredData": {

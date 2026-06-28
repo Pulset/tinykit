@@ -583,10 +583,10 @@
       "downloadNow": "Download Now",
       "items": {
         "0": {
-          "label": "Features"
+          "label": "AI Magic"
         },
         "1": {
-          "label": "Download"
+          "label": "Features"
         }
       },
       "logoAlt": "SleepFlow Logo",
@@ -608,7 +608,19 @@
           "content": "I travel constantly for work. The airplane cabin sound and ambient mixes help me sleep on every flight. This app goes everywhere with me."
         }
       },
-      "ratingAria": "5 out of 5 stars"
+      "ratingAria": "5 out of 5 stars",
+      "subtitle": "Real sleep, from real people who finally found their sound."
+    },
+    "aiDemo": {
+      "badge": "AI Sound Generation",
+      "heading": "Describe It. Hear It.",
+      "subtitle": "Type any sound you can imagine — 'gentle rain on a tin roof', 'a crackling campfire', 'purring cat' — and SleepFlow's AI brings it to life as a custom ambient track, just for you.",
+      "promptLabel": "Describe your sound",
+      "promptPlaceholder": "e.g. gentle rain on a tin roof",
+      "promptValue": "Gentle rain on a tin roof, soft and steady",
+      "generatingLabel": "Generating your soundscape",
+      "resultLabel": "Your custom sound",
+      "note": "5 AI generations included with SleepFlow Premium every month."
     }
   },
   "StructuredData": {

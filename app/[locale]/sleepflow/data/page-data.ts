@@ -66,8 +66,8 @@ export const testimonials = [
 ];
 
 export const navItems = [
-  { labelKey: 'items.0.label', href: '#features' },
-  { labelKey: 'items.1.label', href: '#download' },
+  { labelKey: 'items.0.label', href: '#ai' },
+  { labelKey: 'items.1.label', href: '#features' },
 ];
 
 export const footerLinks = {
